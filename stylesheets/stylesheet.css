@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 center h1{
-  color: black;
+  color: green;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 h2{
 	color: green;
+	font-family: 'Vollkorn', serif;
 }
 
 h3{
@@ -23,4 +25,5 @@ div h3{
 
 div h2{
 	color: orange;
+	font-family: 'Vollkorn', serif;
 }
