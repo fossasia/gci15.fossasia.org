@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
-  font-family: 'Polar';
+  src: url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+font-family: 'Yanone Kaffeesatz', sans-serif;
 }
  /* Margin and padding settings*/   
      *, *:before, *:after {
