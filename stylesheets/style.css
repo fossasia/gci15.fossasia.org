@@ -1,0 +1,66 @@
+nav {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	box-shadow: none;
+	height: 50px;
+	padding: 30px 0 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.hero {
+	color: #333;
+	padding: 165px 0;
+	width: 100%;
+}
+.soft {
+	background-image: linear-gradient(#cfd8dc, #eceff1);
+	box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+}
+nav .logo img {
+	height: 25px;
+	margin-top: 20px;
+}
+nav ul li:hover {
+	background-color: rgba(255, 255, 255, 0);
+}
+nav ul li a {
+	color: #0277bd;
+}
+nav ul li a:hover:not(.btn) {
+	color: #0288d1;
+}
+.git-activities .btn {
+	margin: 10px;
+}
+.sbtn {
+	background: #0277bd;
+	color: #fff;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	padding: 15px;
+	transition: all 0.2s ease-out 0s;
+}
+.btn, .btn-large, .blog .subscribe-email-button, .btn-flat {
+	color: white;
+	border: medium none;
+	border-radius: 2px;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	outline: 0 none;
+	padding: 0 2rem;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.sbtn:hover {
+	background: #0288d1;
+}
+.collection .collection-item.avatar {
+	min-height: 120px;
+	padding-left: 135px;
+	position: relative;
+}
+.collection .collection-item.avatar .circle {
+	height: 100px;
+	width: 100px;
+}
