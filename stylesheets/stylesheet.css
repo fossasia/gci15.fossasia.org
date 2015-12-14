@@ -1,13 +1,26 @@
-* {
-  box-sizing: border-box; }
+/*Fonts*/
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+ /* Margin and padding settings*/   
+     *, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-body {
+/*Hid the flow of images by overflow-x*/
+html ,body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71; 
+  height: 100%;
+  overflow-x: hidden;
+  }
 
 a {
   color: #1e6bb8;
@@ -53,24 +66,8 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
 
-.page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
-
-@media screen and (min-width: 64em) {
-  .page-header {
-    padding: 5rem 6rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
-    padding: 3rem 4rem; } }
-
-@media screen and (max-width: 42em) {
-  .page-header {
-    padding: 2rem 1rem; } }
-
+ 
+/
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; }

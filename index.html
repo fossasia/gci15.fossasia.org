@@ -3,21 +3,78 @@
   <head>
     <meta charset="UTF-8">
     <title>gci15.fossasia.org by fossasia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/ss.css" media="screen">
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">gci15.fossasia.org</h1>
-      <h2 class="project-tagline">FOSSASIA GCI Site 2015/16</h2>
-      <a href="https://github.com/fossasia/gci15.fossasia.org" class="btn">View on GitHub</a>
-      <a href="https://github.com/fossasia/gci15.fossasia.org/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/fossasia/gci15.fossasia.org/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+  <!--Slider-->
+     <div class="slider-container">
+  <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide slide-0 active">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">FOSSASIA</h2>
+     
 
+          <p class="slide__text-desc">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
+          <a class="slide__text-link" href="http://fossasia.org/" target="_blank">HOME</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-1 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Google Code-In </h2>
+          <p class="slide__text-desc" >Participating in Google Code-in a bootcamp for young minds to the world of open source. </p>
+          <a class="slide__text-link" href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">CODE-IN 2015</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">FOSSASIA 2016</h2>
+          <p class="slide__text-desc">Asia's premier Open Technology Event | March 18th - 20th 2016 in Singapore </p>
+
+          <a class="slide__text-link" href="http://2016.fossasia.org/" target="_blank">ATTEND</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">FOSSASIA 2015</h2>
+          <p class="slide__text-desc">MARCH 13TH - 15TH 2015 SINGAPORE </p>
+          <a class="slide__text-link" href="http://2015.fossasia.org/" target="_blank"> 2015 HOME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Slider-->
     <section class="main-content">
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
@@ -52,6 +109,9 @@
 
     </section>
 
-  
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
   </body>
 </html>
