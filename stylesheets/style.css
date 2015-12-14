@@ -12,6 +12,9 @@ nav {
 	padding: 165px 0;
 	width: 100%;
 }
+.landing-container {
+	width: 95%;
+}
 .glow-gradient {
 	background: #282537;
 	background-image: -webkit-radial-gradient(top, circle cover, #8c9eff 0%, #3f51b5 80%);
@@ -63,27 +66,46 @@ nav ul li a:hover:not(.btn) {
 .wrapper {
 	overflow: hidden;
 }
-.avatar {
+
+/*.avatar {
 	float: left;
-	margin: 25px;
-	margin-left: 15px;
+	margin: 15px;
+	margin-left: 5px;
+}*/
+.avatar {
+	margin: 15px auto 0 auto;
+	text-align: center;
+	float: none;
 }
 .avatar img {
-	width: 140px;
-	height: 140px;
+	width: 110px;
+	height: 110px;
 }
 .profile-info {
 	overflow: hidden;
-	margin: 15px;
-	min-height: 170px;
+	margin: 0 15px 15px 15px;
+	min-height: 140px;
+	text-overflow: ellipsis;
+}
+.profile-info h5 {
+	text-align: center;
+}
+.profile-card {
+	height: 355px;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.10), 0 1px 5px 0 rgba(0, 0, 0, 0.10);
 }
 @media screen and (max-width:400px) {
 	.avatar {
-		margin: 25px auto 0 auto;
+		margin: 15px auto 0 auto;
 		text-align: center;
 		float: none;
 	}
 	.profile-info {
 		text-align: center;
 	}
+}
+footer.page-footer {
+	background-color: #8c9eff;
+	margin-top: 20px;
+	padding-top: 20px;
 }
