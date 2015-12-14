@@ -16,6 +16,9 @@ nav {
 	background-image: linear-gradient(#cfd8dc, #eceff1);
 	box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
 }
+.bold {
+	font-weight: bold;
+}
 nav .logo img {
 	height: 25px;
 	margin-top: 20px;
