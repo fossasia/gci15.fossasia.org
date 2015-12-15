@@ -91,10 +91,18 @@
             </div>
             <div class="card-action">
               <div class="social">
-                <a href="{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
-                <a href="{{ mentor.github }}"><i id="github" class="icon-github"></i></a>
-                <a href="{{ mentor.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                {% if mentor.twitter %}
+                  <a href="https://twitter.com/{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
+                {% endif %}
+                {% if mentor.blog %}
+                  <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
+                {% endif %}
+                {% if mentor.github %}
+                  <a href="https://github.com/{{ mentor.github }}"><i id="github" class="icon-github"></i></a>
+                {% endif %}
+                {% if mentor.facebook %}
+                  <a href="https://www.facebook.com/{{ mentor.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -112,10 +120,18 @@
             </div>
             <div class="card-action">
               <div class="social">
-                <a href="{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
-                <a href="{{ student.github }}"><i id="github" class="icon-github"></i></a>
-                <a href="{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                {% if student.twitter %}
+                  <a href="https://twitter.com/{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
+                {% endif %}
+                {% if student.blog %}
+                  <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
+                {% endif %}
+                {% if student.github %}
+                  <a href="https://github.com/{{ student.github }}"><i id="github" class="icon-github"></i></a>
+                {% endif %}
+                {% if student.facebook %}
+                  <a href="https://www.facebook.com/{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                {% endif %}
               </div>
             </div>
           </div>
