@@ -12,11 +12,27 @@
   blog: 
   twitter: 
   facebook: 
+  description: Second GCI
+
+- name: Mario S.
+  github: MarioScappini
+  image: mariosc.jpg
+  blog: 
+  twitter: https://twitter.com/MarioScappini99
+  facebook: https://www.facebook.com/marioakio.scappini
   description: 
 
 - name: Name L.
   github: hey
   image: member.png
+  blog: 
+  twitter: 
+  facebook: 
+  description: 
+
+  - name: Yathannsh Kulshrestha
+  github: Yathannsh
+  image: yathannsh.jpg
   blog: 
   twitter: 
   facebook: 
