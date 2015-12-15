@@ -53,12 +53,11 @@ html, body {
 	float: none;
 }
 .avatar img {
-	width: 110px;
-	height: 110px;
+	width: 150px;
+	height: 150px;
 }
 .profile-card .card-content {
-	height: 350px;
-	min-height: 140px;
+	height: 250px;
 }
 .profile-info {
 	overflow: hidden;
