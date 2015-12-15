@@ -30,6 +30,16 @@
   facebook: 
   description: 
 
+<<<<<<< HEAD
+- name: Juan F. Verhook
+  github: Juanvulcano
+  image: juanvhook.jpg
+  blog: juanfverhook.wordpress.com
+  twitter: 
+  facebook: 
+  description: Venezuelan, 16 years old, First GCI :) Building stuff 
+
+=======
   - name: Yathannsh Kulshrestha
   github: Yathannsh
   image: yathannsh.jpg
@@ -37,3 +47,4 @@
   twitter: 
   facebook: 
   description: 
+>>>>>>> fb9ff1c82c5d528c16f5d4ee6434e5c50554844a
