@@ -1,6 +1,5 @@
 ---
 ---
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -88,7 +87,11 @@
           <div class="col s12 card profile-card white wrapper">
             <div class="card-content">
               <div class="avatar">
-                <img src="img/{{ mentor.image }}" alt="" class="circle">
+                {% if mentor.image %}
+                  <img src="img/{{ mentor.image }}" alt="" class="circle">
+                {% else %}
+                  <img src="img/member.jpg" alt="" class="circle">
+                {% endif %}
               </div>
               <h5 class="bold">{{ mentor.name }}</h5>
             </div>
@@ -117,7 +120,11 @@
           <div class="col s12 card profile-card white wrapper">
             <div class="card-content">
               <div class="avatar">
-                <img src="img/{{ student.image }}" alt="" class="circle">
+                {% if student.image %}
+                  <img src="img/{{ student.image }}" alt="" class="circle">
+                {% else %}
+                  <img src="img/member.jpg" alt="" class="circle">
+                {% endif %}
               </div>
               <h5 class="bold">{{ student.name }}</h5>
             </div>
