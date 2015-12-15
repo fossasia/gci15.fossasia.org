@@ -4,7 +4,6 @@
   blog: 
   twitter: 
   facebook: 
-  description: 
 
 - name: Robin V.
   github: robnvuurdraak
@@ -12,7 +11,13 @@
   blog: 
   twitter: 
   facebook: 
-  description: Second GCI
+
+- name: Vlad Ovchynnykov
+  github: pythad
+  image: vlado.jpg
+  blog: http://pythad.github.io/
+  twitter: 
+  facebook:
 
 - name: Name L.
   github: hey
@@ -20,4 +25,3 @@
   blog: 
   twitter: 
   facebook: 
-  description: 
