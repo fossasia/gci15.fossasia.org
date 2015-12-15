@@ -65,8 +65,8 @@ html, body {
 .card-content h5 {
 	text-align: center;
 }
-.profile-card {
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.10), 0 1px 5px 0 rgba(0, 0, 0, 0.10);
+.card {
+	box-shadow: 0 0 0 0 !important;
 }
 @media screen and (max-width:400px) {
 	.profile-info {
