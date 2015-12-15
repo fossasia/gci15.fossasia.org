@@ -4,66 +4,110 @@
     <meta charset="UTF-8">
     <title>gci15.fossasia.org by fossasia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slider.css" media="screen">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m3">
-            <a href="http://fossasia.org/" class="logo"><img src="media/fossasia-light.png"></a>
-          </div>
-          <div class="col s12 m9">
-            <div class="right"><ul>
-              <li class="team"><a href="#mentors" class="smooth-scroll">Our Mentors</a></li>
-              <li class="students"><a href="#students" class="smooth-scroll">Our Students</a></li>
-            </ul>
+    <!--Slider-->
+    <div class="slider-container">
+      <div class="slider-control left inactive"></div>
+      <div class="slider-control right"></div>
+    <ul class="slider-pagi"></ul>
+    <ul class="navigation">
+      <li class="team"><a href="#mentors" class="smooth-scroll">Our Mentors</a></li>
+      <li class="students"><a href="#students" class="smooth-scroll">Our Students</a></li>
+    </ul>
+    <div class="slider">
+      <div class="slide slide-0 active">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">FOSSASIA</h2>
+            
+            <p class="slide__text-desc">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
+            <a class="slide__text-link" href="http://fossasia.org/" target="_blank">HOME</a>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <div class="hero glow-gradient">
-    <div class="container">
-      <div class="row center-align">
-        <div class="col s12">
-          <h4 class="white-text">gci15.fossasia.org</h4>
-          <h5 class="white-text">FOSSASIA GCI Site 2015/16</h5>
+      <div class="slide slide-1 ">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Google Code-In </h2>
+            <p class="slide__text-desc" >Participating in Google Code-in a bootcamp for young minds to the world of open source. </p>
+            <a class="slide__text-link" href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">CODE-IN 2015</a>
+          </div>
         </div>
       </div>
-      <div class="center-align">
-        <div class="row git-activities">
-          <a class="btn sbtn btn-flat" href="https://github.com/fossasia/gci15.fossasia.org">View on GitHub</a>
-          <a class="btn sbtn btn-flat" href="https://github.com/fossasia/gci15.fossasia.org/zipball/master">Download .zip</a>
-          <a class="btn sbtn btn-flat" href="https://github.com/fossasia/gci15.fossasia.org/tarball/master">Download .tar.gz</a>
+      <div class="slide slide-2">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">FOSSASIA 2016</h2>
+            <p class="slide__text-desc">Asia's premier Open Technology Event | March 18th - 20th 2016 in Singapore </p>
+            <a class="slide__text-link" href="http://2016.fossasia.org/" target="_blank">ATTEND</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-3">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+            <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
+          </svg>
+          <div class="slide__text">
+            <h2 class="slide__text-heading">FOSSASIA 2015</h2>
+            <p class="slide__text-desc">MARCH 13TH - 15TH 2015 SINGAPORE </p>
+            <a class="slide__text-link" href="http://2015.fossasia.org/" target="_blank"> 2015 HOME</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!--End Slider-->
   <div class="container landing-container">
     <div class="row">
       <h3 id="mentors" class="center-align">Our Mentors</h3>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/abc672/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/abc672/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/14f842/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/14f842/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -71,14 +115,24 @@
               consequat.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/aa4312/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/14123a/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -86,14 +140,24 @@
               consequat.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/fcb122/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/14faa9/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -101,14 +165,24 @@
               consequat.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/228228/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/bcf84a/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -116,20 +190,40 @@
               consequat.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/333333/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/aab321/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
             </p>
+          </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -137,24 +231,11 @@
     <div class="row">
       <h3 id="students" class="center-align">Our Students</h3>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="media/images/students/vladyslav_ovchynnykov.jpg" alt="" class="circle">
-          </div>
-          <div class="profile-info">
-            <h5 class="bold">Vladyslav Ovchynnykov</h5>
-            <p>Hello, My name is Vlad and I am proud to be a FOSSASIA student! <br>
-              Check my <a href="pythad.github.io">blog</a> and my <a href="http://stackoverflow.com/users/3832802/pythad">Stack Overflow profile</a> <br>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/abc782/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/14f112/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -162,20 +243,65 @@
               consequat.
             </p>
           </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <div class="col s12 card-panel profile-card white wrapper">
-          <div class="avatar">
-            <img src="http://fakeimg.pl/110x110/f451ab/fff?text=Photo" alt="" class="circle">
-          </div>
-          <div class="profile-info">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/abc728/fff?text=Photo" alt="" class="circle">
+            </div>
             <h5 class="bold">Name Surname</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
             </p>
+          </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="col s12 card profile-card white wrapper">
+          <div class="card-content">
+            <div class="avatar">
+              <img src="http://fakeimg.pl/110x110/c1a1b1/fff?text=Photo" alt="" class="circle">
+            </div>
+            <h5 class="bold">Name Surname</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div class="card-action">
+            <div class="social">
+              <a href="https://twitter.com/"><i id="twitter" class="icon-twitter"></i></a>
+              <a href="https://github.com"><i id="github" class="icon-github"></i></a>
+              <a href="http://stackexchange.com"><i id="stack" class="icon-stackexchange"></i></a>
+              <a href="https://linkedin.com"><i id="linkedin" class="icon-linkedin-sign"></i></a>
+              <a href="https://plus.google.com/"><i id="plus" class="icon-google-plus-sign"></i></a>
+              <a href="mailto:example@example.com"><i id="mail" class="icon-envelope"></i></a>
+            </div>
           </div>
         </div>
       </div>

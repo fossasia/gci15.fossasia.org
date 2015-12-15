@@ -1,45 +1,26 @@
-nav {
-	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	box-shadow: none;
-	height: 50px;
-	padding: 30px 0 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.hero {
-	color: #333;
-	padding: 165px 0;
-	width: 100%;
+/*Hid the flow of images by overflow-x*/
+html, body {
+	height: 100%;
+	overflow-x: hidden;
 }
 .landing-container {
 	width: 95%;
 }
-.glow-gradient {
-	background: #282537;
-	background-image: -webkit-radial-gradient(top, circle cover, #8c9eff 0%, #3f51b5 80%);
-	background-image: -moz-radial-gradient(top, circle cover, #8c9eff 0%, #3f51b5 80%);
-	background-image: -o-radial-gradient(top, circle cover, #8c9eff 0%, #3f51b5 80%);
-	background-image: radial-gradient(top, circle cover, #8c9eff 0%, #3f51b5 80%);
-}
-.bold {
-	font-weight: bold;
-}
-nav .logo img {
-	height: 25px;
-	margin-top: 20px;
-}
-nav ul li:hover {
-	background-color: rgba(255, 255, 255, 0);
-}
-nav ul li a {
-	color: white;
-}
-nav ul li a:hover:not(.btn) {
-	color: #e0f7fa;
-}
 .git-activities .btn {
 	margin: 10px;
+}
+.navigation {
+	right: 25px;
+	line-height: 64px;
+	position: absolute;
+	z-index: 1000;
+}
+.navigation li a {
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+	font-size: 1rem;
+	padding: 0 15px;
 }
 .sbtn {
 	background: #0277bd;
@@ -66,12 +47,6 @@ nav ul li a:hover:not(.btn) {
 .wrapper {
 	overflow: hidden;
 }
-
-/*.avatar {
-	float: left;
-	margin: 15px;
-	margin-left: 5px;
-}*/
 .avatar {
 	margin: 15px auto 0 auto;
 	text-align: center;
@@ -81,31 +56,68 @@ nav ul li a:hover:not(.btn) {
 	width: 110px;
 	height: 110px;
 }
+.profile-card .card-content {
+	height: 350px;
+	min-height: 140px;
+}
 .profile-info {
 	overflow: hidden;
-	margin: 0 15px 15px 15px;
-	min-height: 140px;
-	text-overflow: ellipsis;
 }
-.profile-info h5 {
+.card-content h5 {
 	text-align: center;
 }
 .profile-card {
-	height: 355px;
 	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.10), 0 1px 5px 0 rgba(0, 0, 0, 0.10);
 }
 @media screen and (max-width:400px) {
-	.avatar {
-		margin: 15px auto 0 auto;
-		text-align: center;
-		float: none;
-	}
 	.profile-info {
 		text-align: center;
 	}
 }
 footer.page-footer {
-	background-color: #8c9eff;
+	background-color: #FB6668;
 	margin-top: 20px;
 	padding-top: 20px;
+}
+.social {
+	text-align: center;
+	font-size: 1.5em;
+}
+.social a {
+	color: black;
+	text-decoration: none;
+}
+.social i {
+	margin: .3em;
+	cursor: pointer;
+	transition: color 300ms ease, margin-top 300ms ease;
+	transform: translateZ(0);
+}
+.social i:hover {
+	margin-top: -1px;
+}
+.social i#twitter:hover {
+	color: #77DDF6;
+}
+.social i#github:hover {
+	color: black;
+}
+.social i#linkedin:hover {
+	color: #0177B5;
+}
+.social i#code:hover {
+	color: #29A329;
+}
+.social i#stack:hover {
+	color: #ED780E;
+}
+.social i#plus:hover {
+	color: #D43402;
+}
+.social i#mail:hover {
+	color: #F7B401;
+}
+.card .card-action a {
+	color: #444;
+	margin-right: 0;
 }
