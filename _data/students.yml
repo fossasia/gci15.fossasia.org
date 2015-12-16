@@ -1,47 +1,80 @@
 - name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  description: 
+  blog:
+  twitter: https://twitter.com/devBorsch
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Robin V.
   github: robnvuurdraak
   image: robinv.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  description: Second GCI
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  bio: Second GCI
 
 - name: Mario S.
   github: MarioScappini
   image: mariosc.jpg
-  blog: 
+  blog:
   twitter: https://twitter.com/MarioScappini99
   facebook: https://www.facebook.com/marioakio.scappini
-  description: 
+  stackexchange:
+  bio:
 
-- name: Name L.
-  github: hey
-  image: member.png
-  blog: 
-  twitter: 
-  facebook: 
-  description: 
+- name: Jasper Yu
+  github: seadog007
+  image: seadog007.png
+  blog:
+  twitter: https://twitter.com/007seadog
+  facebook: https://www.facebook.com/seadog007
+  stackexchange:
+  bio:
 
-  - name: Yathannsh Kulshrestha
+- name: Yathannsh Kulshrestha
   github: Yathannsh
   image: yathannsh.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  description: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Piotr K.
   github: PiotrKowalski
   image: PiotrK.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  description: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Juan F. Verhook
+  github: Juanvulcano
+  image: juanvhook.jpg
+  blog: https://juanfverhook.wordpress.com/
+  twitter: https://twitter.com/Juanfrancisco1
+  facebook:
+  stackexchange:
+  bio: Venezuelan, 16 years, Building stuff :), First GCI
+
+- name: Ethan Falck
+  github: emanf9
+  image: ethanf.JPG
+  blog:
+  twitter: https://twitter.com/emanf10
+  facebook:
+  stackexchange:
+  bio: Following my dreams, first GCI
+
+- name: Vlad Ovchynnykov
+  github: pythad
+  image: vlad_ovch.jpg
+  blog: http://pythad.github.io/
+  twitter: https://twitter.com/pythady
+  facebook:
+  stackexchange: http://stackoverflow.com/users/3832802/pythad
+  bio: Following my dreams, first GCI
