@@ -81,7 +81,7 @@ html, body {
 }
 .members {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 25px;
   padding: 45px;
   padding-top: 10px;
 }
@@ -297,10 +297,34 @@ a:hover {
 .avatar img {
   position: absolute;
 }
-#footer {
-  position: absolute;
+footer {
   bottom: 0;
   width: 100%;  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+  background-color: #EE6E73;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: left;
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+}
+footer a {
+  color: white;
+  font-weight: bold;
+}
+footer a:hover, a:focus {
+  color: #eee;
+  text-decoration: none;
+}
+.footer-links {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-links li {
+  padding-right: 5px;
+  display: inline;
+}
+footer p {
+  margin-bottom: 0;
 }
