@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
@@ -116,35 +117,41 @@
             <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
             {% for mentor in site.data.mentors %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <div class="avatar img-circle">
-                    {% if mentor.image %}
-                      <img class="card-img-top" src="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
-                    {% else %}
-                      <img class="card-img-top" src="img/member.png" alt="{{ mentor.name }}">
-                    {% endif %}
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">{{ mentor.name }}</h4>
-                    <div class="social">
-                      {% if mentor.blog %}
-                        <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
-                      {% endif %}
-                      {% if mentor.twitter %}
-                        <a href="https://twitter.com/{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                      {% endif %}
-                      {% if mentor.github %}
-                        <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
-                      {% endif %}
-                      {% if mentor.stackexchange %}
-                        <a href="{{ mentor.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
-                      {% endif %}
-                      {% if mentor.facebook %}
-                        <a href="https://facebook.com/{{ mentor.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
-                      {% endif %}
+                <div class="grid">
+                 <figure class="effect-duke">
+                    <div class="card">
+                      <div class=" avatar img-circle">
+                        {% if mentor.image %}
+                          <img class="card-img-top" src="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
+                        {% else %}
+                          <img class="card-img-top" src="img/member.png" alt="{{ mentor.name }}">
+                        {% endif %}
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">{{ mentor.name }}</h4>
+                        <figcaption>
+                          <div class="social">
+                            {% if mentor.blog %}
+                              <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
+                            {% endif %}
+                            {% if mentor.twitter %}
+                              <a href="https://twitter.com/{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
+                            {% endif %}
+                            {% if mentor.github %}
+                              <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
+                            {% if mentor.stackexchange %}
+                              <a href="{{ mentor.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
+                            {% endif %}
+                            {% if mentor.facebook %}
+                              <a href="https://facebook.com/{{ mentor.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                            {% endif %}
+                          </div>
+                        </figcaption>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </figure>
+                </div>  
               </div>
             {% endfor %}
           </div>
@@ -155,35 +162,43 @@
             <h1 class="section-h1"><span class="white-border">Students</span></h1>
             {% for student in site.data.students %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <div class="avatar img-circle">
-                    {% if student.image %}
-                      <img class="card-img-top" src="img/students/{{ student.image }}" alt="{{ student.name }}">
-                    {% else %}
-                      <img class="card-img-top" src="img/member.png" alt="{{ student.name }}">
-                    {% endif %}
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">{{ student.name }}</h4>
-                    <div class="social">
-                      {% if student.blog %}
-                        <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
-                      {% endif %}
-                      {% if student.twitter %}
-                        <a href="{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                      {% endif %}
-                      {% if student.github %}
-                        <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
-                      {% endif %}
-                      {% if student.stackexchange %}
-                        <a href="{{ student.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
-                      {% endif %}
-                      {% if student.facebook %}
-                        <a href="{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
-                      {% endif %}
+              <div class="grid">
+                <figure class="effect-duke">
+                    <div class="card">
+                      <div class="avatar img-circle">
+                        {% if student.image %}
+                          <img class="card-img-top" src="img/students/{{ student.image }}" alt="{{ student.name }}">
+                        {% else %}
+                          <img class="card-img-top" src="img/member.png" alt="{{ student.name }}">
+                        {% endif %}
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">{{ student.name }}</h4>
+                        <figcaption>
+                          <div class="social">
+                          <div class="icon-holder">
+                            {% if student.blog %}
+                              <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
+                            {% endif %}
+                            {% if student.twitter %}
+                              <a href="{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
+                            {% endif %}
+                            {% if student.github %}
+                              <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
+                            {% if student.stackexchange %}
+                              <a href="{{ student.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
+                            {% endif %}
+                            {% if student.facebook %}
+                              <a href="{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                            {% endif %}
+                          </div>
+                          </div>
+                        </figcaption>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </figure>
+                 </div>   
               </div>
             {% endfor %}
           </div>
@@ -204,6 +219,7 @@
     </footer>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
