@@ -202,11 +202,12 @@
                       <img class="card-img-top" src="img/member.png" alt="{{ contributor.login }}">
                     {% endif %}
                     <div class="card-block">
-                    <h4 class="card-title">{{ contributors.login }}</h4>
-                    <div class="social">
-                      {% if contributors.html_url %}
+                      <h4 class="card-title">{{ contributors.login }}</h4>
+                      <div class="social">
+                        {% if contributors.html_url %}
                         <a href="https://github.com/{{ contributors.html_url }} "><i id="github" class="icon-github"></i></a>
-                      {% endif %}
+                        {% endif %}
+                      </div>
                     </div>
                   </div>
                 </div>
