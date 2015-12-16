@@ -1,9 +1,9 @@
-- name: Name Last
-  github: 
-  image: 
-  blog: 
+- name: Hong Phuc
+  github: hpdang
+  image: hpdang.jpg
+  blog: http://blog.fossasia.org/
   twitter: 
-  facebook: 
+  facebook: hpdang
   stackexchange: 
   description: 
 
