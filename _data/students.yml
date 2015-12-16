@@ -69,3 +69,12 @@
   facebook:
   stackexchange:
   description: Following my dreams, first GCI
+
+- name: Vlad Ovchynnykov
+  github: pythad
+  image: vlad_ovch.jpg
+  blog: pythad.github.io
+  twitter: https://twitter.com/pythady
+  facebook:
+  stackexchange: http://stackoverflow.com/users/3832802/pythad
+  description: Following my dreams, first GCI
