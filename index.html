@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
-  <body ng-app="Appfossasia">
+  <body>
     <!--Navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -190,12 +190,21 @@
         </div>
         <a class="anchor" href="#contributors"></a>
         <div class="row contributors-wrapper">
-          <div ng-controller="ContributorsController" id="contributors" class="members">
+          <div id="contributors" class="members">
             <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
-            <div ng-repeat="contributor in contributors">
-              {{ contributor.login }}
-              
-            </div>
+            {% for contributor in site.data.contributors %}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <div class="avatar img-circle">
+                    {% if contributor.html_url %}
+                      <img class="card-img-top" src="{{ contributor.html_url }}" alt="{{ contributor.login }}">
+                    {% else %}
+                      <img class="card-img-top" src="img/member.png" alt="{{ contributor.login }}">
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -212,7 +221,6 @@
         <p>Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
       </div>
     </footer>
-    <script src="js/angular.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
