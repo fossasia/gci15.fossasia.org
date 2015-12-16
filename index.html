@@ -196,11 +196,18 @@
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <div class="avatar img-circle">
-                    {% if contributor.html_url %}
-                      <img class="card-img-top" src="{{ contributor.html_url }}" alt="{{ contributor.login }}">
+                    {% if contributor.avatar_url %}
+                      <img class="card-img-top" src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}">
                     {% else %}
                       <img class="card-img-top" src="img/member.png" alt="{{ contributor.login }}">
                     {% endif %}
+                    <div class="card-block">
+                    <h4 class="card-title">{{ contributors.login }}</h4>
+                    <div class="social">
+                      {% if contributors.html_url %}
+                        <a href="https://github.com/{{ contributors.html_url }} "><i id="github" class="icon-github"></i></a>
+                      {% endif %}
+                    </div>
                   </div>
                 </div>
               </div>
