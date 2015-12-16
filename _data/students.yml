@@ -1,71 +1,71 @@
 - name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  stackexchange: 
-  description: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  description:
 
 - name: Robin V.
   github: robnvuurdraak
   image: robinv.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  stackexchange: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
   description: Second GCI
 
 - name: Mario S.
   github: MarioScappini
   image: mariosc.jpg
-  blog: 
+  blog:
   twitter: https://twitter.com/MarioScappini99
   facebook: https://www.facebook.com/marioakio.scappini
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
-- name: Name L.
-  github: hey
-  image: member.png
-  blog: 
-  twitter: 
-  facebook:
-  stackexchange: 
-  description: 
+- name: Jasper Yu
+  github: seadog007
+  image: seadog007.png
+  blog:
+  twitter: https://twitter.com/007seadog
+  facebook: https://www.facebook.com/seadog007
+  stackexchange:
+  description:
 
 - name: Yathannsh Kulshrestha
   github: Yathannsh
   image: yathannsh.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  stackexchange: 
-  description: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  description:
 
 - name: Piotr K.
   github: PiotrKowalski
   image: PiotrK.jpg
-  blog: 
-  twitter: 
-  facebook: 
-  stackexchange: 
-  description: 
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  description:
 
-- name: Juan F. Verhook 
-  github: Juanvulcano   
+- name: Juan F. Verhook
+  github: Juanvulcano
   image: juanvhook.jpg
-  blog: https://juanfverhook.wordpress.com/  
-  twitter: https://twitter.com/Juanfrancisco1   
-  facebook: 
-  stackexchange: 
+  blog: https://juanfverhook.wordpress.com/
+  twitter: https://twitter.com/Juanfrancisco1
+  facebook:
+  stackexchange:
   description: Venezuelan, 16 years, Building stuff :), First GCI
 
 - name: Ethan Falck
   github: emanf9
   image: ethanf.JPG
-  blog: 
+  blog:
   twitter: https://twitter.com/emanf10
   facebook:
-  stackexchange: 
+  stackexchange:
   description: Following my dreams, first GCI
