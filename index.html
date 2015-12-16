@@ -123,6 +123,11 @@
                     {% else %}
                       <img class="card-img-top" src="img/member.png" alt="{{ mentor.name }}">
                     {% endif %}
+                    {% if mentor.bio %}
+                      <div class="bio"><p>{{ mentor.bio }}</p></div>
+                      {% else %}
+                      <div class="bio"><p>Just another great mentor!</p></div>
+                    {% endif %}
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">{{ mentor.name }}</h4>
@@ -161,6 +166,11 @@
                       <img class="card-img-top" src="img/students/{{ student.image }}" alt="{{ student.name }}">
                     {% else %}
                       <img class="card-img-top" src="img/member.png" alt="{{ student.name }}">
+                    {% endif %}
+                    {% if student.bio %}
+                      <div class="bio"><p>{{ student.bio }}</p></div>
+                      {% else %}
+                      <div class="bio"><p>Just another friendly student!</p></div>
                     {% endif %}
                   </div>
                   <div class="card-block">
