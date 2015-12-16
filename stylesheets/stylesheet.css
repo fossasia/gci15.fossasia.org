@@ -271,6 +271,8 @@ a:hover {
 .avatar img {
   position: absolute;
   border-radius: 50%;
+  height: 100%;
+  min-width: 100%;
 }
 footer {
   bottom: 0;
