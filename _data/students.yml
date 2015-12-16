@@ -4,6 +4,7 @@
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
 
 - name: Robin V.
@@ -12,6 +13,7 @@
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: Second GCI
 
 - name: Mario S.
@@ -20,6 +22,7 @@
   blog: 
   twitter: https://twitter.com/MarioScappini99
   facebook: https://www.facebook.com/marioakio.scappini
+  stackexchange: 
   description: 
 
 - name: Name L.
@@ -27,7 +30,8 @@
   image: member.png
   blog: 
   twitter: 
-  facebook: 
+  facebook:
+  stackexchange: 
   description: 
 
   - name: Yathannsh Kulshrestha
@@ -36,6 +40,7 @@
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
 
 - name: Piotr K.
@@ -44,6 +49,7 @@
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
 
 -  name: Juan F. Verhook 
@@ -51,7 +57,8 @@
    image: juanvhook.jpg
    blog: https://juanfverhook.wordpress.com/  
    twitter: https://twitter.com/Juanfrancisco1   
-   facebook:   
+   facebook: 
+  stackexchange: 
    description: Venezuelan, 16 years, Building stuff :), First GCI
 
 - name: Ethan Falck
@@ -60,4 +67,5 @@
   blog: 
   twitter: https://twitter.com/emanf10
   facebook:
+  stackexchange: 
   description: Following my dreams, first GCI
