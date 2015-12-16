@@ -1,23 +1,26 @@
 - name: Name Last
   github: 
-  image: member.png
+  image: 
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
 
 - name: Name L.
   github: hey
-  image: member.png
+  image: 
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
 
 - name: Name L.
   github: hey
-  image: member.png
+  image: 
   blog: 
   twitter: 
   facebook: 
+  stackexchange: 
   description: 
