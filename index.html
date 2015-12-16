@@ -131,6 +131,7 @@
                         <h4 class="card-title">{{ mentor.name }}</h4>
                         <figcaption>
                           <div class="social">
+                          <div class="icon-holder">
                             {% if mentor.blog %}
                               <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
@@ -146,6 +147,7 @@
                             {% if mentor.facebook %}
                               <a href="https://facebook.com/{{ mentor.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
                             {% endif %}
+                            </div>
                           </div>
                         </figcaption>
                       </div>
