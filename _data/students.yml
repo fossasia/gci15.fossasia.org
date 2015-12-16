@@ -2,10 +2,10 @@
   github: MaxBorsch
   image: mborsch.jpg
   blog:
-  twitter:
+  twitter: https://twitter.com/devBorsch
   facebook:
   stackexchange:
-  description:
+  bio:
 
 - name: Robin V.
   github: robnvuurdraak
@@ -14,7 +14,7 @@
   twitter:
   facebook:
   stackexchange:
-  description: Second GCI
+  bio: Second GCI
 
 - name: Mario S.
   github: MarioScappini
@@ -23,7 +23,7 @@
   twitter: https://twitter.com/MarioScappini99
   facebook: https://www.facebook.com/marioakio.scappini
   stackexchange:
-  description:
+  bio:
 
 - name: Jasper Yu
   github: seadog007
@@ -32,7 +32,7 @@
   twitter: https://twitter.com/007seadog
   facebook: https://www.facebook.com/seadog007
   stackexchange:
-  description:
+  bio:
 
 - name: Yathannsh Kulshrestha
   github: Yathannsh
@@ -41,7 +41,7 @@
   twitter:
   facebook:
   stackexchange:
-  description:
+  bio:
 
 - name: Piotr K.
   github: PiotrKowalski
@@ -50,7 +50,7 @@
   twitter:
   facebook:
   stackexchange:
-  description:
+  bio:
 
 - name: Juan F. Verhook
   github: Juanvulcano
@@ -59,7 +59,7 @@
   twitter: https://twitter.com/Juanfrancisco1
   facebook:
   stackexchange:
-  description: Venezuelan, 16 years, Building stuff :), First GCI
+  bio: Venezuelan, 16 years, Building stuff :), First GCI
 
 - name: Ethan Falck
   github: emanf9
@@ -68,7 +68,7 @@
   twitter: https://twitter.com/emanf10
   facebook:
   stackexchange:
-  description: Following my dreams, first GCI
+  bio: Following my dreams, first GCI
 
 - name: Vlad Ovchynnykov
   github: pythad
@@ -77,4 +77,4 @@
   twitter: https://twitter.com/pythady
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
-  description: Following my dreams, first GCI
+  bio: Following my dreams, first GCI
