@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/ss.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-responsive.css" media="screen">
@@ -119,11 +118,11 @@
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <div class="avatar">
-                  {% if mentor.image %}
-                    <img class="card-img-top" src="img/{{ mentor.image }}" alt="{{ mentor.name }}">                  
-                  {% else %}
-                    <img class="card-img-top" src="img/member.jpg" alt="{{ mentor.name }}"> 
-                  {% endif %}
+                    {% if mentor.image %}
+                      <img class="card-img-top" src="img/{{ mentor.image }}" alt="{{ mentor.name }}">
+                    {% else %}
+                      <img class="card-img-top" src="img/member.jpg" alt="{{ mentor.name }}">
+                    {% endif %}
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">{{ mentor.name }}</h4>
@@ -158,11 +157,11 @@
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <div class="avatar">
-                  {% if student.image %}
-                    <img class="card-img-top" src="img/{{ student.image }}" alt="{{ student.name }}">                  
-                  {% else %}
-                    <img class="card-img-top" src="img/member.jpg" alt="{{ student.name }}"> 
-                  {% endif %}
+                    {% if student.image %}
+                      <img class="card-img-top" src="img/{{ student.image }}" alt="{{ student.name }}">
+                    {% else %}
+                      <img class="card-img-top" src="img/member.jpg" alt="{{ student.name }}">
+                    {% endif %}
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">{{ student.name }}</h4>
@@ -191,7 +190,7 @@
         </div>
       </div>
     </section>
-<!--     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -214,12 +213,7 @@
           <p>© 2015 FOSSASIA <a class="grey-text text-lighten-4 right" href="http://fossasia.org">http://fossasia.org</a></p>
         </div>
       </div>
-    </footer> -->
-    <div id="footer">
-      <div class="container">
-
-      </div>
-    </div>
+    </footer>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
