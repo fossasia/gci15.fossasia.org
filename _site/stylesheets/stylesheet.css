@@ -25,7 +25,7 @@ html ,body {
 /* mborsch.css*/
 
 .main-content {
-  background-color: #464646;
+  background-color: white;
 }
 
 .navbar-default {
@@ -99,37 +99,16 @@ html ,body {
 #home {
   height: 300px;
 }
-
-#students {
-  background-color: #F1A749;
-  border-bottom-style: solid;
-  border-width: 10px;
-  border-color: #CC8731;
-}
-
-#mentors {
-  background-color: #48A9FF;
-  border-bottom-style: solid;
-  border-width: 10px;
-  border-color: #268CE4;
-}
-
 .member {
   background-color: black;
   color: white;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  display: inline-block;
-  position: relative;
+  height: auto;
   border-radius: 50%;
-  box-shadow: 6px 6px 0px #292929;
 }
 
 .member img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -170,25 +149,6 @@ html ,body {
   filter: blur(5px);
   background-color: white;
 }
-
-.section-h2 {
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
-  line-height: 65px;
-}
-
-#mentors .section-h2 {
-  background-color: #2A93F1;
-  box-shadow: 1px 1px 50px #398CD6;
-}
-
-#students .section-h2 {
-  background-color: #FF9D20;
-  box-shadow: 1px 1px 50px #E28C1F;
-}
-
 footer.page-footer .footer-copyright {
   background-color: rgba(0, 0, 0, 0.15);
 }
@@ -283,100 +243,10 @@ a {
   margin-top: 0; }
 .main-content img {
   max-width: 100%; }
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: normal;
-  color: white; }
 .main-content p {
   margin-bottom: 1em; }
-.main-content code {
-  padding: 2px 4px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.9rem;
-  color: #383e41;
-  background-color: #f3f6fa;
-  border-radius: 0.3rem; }
-.main-content pre {
-  padding: 0.8rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  color: #567482;
-  word-wrap: normal;
-  background-color: #f3f6fa;
-  border: solid 1px #dce6f0;
-  border-radius: 0.3rem; }
-  .main-content pre > code {
-    padding: 0;
-    margin: 0;
-    font-size: 0.9rem;
-    color: #567482;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0; }
-.main-content .highlight {
-  margin-bottom: 1rem; }
-  .main-content .highlight pre {
-    margin-bottom: 0;
-    word-break: normal; }
-.main-content .highlight pre, .main-content pre {
-  padding: 0.8rem;
-  overflow: auto;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  border-radius: 0.3rem; }
-.main-content pre code, .main-content pre tt {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0; }
-  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
-    content: normal; }
 .main-content ul, .main-content ol {
   margin-top: 0; }
-.main-content blockquote {
-  padding: 0 1rem;
-  margin-left: 0;
-  color: #819198;
-  border-left: 0.3rem solid #dce6f0; }
-  .main-content blockquote > :first-child {
-    margin-top: 0; }
-  .main-content blockquote > :last-child {
-    margin-bottom: 0; }
-.main-content table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all; }
-  .main-content table th {
-    font-weight: bold; }
-  .main-content table th, .main-content table td {
-    padding: 0.5rem 1rem;
-    border: 1px solid #e9ebec; }
-.main-content dl {
-  padding: 0; }
-  .main-content dl dt {
-    padding: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: bold; }
-  .main-content dl dd {
-    padding: 0;
-    margin-bottom: 1rem; }
-.main-content hr {
-  height: 2px;
-  padding: 0;
-  margin: 1rem 0;
-  background-color: #eff0f1;
-  border: 0; }
 
 @media screen and (min-width: 64em) {
   .main-content {
@@ -418,3 +288,73 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.section-h1 {
+  color: black !important;
+  font-weight: bold !important;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  line-height: 65px;
+}
+.social {
+  text-align: center;
+  font-size: 1.5em;
+}
+.social a {
+  color: black;
+  text-decoration: none;
+}
+.social i {
+  margin: .3em;
+  cursor: pointer;
+  transition: color 300ms ease, margin-top 300ms ease;
+  transform: translateZ(0);
+}
+.social i:hover {
+  margin-top: -1px;
+}
+.social i#twitter:hover {
+  color: #77DDF6;
+}
+.social i#github:hover {
+  color: black;
+}
+.social i#linkedin:hover {
+  color: #0177B5;
+}
+.social i#code:hover {
+  color: #29A329;
+}
+.social i#stack:hover {
+  color: #ED780E;
+}
+.social i#facebook:hover {
+  color: #3b5998;
+}
+.social i#mail:hover {
+  color: #F7B401;
+}
+.card .card-action a {
+  color: #444;
+  margin-right: 0;
+}
+.card-block {
+  margin-bottom: 20px;
+}
+.card .card-title {
+  text-align: center;
+}
+.card a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+.avatar {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.avatar img {
+    position:absolute;
+}
