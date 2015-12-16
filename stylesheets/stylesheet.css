@@ -124,14 +124,6 @@ html, body {
 .anchor {
   display: none;
 }
-.blur {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  background-color: white;
-}
 
 /* end mborsch.css*/
 a {
@@ -245,6 +237,37 @@ a:hover {
 .social i#mail:hover {
   color: #F7B401;
 }
+.avatar .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: none;
+}
+.bio p {
+  margin: 0;
+  font-size: 1rem;
+  word-wrap: break-word;
+  text-align: center;
+  width: 77%;
+  transition: all 500ms ease;
+}
+.avatar:hover .bio {
+  display: flex;
+}
+.avatar:hover img {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  background-color: white;
+}
 .card .card-action a {
   color: #444;
   margin-right: 0;
@@ -268,9 +291,15 @@ a:hover {
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
+.avatar:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 .avatar img {
   position: absolute;
   border-radius: 50%;
+  transition: all 400ms ease;
 }
 footer {
   bottom: 0;
