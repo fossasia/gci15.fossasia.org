@@ -15,7 +15,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="js/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-app="Appfossasia">
     <!--Navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -191,9 +191,9 @@
         </div>
         <a class="anchor" href="#contributors"></a>
         <div class="row contributors-wrapper">
-          <div id="contributors" class="members">
+          <div ng-controller="ContributorsController" id="contributors" class="members">
             <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
-            {% for contributor in https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors %}
+            {% for contributor in contributors %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                   <div class="avatar img-circle">

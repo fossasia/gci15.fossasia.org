@@ -131,3 +131,12 @@ $(document).ready(function() {
   });
   
 });
+
+
+var myAppfossasia = angular.module('Appfossasia',[]);
+
+myAppfossasia.controller('ContributorsController', function($scope, $http){
+  $http.get('https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors').success(function(contributors){
+    $scope.contributors = contributors;
+  });
+});
