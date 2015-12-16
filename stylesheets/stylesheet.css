@@ -13,7 +13,7 @@
 
 /*Hid the flow of images by overflow-x*/
 html, body {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -25,7 +25,7 @@ html, body {
 
 /* mborsch.css*/
 .main-content {
-  background-color: white;
+  background-color: #9ccc65;
 }
 .navbar-default {
   background-color: #FFFFFF;
@@ -132,14 +132,6 @@ html, body {
   filter: blur(5px);
   background-color: white;
 }
-footer.page-footer .footer-copyright {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-footer.page-footer {
-  background-color: #353535;
-  margin-top: 0px;
-  padding-top: 0px;
-}
 
 /* end mborsch.css*/
 a {
@@ -201,40 +193,18 @@ a:hover {
     font-size: 1rem;
   }
 }
-.site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px #eff0f1;
-}
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
-}
-.site-footer-credits {
-  color: #819198;
-}
-@media screen and (min-width:64em) {
-  .site-footer {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width:42em) and (max-width:64em) {
-  .site-footer {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width:42em) {
-  .site-footer {
-    font-size: 0.9rem;
-  }
+.white-border {
+  border: 3px white solid;
+  padding: 0 15px;
 }
 .section-h1 {
-  color: black !important;
+  color: white !important;
   font-weight: bold !important;
   text-align: center;
   width: 100%;
   display: block;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 25px;
   line-height: 65px;
 }
 .social {
@@ -283,6 +253,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .card .card-title {
+  color: white;
   text-align: center;
 }
 .card a:hover, a:focus {
@@ -293,6 +264,9 @@ a:hover {
   position: relative;
   overflow: hidden;
   padding-bottom: 100%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
 }
 .avatar img {
   position: absolute;
@@ -327,4 +301,23 @@ footer a:hover, a:focus {
 }
 footer p {
   margin-bottom: 0;
+}
+.mentors-wrapper {
+  margin-top: 50px;
+  background-color: #6e73ee;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+}
+.students-wrapper {
+  margin-top: 50px;
+  background-color: #ff7043;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+  box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 1);
+}
+.main-content i {
+  color: white;
 }

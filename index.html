@@ -111,13 +111,13 @@
     <section class="main-content">
       <div class="container">
         <a class="anchor" href="#mentors"></a>
-        <div class="row">
+        <div class="row mentors-wrapper">
           <div id="mentors" class="members">
-            <h1 class="section-h1">Mentors</h1>
+            <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
             {% for mentor in site.data.mentors %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <div class="avatar">
+                  <div class="avatar img-circle">
                     {% if mentor.image %}
                       <img class="card-img-top" src="img/{{ mentor.image }}" alt="{{ mentor.name }}">
                     {% else %}
@@ -150,13 +150,13 @@
           </div>
         </div>
         <a class="anchor" href="#students"></a>
-        <div class="row">
+        <div class="row students-wrapper">
           <div id="students" class="members">
-            <h1 class="section-h1">Students</h1>
+            <h1 class="section-h1"><span class="white-border">Students</span></h1>
             {% for student in site.data.students %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                  <div class="avatar">
+                  <div class="avatar img-circle">
                     {% if student.image %}
                       <img class="card-img-top" src="img/{{ student.image }}" alt="{{ student.name }}">
                     {% else %}
