@@ -175,21 +175,24 @@ a:hover {
 }
 @media screen and (min-width:64em) {
   .main-content {
-    max-width: 256rem;
-    padding: 2rem 6rem;
+    /*max-width: 256rem;*/
+    /*padding: 2rem 4rem;*/
+    /*padding: auto;*/
     margin: 0 auto;
     font-size: 1.1rem;
   }
 }
 @media screen and (min-width:42em) and (max-width:64em) {
   .main-content {
-    padding: 2rem 4rem;
+    /*padding: 2rem 4rem;*/
+    padding: auto;
     font-size: 1.1rem;
   }
 }
 @media screen and (max-width:42em) {
   .main-content {
-    padding: 2rem 1rem;
+    /*padding: 2rem 1rem;*/
+    padding: auto;
     font-size: 1rem;
   }
 }
@@ -346,6 +349,7 @@ footer p {
   margin-bottom: 0;
 }
 .mentors-wrapper {
+  margin: auto;
   margin-top: 50px;
   background-color: #6e73ee;
   border-radius: 5px;
@@ -354,6 +358,7 @@ footer p {
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
 .students-wrapper {
+  margin: auto;
   margin-top: 50px;
   background-color: #ff7043;
   border-radius: 5px;
@@ -363,7 +368,9 @@ footer p {
 }
 
 .contributors-wrapper {
+  margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #27ae60;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
