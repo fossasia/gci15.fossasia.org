@@ -270,6 +270,7 @@ a:hover {
 }
 .avatar img {
   position: absolute;
+  border-radius: 50%;
 }
 footer {
   bottom: 0;
