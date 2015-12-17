@@ -311,6 +311,8 @@ a:hover {
 .avatar img {
   position: absolute;
   border-radius: 50%;
+  height: 100%;
+  min-width: 100%;
 }
 footer {
   bottom: 0;
@@ -359,6 +361,16 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
+
+.contributors-wrapper {
+  margin-top: 50px;
+  background-color: #27ae60;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+
 .main-content i {
   color: white;
 }
