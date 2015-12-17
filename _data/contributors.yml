@@ -1,153 +1,24 @@
----
   - 
     login: "mariobehling"
     id: 1583873
-    avatar_url: "https://avatars.githubusercontent.com/u/1583873?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/mariobehling"
-    html_url: "https://github.com/mariobehling"
-    followers_url: "https://api.github.com/users/mariobehling/followers"
-    following_url: "https://api.github.com/users/mariobehling/following{/other_user}"
-    gists_url: "https://api.github.com/users/mariobehling/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/mariobehling/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/mariobehling/subscriptions"
-    organizations_url: "https://api.github.com/users/mariobehling/orgs"
-    repos_url: "https://api.github.com/users/mariobehling/repos"
-    events_url: "https://api.github.com/users/mariobehling/events{/privacy}"
-    received_events_url: "https://api.github.com/users/mariobehling/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 24
   - 
     login: "seadog007"
     id: 5138409
-    avatar_url: "https://avatars.githubusercontent.com/u/5138409?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/seadog007"
-    html_url: "https://github.com/seadog007"
-    followers_url: "https://api.github.com/users/seadog007/followers"
-    following_url: "https://api.github.com/users/seadog007/following{/other_user}"
-    gists_url: "https://api.github.com/users/seadog007/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/seadog007/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/seadog007/subscriptions"
-    organizations_url: "https://api.github.com/users/seadog007/orgs"
-    repos_url: "https://api.github.com/users/seadog007/repos"
-    events_url: "https://api.github.com/users/seadog007/events{/privacy}"
-    received_events_url: "https://api.github.com/users/seadog007/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 11
   - 
     login: "emanf9"
     id: 14959346
-    avatar_url: "https://avatars.githubusercontent.com/u/14959346?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/emanf9"
-    html_url: "https://github.com/emanf9"
-    followers_url: "https://api.github.com/users/emanf9/followers"
-    following_url: "https://api.github.com/users/emanf9/following{/other_user}"
-    gists_url: "https://api.github.com/users/emanf9/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/emanf9/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/emanf9/subscriptions"
-    organizations_url: "https://api.github.com/users/emanf9/orgs"
-    repos_url: "https://api.github.com/users/emanf9/repos"
-    events_url: "https://api.github.com/users/emanf9/events{/privacy}"
-    received_events_url: "https://api.github.com/users/emanf9/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 10
   - 
     login: "robnvuurdraak"
     id: 11552478
-    avatar_url: "https://avatars.githubusercontent.com/u/11552478?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/robnvuurdraak"
-    html_url: "https://github.com/robnvuurdraak"
-    followers_url: "https://api.github.com/users/robnvuurdraak/followers"
-    following_url: "https://api.github.com/users/robnvuurdraak/following{/other_user}"
-    gists_url: "https://api.github.com/users/robnvuurdraak/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/robnvuurdraak/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/robnvuurdraak/subscriptions"
-    organizations_url: "https://api.github.com/users/robnvuurdraak/orgs"
-    repos_url: "https://api.github.com/users/robnvuurdraak/repos"
-    events_url: "https://api.github.com/users/robnvuurdraak/events{/privacy}"
-    received_events_url: "https://api.github.com/users/robnvuurdraak/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 7
   - 
     login: "Juanvulcano"
     id: 9177978
-    avatar_url: "https://avatars.githubusercontent.com/u/9177978?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/Juanvulcano"
-    html_url: "https://github.com/Juanvulcano"
-    followers_url: "https://api.github.com/users/Juanvulcano/followers"
-    following_url: "https://api.github.com/users/Juanvulcano/following{/other_user}"
-    gists_url: "https://api.github.com/users/Juanvulcano/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/Juanvulcano/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/Juanvulcano/subscriptions"
-    organizations_url: "https://api.github.com/users/Juanvulcano/orgs"
-    repos_url: "https://api.github.com/users/Juanvulcano/repos"
-    events_url: "https://api.github.com/users/Juanvulcano/events{/privacy}"
-    received_events_url: "https://api.github.com/users/Juanvulcano/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 5
   - 
     login: "MaxBorsch"
     id: 2924585
-    avatar_url: "https://avatars.githubusercontent.com/u/2924585?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/MaxBorsch"
-    html_url: "https://github.com/MaxBorsch"
-    followers_url: "https://api.github.com/users/MaxBorsch/followers"
-    following_url: "https://api.github.com/users/MaxBorsch/following{/other_user}"
-    gists_url: "https://api.github.com/users/MaxBorsch/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/MaxBorsch/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/MaxBorsch/subscriptions"
-    organizations_url: "https://api.github.com/users/MaxBorsch/orgs"
-    repos_url: "https://api.github.com/users/MaxBorsch/repos"
-    events_url: "https://api.github.com/users/MaxBorsch/events{/privacy}"
-    received_events_url: "https://api.github.com/users/MaxBorsch/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 4
   - 
     login: "kokoye2007"
     id: 3091754
-    avatar_url: "https://avatars.githubusercontent.com/u/3091754?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/kokoye2007"
-    html_url: "https://github.com/kokoye2007"
-    followers_url: "https://api.github.com/users/kokoye2007/followers"
-    following_url: "https://api.github.com/users/kokoye2007/following{/other_user}"
-    gists_url: "https://api.github.com/users/kokoye2007/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/kokoye2007/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/kokoye2007/subscriptions"
-    organizations_url: "https://api.github.com/users/kokoye2007/orgs"
-    repos_url: "https://api.github.com/users/kokoye2007/repos"
-    events_url: "https://api.github.com/users/kokoye2007/events{/privacy}"
-    received_events_url: "https://api.github.com/users/kokoye2007/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 3
   - 
     login: "MarioScappini"
     id: 7283678
-    avatar_url: "https://avatars.githubusercontent.com/u/7283678?v=3"
-    gravatar_id: ""
-    url: "https://api.github.com/users/MarioScappini"
-    html_url: "https://github.com/MarioScappini"
-    followers_url: "https://api.github.com/users/MarioScappini/followers"
-    following_url: "https://api.github.com/users/MarioScappini/following{/other_user}"
-    gists_url: "https://api.github.com/users/MarioScappini/gists{/gist_id}"
-    starred_url: "https://api.github.com/users/MarioScappini/starred{/owner}{/repo}"
-    subscriptions_url: "https://api.github.com/users/MarioScappini/subscriptions"
-    organizations_url: "https://api.github.com/users/MarioScappini/orgs"
-    repos_url: "https://api.github.com/users/MarioScappini/repos"
-    events_url: "https://api.github.com/users/MarioScappini/events{/privacy}"
-    received_events_url: "https://api.github.com/users/MarioScappini/received_events"
-    type: "User"
-    site_admin: false
-    contributions: 1
