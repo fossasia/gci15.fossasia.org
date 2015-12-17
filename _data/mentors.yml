@@ -1,26 +1,71 @@
-- name: Name Last
-  github: 
-  image: 
-  blog: 
+- name: Hong Phuc
+  github: hpdang
+  image: hpdang.jpg
+  blog: http://blog.fossasia.org/
+  twitter: 
+  facebook: hpdang
+  stackexchange: 
+  description: 
+
+- name: eMBee
+  github: embee
+  image: embee.png
+  blog: http://societyserver.org/mbaehr/
   twitter: 
   facebook: 
   stackexchange: 
   description: 
 
-- name: Name L.
-  github: hey
-  image: 
-  blog: 
-  twitter: 
-  facebook: 
+- name: Mario Behling
+  github: mariobehling
+  image: mariobehling.jpg
+  blog: http://mariobehling.de/
+  twitter: mariobehling
+  facebook: mariobehling
   stackexchange: 
   description: 
 
-- name: Name L.
-  github: hey
-  image: 
-  blog: 
-  twitter: 
-  facebook: 
+- name: Aruna Herath
+  github: RoonyH
+  image: arunaherath.jpg
+  blog: http://mariobehling.de/
+  twitter: aruna_herath
+  facebook: aruna.herath99
+  stackexchange: 
+  description: 
+
+- name: Andreas Bräu
+  github: andibraeu
+  image: andibraeu.jpg
+  blog: https://blog.andi95.de
+  twitter: evaltenberga
+  facebook: eddie.vonaltenberga
+  stackexchange: 
+  description: 
+
+- name: Kalpa Welivitigoda
+  github: callkalpa
+  image: callkalpa.jpg
+  blog: http://kalpapathum.blogspot.com
+  twitter: callkalpa
+  facebook: callkalpa
+  stackexchange: 
+  description: 
+
+- name: Harsh Vardhan
+  github: royalharsh
+  image: royalharsh.jpg
+  blog: https://royalharsh95.wordpress.com/
+  twitter: royalharsh95
+  facebook: royalharsh95
+  stackexchange: 
+  description: 
+
+- name: Ko Ko Ye`
+  github: kokoye2007
+  image: kokoye2007.png
+  blog: http://ubuntu-mm.net/
+  twitter: kokoye2007
+  facebook: kokoye2007
   stackexchange: 
   description: 
