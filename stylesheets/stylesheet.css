@@ -280,11 +280,38 @@ a:hover {
   border-radius: 10px;
   z-index: 1000;
   display: none;
-}
-
-.pinched strong {
   font-size: .8rem;
   word-wrap: break-word;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pinched .quote-container {
+  position: relative;
+}
+
+.pinched .quote {
+  font-style: italic;
+  font-family: sans-serif;
+  line-height: 0px;
+  position: absolute;
+  font-size: 3rem;
+  margin-right: 5px;
+  top: 8px;
+  left: -32px;
+}
+
+.pinched .end-quote {
+  top: 35px;
+  left: -4px;
+}
+
+#mentors .pinched .quote {
+  color: #FF7043;
+}
+
+#students .pinched .quote {
+  color: #FF7043;
 }
 
 .arrow-down {
@@ -307,7 +334,7 @@ a:hover {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 
-.avatar:hover .pinched {
+.card:hover .pinched {
   display: block;
 }
 
