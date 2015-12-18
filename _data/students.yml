@@ -1,4 +1,4 @@
-- name: Max B.
+﻿- name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
   blog:
@@ -85,7 +85,7 @@
   blog: http://neerajp99.github.io/
   twitter: neerajp99
   facebook: Neerajpandey99
-  stackexchange: 
+  stackexchange:
   bio: Web Developer, 16 years, Indian :)
 
 - name: Anshuman Agarwal
@@ -94,14 +94,29 @@
   blog: http://anshuman73.github.io/
   twitter: anshumanagr73
   facebook: AgarwalAnshuman.73
-  stackexchange: 
-  bio: 
+  stackexchange:
+  bio:
 
 - name: Pol Baladas
   github: PolBaladas
   image: polbaladas.jpg
-  blog: 
+  blog:
   twitter: PolBaladas
-  facebook: 
-  stackexchange: 
+  facebook:
+  stackexchange:
   bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI. 👍
+
+- name: Jared Stefanowicz
+  github: jaredStef
+  image: jaredStef.jpg
+  blog: https://jaredstef.github.io/
+  twitter: https://twitter.com/jaredstef
+  facebook:
+  stackexchange:
+  bio: Plans to better the world. First GCI. Code + Design = <3
+
+- name: Ben Hiatt
+  github: benhiatt
+  image: bhiatt.JPG
+  instagram: ben_hiatt
+  bio: I’m totally doing this for the t-shirt... and for the non-profits :)

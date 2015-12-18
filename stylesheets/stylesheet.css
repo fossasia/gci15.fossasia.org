@@ -55,6 +55,11 @@ html, body {
   margin: 0;
   color: #484848;
 }
+@media (max-width:768px) {
+  .codein-bkg{
+  display: none;
+  }
+}
 .codein-smaller {
   position: absolute;
   top: 24px;
