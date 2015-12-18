@@ -127,12 +127,24 @@
                         {% endif %}
                         {% if mentor.bio %}
                           <div class="pinched">
-                            <p><strong>{{ mentor.bio }}</strong></p>
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            {{ mentor.bio }}
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
                             <div class="arrow-down"></div>
                           </div>
                         {% else %}
                           <div class="pinched">
-                            <p><strong>Just another great mentor!</strong></p>
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            Just another great mentor!
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
                             <div class="arrow-down"></div>
                           </div>
                         {% endif %}
@@ -185,14 +197,26 @@
                         {% endif %}
                         {% if student.bio %}
                           <div class="pinched">
-                            <p><strong>{{ student.bio }}</strong></p>
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            {{ student.bio }}
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
                             <div class="arrow-down"></div>
                           </div>
                         {% else %}
-                          <div class="pinched">
-                            <p><strong>Just another creative student!</strong></p>
-                            <div class="arrow-down"></div>
-                          </div>
+                        <div class="pinched">
+                          <b class="quote-container">
+                            <b class="quote">&#8220;</b>
+                          </b>
+                          Just another creative student!
+                          <b class="quote-container">
+                            <b class="quote end-quote">&#8221;</b>
+                          </b>
+                          <div class="arrow-down"></div>
+                        </div>
                         {% endif %}
                       </div>
                       <div class="card-block">
