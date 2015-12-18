@@ -56,7 +56,6 @@ html, body {
   color: #484848;
 }
 @media (max-width:768px) {
-
   .codein-bkg{
      display: none;
   }
