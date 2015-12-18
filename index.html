@@ -24,6 +24,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand">
             <img class="navbar-brand-logo" src="img/fossasia-dark.png">
@@ -35,7 +37,7 @@
             <li><a href="#mentors">Mentors</a></li>
             <li><a href="#students">Students</a></li>
             <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#social_media">Social media</a></li>
+            <li><a href="#social_media">Social Media</a></li>
           </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -241,6 +243,9 @@
                             {% if student.facebook %}
                               <a href="https://facebook.com/{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
                             {% endif %}
+                            {% if student.instagram %}
+                              <a href="https://instagram.com/{{ student.instagram }}"><i id="instagram" class="icon-instagram"></i></a>
+                            {% endif %}
                           </div>
                           </div>
                         </figcaption>
@@ -279,10 +284,9 @@
             {% endfor %}
           </div>
         </div>
-        <a class="anchor" href="#social_media"></a>
         <div id="social_media" class="social_media">
             <br>
-            <h2 class="section-h1"><span class="white-border">FOSSASIA Social media</span></h2>
+            <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
             <div class="twitter" style="float: left; width: 50%;">
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
               <a class="twitter-timeline" href="https://twitter.com/fossasia" data-widget-id="541955158897618944">Tweets by @fossasia.</a>

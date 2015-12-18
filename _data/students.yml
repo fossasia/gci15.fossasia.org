@@ -1,4 +1,4 @@
-- name: Max B.
+﻿- name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
   blog:
@@ -114,3 +114,9 @@
   facebook:
   stackexchange:
   bio: Plans to better the world. First GCI. Code + Design = <3
+
+- name: Ben Hiatt
+  github: benhiatt
+  image: bhiatt.JPG
+  instagram: ben_hiatt
+  bio: I’m totally doing this for the t-shirt... and for the non-profits :)
