@@ -10,7 +10,6 @@
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" type="text/css" href="stylesheets/ss.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -61,7 +60,7 @@
             </svg>
             <div class="slide__text">
               <h2 class="slide__text-heading">FOSSASIA</h2>
-              
+
               <p class="slide__text-desc">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
               <a class="slide__text-link" href="http://fossasia.org/" target="_blank">HOME</a>
             </div>
@@ -164,7 +163,7 @@
                       </div>
                     </div>
                   </figure>
-                </div>  
+                </div>
               </div>
             {% endfor %}
           </div>
@@ -205,7 +204,7 @@
                               <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
                             {% if student.twitter %}
-                              <a href="{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
+                              <a href="https://twitter.com/{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
                             {% endif %}
                             {% if student.github %}
                               <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
@@ -214,7 +213,7 @@
                               <a href="{{ student.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
                             {% endif %}
                             {% if student.facebook %}
-                              <a href="{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                              <a href="https://facebook.com/{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
                             {% endif %}
                           </div>
                           </div>
@@ -222,7 +221,34 @@
                       </div>
                     </div>
                   </figure>
-                 </div>   
+                 </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="anchor" href="#contributors"></a>
+        <div class="row contributors-wrapper">
+          <div id="contributors" class="members">
+            <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
+            {% for contributor in site.data.contributors %}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                  <div class="avatar img-circle">
+                    {% if contributor.id %}
+                      <img class="card-img-top" src="https://avatars.githubusercontent.com/u/{{ contributor.id }}?v=3" alt="{{ contributor.login }}">
+                    {% else %}
+                      <img class="card-img-top" src="img/member.png" alt="{{ contributor.login }}">
+                    {% endif %}
+                  </div>
+                  <div class="card-block">
+                    <h4 class="card-title">{{ contributor.login }}</h4>
+                    <div class="social">
+                      {% if contributor.login %}
+                      <a href="https://github.com/{{ contributor.login }} "><i id="github" class="icon-github"></i></a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
               </div>
             {% endfor %}
           </div>
