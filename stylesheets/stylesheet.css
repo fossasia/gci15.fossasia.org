@@ -58,7 +58,7 @@ html, body {
 @media (max-width:768px) {
 
   .codein-bkg{
-    display: none;
+     display: none;
   }
 }
 .codein-smaller {
