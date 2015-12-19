@@ -110,7 +110,7 @@
   github: jaredStef
   image: jaredStef.jpg
   blog: https://jaredstef.github.io/
-  twitter: https://twitter.com/jaredstef
+  twitter: jaredstef
   facebook:
   stackexchange:
   bio: Plans to better the world. First GCI. Code + Design = <3
@@ -120,12 +120,19 @@
   image: bhiatt.JPG
   instagram: ben_hiatt
   bio: I’m totally doing this for the t-shirt... and for the non-profits :)
-  
+
 - name: Michael Jancen-Widmer
   github: michaeljancen
   image: michaeljancen.jpg
   blog: https://michaeljancen.de
-  twitter: https://twitter.com/JancenWidmer
+  twitter: JancenWidmer
   facebook:
   stackexchange:
   bio: First GCI, I <3 cyber-security and coding :)
+  
+- name: Poh Say Keong
+  github: PohSayKeong
+  image: pohSayKeong.jpg
+  twitter: pohsaykeong
+  facebook: poh.saykeong
+  bio: 14 years... Hope I can help
