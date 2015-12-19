@@ -257,6 +257,7 @@ svg {
   }
 }
 .slide__text-heading {
+  color: white !important;
   font-family: "Polar", Helvetica, Arial, sans-serif;
   font-size: 5rem;
    text-decoration: none;
