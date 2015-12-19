@@ -146,6 +146,13 @@ a.anchor[name='social_media'] {
   background-color: white;
 }
 
+.section-h1.start {
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -webkit-transform: rotateX(-720deg);
+  transform: rotateX(-720deg);
+}
+
 /* end mborsch.css*/
 a {
   color: #1e6bb8;
