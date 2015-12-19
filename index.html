@@ -114,7 +114,7 @@
       <div class="container">
         <a class="anchor" name="mentors"></a>
         <div class="row mentors-wrapper">
-          <div id="mentors" class="members">
+          <div class="members mentors">
             <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
             {% for mentor in site.data.mentors %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -184,7 +184,7 @@
         </div>
         <a class="anchor" name="students"></a>
         <div class="row students-wrapper">
-          <div id="students" class="members">
+          <div class="members students">
             <h1 class="section-h1"><span class="white-border">Students</span></h1>
             {% for student in site.data.students %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -257,7 +257,7 @@
         </div>
         <a class="anchor" name="contributors"></a>
         <div class="row contributors-wrapper">
-          <div id="contributors" class="members">
+          <div class="members contributers">
             <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
             {% for contributor in site.data.contributors %}
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -282,7 +282,8 @@
             {% endfor %}
           </div>
         </div>
-        <div id="social_media" class="social_media">
+        <a class="anchor" name="social_media"></a>
+        <div class="social_media">
             <br>
             <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
             <div class="twitter" style="float: left; width: 50%;">
