@@ -390,6 +390,7 @@ footer a:hover, a:focus {
 }
 footer p {
   margin-bottom: 0;
+  float: right;
 }
 .mentors-wrapper {
   margin: auto;
@@ -413,7 +414,6 @@ footer p {
 .contributors-wrapper {
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
   background-color: #27ae60;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
