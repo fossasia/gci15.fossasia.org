@@ -24,6 +24,16 @@ html, body {
 }
 
 /* mborsch.css*/
+a.anchor {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    top: -50px;
+}
+a.anchor[name='social_media'] {
+  position: relative;
+  top: -50px;
+}
 .main-content {
   background-color: #424242;
 }
@@ -126,9 +136,7 @@ html, body {
   text-align: center;
   font-size: 2rem;
 }
-.anchor {
-  display: none;
-}
+
 .blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -311,11 +319,11 @@ a:hover {
   left: -4px;
 }
 
-#mentors .pinched .quote {
+.mentors .pinched .quote {
   color: #FF7043;
 }
 
-#students .pinched .quote {
+.students .pinched .quote {
   color: #FF7043;
 }
 
