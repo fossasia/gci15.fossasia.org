@@ -387,6 +387,7 @@ footer a:hover, a:focus {
 }
 footer p {
   margin-bottom: 0;
+  float: right;
 }
 .mentors-wrapper {
   margin: auto;
