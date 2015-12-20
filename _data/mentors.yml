@@ -105,3 +105,24 @@
   facebook: 
   stackexchange: 
   bio: 
+<<<<<<< HEAD
+  
+- name: Rafał Kowalski
+  github: rafalkowalski
+  image: rafalkowalski.png
+  blog: 
+  twitter: 
+  facebook: 
+  stackexchange: 
+  bio: 
+=======
+
+- name: Arnav Gupta
+  github: championswimmer
+  image: arnav.jpg
+  blog: http://championswimmer.in/
+  twitter: championswimmer
+  facebook: championswimmer
+  stackexchange: 
+  bio: 
+>>>>>>> 914b670... added mentor profile
