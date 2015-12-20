@@ -24,11 +24,12 @@ html, body {
 }
 
 html {
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 body {
-  margin-top: 61px;
+  padding-top: 61px;
+  overflow-y: visible;
 }
 
 /* mborsch.css*/
