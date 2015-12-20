@@ -23,6 +23,14 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-y: hidden;
+}
+
+body {
+  margin-top: 61px;
+}
+
 /* mborsch.css*/
 a.anchor {
     display: block;
