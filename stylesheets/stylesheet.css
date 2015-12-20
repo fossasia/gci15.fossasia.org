@@ -448,9 +448,12 @@ footer a:hover, a:focus {
   display: inline;
 }
 
+footer .row {
+	padding-bottom: 50px;
+}
+
 footer p {
-  margin-bottom: 0;
-  float: right;
+    float: right;
 }
 
 .mentors-wrapper {
