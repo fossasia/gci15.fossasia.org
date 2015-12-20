@@ -36,6 +36,7 @@
             <li><a href="#banner">Welcome</a></li>
             <li><a href="#mentors">Mentors</a></li>
             <li><a href="#students">Students</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contributors">Contributors</a></li>
             <li><a href="#social_media">Social Media</a></li>
           </ul>
@@ -251,6 +252,27 @@
                     </div>
                   </figure>
                  </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="anchor" name="gallery"></a>
+        <div class="row gallery-wrapper">
+          <div class="members gallery">
+            <h1 class="section-h1"><span class="white-border">Student Gallery</span></h1>
+            {% for piece in site.data.gallery %}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                  {% if piece.image %}
+                    <div class="painting-container">
+                      <img class="card-img-top" src="img/gallery/{{ piece.image }}" alt="{{ piece.name }}">
+                      <a class="author" href="#{{ piece.author }}">By: {{ piece.author }}</a>
+                    </div>
+                  {% endif %}
+                  <div class="card-block">
+                    <h4 class="card-title">{{ piece.name }}</h4>
+                  </div>
+                </div>
               </div>
             {% endfor %}
           </div>
