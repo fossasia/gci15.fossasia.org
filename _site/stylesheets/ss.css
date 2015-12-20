@@ -1,0 +1,436 @@
+
+/*===================Slide show=================================================*/
+/*Graphic styles*/
+svg {
+  display: block;
+  overflow: visible;
+}
+
+/*Styles for the container=======================*/
+.slider-container {
+  position: relative;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: all-scroll;
+}
+/*Styles for the controller=======================*/
+.slider-control {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 50%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  opacity: 0;
+}
+
+.slider-control:not(.inactive):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider-control.left {
+  left: 0;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.slider-control.right {
+  right: 0;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+}
+/*Control buttons==============*/
+.slider-pagi {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0px;
+ 
+}
+.slider-pagi__elem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.slider-pagi__elem:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+/*End Control buttons==============*/
+
+/*Styles for the slide*/
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+/*Animations=========================*/
+.slider.animating {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
+.slider.animating .slide__bg {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
+/*End of Animations=========================*/
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  will-change: transform;
+}
+
+/*Slide 1=================*/
+.slide:nth-child(1) {
+  left: 0;
+}
+.slide:nth-child(1) .slide__bg {
+  left: 0;
+  background-image: url("../img/community.jpg");
+  background-position: center center; 
+    background-repeat:no-repeat;
+}
+.slide:nth-child(1) .slide__overlay-path {
+  fill: #ff4646;
+}
+
+/*Slide 2=================*/
+.slide:nth-child(2) {
+  left: 100%;
+}
+.slide:nth-child(2) .slide__bg {
+  left: -50%;
+  background-image: url("../img/youth.jpg");
+}
+.slide:nth-child(2) .slide__overlay-path {
+  fill: #ff4646;
+}
+
+/*Slide 3=================*/
+.slide:nth-child(3) {
+  left: 200%;
+}
+.slide:nth-child(3) .slide__bg {
+  left: -100%;
+  background-image: url("http://theatreplan.co.uk/wp-content/uploads/2015/07/Singapore-Genexis-Theatre-Auditorium-1-current-small.jpg");
+}
+.slide:nth-child(3) .slide__overlay-path {
+  fill:#ff4646;
+}
+
+/*Slide 4=================*/
+.slide:nth-child(4) {
+  left: 300%;
+}
+.slide:nth-child(4) .slide__bg {
+  left: -150%;
+  background-image: url("../img/2015.jpg");
+    background-position: center center; 
+    background-repeat:no-repeat;
+}
+.slide:nth-child(4) .slide__overlay-path {
+  fill: #ff4646;
+}
+
+/*Styles for the figure*/
+
+.slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  min-height: 810px;
+  -webkit-transition: opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  transition: opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  will-change: transform, opacity;
+  -webkit-transform: translate3d(-20%, 0, 0);
+          transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+}
+/*Media query for making the figure disappear*/
+@media (max-width: 991px) {
+  .slide__overlay {
+    display: none;
+  }
+}
+.slide__overlay path {
+  opacity: 0.8;
+}
+.slide__text {
+  position: absolute;
+  width: 32%;
+  bottom: 15%;
+  left: 5%;
+  color: #fff;
+  -webkit-transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  will-change: transform, opacity;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+/*Small screen _text*/
+@media (max-width: 991px) {
+  .slide__text {
+    position: absolute;
+    left: 0;
+   margin: auto;
+    top: 80px;
+    width: auto;
+    height: 20rem;
+    text-align: center;
+
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    padding: 0 1rem;
+  }
+}
+.slide__text-heading {
+  color: white !important;
+  font-family: "Polar", Helvetica, Arial, sans-serif;
+  font-size: 5rem;
+   text-decoration: none;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .slide__text-heading {
+
+     color: red;
+     background:rgba(255,255,255,.7);
+    display: block;
+    cursor: auto;
+    line-height: 20rem;
+    font-size: 2rem;
+    text-align: center;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 2.4rem;
+    border: 0.3rem solid currentColor;
+  }
+
+@media (max-width: 365px){
+ .slide__text-heading {
+    color: red;
+     background:rgba(255,255,255,.7);
+    display: block;
+    line-height: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 2.4rem;
+    border: 0.3rem solid currentColor;
+}
+
+}
+  a.slide__text-heading {
+
+   
+    text-decoration: none;
+
+  }
+}
+.slide__text-desc {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+
+}
+@media (max-width: 991px) {
+  .slide__text-desc {
+    position: relative;
+  margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    font-size: 1.6rem;
+    background:rgba(96,96,96, .4);
+ 
+  }
+}
+@media (max-width: 365px) {
+  .slide__text-desc {
+    position: relative;
+  margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    background:rgba(96,96,96, .4);
+ 
+  }
+}
+.slide__text-link {
+  z-index: 5;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  color:#2F4F4F !important;
+  text-decoration: none !important;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.0rem;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.slide__text-link a {
+  color: black !important;
+  }
+/*Text dissapears*/
+@media (max-width: 991px) {
+  .slide__text-link {
+    z-index: 5;
+      color:red !important;
+   background:rgba(255,255,255,0.8);
+    display: block;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    width: 360px
+    line-height: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 2.4rem;
+    border: 0.3rem solid currentColor;
+  }
+}
+@media (max-width: 365px) {
+  .slide__text-link {
+    z-index: 5;
+     
+   background:rgba(255,255,255,0.8);
+    display: block;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    
+    line-height: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 2.4rem;
+    border: 0.3rem solid currentColor;
+  }
+}
+
+/*End Link Animations*/
+.slide__text-link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; 
+  text-decoration: none; 
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-85deg);
+          transform: rotateX(-85deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  will-change: transform;
+}
+.slide__text-link:hover:before {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+/*End Link Animations*/
+
+ #hidden{
+    display: none;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 2.4rem;
+    border: 0.3rem solid currentColor;
+  }
+  @media (max-width: 991px) {
+  #hidden{
+    display: visible;
+    display:block;
+    text-align: center;
+      overflow: visible;
+  }
+}
