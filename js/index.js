@@ -129,5 +129,43 @@ $(document).ready(function() {
     curSlide = $(this).data("page");
     changeSlides();
   });
+
+  // @mborsch FLIPPY SECTION HEADERS! :P
+  function isElementInViewport(elem) {
+    var $elem = $(elem);
+
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+  }
+
+  function checkAnimation() {
+      var $elem = $('.section-h1').each(function( index ) {
+        var isInView = isElementInViewport($(this));
+
+        if ($(this).hasClass('start')) {
+          if (!isInView) {
+            $(this).removeClass('start');
+          }
+
+          return;
+        };
+
+        if (isInView) {
+            $(this).addClass('start');
+        }
+      });
+  }
+  $("body").scroll(function(){
+      checkAnimation();
+  });
+  //End Flippy Section Headers
   
 });

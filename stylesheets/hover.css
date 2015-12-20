@@ -66,15 +66,15 @@ figure.effect-duke:hover img {
 
 figure.effect-duke .icon-holder {
 	position 				: absolute;
-	top 					: 40%;
+	top 					: 50%;
 	left 					: 0;
-	margin 					: 20px;
-	padding 				: 30px;
+	padding 				: 0 30px;
 	text-transform 			: none;
 	font-size 				: 2.0em;
 	opacity 				: 0;
 	width 					: 100%;
-	margin 					: auto;
+	height 					: 200px;
+	margin 					: -50px auto 0;
 	-webkit-transform 		: scale3d(0.8,0.8,1);
 	transform 				: scale3d(0.8,0.8,1);
 	-webkit-transform-origin: 50% -100%;

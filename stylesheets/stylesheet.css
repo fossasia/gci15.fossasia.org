@@ -13,7 +13,7 @@
 
 /*Hid the flow of images by overflow-x*/
 html, body {
-  padding: 0 !important;
+  padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -146,6 +146,13 @@ a.anchor[name='social_media'] {
   background-color: white;
 }
 
+.section-h1.start {
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -webkit-transform: rotateX(-720deg);
+  transform: rotateX(-720deg);
+}
+
 /* end mborsch.css*/
 a {
   color: #1e6bb8;
@@ -230,12 +237,15 @@ a:hover {
 .social a {
   color: black;
   text-decoration: none;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
 }
 .social i {
-  margin: .3em;
   cursor: pointer;
   transition: color 300ms ease, margin-top 300ms ease;
   transform: translateZ(0);
+  vertical-align: middle;
 }
 .social i:hover {
   margin-top: -1px;
@@ -503,3 +513,11 @@ footer p {
     transform: rotate(4deg);
 }
 
+.icon-holder {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
