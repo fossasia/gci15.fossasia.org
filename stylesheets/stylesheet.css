@@ -276,6 +276,9 @@ a:hover {
 .social i#mail:hover {
   color: #F7B401;
 }
+.social i#instagram:hover {
+  color: #F0FFFF;
+}
 .card .card-action a {
   color: #444;
   margin-right: 0;
