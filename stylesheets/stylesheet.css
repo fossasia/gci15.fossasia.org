@@ -20,11 +20,11 @@ html, body {
   line-height: 1.5;
   color: #606c71;
   height: 100%;
-  overflow-x: hidden;
 }
 
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
