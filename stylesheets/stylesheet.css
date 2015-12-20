@@ -288,6 +288,9 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
+  color:  #F0FFFF;
+}
+.social i#github:visited {
   color: black;
 }
 .social i#linkedin:hover {
@@ -296,7 +299,7 @@ a:hover {
 .social i#code:hover {
   color: #29A329;
 }
-.social i#stack:hover {
+.social i#stackexchange:hover {
   color: #ED780E;
 }
 .social i#facebook:hover {
@@ -304,6 +307,9 @@ a:hover {
 }
 .social i#mail:hover {
   color: #F7B401;
+}
+.social i#instagram:hover {
+  color: #F0FFFF;
 }
 .card .card-action a {
   color: #444;
@@ -405,7 +411,7 @@ footer {
   width: 100%;  /* Set the fixed height of the footer here */
   background-color: #EE6E73;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 50px;
   text-align: left;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
