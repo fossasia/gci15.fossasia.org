@@ -152,6 +152,7 @@
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
+<<<<<<< HEAD
   
 - name: Jason Wong
   github: codethejason
@@ -160,3 +161,6 @@
   twitter: codethejason
   stackexchange: http://stackexchange.com/users/3961331/animaltesting
   bio: Designer and developer - first GCI!
+=======
+ 
+>>>>>>> fossasia/gh-pages
