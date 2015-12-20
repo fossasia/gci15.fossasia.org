@@ -1,4 +1,4 @@
-﻿- name: Max B.
+- name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
   blog:
@@ -145,11 +145,11 @@
   stackexchange: http://stackexchange.com/users/4312856/shashank
   bio: Programmer, 17 years old, love physics, and I love coding :D
 
--name: Rohit kumar
- github: Rohythakur
- image: rohyt.jpg
- twitter: @rohytx
- facebook: rohyt.thakur
- stackexchange: http://stackexchange.com/users/7503355/rohyt
- bio: from india , i know java,python..
+- name: Rohit kumar
+  github: Rohythakur
+  image: rohyt.jpg
+  twitter: rohytx
+  facebook: rohyt.thakur
+  stackexchange: http://stackexchange.com/users/7503355/rohyt
+  bio: from india , i know java,python..
  
