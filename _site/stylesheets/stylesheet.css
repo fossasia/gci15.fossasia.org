@@ -474,6 +474,16 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
+.thanku-wrapper {
+  margin: auto;
+  margin-top: 20px;
+  background-color: yellow;
+  border-radius: 5px;
+  height: 80px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
 
 .wrap {
     margin: 0 auto;

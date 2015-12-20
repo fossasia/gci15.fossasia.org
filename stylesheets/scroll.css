@@ -54,20 +54,20 @@
 
   .scrolling-words {
     overflow: hidden;
-    height: 54px;
+    height: 80px;
     padding-left: 15px;
-    margin-top: 21%;
+    margin-top: 8%;
   }
 
   .scrolling-words  p {
     margin: 0 0 30px;
     padding-top: 5px;
     white-space: nowrap;
-    -webkit-animation: move 10s 1s infinite;
-    -moz-animation: move 10s 1s infinite;
-    -o-animation: move 10s 1s infinite;
-    -ms-animation: move 10s 1s infinite;
-    animation: move 10s 1s infinite;
+    -webkit-animation: move 20s 1s infinite;
+    -moz-animation: move 20s 1s infinite;
+    -o-animation: move 20s 1s infinite;
+    -ms-animation: move 20s 1s infinite;
+    animation: move 20s 1s infinite;
     font-size: 43px;
     letter-spacing: 1px;
   }
