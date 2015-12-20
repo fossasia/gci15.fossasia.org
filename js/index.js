@@ -167,5 +167,11 @@ $(document).ready(function() {
       checkAnimation();
   });
   //End Flippy Section Headers
+
+  //DYNAMIC SOCIAL WIDGETS
+  var isMobile = ($(window).width() < 500 ? true : false);
+
+  $("#GPlusPage").html('<div class="g-page" data-layout="' + (isMobile ? "landscape" : "portrait") + '" data-width="' + (isMobile ? 150 : 450) + '" data-href="https://plus.google.com/+FossasiaOrg"></div>');
+  //End Dynamic Social Widgets
   
 });
