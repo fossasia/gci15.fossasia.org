@@ -163,7 +163,7 @@ $(document).ready(function() {
         }
       });
   }
-  $("body").scroll(function(){
+  $(document).scroll(function(){
       checkAnimation();
   });
   //End Flippy Section Headers
