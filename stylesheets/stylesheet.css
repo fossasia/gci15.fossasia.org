@@ -261,6 +261,9 @@ a:hover {
 .social i#github:hover {
   color:  #F0FFFF;
 }
+.social i#github:visited {
+  color: black;
+}
 .social i#linkedin:hover {
   color: #0177B5;
 }
