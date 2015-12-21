@@ -16,6 +16,15 @@
   stackexchange:
   bio: Second GCI
 
+- name: Sten van Houwelingen
+  github: Stenvh
+  image: Stenvh.jpg
+  blog: https://sten.meorga.nl/
+  twitter: https://twitter.com/stenvh
+  facebook:
+  stackexchange:
+  bio: A 15 Year old geek from The Netherlands
+
 - name: Mario S.
   github: MarioScappini
   image: mariosc.jpg
@@ -152,10 +161,20 @@
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
+  
+- name: Archie Buissink
+  github: abuissink
+  image: archieb.jpg
+  twitter: ribbitdev
+  facebook: arch.buissink
+  stackexchange: http://stackexchange.com/users/5701991/archiebnz
+  bio: from NZ, this is my first GCI. I <3 Biology and Coding 
+  
+
  
 - name: Cho Yin Yong
   github: hkminegod
-  blog: https://choy.in/
   image: choyin.jpg
+  blog: https://choy.in/
   twitter: choyiny
   bio: Student, Gamer, Developer, 17!
