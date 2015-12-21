@@ -157,7 +157,7 @@
 - name: Rohit kumar
   github: Rohythakur
   image: rohyt.jpg
-  twitter: rohytx
+  twitter: @rohytx
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
@@ -172,3 +172,9 @@
   
 
  
+- name: Cho Yin Yong
+  github: hkminegod
+  blog: https://choy.in/
+  image: choyin.jpg
+  twitter: choyiny
+  bio: Student, Gamer, Developer, 17!
