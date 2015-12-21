@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/ss.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/scroll.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
@@ -27,7 +28,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">
+          <a class="navbar-brand" href="http://fossasia.org/">
             <img class="navbar-brand-logo" src="img/fossasia-dark.png">
           </a>
         </div>
@@ -118,9 +119,12 @@
           <div class="members mentors">
             <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
             {% for mentor in site.data.mentors %}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                 <div class="grid">
                  <figure class="effect-duke">
+                    {% if mentor.github %}
+                              <a href="https://github.com/{{ student.github }} " class="mobile-only"></a>
+                    {% endif %}
                     <div class="card">
                       <div class=" avatar img-circle">
                         {% if mentor.image %}
@@ -157,14 +161,14 @@
                         <figcaption>
                           <div class="social">
                           <div class="icon-holder">
+                            {% if mentor.github %}
+                              <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
                             {% if mentor.blog %}
                               <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
                             {% if mentor.twitter %}
                               <a href="https://twitter.com/{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                            {% endif %}
-                            {% if mentor.github %}
-                              <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
                             {% endif %}
                             {% if mentor.stackexchange %}
                               <a href="{{ mentor.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
@@ -188,9 +192,12 @@
           <div class="members students">
             <h1 class="section-h1"><span class="white-border">Students</span></h1>
             {% for student in site.data.students %}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
               <div class="grid">
                 <figure class="effect-duke">
+                    {% if student.github %}
+                              <a href="https://github.com/{{ student.github }} " class="mobile-only"></a>
+                    {% endif %}
                     <div id="{{ student.name }}" class="card">
                       <div class="avatar img-circle">
                         {% if student.image %}
@@ -227,14 +234,14 @@
                         <figcaption>
                           <div class="social">
                           <div class="icon-holder">
+                            {% if student.github %}
+                              <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
                             {% if student.blog %}
                               <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
                             {% if student.twitter %}
                               <a href="https://twitter.com/{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                            {% endif %}
-                            {% if student.github %}
-                              <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
                             {% endif %}
                             {% if student.stackexchange %}
                               <a href="{{ student.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
@@ -280,29 +287,34 @@
         <a class="anchor" name="contributors"></a>
         <div class="row contributors-wrapper">
           <div class="members contributers">
-            <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
-            {% for contributor in site.data.contributors %}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <div class="avatar img-circle">
-                    {% if contributor.id %}
-                      <img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/{{ contributor.id }}?v=3" alt="{{ contributor.login }}">
-                    {% else %}
-                      <img class="card-img-top" src="" data="img/member.png" alt="{{ contributor.login }}">
-                    {% endif %}
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">{{ contributor.login }}</h4>
-                    <div class="social">
-                      {% if contributor.login %}
-                      <a href="https://github.com/{{ contributor.login }} "><i id="github" class="icon-github"></i></a>
-                      {% endif %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
+            <h1 class="section-h1" id="contributors"><span class="white-border">Contributors</span></h1>
           </div>
+        </div>
+        <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center">
+
+
+              <p>Thank you for contributing!</p>
+              <br>
+              <p>Спасибо за вклад!</p>
+              <br>
+              <p>योगदान के लिए धन्यवाद!</p>
+              <br>
+              <p>Благодаря за приноса Ви!</p>
+              <br>
+              <p> දායකවූවාට ස්තුතියි!</p>
+              <br>
+              <p> 感謝您的貢獻！</p>
+              <br>
+              <p>!شكرا لكم للمساهمة</p>
+              <br>
+              <p> תודה על התרומה שלך </p>
+              <br>
+              <p> Cảm ơn bạn đã đóng góp!</p>
+              <br>
+              <p>Nous vous remercions de votre contribution!</p>
+              <br>
+              <p>Dziękujemy za współpracę!</p>
+
         </div>
         <a class="anchor" name="social_media"></a>
         <div class="social_media">
