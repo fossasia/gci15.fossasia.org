@@ -34,7 +34,7 @@
     float: center;
     white-space: nowrap;
     position: relative;
-    font-size: 43px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 22%;
   }
@@ -54,7 +54,7 @@
 
   .scrolling-words {
     overflow: hidden;
-    height: 80px;
+    height: 100px;
     padding-left: 15px;
     margin-top: 8%;
   }
@@ -68,7 +68,7 @@
     -o-animation: move 20s 1s infinite;
     -ms-animation: move 20s 1s infinite;
     animation: move 20s 1s infinite;
-    font-size: 43px;
+    font-size: 50px;
     letter-spacing: 1px;
   }
 
