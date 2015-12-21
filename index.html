@@ -287,33 +287,12 @@
         <a class="anchor" name="contributors"></a>
         <div class="row contributors-wrapper">
           <div class="members contributers">
-            <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
-            {% for contributor in site.data.contributors %}
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
-                <div class="card">
-                  <div class="avatar img-circle">
-                    {% if contributor.id %}
-                      <img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/{{ contributor.id }}?v=3" alt="{{ contributor.login }}">
-                    {% else %}
-                      <img class="card-img-top" src="" data="img/member.png" alt="{{ contributor.login }}">
-                    {% endif %}
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">{{ contributor.login }}</h4>
-                    <div class="social">
-                      {% if contributor.login %}
-                      <a href="https://github.com/{{ contributor.login }} "><i id="github" class="icon-github"></i></a>
-                      {% endif %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
+            <h1 class="section-h1" id="contributors"><span class="white-border">Contributors</span></h1>
           </div>
         </div>
         <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center">
-          
-          
+
+
               <p>Thank you for contributing!</p>
               <br>
               <p>Спасибо за вклад!</p>
@@ -334,9 +313,9 @@
               <br>
               <p>Nous vous remercions de votre contribution!</p>
               <br>
-              <p>Dziękujemy za współpracę!</p>            
-              
-        </div> 
+              <p>Dziękujemy za współpracę!</p>
+
+        </div>
         <a class="anchor" name="social_media"></a>
         <div class="social_media">
             <br>
