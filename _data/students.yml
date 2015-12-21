@@ -138,7 +138,7 @@
   facebook:
   stackexchange:
   bio: First GCI, I <3 cyber-security and coding :)
-  
+
 - name: Poh Say Keong
   github: PohSayKeong
   image: pohSayKeong.jpg
@@ -162,3 +162,32 @@
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
  
+- name: Jason Wong
+  github: codethejason
+  blog: http://codethejason.github.io/blog
+  image: jasonw.jpg
+  twitter: codethejason
+  stackexchange: http://stackexchange.com/users/3961331/animaltesting
+  bio: Designer and developer - first GCI!
+
+- name: Archie Buissink
+  github: abuissink
+  image: archieb.jpg
+  twitter: ribbitdev
+  facebook: arch.buissink
+  stackexchange: http://stackexchange.com/users/5701991/archiebnz
+  bio: from NZ, this is my first GCI. I <3 Biology and Coding
+
+- name: Cho Yin Yong
+  github: hkminegod
+  image: choyin.jpg
+  blog: https://choy.in/
+  twitter: choyiny
+  bio: Student, Gamer, Developer, 17!
+  
+- name: Dea Chintia Putri
+  github: delta949
+  image: delta949.jpg
+  twitter: dea94998
+  facebook: deachintiaputri
+  bio: First and last GCI, from Indonesia. Coding is fun.
