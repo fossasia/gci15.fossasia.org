@@ -319,7 +319,7 @@ a:hover {
 .card a:hover, a:focus {
   text-decoration: none;
 }
-
+@media screen and (min-width:48em) {
 /* Speech bubble!*/
 .pinched {
   position: absolute;
@@ -370,6 +370,7 @@ a:hover {
   color: #FF7043;
 }
 
+
 .arrow-down {
   position: absolute;
   width: 0;
@@ -382,16 +383,19 @@ a:hover {
 }
 /* End Speech bubble!*/
 
+.card:hover .pinched {
+  display: block;
+}
+
+}
+
+
 .avatar {
   position: relative;
   padding-bottom: 100%;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
-}
-
-.card:hover .pinched {
-  display: block;
 }
 
 .avatar img {
@@ -561,4 +565,32 @@ footer p {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+
+@media screen and (max-width:48em) {
+    div.pinched {
+        display: none;
+    }
+    .icon-holder > a {
+        display: none;
+    }
+    
+    .icon-holder {
+        position: relative;
+    }
+    
+    .mobile-only {
+        display: inline-block;
+        height: 24vw; /*measured according to boostrap sizing vs browser width*/
+        width: 24vw;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 8000;
+    }
+    
+    h4.card-title {
+        font-size: 0.8em;
+    }
 }
