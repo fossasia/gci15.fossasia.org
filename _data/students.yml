@@ -161,6 +161,14 @@
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
+ 
+- name: Jason Wong
+  github: codethejason
+  blog: http://codethejason.github.io/blog
+  image: jasonw.jpg
+  twitter: codethejason
+  stackexchange: http://stackexchange.com/users/3961331/animaltesting
+  bio: Designer and developer - first GCI!
 
 - name: Archie Buissink
   github: abuissink
@@ -169,8 +177,6 @@
   facebook: arch.buissink
   stackexchange: http://stackexchange.com/users/5701991/archiebnz
   bio: from NZ, this is my first GCI. I <3 Biology and Coding
-
-
 
 - name: Cho Yin Yong
   github: hkminegod
