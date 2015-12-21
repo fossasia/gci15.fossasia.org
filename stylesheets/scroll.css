@@ -89,12 +89,13 @@
     60%{ top: -338px; }
     70%{ top: -395px; }
     80%{ top: -452px; }
-    90%{ top: -509px; }
+    90%{ top: -600px; }
+    95%{ top: -700px; }
     100%{ top: -0px; }
   }
 
   @-o-keyframes move {
-       0%  { top:  0px;   }
+    0%  { top:  0px;   }
     10% { top: -56px;  }
     20% { top: -110px; }
     30% { top: -167px; }
@@ -103,9 +104,11 @@
     60%{ top: -338px; }
     70%{ top: -395px; }
     80%{ top: -452px; }
-    90%{ top: -509px; }
+    90%{ top: -600px; }
+    95%{ top: -700px; }
     100%{ top: -0px; }
   }
+
 
  @-ms-keyframes move {
     0%  { top:  0px;   }
@@ -117,7 +120,8 @@
     60%{ top: -338px; }
     70%{ top: -395px; }
     80%{ top: -452px; }
-    90%{ top: -509px; }
+    90%{ top: -600px; }
+    95%{ top: -700px; }
     100%{ top: -0px; }
   }
 
@@ -131,12 +135,13 @@
     60%{ top: -338px; }
     70%{ top: -395px; }
     80%{ top: -452px; }
-    90%{ top: -509px; }
+    90%{ top: -600px; }
+    95%{ top: -750px; }
     100%{ top: -0px; }
   }
 
   @keyframes move {
-     0%  { top:  0px;   }
+    0%  { top:  0px;   }
     10% { top: -56px;  }
     20% { top: -110px; }
     30% { top: -167px; }
@@ -145,7 +150,8 @@
     60%{ top: -338px; }
     70%{ top: -395px; }
     80%{ top: -452px; }
-    90%{ top: -509px; }
+    90%{ top: -600px; }
+    95%{ top: -700px; }
     100%{ top: -0px; }
   }
   /*******************************/
