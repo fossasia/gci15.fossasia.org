@@ -16,6 +16,15 @@
   stackexchange:
   bio: Second GCI
 
+- name: Sten van Houwelingen
+  github: Stenvh
+  image: Stenvh.jpg
+  blog: https://sten.meorga.nl/
+  twitter: https://twitter.com/stenvh
+  facebook:
+  stackexchange:
+  bio: A 15 Year old geek from The Netherlands
+
 - name: Mario S.
   github: MarioScappini
   image: mariosc.jpg
