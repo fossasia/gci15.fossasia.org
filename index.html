@@ -124,9 +124,9 @@
                     <div class="card">
                       <div class=" avatar img-circle">
                         {% if mentor.image %}
-                          <img class="card-img-top" src="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
+                          <img class="card-img-top" src="" data="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
                         {% else %}
-                          <img class="card-img-top" src="img/member.png" alt="{{ mentor.name }}">
+                          <img class="card-img-top" src="" data="img/member.png" alt="{{ mentor.name }}">
                         {% endif %}
                         {% if mentor.bio %}
                           <div class="pinched">
@@ -194,9 +194,9 @@
                     <div id="{{ student.name }}" class="card">
                       <div class="avatar img-circle">
                         {% if student.image %}
-                          <img class="card-img-top" src="img/students/{{ student.image }}" alt="{{ student.name }}">
+                          <img class="card-img-top" src="" data="img/students/{{ student.image }}" alt="{{ student.name }}">
                         {% else %}
-                          <img class="card-img-top" src="img/member.png" alt="{{ student.name }}">
+                          <img class="card-img-top" src="" data="img/member.png" alt="{{ student.name }}">
                         {% endif %}
                         {% if student.bio %}
                           <div class="pinched">
@@ -265,7 +265,7 @@
                 <div class="card">
                   {% if piece.image %}
                     <div class="painting-container">
-                      <img class="card-img-top" src="img/gallery/{{ piece.image }}" alt="{{ piece.name }}">
+                      <img class="card-img-top" src="" data="img/gallery/{{ piece.image }}" alt="{{ piece.name }}">
                       <a class="author" href="#{{ piece.author }}">By: {{ piece.author }}</a>
                     </div>
                   {% endif %}
@@ -286,9 +286,9 @@
                 <div class="card">
                   <div class="avatar img-circle">
                     {% if contributor.id %}
-                      <img class="card-img-top" src="https://avatars.githubusercontent.com/u/{{ contributor.id }}?v=3" alt="{{ contributor.login }}">
+                      <img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/{{ contributor.id }}?v=3" alt="{{ contributor.login }}">
                     {% else %}
-                      <img class="card-img-top" src="img/member.png" alt="{{ contributor.login }}">
+                      <img class="card-img-top" src="" data="img/member.png" alt="{{ contributor.login }}">
                     {% endif %}
                   </div>
                   <div class="card-block">

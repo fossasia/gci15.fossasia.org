@@ -163,8 +163,18 @@ $(document).ready(function() {
         }
       });
   }
+
+  function checkImages () {
+    var $elem = $('.card-img-top').each(function( index ) {
+        if ($(this).attr("src") == "" && isElementInViewport($(this))) {
+          $(this).attr("src", $(this).attr("data"));
+        }
+      });
+  }
+
   $(document).scroll(function(){
       checkAnimation();
+      checkImages();
   });
   //End Flippy Section Headers
 
