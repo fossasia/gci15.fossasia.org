@@ -10,8 +10,8 @@
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" type="text/css" href="stylesheets/ss.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/scroll.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
@@ -25,30 +25,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">
+          <a class="navbar-brand" href="http://fossasia.org/">
             <img class="navbar-brand-logo" src="img/fossasia-dark.png">
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home">Welcome</a></li>
+            <li><a href="#banner">Welcome</a></li>
             <li><a href="#mentors">Mentors</a></li>
             <li><a href="#students">Students</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+            <li><a href="#social_media">Social Media</a></li>
           </ul>
           </div><!--/.nav-collapse -->
         </div>
-        <a href="https://codein.withgoogle.com/" class="codein-bkg">
+        <a href="https://codein.withgoogle.com/" class="codein-bkg hidden-xs">
           <h2 class="codein-bigger">Google</h2>
           <h2 class="codein-smaller">Code-in</h2>
           <img src="img/google-bkg.png">
         </a>
       </nav>
       <!--End Navbar-->
-      <a class="anchor" href="#home"></a>
       <!--Slider-->
-      <a class="anchor" href="#home"></a>
-      <div class="slider-container">
+      <div class="slider-container" id="banner">
         <div class="slider-control left inactive"></div>
         <div class="slider-control right"></div>
       <ul class="slider-pagi"></ul>
@@ -61,7 +64,7 @@
             </svg>
             <div class="slide__text">
               <h2 class="slide__text-heading">FOSSASIA</h2>
-              
+
               <p class="slide__text-desc">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
               <a class="slide__text-link" href="http://fossasia.org/" target="_blank">HOME</a>
             </div>
@@ -75,7 +78,7 @@
             </svg>
             <div class="slide__text">
               <h2 class="slide__text-heading">Google Code-In </h2>
-              <p class="slide__text-desc" >Participating in Google Code-in a bootcamp for young minds to the world of open source. </p>
+              <p class="slide__text-desc" >Participating in Google Code-in, a bootcamp for young minds to explore the world of open source. </p>
               <a class="slide__text-link" href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">CODE-IN 2015</a>
             </div>
           </div>
@@ -111,20 +114,46 @@
     <!--End Slider-->
     <section class="main-content">
       <div class="container">
-        <a class="anchor" href="#mentors"></a>
+        <a class="anchor" name="mentors"></a>
         <div class="row mentors-wrapper">
-          <div id="mentors" class="members">
+          <div class="members mentors">
             <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
             {% for mentor in site.data.mentors %}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                 <div class="grid">
                  <figure class="effect-duke">
+                    {% if mentor.github %}
+                              <a href="https://github.com/{{ student.github }} " class="mobile-only"></a>
+                    {% endif %}
                     <div class="card">
                       <div class=" avatar img-circle">
                         {% if mentor.image %}
-                          <img class="card-img-top" src="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
+                          <img class="card-img-top" src="" data="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
                         {% else %}
-                          <img class="card-img-top" src="img/member.png" alt="{{ mentor.name }}">
+                          <img class="card-img-top" src="" data="img/member.png" alt="{{ mentor.name }}">
+                        {% endif %}
+                        {% if mentor.bio %}
+                          <div class="pinched">
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            {{ mentor.bio }}
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
+                            <div class="arrow-down"></div>
+                          </div>
+                        {% else %}
+                          <div class="pinched">
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            Just another great mentor!
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
+                            <div class="arrow-down"></div>
+                          </div>
                         {% endif %}
                       </div>
                       <div class="card-block">
@@ -132,14 +161,14 @@
                         <figcaption>
                           <div class="social">
                           <div class="icon-holder">
+                            {% if mentor.github %}
+                              <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
                             {% if mentor.blog %}
                               <a href="{{ mentor.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
                             {% if mentor.twitter %}
                               <a href="https://twitter.com/{{ mentor.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                            {% endif %}
-                            {% if mentor.github %}
-                              <a href="https://github.com/{{ mentor.github }} "><i id="github" class="icon-github"></i></a>
                             {% endif %}
                             {% if mentor.stackexchange %}
                               <a href="{{ mentor.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
@@ -153,25 +182,51 @@
                       </div>
                     </div>
                   </figure>
-                </div>  
+                </div>
               </div>
             {% endfor %}
           </div>
         </div>
-        <a class="anchor" href="#students"></a>
+        <a class="anchor" name="students"></a>
         <div class="row students-wrapper">
-          <div id="students" class="members">
+          <div class="members students">
             <h1 class="section-h1"><span class="white-border">Students</span></h1>
             {% for student in site.data.students %}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
               <div class="grid">
                 <figure class="effect-duke">
-                    <div class="card">
+                    {% if student.github %}
+                              <a href="https://github.com/{{ student.github }} " class="mobile-only"></a>
+                    {% endif %}
+                    <div id="{{ student.name }}" class="card">
                       <div class="avatar img-circle">
                         {% if student.image %}
-                          <img class="card-img-top" src="img/students/{{ student.image }}" alt="{{ student.name }}">
+                          <img class="card-img-top" src="" data="img/students/{{ student.image }}" alt="{{ student.name }}">
                         {% else %}
-                          <img class="card-img-top" src="img/member.png" alt="{{ student.name }}">
+                          <img class="card-img-top" src="" data="img/member.png" alt="{{ student.name }}">
+                        {% endif %}
+                        {% if student.bio %}
+                          <div class="pinched">
+                            <b class="quote-container">
+                              <b class="quote">&#8220;</b>
+                            </b>
+                            {{ student.bio }}
+                            <b class="quote-container">
+                              <b class="quote end-quote">&#8221;</b>
+                            </b>
+                            <div class="arrow-down"></div>
+                          </div>
+                        {% else %}
+                        <div class="pinched">
+                          <b class="quote-container">
+                            <b class="quote">&#8220;</b>
+                          </b>
+                          Just another creative student!
+                          <b class="quote-container">
+                            <b class="quote end-quote">&#8221;</b>
+                          </b>
+                          <div class="arrow-down"></div>
+                        </div>
                         {% endif %}
                       </div>
                       <div class="card-block">
@@ -179,20 +234,23 @@
                         <figcaption>
                           <div class="social">
                           <div class="icon-holder">
+                            {% if student.github %}
+                              <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
+                            {% endif %}
                             {% if student.blog %}
                               <a href="{{ student.blog }}"><i id="code" class="icon-code"></i></a>
                             {% endif %}
                             {% if student.twitter %}
-                              <a href="{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
-                            {% endif %}
-                            {% if student.github %}
-                              <a href="https://github.com/{{ student.github }} "><i id="github" class="icon-github"></i></a>
+                              <a href="https://twitter.com/{{ student.twitter }}"><i id="twitter" class="icon-twitter"></i></a>
                             {% endif %}
                             {% if student.stackexchange %}
                               <a href="{{ student.stackexchange }} "><i id="stackexchange" class="icon-stackexchange"></i></a>
                             {% endif %}
                             {% if student.facebook %}
-                              <a href="{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                              <a href="https://facebook.com/{{ student.facebook }}"><i id="facebook" class="icon-facebook"></i></a>
+                            {% endif %}
+                            {% if student.instagram %}
+                              <a href="https://instagram.com/{{ student.instagram }}"><i id="instagram" class="icon-instagram"></i></a>
                             {% endif %}
                           </div>
                           </div>
@@ -200,28 +258,124 @@
                       </div>
                     </div>
                   </figure>
-                 </div>   
+                 </div>
               </div>
             {% endfor %}
+          </div>
+        </div>
+        <a class="anchor" name="gallery"></a>
+        <div class="row gallery-wrapper">
+          <div class="members gallery">
+            <h1 class="section-h1"><span class="white-border">Student Gallery</span></h1>
+            {% for piece in site.data.gallery %}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card">
+                  {% if piece.image %}
+                    <div class="painting-container">
+                      <img class="card-img-top" src="" data="img/gallery/{{ piece.image }}" alt="{{ piece.name }}">
+                      <a class="author" href="#{{ piece.author }}">By: {{ piece.author }}</a>
+                    </div>
+                  {% endif %}
+                  <div class="card-block">
+                    <h4 class="card-title">{{ piece.name }}</h4>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="anchor" name="contributors"></a>
+        <div class="row contributors-wrapper">
+          <div class="members contributers">
+            <h1 class="section-h1" id="contributors"><span class="white-border">Contributors</span></h1>
+          </div>
+        </div>
+        <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center">
+
+
+              <p>Thank you for contributing!</p>
+              <br>
+              <p>Спасибо за вклад!</p>
+              <br>
+              <p>Bedankt voor het bijdragen!</p>
+              <br>
+              <p>योगदान के लिए धन्यवाद!</p>
+              <br>
+              <p>Благодаря за приноса Ви!</p>
+              <br>
+              <p> දායකවූවාට ස්තුතියි!</p>
+              <br>
+              <p> 感謝您的貢獻！</p>
+              <br>
+              <p>!شكرا لكم للمساهمة</p>
+              <br>
+              <p> תודה על התרומה שלך </p>
+              <br>
+              <p> Cảm ơn bạn đã đóng góp!</p>
+              <br>
+              <p>Nous vous remercions de votre contribution!</p>
+              <br>
+              <p>Dziękujemy za współpracę!</p>
+              <br>
+              <p>"યોગદાન માટે આભાર !"</p>
+
+        </div>
+        <a class="anchor" name="social_media"></a>
+        <div class="social_media">
+            <br>
+            <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
+
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12">
+                    <div class="twitter" style="">
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                      <a  style="height:315px;" class="twitter-timeline" href="https://twitter.com/fossasia" data-widget-id="541955158897618944">Tweets by @fossasia.</a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-12">
+                    <iframe scrolling="no" frameborder="0" allowtransparency="true" style="margin-top:15px; border: none; overflow: hidden; width: 100%; height: 214px;" src="http://www.facebook.com/plugins/likebox.php?id=126893747338271&amp;width=500&amp;connections=15&amp;stream=false&amp;header=false&amp;height=500"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLzZVLecTsGpIt1xH0_dSwNwsLrdhR1bh3" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-12">
+                    <div id="GPlusPage"style="margin-top:21px; text-align: center;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <footer>
       <div class="container">
-        <ul class="footer-links">
-          <li><a href="mailto:contact@fossasia.org">Email</a></li>
-          <li><a href="http://webchat.freenode.net/?channels=fossasia">IRC Channel</a></li>
-          <li><a href="https://plus.google.com/108920596016838318216">Google+</a></li>
-          <li><a href="http://twitter.com/fossasia">Twitter</a></li>
-          <li><a href="http://blog.fossasia.org">Blog</a></li>
-        </ul>
-        <p>Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="facebook goof icon"><a href="https://www.facebook.com/fossasia" target="_blank"></a></div>
+              <div class="twitter2 icon"><a href="http://twitter.com/fossasia" target="_blank"></a></div>
+              <div class="github icon"><a href="https://github.com/fossasia" target="_blank"></a></div>
+              <div class="plus icon"><a href="https://plus.google.com/108920596016838318216" target="_blank"></a></div>
+            </div>
+            <div class="col-md-6">
+              <p>
+                Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT
+              </p>
+          </div>
+        </div>
       </div>
     </footer>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>

@@ -41,7 +41,7 @@
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 #grid figure figcaption > a {
-	z-index 	: 1000;
+	z-index 	: 900;
 	text-indent : 200%;
 	white-space : nowrap;
 	font-size   : 0;
@@ -56,7 +56,7 @@ figure.effect-duke:hover .icon-holder {
 
 	-webkit-transition  : all 0.35s, -webkit-transform 0.35s;
 	transition 			: all 1s 0.25s, transform 0.35s;
-	z-index 			: 999;
+	z-index 			: 800;
 }
 
 figure.effect-duke:hover img {
@@ -66,15 +66,15 @@ figure.effect-duke:hover img {
 
 figure.effect-duke .icon-holder {
 	position 				: absolute;
-	top 					: 40%;
+	top 					: 50%;
 	left 					: 0;
-	margin 					: 20px;
-	padding 				: 30px;
+	padding 				: 0 30px;
 	text-transform 			: none;
 	font-size 				: 2.0em;
 	opacity 				: 0;
 	width 					: 100%;
-	margin 					: auto;
+	height 					: 200px;
+	margin 					: -50px auto 0;
 	-webkit-transform 		: scale3d(0.8,0.8,1);
 	transform 				: scale3d(0.8,0.8,1);
 	-webkit-transform-origin: 50% -100%;

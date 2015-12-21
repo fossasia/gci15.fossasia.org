@@ -2,10 +2,10 @@
   github: MaxBorsch
   image: mborsch.jpg
   blog:
-  twitter: https://twitter.com/devBorsch
+  twitter: devBorsch
   facebook:
-  stackexchange:
-  bio:
+  stackexchange: http://stackoverflow.com/users/1447381/mborsch
+  bio: "Hi, I'm Max. This is my first time participating in GCI. Best of luck to all the participants!"
 
 - name: Robin V.
   github: robnvuurdraak
@@ -16,12 +16,21 @@
   stackexchange:
   bio: Second GCI
 
+- name: Sten van Houwelingen
+  github: Stenvh
+  image: Stenvh.jpg
+  blog: https://sten.meorga.nl/
+  twitter: https://twitter.com/stenvh
+  facebook:
+  stackexchange:
+  bio: A 15 Year old geek from The Netherlands
+
 - name: Mario S.
   github: MarioScappini
   image: mariosc.jpg
   blog:
-  twitter: https://twitter.com/MarioScappini99
-  facebook: https://www.facebook.com/marioakio.scappini
+  twitter: MarioScappini99
+  facebook: marioakio.scappini
   stackexchange:
   bio:
 
@@ -29,8 +38,8 @@
   github: seadog007
   image: seadog007.png
   blog:
-  twitter: https://twitter.com/007seadog
-  facebook: https://www.facebook.com/seadog007
+  twitter: 007seadog
+  facebook: seadog007
   stackexchange:
   bio:
 
@@ -56,7 +65,7 @@
   github: Juanvulcano
   image: juanvhook.jpg
   blog: https://juanfverhook.wordpress.com/
-  twitter: https://twitter.com/Juanfrancisco1
+  twitter: Juanfrancisco1
   facebook:
   stackexchange:
   bio: Venezuelan, 16 years, Building stuff :), First GCI
@@ -65,7 +74,7 @@
   github: emanf9
   image: ethanf.JPG
   blog:
-  twitter: https://twitter.com/emanf10
+  twitter: emanf10
   facebook:
   stackexchange:
   bio: Following my dreams, first GCI
@@ -74,7 +83,7 @@
   github: pythad
   image: vlad_ovch.jpg
   blog: http://pythad.github.io/
-  twitter: https://twitter.com/pythady
+  twitter: pythady
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
@@ -87,3 +96,108 @@
   facebook: https://www.facebook.com/sarah.greisdorf
   stackexchange:
   bio: First GCI
+
+- name: Neeraj Pandey
+  github: neerajp99
+  image: neeraj.jpg
+  blog: http://neerajp99.github.io/
+  twitter: neerajp99
+  facebook: Neerajpandey99
+  stackexchange:
+  bio: Web Developer, 16 years, Indian :)
+
+- name: Anshuman Agarwal
+  github: anshuman73
+  image: anshuman.jpg
+  blog: http://anshuman73.github.io/
+  twitter: anshumanagr73
+  facebook: AgarwalAnshuman.73
+  stackexchange:
+  bio:
+
+- name: Pol Baladas
+  github: PolBaladas
+  image: polbaladas.jpg
+  blog:
+  twitter: PolBaladas
+  facebook:
+  stackexchange:
+  bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI. 👍
+
+- name: Jared Stefanowicz
+  github: jaredStef
+  image: jaredStef.jpg
+  blog: https://jaredstef.github.io/
+  twitter: jaredstef
+  facebook:
+  stackexchange:
+  bio: Plans to better the world. First GCI. Code + Design = <3
+
+- name: Ben Hiatt
+  github: benhiatt
+  image: bhiatt.JPG
+  instagram: ben_hiatt
+  bio: I’m totally doing this for the t-shirt... and for the non-profits :)
+
+- name: Michael Jancen-Widmer
+  github: michaeljancen
+  image: michaeljancen.jpg
+  blog: https://michaeljancen.de
+  twitter: JancenWidmer
+  facebook:
+  stackexchange:
+  bio: First GCI, I <3 cyber-security and coding :)
+
+- name: Poh Say Keong
+  github: PohSayKeong
+  image: pohSayKeong.jpg
+  twitter: pohsaykeong
+  facebook: poh.saykeong
+  bio: 14 years... Hope I can help
+
+- name: Shashank Sharma
+  github: shashank-sharma
+  image: shashank.jpg
+  twitter: shashanksharma9
+  facebook: shashank.sharma.902
+  stackexchange: http://stackexchange.com/users/4312856/shashank
+  bio: Programmer, 17 years old, love physics, and I love coding :D
+
+- name: Rohit kumar
+  github: Rohythakur
+  image: rohyt.jpg
+  twitter: rohytx
+  facebook: rohyt.thakur
+  stackexchange: http://stackexchange.com/users/7503355/rohyt
+  bio: from india , i know java,python..
+ 
+- name: Jason Wong
+  github: codethejason
+  blog: http://codethejason.github.io/blog
+  image: jasonw.jpg
+  twitter: codethejason
+  stackexchange: http://stackexchange.com/users/3961331/animaltesting
+  bio: Designer and developer - first GCI!
+
+- name: Archie Buissink
+  github: abuissink
+  image: archieb.jpg
+  twitter: ribbitdev
+  facebook: arch.buissink
+  stackexchange: http://stackexchange.com/users/5701991/archiebnz
+  bio: from NZ, this is my first GCI. I <3 Biology and Coding
+
+- name: Cho Yin Yong
+  github: hkminegod
+  image: choyin.jpg
+  blog: https://choy.in/
+  twitter: choyiny
+  bio: Student, Gamer, Developer, 17!
+  
+- name: Dea Chintia Putri
+  github: delta949
+  image: delta949.jpg
+  twitter: dea94998
+  facebook: deachintiaputri
+  bio: First and last GCI, from Indonesia. Coding is fun.
+
