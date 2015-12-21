@@ -148,7 +148,11 @@
 - name: Rohit kumar
   github: Rohythakur
   image: rohyt.jpg
+<<<<<<< HEAD
   twitter: @rohytx
+=======
+  twitter: rohytx
+>>>>>>> fossasia/gh-pages
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..

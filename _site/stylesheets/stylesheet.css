@@ -20,16 +20,7 @@ html, body {
   line-height: 1.5;
   color: #606c71;
   height: 100%;
-}
-
-html {
-  overflow-y: scroll;
   overflow-x: hidden;
-}
-
-body {
-  padding-top: 61px;
-  overflow-y: visible;
 }
 
 /* mborsch.css*/
@@ -50,6 +41,9 @@ a.anchor[name='social_media'] {
   background-color: #FFFFFF;
   box-shadow: 0px 1px 5px #989898;
   border: none;
+}
+.navbar-header {
+  height: 50px;
 }
 .codein-bkg {
   float: right;
@@ -150,41 +144,6 @@ a.anchor[name='social_media'] {
   -ms-filter: blur(5px);
   filter: blur(5px);
   background-color: white;
-}
-
-.section-h1.start {
-  transition: all 2s;
-  -webkit-transition: all 2s;
-  -webkit-transform: rotateX(-720deg);
-  transform: rotateX(-720deg);
-}
-
-.painting-container {
-  position: relative;
-  box-shadow: 0px 0px 32px #424242;
-}
-
-.author {
-  position: absolute;
-  bottom: -80%;
-  text-align: center;
-  line-height: 50px;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  border-radius: 50%;
-  clip: rect(0px, 320px, 40px, 0px);
-  font-size: .9rem;
-}
-
-.author:hover {
-  color: white;
-  cursor: hand;
-}
-
-.gallery .card-title {
-  font-style: italic;
 }
 
 /* end mborsch.css*/
@@ -288,9 +247,6 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
-  color:  #F0FFFF;
-}
-.social i#github:visited {
   color: black;
 }
 .social i#linkedin:hover {
@@ -299,7 +255,7 @@ a:hover {
 .social i#code:hover {
   color: #29A329;
 }
-.social i#stackexchange:hover {
+.social i#stack:hover {
   color: #ED780E;
 }
 .social i#facebook:hover {
@@ -307,9 +263,6 @@ a:hover {
 }
 .social i#mail:hover {
   color: #F7B401;
-}
-.social i#instagram:hover {
-  color: #F0FFFF;
 }
 .card .card-action a {
   color: #444;
@@ -323,6 +276,7 @@ a:hover {
   text-align: center;
 }
 .card a:hover, a:focus {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -411,7 +365,7 @@ footer {
   width: 100%;  /* Set the fixed height of the footer here */
   background-color: #EE6E73;
   color: white;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   padding-top: 50px;
   text-align: left;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
@@ -456,15 +410,7 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
-.gallery-wrapper {
-  margin: auto;
-  margin-top: 50px;
-  background-color: #1E78D2;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-}
+
 .contributors-wrapper {
   margin: auto;
   margin-top: 50px;
@@ -560,11 +506,3 @@ footer p {
     transform: rotate(4deg);
 }
 
-.icon-holder {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
