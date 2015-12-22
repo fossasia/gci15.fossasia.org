@@ -67,8 +67,8 @@
   blog: https://juanfverhook.wordpress.com/
   twitter: Juanfrancisco1
   facebook:
-  stackexchange:
-  bio: Venezuelan, 16 years, Building stuff :), First GCI
+  stackexchange:http://stackoverflow.com/users/4135058/juanvulcano
+  bio: Venezuelan, 16 years, Building stuff :) First GCI! Good luck to everyone!
 
 - name: Ethan Falck
   github: emanf9
@@ -113,7 +113,7 @@
   twitter: PolBaladas
   facebook:
   stackexchange:
-  bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI. 👍
+  bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI. ?
 
 - name: Jared Stefanowicz
   github: jaredStef
@@ -128,7 +128,7 @@
   github: benhiatt
   image: bhiatt.JPG
   instagram: ben_hiatt
-  bio: I’m totally doing this for the t-shirt... and for the non-profits :)
+  bio: I'm totally doing this for the t-shirt... and for the non-profits :)
 
 - name: Michael Jancen-Widmer
   github: michaeljancen
@@ -216,3 +216,4 @@
   twitter: shreyas2101
   facebook: shreyasharshant
   bio: 16, Aviator, coder
+
