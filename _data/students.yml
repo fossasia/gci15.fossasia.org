@@ -90,12 +90,12 @@
 
 - name: Sarah Greisdorf
   github: sarahgreisdorf
-  image: sarahg.jpeg
+  image: sarahg.png
   blog: http://sarahgreisdorf.com
-  twitter: https://twitter.com/sarahgreisdorf
-  facebook: https://www.facebook.com/sarah.greisdorf
+  twitter: sarahgreisdorf
+  facebook: Sarah Greisdorf
   stackexchange:
-  bio: First GCI
+  bio: Designer and Developer, First GCI
 
 - name: Neeraj Pandey
   github: neerajp99
