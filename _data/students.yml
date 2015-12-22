@@ -161,7 +161,7 @@
   facebook: rohyt.thakur
   stackexchange: http://stackexchange.com/users/7503355/rohyt
   bio: from india , i know java,python..
- 
+
 - name: Jason Wong
   github: codethejason
   blog: http://codethejason.github.io/blog
@@ -184,10 +184,19 @@
   blog: https://choy.in/
   twitter: choyiny
   bio: Student, Gamer, Developer, 17!
-  
+
 - name: Dea Chintia Putri
   github: delta949
   image: delta949.jpg
   twitter: dea94998
   facebook: deachintiaputri
   bio: First and last GCI, from Indonesia. Coding is fun.
+
+- name: Ian Arlo Hoegen
+  github: ihoegen
+  image: IanHoegen.jpg
+  blog: http://hoegendevelopments.ga
+  twitter:
+  facebook: ianhoegen
+  stackexchange: https://stackexchange.com/users/6268679/ian-hoegen
+  bio: Web developer, from Washington.
