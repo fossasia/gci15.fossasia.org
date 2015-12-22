@@ -181,7 +181,7 @@
 - name: Cho Yin Yong
   github: hkminegod
   image: choyin.jpg
-  blog: https://choy.in/
+ 
   twitter: choyiny
   bio: Student, Gamer, Developer, 17!
   
@@ -191,3 +191,11 @@
   twitter: dea94998
   facebook: deachintiaputri
   bio: First and last GCI, from Indonesia. Coding is fun.
+
+- name: Shreyas Sanghvi
+  github: shreyassanghvi
+  image: shreyas.jpg
+  twitter: shreyas2101
+  facebook: shreyas sanghvi 
+   blog: http://shreyassanghvi.co.in/
+  bio: First , from India. Coding and Aviation it is.
