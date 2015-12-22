@@ -106,11 +106,20 @@
   stackexchange: 
   bio: 
 
-- name: Rafał Kowalski
-  github: rafalkowalski
-  image: rafalkowalski.png
-  blog: 
-  twitter: 
-  facebook: 
+- name: Arnav Gupta
+  github: championswimmer
+  image: arnav.jpg
+  blog: http://championswimmer.in/
+  twitter: championswimmer
+  facebook: championswimmer
+  stackexchange: 
+  bio:  
+
+- name: Jigyasa Grover
+  github: jig08
+  image: jigyasagrover.jpg
+  blog: http://jigyasagrover.wordpress.com
+  twitter: jigyasa_grover
+  facebook: jigyasa.grover.14
   stackexchange: 
   bio: 

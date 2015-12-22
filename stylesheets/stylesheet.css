@@ -20,15 +20,16 @@ html, body {
   line-height: 1.5;
   color: #606c71;
   height: 100%;
-  overflow-x: hidden;
 }
 
 html {
-  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
-  margin-top: 61px;
+  padding-top: 61px;
+  overflow-y: visible;
 }
 
 /* mborsch.css*/
@@ -52,9 +53,11 @@ a.anchor[name='social_media'] {
 }
 .codein-bkg {
   float: right;
-  position: absolute;
-  right: 0px;
-  top: -6px;
+}
+nav > .container {
+  padding-right: 0;
+  margin-right: 0;
+  width: 95vw;
 }
 .codein-bkg img {
   height: 67px;
@@ -78,11 +81,10 @@ a.anchor[name='social_media'] {
 .codein-smaller {
   position: absolute;
   top: 24px;
-  right: -194px;
+  right: 22px;
   font-size: 18px;
   margin: 0;
   color: white;
-  width: 100%
 }
 .navbar-brand {
   height: 60px;
@@ -98,6 +100,12 @@ a.anchor[name='social_media'] {
   width: 100%;
   height: 36px;
   margin-top: -7px;
+}
+
+@media screen and (max-width: 850px) and (min-width: 767px) {
+  ul.nav > li > a { 
+    font-size: 0.85em;
+  }
 }
 .members {
   width: 100%;
@@ -156,6 +164,34 @@ a.anchor[name='social_media'] {
   -webkit-transition: all 2s;
   -webkit-transform: rotateX(-720deg);
   transform: rotateX(-720deg);
+}
+
+.painting-container {
+  position: relative;
+  box-shadow: 0px 0px 32px #424242;
+}
+
+.author {
+  position: absolute;
+  bottom: -80%;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  clip: rect(0px, 320px, 40px, 0px);
+  font-size: .9rem;
+}
+
+.author:hover {
+  color: white;
+  cursor: hand;
+}
+
+.gallery .card-title {
+  font-style: italic;
 }
 
 /* end mborsch.css*/
@@ -259,6 +295,9 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
+  color:  #F0FFFF;
+}
+.social i#github:visited {
   color: black;
 }
 .social i#linkedin:hover {
@@ -267,7 +306,7 @@ a:hover {
 .social i#code:hover {
   color: #29A329;
 }
-.social i#stack:hover {
+.social i#stackexchange:hover {
   color: #ED780E;
 }
 .social i#facebook:hover {
@@ -275,6 +314,9 @@ a:hover {
 }
 .social i#mail:hover {
   color: #F7B401;
+}
+.social i#instagram:hover {
+  color: #F0FFFF;
 }
 .card .card-action a {
   color: #444;
@@ -290,7 +332,7 @@ a:hover {
 .card a:hover, a:focus {
   text-decoration: none;
 }
-
+@media screen and (min-width:48em) {
 /* Speech bubble!*/
 .pinched {
   position: absolute;
@@ -341,6 +383,7 @@ a:hover {
   color: #FF7043;
 }
 
+
 .arrow-down {
   position: absolute;
   width: 0;
@@ -353,16 +396,19 @@ a:hover {
 }
 /* End Speech bubble!*/
 
+.card:hover .pinched {
+  display: block;
+}
+
+}
+
+
 .avatar {
   position: relative;
   padding-bottom: 100%;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
-}
-
-.card:hover .pinched {
-  display: block;
 }
 
 .avatar img {
@@ -376,7 +422,7 @@ footer {
   width: 100%;  /* Set the fixed height of the footer here */
   background-color: #EE6E73;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 50px;
   text-align: left;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
@@ -421,12 +467,30 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
-
+.gallery-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #1E78D2;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
 .contributors-wrapper {
   margin: auto;
   margin-top: 50px;
   background-color: #27ae60;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+.thanku-wrapper {
+  margin: auto;
+  margin-top: 20px;
+  background-color: yellow;
+  border-radius: 5px;
+  height: 80px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
@@ -524,4 +588,44 @@ footer p {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+
+@media screen and (max-width:48em) {
+    div.pinched {
+        display: none;
+    }
+    .icon-holder > a {
+        display: none;
+    }
+    
+    .icon-holder {
+        position: relative;
+    }
+    
+    .mobile-only {
+        display: inline-block;
+        height: 24vw; /*measured according to boostrap sizing vs browser width*/
+        width: 24vw;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 8000;
+    }
+    
+    h4.card-title {
+        font-size: 0.7em;
+    }
+}
+.contributers .card:hover{
+  -webkit-transition:0.6s all ease-in-out;
+  -mozkit-transition:0.6s all ease-in-out;
+  -transition:0.6s all ease-in-out;
+  opacity: 0.3;
+  
+}
+.contributers .card{
+ -webkit-transition:0.6s all ease-in-out;
+  -mozkit-transition:0.6s all ease-in-out;
+  -transition:0.6s all ease-in-out;
 }
