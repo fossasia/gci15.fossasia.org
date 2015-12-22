@@ -101,6 +101,12 @@ nav > .container {
   height: 36px;
   margin-top: -7px;
 }
+
+@media screen and (max-width: 850px) and (min-width: 767px) {
+  ul.nav > li > a { 
+    font-size: 0.85em;
+  }
+}
 .members {
   width: 100%;
   margin-top: 25px;
