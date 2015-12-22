@@ -187,7 +187,7 @@ $(document).ready(function() {
   $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors", function (json) {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
-      output = output + '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">\n';
+      output = output + '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">\n';
       output = output + '<div class="card">\n';
       output = output + '<div class="avatar img-circle">\n';
       output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
