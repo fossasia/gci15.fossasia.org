@@ -688,3 +688,8 @@ footer ul {
     text-align: center;
   }
 }
+
+#GPlusPage {
+  margin: 20px 0 40px;
+  text-align: center;
+}
