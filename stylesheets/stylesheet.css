@@ -528,7 +528,7 @@ footer p {
     -ms-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
-    float: left;
+    margin: auto;
 }
 
 .icon a {
@@ -596,6 +596,16 @@ footer p {
     transform: rotate(4deg);
 }
 
+.mail {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjM4Mi4xMTciIGhlaWdodD0iMzgyLjExNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDx0aXRsZT5MYXllciAxPC90aXRsZT4KICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBpZD0ic3ZnXzEiIGQ9Im0yODkuMTAwMTI4LDkzLjQxNTI0NWwtMTk2LjA4MjU1LDBjLTE2LjgyNzI2MywwIC0zMC41MTc1NzgsMTMuMTQ3MzAxIC0zMC41MTc1NzgsMjkuMzA3MDc2bDAsMTM2LjY3MjM2M2MwLDE2LjE1OTc2IDEzLjY5MDMxNSwyOS4zMDcwNjggMzAuNTE3NTc4LDI5LjMwNzA2OGwxOTYuMDgyNTUsMGMxNi44MjcyNCwwIDMwLjUxNjg3NiwtMTMuMTQ3MzA4IDMwLjUxNjg3NiwtMjkuMzA3MDY4bDAsLTEzNi42NzIzNjNjMCwtMTYuMTU5Nzc1IC0xMy42ODk2MzYsLTI5LjMwNzA3NiAtMzAuNTE2ODc2LC0yOS4zMDcwNzZ6bTAsMTY5LjQxMzEyNGwtMTk2LjA4MjU1LDBjLTIuNDczNDg4LDAgLTQuNjQyODM4LC0xLjYwNDE1NiAtNC42NDI4MzgsLTMuNDMzNjg1bDAsLTExOC41OTk2MjVsODguNjgyOTIyLDc0Ljg3MDgwNGMxLjgxODEsMS41MzU1MDcgNC4xMzAxMTIsMi4zODA2NDYgNi41MTA3MjcsMi4zODA2NDZsMTQuOTc3NTI0LDAuMDAwNjcxYzIuMzc5Mjg4LDAgNC42OTI2NDIsLTAuODQ1ODEgNi41MTE0MjksLTIuMzgxMzE3bDg4LjY4Njk1MSwtNzQuODczNDg5bDAsMTE4LjYwMzY1M2MtMC4wMDEzNDMsMS44MjgxODYgLTIuMTcxMzg3LDMuNDMyMzQzIC00LjY0NDE2NSwzLjQzMjM0M3ptLTk4LjA0MTI3NSwtNzAuNDcyMjI5bC04Ni4yNTUyMDMsLTczLjA2NzUwNWwxNzIuNTEwMzc2LDBsLTg2LjI1NTE3Myw3My4wNjc1MDV6Ii8+CiAgPGcgaWQ9InN2Z18yIi8+CiAgPGcgaWQ9InN2Z18zIi8+CiAgPGcgaWQ9InN2Z180Ii8+CiAgPGcgaWQ9InN2Z181Ii8+CiAgPGcgaWQ9InN2Z182Ii8+CiAgPGcgaWQ9InN2Z183Ii8+CiAgPGcgaWQ9InN2Z184Ii8+CiAgPGcgaWQ9InN2Z185Ii8+CiAgPGcgaWQ9InN2Z18xMCIvPgogIDxnIGlkPSJzdmdfMTEiLz4KICA8ZyBpZD0ic3ZnXzEyIi8+CiAgPGcgaWQ9InN2Z18xMyIvPgogIDxnIGlkPSJzdmdfMTQiLz4KICA8ZyBpZD0ic3ZnXzE1Ii8+CiAgPGcgaWQ9InN2Z18xNiIvPgogPC9nPgo8L3N2Zz4=);
+    background-size: cover;
+}
+
+.mail:hover {
+    background-color: ;
+    transform: rotate(4deg);
+}
+
 .icon-holder {
     display: flex !important;
     flex-direction: row;
@@ -643,4 +653,38 @@ footer p {
  -webkit-transition:0.6s all ease-in-out;
   -mozkit-transition:0.6s all ease-in-out;
   -transition:0.6s all ease-in-out;
+}
+
+footer {
+  background-color: #ff4646;
+}
+
+footer p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+@media screen and (max-width:48em) {
+  footer {
+    padding: 20px 0;
+  }
+  .icon {
+    float: left;
+  }
+  .social-media-container {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+  }
+  .links, .blurb {
+    text-align: center;
+  }
 }
