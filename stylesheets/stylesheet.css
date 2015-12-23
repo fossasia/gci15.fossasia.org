@@ -53,9 +53,11 @@ a.anchor[name='social_media'] {
 }
 .codein-bkg {
   float: right;
-  position: absolute;
-  right: 0px;
-  top: -6px;
+}
+nav > .container {
+  padding-right: 0;
+  margin-right: 0;
+  width: 95vw;
 }
 .codein-bkg img {
   height: 67px;
@@ -79,11 +81,10 @@ a.anchor[name='social_media'] {
 .codein-smaller {
   position: absolute;
   top: 24px;
-  right: -194px;
+  right: 22px;
   font-size: 18px;
   margin: 0;
   color: white;
-  width: 100%
 }
 .navbar-brand {
   height: 60px;
@@ -99,6 +100,12 @@ a.anchor[name='social_media'] {
   width: 100%;
   height: 36px;
   margin-top: -7px;
+}
+
+@media screen and (max-width: 850px) and (min-width: 767px) {
+  ul.nav > li > a { 
+    font-size: 0.85em;
+  }
 }
 .members {
   width: 100%;
@@ -607,6 +614,18 @@ footer p {
     }
     
     h4.card-title {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
+}
+.contributers .card:hover{
+  -webkit-transition:0.6s all ease-in-out;
+  -mozkit-transition:0.6s all ease-in-out;
+  -transition:0.6s all ease-in-out;
+  opacity: 0.3;
+  
+}
+.contributers .card{
+ -webkit-transition:0.6s all ease-in-out;
+  -mozkit-transition:0.6s all ease-in-out;
+  -transition:0.6s all ease-in-out;
 }
