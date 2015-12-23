@@ -88,6 +88,15 @@
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
 
+- name: Sarah Greisdorf
+  github: sarahgreisdorf
+  image: sarahg.png
+  blog: http://sarahgreisdorf.com
+  twitter: sarahgreisdorf
+  facebook: Sarah Greisdorf
+  stackexchange:
+  bio: Designer and Developer, First GCI
+
 - name: Neeraj Pandey
   github: neerajp99
   image: neeraj.jpg
@@ -216,4 +225,3 @@
   twitter: shreyas2101
   facebook: shreyasharshant
   bio: 16, Aviator, coder
-
