@@ -131,7 +131,7 @@ $(document).ready(function() {
   });
 
   // @mborsch FLIPPY SECTION HEADERS! :P
-  function isElementInViewport(elem) {
+  function isElementInViewport(elem, biasUp) {
     var $elem = $(elem);
 
     // Get the scroll position of the page.
@@ -143,7 +143,7 @@ $(document).ready(function() {
     var elemTop = Math.round( $elem.offset().top );
     var elemBottom = elemTop + $elem.height();
 
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+    return ((elemTop < viewportBottom + (biasUp ? 0 : 500)) && (elemBottom > viewportTop - (biasUp ? 0 : 500)));
   }
 
   function checkAnimation() {
@@ -164,17 +164,30 @@ $(document).ready(function() {
       });
   }
 
+  var images = $.makeArray($('.card-img-top'));
   function checkImages () {
-    var $elem = $('.card-img-top').each(function( index ) {
-        if ($(this).attr("src") == "" && isElementInViewport($(this))) {
-          $(this).attr("src", $(this).attr("data"));
+    if (!images) { return; }
+
+    images.forEach(function( item, index ) {
+        if (item.getAttribute ("src") == "" && isElementInViewport(item, scrollingUp)) {
+          item.setAttribute ("src", item.getAttribute ("data"));
+          images.splice (index, 1);
         }
       });
   }
 
+  var lastScrollTop = 0;
+  var scrollingUp = false;
   $(document).scroll(function(){
-      checkAnimation();
+    var st = $(this).scrollTop();
+    scrollingUp = st < lastScrollTop;
+      
+    checkAnimation();
+    if (!images.length < 1) {
       checkImages();
+    }
+
+    lastScrollTop = st;
   });
   //End Flippy Section Headers
 
@@ -202,5 +215,6 @@ $(document).ready(function() {
       output = output + '</div>';
     }
     $('.contributers').append(output);
+    images = $.makeArray($('.card-img-top[src=""]'));
   });
 });
