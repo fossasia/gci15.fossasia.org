@@ -63,6 +63,11 @@ nav > .container {
   height: 67px;
   margin: 0;
   padding: 0;
+  margin-right: -15px;
+  transition: all .5s;
+}
+.codein-bkg img:hover{
+  margin-right: 0px;
 }
 .codein-bigger {
   position: absolute;
@@ -72,6 +77,7 @@ nav > .container {
   font-weight: bold;
   margin: 0;
   color: #484848;
+  pointer-events: none;
 }
 @media (max-width:768px) {
   .codein-bkg{
@@ -85,6 +91,7 @@ nav > .container {
   font-size: 18px;
   margin: 0;
   color: white;
+  pointer-events: none;
 }
 .navbar-brand {
   height: 60px;
