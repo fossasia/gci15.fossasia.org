@@ -217,7 +217,7 @@
   twitter: amishadobriyal
   facebook: amishadobriyal00
   bio: 15, Student, First GCI :)
-
+  
 - name: Shreyas Sanghvi
   github: shreyassanghvi
   image: shreyassanghvi.jpg
@@ -233,13 +233,4 @@
   twitter: dhruvRamani98
   facebook: dhruv.ramani
   stackexchange: https://stackoverflow.com/users/4534903/dhruv-ramani
-  bio: Coding is passion 
-
-- name: M.Yasoob Ullah Khalid
-  github: yasoob
-  image: yasoob.jpg
-  blog: http://yasoob.me
-  twitter: yasoobkhalid
-  facebook: m.yasoob
-  stackexchange: 
-  bio: 17, Author, Blogger, Programmer. First & last GCI.
+  bio: Coding is passion
