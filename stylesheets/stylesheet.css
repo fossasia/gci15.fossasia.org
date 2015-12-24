@@ -418,7 +418,7 @@ a:hover {
   min-width: 100%;
 }
 footer {
-  bottom: 0;
+
   width: 100%;  /* Set the fixed height of the footer here */
   background-color: #EE6E73;
   color: white;
@@ -437,18 +437,30 @@ footer a:hover, a:focus {
 }
 .footer-links {
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
   list-style-type: none;
 }
 .footer-links li {
   padding-right: 5px;
-  display: inline;
+  display: inline-block;
 }
 footer p {
   margin-bottom: 0;
   float: right;
 }
+@media (max-width:768px) {
+  footer {
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+  }
+  .flink  {
+  padding-left: 30%;
+}
+
+
+}
+
 .mentors-wrapper {
   margin: auto;
   margin-top: 50px;
