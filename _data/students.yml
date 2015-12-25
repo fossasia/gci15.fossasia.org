@@ -97,15 +97,6 @@
   stackexchange:
   bio: Designer and Developer, First GCI
 
-- name: Sarah Greisdorf
-  github: sarahgreisdorf
-  image: sarahg.png
-  blog: http://sarahgreisdorf.com
-  twitter: sarahgreisdorf
-  facebook: Sarah Greisdorf
-  stackexchange:
-  bio: Designer and Developer, First GCI
-
 - name: Neeraj Pandey
   github: neerajp99
   image: neeraj.jpg
@@ -252,6 +243,7 @@
   facebook: m.yasoob
   stackexchange:
   bio: 17, Author, Blogger, Programmer. First & last GCI.
+
 - name: Sarah Greisdorf
   github: sarahgreisdorf
   image: sarahg.jpg
@@ -268,4 +260,13 @@
   twitter:
   facebook:
   stackexchange:
-  bio:
+  bio: I like doing it
+
+
+- name: Duc Phan Duy
+  github: ducphanduyagentp
+  image: ducphanduy.jpg
+  blog: https://ptnega.wordpress.com/
+  twitter: I_am_agentp_14
+  facebook: ducphanduy.agentp
+  bio: What's worth the prize is always worth the fight
