@@ -87,7 +87,7 @@
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
-  
+
 - name: Sarah Greisdorf
   github: sarahgreisdorf
   image: sarahg.png
@@ -243,6 +243,25 @@
   facebook: m.yasoob
   stackexchange:
   bio: 17, Author, Blogger, Programmer. First & last GCI.
+
+- name: Sarah Greisdorf
+  github: sarahgreisdorf
+  image: sarahg.jpg
+  blog: http://sarahgreisdorf.com
+  twitter: https://twitter.com/sarahgreisdorf
+  facebook: https://www.facebook.com/sarah.greisdorf
+  stackexchange:
+  bio: First GCI
+
+- name: Paweł K.
+  github: asplia
+  image: Pawelk.jpg
+  blog:
+  twitter:
+  facebook:
+  stackexchange:
+  bio: I like doing it
+
 
 - name: Duc Phan Duy
   github: ducphanduyagentp
