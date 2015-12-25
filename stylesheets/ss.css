@@ -167,7 +167,7 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("http://theatreplan.co.uk/wp-content/uploads/2015/07/Singapore-Genexis-Theatre-Auditorium-1-current-small.jpg");
+  background-image: url("../img/auditorium.jpg");
 }
 .slide:nth-child(3) .slide__overlay-path {
   fill:#ff4646;
