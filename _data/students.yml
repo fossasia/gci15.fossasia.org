@@ -244,15 +244,6 @@
   stackexchange:
   bio: 17, Author, Blogger, Programmer. First & last GCI.
 
-- name: Sarah Greisdorf
-  github: sarahgreisdorf
-  image: sarahg.jpg
-  blog: http://sarahgreisdorf.com
-  twitter: https://twitter.com/sarahgreisdorf
-  facebook: https://www.facebook.com/sarah.greisdorf
-  stackexchange:
-  bio: First GCI
-
 - name: Paweł K.
   github: asplia
   image: Pawelk.jpg
@@ -261,7 +252,6 @@
   facebook:
   stackexchange:
   bio: I like doing it
-
 
 - name: Duc Phan Duy
   github: ducphanduyagentp
