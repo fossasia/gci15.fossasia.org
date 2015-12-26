@@ -15,6 +15,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
+
+    
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+
+  
+
   </head>
   <body>
     <!--Navbar-->
@@ -265,25 +275,30 @@
           </div>
         </div>
         <a class="anchor" name="gallery"></a>
-        <div class="row gallery-wrapper">
-          <div class="members gallery">
-            <h1 class="section-h1"><span class="white-border">Student Gallery</span></h1>
-            {% for piece in site.data.gallery %}
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <div class="card">
-                  {% if piece.image %}
-                    <div class="painting-container">
-                      <img class="card-img-top" src="" data="img/gallery/{{ piece.image }}" alt="{{ piece.name }}">
-                      <a class="author" href="#{{ piece.author }}">By: {{ piece.author }}</a>
-                    </div>
-                  {% endif %}
-                  <div class="card-block">
-                    <h4 class="card-title">{{ piece.name }}</h4>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
+        
+           <div class="container1">
+        <section id="photostack-1" class="photostack photostack-start">
+            <div>
+                <figure>
+                    <img src="img/gallery/OpenSourceCollage.jpg" alt="img01" height="240" width="240">
+                    <figcaption>
+                        <h2 class="photostack-title">Open Source Collage</h2>
+                        <h3>Max B.</h3>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
+                    <figcaption>
+                        <h2 class="photostack-title">Treasure Hunt</h2>
+                        <h3>Juan F. Verhook</h3>
+                    </figcaption>
+                </figure>
+              
+            </div>
+        </section>
+    
+
+
         </div>
         <a class="anchor" name="contributors"></a>
         <div class="row contributors-wrapper">
@@ -349,7 +364,6 @@
               <div class="twitter2 icon"><a href="http://twitter.com/fossasia" target="_blank"></a></div>
               <div class="github icon"><a href="https://github.com/fossasia" target="_blank"></a></div>
               <div class="plus icon"><a href="https://plus.google.com/108920596016838318216" target="_blank"></a></div>
-              <div class="youtube icon"><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank"></a></div>
               <div class="mail icon"><a href="mailto:contact@fossasia.com" target="_blank"></a></div>
               <div class="clearfix"></div>
               </div>
@@ -372,5 +386,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="js/scroll.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/photostack.js"></script>
+       <script>
+   
+    new Photostack(document.getElementById('photostack-1'), {
+        callback: function(item) {
+            //console.log(item)
+        }
+    });
+
+      $('.photostack').photostack({
+  auto: true,
+  autoControls: true
+});
+  
+
+
+
+    </script>
   </body>
 </html>
