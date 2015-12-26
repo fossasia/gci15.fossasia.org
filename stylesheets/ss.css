@@ -28,7 +28,12 @@ svg {
   will-change: opacity;
   opacity: 0;
 }
-
+h2.equal_pad.slide__text-heading{
+margin-bottom: 3px;
+}
+p.equal_pad.slide__text-desc{
+    margin-bottom: 3px;
+}
 .slider-control:not(.inactive):hover {
   opacity: 1;
   cursor: pointer;
