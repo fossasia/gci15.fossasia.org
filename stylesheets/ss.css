@@ -22,7 +22,7 @@ svg {
   position: absolute;
   top: 0;
   width: 12%;
-  height: 50%;
+  height: 100%;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   will-change: opacity;
