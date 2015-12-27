@@ -538,18 +538,14 @@ footer p {
     margin: auto;
 }
 
+.icon:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+}
+
 .icon a {
   display: block;
   height: 100%;
   width: 100%;
-}
-
-.goof {
-    -webkit-transition: all 0.4s cubic-bezier(0, 2, 0, 2);
-    -moz-transition: all 0.4s cubic-bezier(0, 2, 0, 2);
-    -ms-transition: all 0.4s cubic-bezier(0, 2, 0, 2);
-    -o-transition: all 0.4s cubic-bezier(0, 2, 0, 2);
-    transition: all 0.4s cubic-bezier(0, 2, 0, 2);
 }
 
 .facebook {
@@ -559,7 +555,6 @@ footer p {
 
 .facebook:hover {
     background-color: #3664A2;
-    transform: rotate(4deg);
     
 }
 
@@ -570,7 +565,6 @@ footer p {
 
 .twitter2:hover {
     background-color: #44C8F5;
-    transform: rotate(4deg);
 }
 
 .linkedin {
@@ -580,7 +574,6 @@ footer p {
 
 .linkedin:hover {
     background-color: #007BB6;
-    transform: rotate(4deg);
 }
 
 .github {
@@ -590,7 +583,6 @@ footer p {
 
 .github:hover {
     background-color: #6CC644;
-    transform: rotate(4deg);
 }
 
 .plus {
@@ -600,7 +592,6 @@ footer p {
 
 .plus:hover {
     background-color: #dd4b39;
-    transform: rotate(4deg);
 }
 
 .youtube {
@@ -610,7 +601,6 @@ footer p {
 
 .youtube:hover {
     background-color: #cd201f;
-    transform: rotate(4deg);
 }
 
 .mail {
@@ -619,8 +609,7 @@ footer p {
 }
 
 .mail:hover {
-    background-color: ;
-    transform: rotate(4deg);
+    background-color: #FAA94C;
 }
 
 .icon-holder {
