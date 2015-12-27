@@ -58,6 +58,12 @@ You can bring the changes others make by,
 
 `git pull --rebase upstream/gh-pages`
 
+If the above command does not work (i.e. you do not have access rights), use this command:
+
+`git pull --rebase https://github.com/fossasia/gci15.fossasia.org`  
+
+Either of these commands will not make a visible merge commit (the commit you would get from pressing *Update from fossasia/gh-pages*), making the commit history cleaner and more readable.  
+
 Then you can push to your fork (`origin`) by
 
 `git push origin`
