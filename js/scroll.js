@@ -20,16 +20,13 @@ Remember to insert a comma after the second last great*/
       'ขอขอบคุณสำหรับการสนับสนุนของคุณ',
       'Obrigado por contribuir!',
       'Danke fürs Mitmachen!',
-      'Thank you for contributing!',
-      'योगदान धन्यवाद!',
-      "qatlho' ghaq!",
-      "TY 4 c0ntr1but1n'"
+      'Thank you for contributing!'
     ],
     i = 0;
   setInterval(function() {
     $('#changingword').fadeOut(function() {
       $(this).html(words[i = (i + 1) % words.length]).fadeIn();
     });
-  }, 750);
+  }, 3000);
 
 })();
