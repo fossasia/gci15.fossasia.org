@@ -432,7 +432,7 @@ footer {
   width: 100%;  /* Set the fixed height of the footer here */
   background-color: #EE6E73;
   color: white;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   padding-top: 50px;
   text-align: left;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
@@ -702,7 +702,9 @@ footer ul {
     text-align: center;
   }
 }
-
+.links, .blurb {
+  margin-top: 30px;
+}
 #GPlusPage {
   margin: 20px 0 40px;
   text-align: center;
