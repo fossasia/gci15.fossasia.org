@@ -1,5 +1,5 @@
 /*Add your Thank-You great down below
-Remember to insert a comma after the second last great*/
+Add a comma after each great you add except the last one*/
 (function() {
   var words = [
       'Спасибо за вклад!',
@@ -25,8 +25,8 @@ Remember to insert a comma after the second last great*/
       "qatlho' ghaq!",
       "TY 4 c0ntr1but1n'",
       "Mulțumim pentru contribuție!",
-      "Grazie per il tuo contributo!"
-      "Tack för att bidra"
+      "Grazie per il tuo contributo!",
+      "Tack för att bidra",
       "cảm ơn bạn đã đóng góp"
     ],
     i = 0;
