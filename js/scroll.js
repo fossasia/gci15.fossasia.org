@@ -23,7 +23,9 @@ Remember to insert a comma after the second last great*/
       'Thank you for contributing!',
       'योगदान दिल्याबद्दल धन्यवाद !',
       "qatlho' ghaq!",
-      "TY 4 c0ntr1but1n'"
+      "TY 4 c0ntr1but1n'",
+      "Mulțumim pentru contribuție!",
+      "Grazie per il tuo contributo!"
     ],
     i = 0;
 //Don't modify until you know what you are doing
