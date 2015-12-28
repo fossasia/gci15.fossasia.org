@@ -26,6 +26,8 @@ Remember to insert a comma after the second last great*/
       "TY 4 c0ntr1but1n'",
       "Mulțumim pentru contribuție!",
       "Grazie per il tuo contributo!"
+      "Tack för att bidra"
+      "cảm ơn bạn đã đóng góp"
     ],
     i = 0;
 //Don't modify until you know what you are doing
