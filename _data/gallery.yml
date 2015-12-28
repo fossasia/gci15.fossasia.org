@@ -7,3 +7,23 @@
     name: Treasurehunt Game
     image: Treasurehunt.png
     author: Juan F. Verhook
+
+  -
+    name: Geolocation
+    image: geolocation.png
+    author: Jason Wong
+
+  -
+    name: Personal Page
+    image: personalpage.png
+    author: Vlad Fara
+
+  -
+    name: Git tutorial
+    image: git-tutorial.png
+    author: Oana Rosca
+
+  -
+    name: Lights Out Javascript
+    image: lights-out.png
+    author: Oana Rosca
