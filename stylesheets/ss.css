@@ -21,7 +21,7 @@ svg {
   z-index: 2;
   position: absolute;
   top: 0;
-  width: 12%;
+  width: 6%;
   height: 100%;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;

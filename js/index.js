@@ -202,19 +202,33 @@ $(document).ready(function() {
     for (var i = 0; i <= json.length - 1; i++) {
       output = output + '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">\n';
       output = output + '<div class="card">\n';
+      output = output + '<a href="https://github.com/' + json[i].login + '">';
       output = output + '<div class="avatar img-circle">\n';
       output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
       output = output + '</div>';
       output = output + '<div class="card-block">';
       output = output + '<h4 class="card-title">' + json[i].login + '</h4>';
-      output = output + '<div class="social">';
-      output = output + '<a href="https://github.com/' + json[i].login + '"><i id="github" class="icon-github"></i></a>';
-      output = output + '</div>';
+      output = output + '</a>';
       output = output + '</div>';
       output = output + '</div>';
       output = output + '</div>';
     }
     $('.contributers').append(output);
     images = $.makeArray($('.card-img-top[src=""]'));
+  });
+});
+// Anchor to Anchor smooth scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 });
