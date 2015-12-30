@@ -27,3 +27,28 @@
     name: Lights Out Javascript
     image: lights-out.png
     author: Oana Rosca
+
+  -
+    name: LibreOffice Poster
+    image: libreoffice.png
+    author: Dea Chintia
+
+  -
+    name: Lights Out
+    image: lightsout.png
+    author: Jason Wong
+
+  -
+    name: Hangman
+    image: hangman1.png
+    author: Oana Rosca
+
+  -
+    name: Blog about Open Source
+    image: opensource.png
+    author: Selina Feng
+
+  -
+    name: Hangman
+    image: hangman2.png
+    author: Jason Wong
