@@ -709,3 +709,8 @@ footer ul {
   margin: 20px 0 40px;
   text-align: center;
 }
+@media screen and (max-width:490px) {
+ #___page_0{
+ margin-left: -20% !important;
+  }
+ }
