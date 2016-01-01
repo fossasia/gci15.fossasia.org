@@ -657,6 +657,17 @@ background-size: cover;
         font-size: 0.7em;
     }
 }
+
+@media screen and (max-width:60em) and (min-width:48em) {
+  .icon-holder > a {
+    font-size: 0.75em;
+    
+  }
+  .icon-holder {
+    padding-top: 0;
+    margin-top: -55px !important; /* small adjustment due to screen size */
+  }
+}
 .contributers .card:hover{
   -webkit-transition:0.6s all ease-in-out;
   -mozkit-transition:0.6s all ease-in-out;
