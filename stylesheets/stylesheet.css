@@ -341,6 +341,7 @@ a:hover {
   white-space: nowrap;
   margin-left: -10px;
   margin-right: -10px;
+  overflow: hidden;
 }
 .card a:hover, a:focus {
   text-decoration: none;
