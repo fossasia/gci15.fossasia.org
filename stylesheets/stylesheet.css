@@ -723,3 +723,8 @@ footer ul {
   margin: 20px 0 40px;
   text-align: center;
 }
+h4.card-title{
+    text-overflow: ellipsis !important;/* Required for text-overflow to do anything */
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
