@@ -73,7 +73,8 @@ Then you can push to your fork (`origin`) by
 There are times when you have multiple commits that are related, you have to make them into one and then file a pull request. For this, we use squashing mode of `git rebase`.
 For this we follow these steps : 
 
-1) `git rebase -i HEAD~x`, where x is the number of commits to be squashed into one. 
+1) `git rebase -i HEAD~x`, where `x` is how many commits away is the first commit you want to squash.  
+For example, if the first commit you want to squash is `4cc1a7` in the example below, you'll have to type in `git rebase -i HEAD~3`, because that commit is 3 commits away from the last one. 
 
 2) This will open you default text editor with an output like :
 
@@ -102,7 +103,7 @@ pick cc57f1 Third commit
 #
 # Note that empty commits are commented out
 ```
-Here you change the `pick` keyboard in front of the commits to `squash` expect for the oldest commit of the lot (For example Commit named `First commit` here)
+Here you change the `pick` keyboard in front of all the commits you want to `squash`, except for the oldest commit of the lot (For example Commit named `First commit` here)
 
 3) Quit the editor. 
 
