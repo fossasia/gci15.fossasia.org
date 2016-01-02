@@ -338,6 +338,9 @@ a:hover {
 .card .card-title {
   color: white;
   text-align: center;
+  white-space: nowrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .card a:hover, a:focus {
   text-decoration: none;
