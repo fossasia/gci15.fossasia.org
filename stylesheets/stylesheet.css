@@ -659,6 +659,7 @@ background-size: cover;
     h4.card-title {
         font-size: 0.7em;
     }
+
 }
 
 @media screen and (max-width:60em) and (min-width:48em) {
@@ -670,6 +671,17 @@ background-size: cover;
     padding-top: 0;
     margin-top: -55px !important; /* small adjustment due to screen size */
   }
+
+  iframe {
+    display: block!important;
+    margin: 30px auto!important;
+    width: 800px!important;
+  }
+
+  #facebook-iframe {
+    width: 500px!important;
+  }
+    
 }
 .contributers .card:hover{
   -webkit-transition:0.6s all ease-in-out;
@@ -715,14 +727,24 @@ footer ul {
   .links, .blurb {
     text-align: center;
   }
+
+  iframe {
+    display: block!important;
+    margin: 30px auto!important;
+    width: 500px!important;
+  }
 }
+
 .links, .blurb {
   margin-top: 30px;
 }
+
 #GPlusPage {
   margin: 20px 0 40px;
   text-align: center;
 }
+
+
 h4.card-title{
     text-overflow: ellipsis !important;/* Required for text-overflow to do anything */
   white-space: nowrap !important;
