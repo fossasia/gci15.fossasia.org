@@ -1,4 +1,4 @@
-- name: Hong Phuc
+﻿- name: Hong Phuc
   github: hpdang
   image: hpdang.jpg
   blog: http://blog.fossasia.org/
@@ -176,4 +176,22 @@
   twitter: shiluka
   facebook:
   stackexchange: 
+  bio: 
+
+- name: Nicco Kunzmann
+  github: niccokunzmann
+  image: NiccoKunzmann.jpg
+  twitter: dannhaltohneson
+  bio:
+
+- name: Arunoda Susiripala
+  github: arunoda
+  image: arunoda.jpg
+  twitter: arunoda
+  bio:    
+
+- name: Hossain Al Ikram
+  github: hossainalikram
+  image: hossain.jpg
+  twitter: Hossainalikram
   bio: 

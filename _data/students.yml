@@ -87,7 +87,7 @@
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
-  
+
 - name: Sarah Greisdorf
   github: sarahgreisdorf
   image: sarahg.png
@@ -273,13 +273,40 @@
 - name: Aditya Singh
   github: S-ulphuric
   image: aditya.jpg
-  facebook: https://www.facebook.com/cuteaditya1 
+  facebook: https://www.facebook.com/cuteaditya1
   twitter: NxtbigAditya
   bio: Web Designer, Gamer, CODER. 15, First Year GCI.
-  
+
 - name: Jerome Leow
   github: JLeow00
   image: JLeow.png
   facebook: jerome.leow.5
   twitter: JLeow00
   bio: Ukulele is love, ukulele is life
+
+- name: Leow Yee Zhi
+  github: yeezhi
+  image: yeezhi.png
+  facebook: yeezhi.leow
+  twitter: yee_zhi_leow
+  bio: Eat_Sleep_Ball
+
+- name: Kenneth Chua
+  github: kencyk99
+  image: kenneth.jpg
+  facebook: kenneth.chua.332
+  twitter: evad3rChua
+  bio: Gamer, Pentester, First Year GCI.
+
+- name: Ching Hannie
+  github: ChingHannie
+  image: ching.jpg
+  facebook: abchingh
+  twitter: hannniieeeee
+  bio: Singaporean coder and classical music enthusiast!
+
+- name: John Murzaku
+  github: JamMurz
+  image: johnmurz.jpg
+  facebook: john.murzaku
+  bio: 16 years old, 3rd GCI, interested in startups and open source community.
