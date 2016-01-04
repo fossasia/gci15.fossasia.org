@@ -723,8 +723,16 @@ footer ul {
   margin: 20px 0 40px;
   text-align: center;
 }
-h4.card-title{
-    text-overflow: ellipsis !important;/* Required for text-overflow to do anything */
-  white-space: nowrap !important;
-  overflow: hidden !important;
+@media screen and (max-width:370px){
+ .section-h1 {
+  color: white !important;
+  font-weight: bold !important;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  line-height: 65px;
+  font-size: 25px !important;
+} 
 }
