@@ -17,7 +17,7 @@ Add a comma after each great you add except the last one*/
       'Gracias por contribuir!',
       'Berkontribusi untuk Terima kasih!',
       '感谢您的贡献！',
-      'ขอขอบคุณสำหรับการสนับสนุนของคุณ',
+      'ขอขอบคุณในความร่วมมือของคุณ',
       'Obrigado por contribuir!',
       'Danke fürs Mitmachen!',
       'Thank you for contributing!',
@@ -28,7 +28,8 @@ Add a comma after each great you add except the last one*/
       "Grazie per il tuo contributo!",
       "Tack för att bidra",
       "cảm ơn bạn đã đóng góp",
-      "Falemnderit për kontributin!"
+      "Falemnderit për kontributin!",
+      "Hvala na učešću!"
     ],
     i = 0;
 //Don't modify until you know what you are doing

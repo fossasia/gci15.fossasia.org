@@ -1,3 +1,12 @@
+- name: Saatvik Arya
+  github: aryasaatvik
+  image: saatvikarya.jpg
+  blog:
+  twitter: SaatvikArya
+  facebook:
+  stackexchange:
+  bio: "15 year old Computer Science Enthusiast"
+
 - name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
@@ -87,7 +96,7 @@
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
-  
+
 - name: Sarah Greisdorf
   github: sarahgreisdorf
   image: sarahg.png
@@ -273,10 +282,10 @@
 - name: Aditya Singh
   github: S-ulphuric
   image: aditya.jpg
-  facebook: https://www.facebook.com/cuteaditya1 
+  facebook: https://www.facebook.com/cuteaditya1
   twitter: NxtbigAditya
   bio: Web Designer, Gamer, CODER. 15, First Year GCI.
-  
+
 - name: Jerome Leow
   github: JLeow00
   image: JLeow.png
@@ -290,14 +299,14 @@
   facebook: yeezhi.leow
   twitter: yee_zhi_leow
   bio: Eat_Sleep_Ball
-  
+
 - name: Kenneth Chua
   github: kencyk99
   image: kenneth.jpg
   facebook: kenneth.chua.332
   twitter: evad3rChua
   bio: Gamer, Pentester, First Year GCI.
-  
+
 - name: Ching Hannie
   github: ChingHannie
   image: ching.jpg
@@ -305,6 +314,7 @@
   twitter: hannniieeeee
   bio: Singaporean coder and classical music enthusiast!
 
+<<<<<<< HEAD
 - name: Maitreya Vyas
   github: maitreyav
   image: maitreyav.jpg
@@ -312,3 +322,23 @@
   facebook: maitreyav
   blog: https://plus.google.com/+MaitreyaVyas
   bio: 17, India, Design + Code, Second GCI. The web is what you make of it. 
+=======
+- name: John Murzaku
+  github: JamMurz
+  image: johnmurz.jpg
+  facebook: john.murzaku
+  bio: 16 years old, 3rd GCI, interested in startups and open source community.
+
+- name: Dani Pop
+  github: AvramPop
+  image: danipop.jpg
+  facebook: dany.pop.507
+  bio: iOS developer. Football addict. 16. Physics enthusiast. Jesus lover!
+
+- name: Bartosz Wiśniewski
+  github: PoprostuRonin
+  image: poprosturonin.jpg
+  blog: http://poprosturonin.com
+  twitter: poprosturonin
+  bio: Gamer, developer, designer from Poland.
+>>>>>>> refs/remotes/fossasia/gh-pages
