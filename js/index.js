@@ -216,6 +216,36 @@ $(document).ready(function() {
     $('.contributers').append(output);
     images = $.makeArray($('.card-img-top[src=""]'));
   });
+  
+  //Retrieve tweets from loklak using AJAX
+  var loklak_request = $.ajax({
+    url: "http://www.loklak.org/api/peers.json",
+    method: "GET",
+    dataType: "jsonp"
+  });
+  
+  
+  loklak_request.done(function(json_result) {
+    var peers = json_result.peers;
+    var table = $('#loklak_table');
+    for(var index in peers) {
+      table.append("<tr><td>"+peers[index].host+"</td><td>"+dateFormatter(peers[index].lastSeen)+" Hours Ago</td></tr>");
+    }
+  });
+  
+  var dateFormatter = function (unix_timestamp) {
+    //convert to miliseconds
+    var date = new Date(unix_timestamp);
+    var dateNow = (new Date).getTime();
+    var difference = Math.abs(dateNow - date);
+    var dateCompare = new Date(difference*1000);
+    // Hours part from the timestamp
+    var hours = dateCompare.getHours();
+
+    // Will display time in 10:30:23 format
+    return hours;
+    
+  }
 });
 // Anchor to Anchor smooth scroll
 $(function() {
