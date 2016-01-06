@@ -1,12 +1,3 @@
-- name: Saatvik Arya
-  github: aryasaatvik
-  image: saatvikarya.jpg
-  blog:
-  twitter: SaatvikArya
-  facebook:
-  stackexchange:
-  bio: "15 year old Computer Science Enthusiast"
-
 - name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
