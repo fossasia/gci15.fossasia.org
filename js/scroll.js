@@ -22,15 +22,18 @@ Add a comma after each great you add except the last one*/
       'Danke fürs Mitmachen!',
       'Thank you for contributing!',
       'योगदान दिल्याबद्दल धन्यवाद !',
-      "qatlho' ghaq!",
-      "TY 4 c0ntr1but1n'",
-      "Mulțumim pentru contribuție!",
-      "Grazie per il tuo contributo!",
-      "Tack för att bidra",
-      "cảm ơn bạn đã đóng góp",
-      "Falemnderit për kontributin!",
-      "Hvala na učešću!",
-      "貢献していただきありがとうございます！"
+      'qatlho ghaq!',
+      'TY 4 c0ntr1but1n',
+      'Mulțumim pentru contribuție!',
+      'Grazie per il tuo contributo!',
+      'Tack för att bidra',
+      'cảm ơn bạn đã đóng góp',
+      'Falemnderit për kontributin!',
+      'Hvala na učešću!',
+      'योगदान दिल्याबद्दल धन्यवाद!',
+      '貢献していただきありがとうございます！'
+
+      
     ],
     i = 0;
 //Don't modify until you know what you are doing
