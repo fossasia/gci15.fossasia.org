@@ -521,6 +521,16 @@ footer p {
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
 
+.loklak-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #c7254e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+
 .wrap {
     margin: 0 auto;
     padding: 2%;
@@ -724,15 +734,26 @@ footer ul {
   text-align: center;
 }
 @media screen and (max-width:370px){
- .section-h1 {
-  color: white !important;
-  font-weight: bold !important;
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  line-height: 65px;
-  font-size: 25px !important;
-} 
+   .section-h1 {
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    line-height: 65px;
+    font-size: 25px !important;
+  } 
+}
+
+#loklak_table {
+  color: white;
+  border: 3px solid white;
+  margin: 10px auto;
+}
+
+th, td {
+  padding: 10px 20px;
+  border: 1px solid white;
 }
