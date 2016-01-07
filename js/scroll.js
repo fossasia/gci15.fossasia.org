@@ -20,7 +20,8 @@ Remember to insert a comma after the second last great*/
       'ขอขอบคุณสำหรับการสนับสนุนของคุณ',
       'Obrigado por contribuir!',
       'Danke fürs Mitmachen!',
-      'Thank you for contributing!'
+      'Thank you for contributing!',
+      'Tibi gratias dedit quod tu'
     ],
     i = 0;
   setInterval(function() {
