@@ -561,6 +561,18 @@ footer p {
   width: 100%;
 }
 
+#facebook-iframe {
+  display: block;
+  width: 500px;
+  height: 214px;
+  margin: 20px auto 30px;
+  border: 0;
+}
+
+.twitter {
+  text-align: center;
+}
+
 .facebook {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjEzNC43IiBoZWlnaHQ9IjI4Ny42IiB2aWV3Qm94PSItMC43IC0wLjYgMTM0IDI3OCI+PHN0eWxlPi5zdHlsZTB7ZmlsbDoJI0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBkPSJNODIuNiA1OGMwIDAtMC43LTUuNSA0LjQtOS42YzUuMS00IDkuOS0zLjcgOS45LTMuN2MxMi45LTEuNiAyOS44IDIuNiAyOS44IDIuNmw1LjktNDIuN2MwIDAtNTkuNy0xNC4zLTg1LjkgNy4yQzI5LjUgMjQuNSAyOS4zIDQzLjcgMjkuMyA0My43djQ3LjdIMC4ybC0wLjIgNDJoMjkuNGwtMS4xIDE0My4xbDUyLjggMC4zbDAuMy0xNDMuNGg0My4xbDIuOS00MS45bC00NS4xLTAuMkw4Mi42IDU4eiIgY2xhc3M9InN0eWxlMCIvPjwvc3ZnPg==);
   background-size: 25%;
@@ -756,4 +768,89 @@ footer ul {
 th, td {
   padding: 10px 20px;
   border: 1px solid white;
+}
+
+#loklak-twitter {
+  position: relative;
+  height: 600px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: white;
+}
+
+#loklak-twitter h3 {
+  text-align: center;
+}
+
+
+.header-image {
+  float: left;
+  height: 75px;
+  width: 75px;
+  margin: 0 10px;
+}
+
+#loklak-twitter hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  background-image: linear-gradient(to right, #9f4f24, #55acee);
+}
+
+#tweet-container {
+  height: 475px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+.tweetbox {
+  position: relative;
+  width: 90%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px 8px;
+  margin: 10px auto 0;
+}
+
+.profilePic {
+  display: inline-block;
+  height: 100%;
+}
+
+.profilePic > img {
+  height: 100%;
+}
+
+.tweet-content {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  margin-left: 5%;
+}
+
+.tweet-content h4 {
+  margin-top: 0;
+}
+
+.tweet-content .Emoji {
+  height: 20px;
+  margin: 0 2px;
+}
+
+a.tweetLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a.nameLink {
+  text-decoration: none;
+  color: black;
 }
