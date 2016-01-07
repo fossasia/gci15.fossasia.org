@@ -1,4 +1,4 @@
-- name: Saatvik Arya
+﻿- name: Saatvik Arya
   github: aryasaatvik
   image: saatvikarya.jpg
   blog:
@@ -329,6 +329,12 @@
   facebook: john.murzaku
   bio: 16 years old, 3rd GCI, interested in startups and open source community.
 
+- name: Li Zhaoqi
+  github: Eclipse-Dominator
+  image: eclipse_D.png
+  twitter: Doomgrammar
+  bio: You will never know whether you are capable of something unless you tried it.
+
 - name: Dani Pop
   github: AvramPop
   image: danipop.jpg
@@ -341,3 +347,4 @@
   blog: http://poprosturonin.com
   twitter: poprosturonin
   bio: Gamer, developer, designer from Poland.
+
