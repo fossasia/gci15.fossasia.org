@@ -323,6 +323,14 @@
   twitter: hannniieeeee
   bio: Singaporean coder and classical music enthusiast!
 
+<<<<<<< HEAD
+- name: Maitreya Vyas
+  github: maitreyav
+  image: maitreyav.jpg
+  twitter: maitvyas
+  facebook: maitreyav
+  bio: 17, India, Design + Code, Second GCI. The web is what you make of it. 
+=======
 - name: John Murzaku
   github: JamMurz
   image: johnmurz.jpg
@@ -341,3 +349,4 @@
   blog: http://poprosturonin.com
   twitter: poprosturonin
   bio: Gamer, developer, designer from Poland.
+>>>>>>> refs/remotes/fossasia/gh-pages
