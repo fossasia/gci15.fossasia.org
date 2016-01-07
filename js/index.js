@@ -228,9 +228,12 @@ $(document).ready(function() {
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
     var table = $('#loklak_table');
+
     for(var index in peers) {
       table.append("<tr><td>"+peers[index].host+"</td><td>"+dateFormatter(peers[index].lastSeen)+" Hours Ago</td></tr>");
     }
+
+
   });
   
   var dateFormatter = function (unix_timestamp) {
