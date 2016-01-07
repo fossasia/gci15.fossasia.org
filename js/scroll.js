@@ -29,6 +29,7 @@ Add a comma after each great you add except the last one*/
       "Tack för att bidra",
       "cảm ơn bạn đã đóng góp",
       "Falemnderit për kontributin!"
+      "მადლობა ხელს უწყობს!"
     ],
     i = 0;
 //Don't modify until you know what you are doing
