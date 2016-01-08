@@ -78,7 +78,7 @@
   facebook:
   stackexchange: http://stackoverflow.com/users/4135058/juanvulcano
   bio: Venezuelan, 16 years, Building stuff :) First GCI! Good luck to everyone!
-  
+
 - name: Mehmet Cagri Ari
   github: hesapadim
   image: mehmetcagri.jpg
@@ -87,7 +87,7 @@
   blog: http://cagriari.com
   twitter: cagriaricom
   bio: 14 years student, gamer, coder. First GCI :)
-  
+
 - name: Ethan Falck
   github: emanf9
   image: ethanf.JPG
@@ -347,10 +347,18 @@
   image: maitreyav.jpg
   facebook: maitreyav
   twitter: maitvyas
-  bio: 17, Second GCI, Design + Code, The web is what you make of it. 
+  bio: 17, Second GCI, Design + Code, The web is what you make of it.
 
 - name: Catalin Pirvu
   github: CatalinPirvu
   image: catalinpirvu.jpg
   facebook: pirvu.catalin.98
   bio: Gamer. Bookworm. 16. Future lawyer.
+
+- name: Hannan Ali
+  github: abdulhannanali
+  image: abdulhannanali.jpg
+  facebook: abdulhannanali
+  twitter: computistic
+  blog: https://abdulhannanali.github.io/my-opensource-journey
+  bio: Programmer, open source enthusiast and node.js fan
