@@ -344,14 +344,17 @@ p.equal_pad.slide__text-desc{
   position: relative;
   padding: 0.5rem;
   cursor: pointer;
-  color:#2F4F4F !important;
+  color:white !important;
+  transition: all .4s;
   text-decoration: none !important;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 2.0rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
-
+.slide__text-link:hover {
+  color: #2F4F4F !important;
+}
 .slide__text-link a {
   color: black !important;
   }
