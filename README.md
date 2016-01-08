@@ -33,3 +33,7 @@ or own fork version
 
 ## Useful Git Tricks
   see [GIT.md](https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/GIT.md) 
+
+## Demo
+
+You can see the current website [over here](http://gci15.fossasia.org).
