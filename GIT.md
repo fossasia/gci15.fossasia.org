@@ -1,5 +1,7 @@
-Conflict resolving
+Working with Git
 ==================
+
+## Conflicts
 
 This little website is built with a collection of work from different contributors.
 
