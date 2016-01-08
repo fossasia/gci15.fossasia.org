@@ -531,14 +531,17 @@ footer p {
     background-color: #222;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 2.5em;
-    width: 2.5em;
+    height: 3.5em;
+    width: 6.5em;
     -webkit-transition: background-color 0.4s ease;
     -moz-transition: background-color 0.4s ease;
     -ms-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
     margin: auto;
+	margin-left:114px;
+	border-radius: 14px;
+	box-shadow:2px 2px 3px #000;
 }
 
 .icon:hover {
