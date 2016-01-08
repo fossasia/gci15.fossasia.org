@@ -31,7 +31,8 @@ Add a comma after each great you add except the last one*/
       "Falemnderit për kontributin!",
       "Hvala na učešću!",
       "貢献していただきありがとうございます！",
-      'Tibi gratias dedit quod tu'
+      'Tibi gratias dedit quod tu',
+      'योगदान दिल्याबद्दल धन्यवाद!'
     ],
     i = 0;
 //Don't modify until you know what you are doing
