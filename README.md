@@ -31,5 +31,5 @@ or own fork version
 
     http://0.0.0.0:4000/ or http://localhost:4000/
 
-## Useful Git Tricks
+### Useful Git Tricks
   see [GIT.md](https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/GIT.md) 
