@@ -229,13 +229,14 @@ $(document).ready(function() {
     var peers = json_result.peers;
     var table = $('#loklak_table');
     var count = json_result.count; 
-    for(var index in peers) {
-      table.append("<tr><td>"+peers[index].host+"</td><td>"+dateFormatter(peers[index].lastSeen)+" Hours Ago</td></tr>");
+    var counter = count/2 ;
+    for(i = 0; i < counter; i++) {
+      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
     }
 
-   table.append("<tr><td id='endrow'> Available Peers:</td><td id='endrow'>"+ count  +"</td></tr>");
+   table.append("<tr ><td id='endrow'colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
    
-  });
+  });  
   
   var dateFormatter = function (unix_timestamp) {
     //convert to miliseconds
@@ -249,7 +250,42 @@ $(document).ready(function() {
     // Will display time in 10:30:23 format
     return hours;
     
-  }
+  };
+  
+  var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL) {
+    $('#tweet-container').append('<div class="tweetbox"> \
+                      <a class="tweetLink" target="_blank" href="'+tweetURL+'">Tweet</a> \
+                      <div class="profilePic"> \
+                        <img src="'+profilePicURL+'"> \
+                      </div> \
+                      <div class="tweet-content"> \
+                        <h4><a class="nameLink" target="_blank" href="https://twitter.com/'+username+'">'+name+'</a></h4> \
+                        '+tweet+' \
+                      </div> \
+                    </div> ');
+  };
+  
+  var fetchLoklakTweets = $.ajax({
+    url: "http://loklak.org/api/search.json?q=%40fossasia&count=20", //get @fossasia tweets
+    method: "GET",
+    dataType: "jsonp"
+  });
+  
+  fetchLoklakTweets.done(function(json_result) {
+    var tweets = json_result.statuses;
+    
+    for(var index in tweets) {
+      var tweet = tweets[index].text.replace(/\\/g, ''); //since characters are escpaed
+      var tweetLink = tweets[index].link;
+      var username = tweets[index].user.screen_name;
+      var name = tweets[index].user.name;
+      var profilePic = tweets[index].user.profile_image_url_https;
+      tweetsTemplate(tweet, tweetLink, username, name, profilePic);
+    }
+  })
+  .fail(function() { console.log("The loklak call failed.")});
+  
+  
 });
 // Anchor to Anchor smooth scroll
 $(function() {
