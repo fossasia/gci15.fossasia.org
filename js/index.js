@@ -249,7 +249,42 @@ $(document).ready(function() {
     // Will display time in 10:30:23 format
     return hours;
     
-  }
+  };
+  
+  var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL) {
+    $('#tweet-container').append('<div class="tweetbox"> \
+                      <a class="tweetLink" target="_blank" href="'+tweetURL+'">Tweet</a> \
+                      <div class="profilePic"> \
+                        <img src="'+profilePicURL+'"> \
+                      </div> \
+                      <div class="tweet-content"> \
+                        <h4><a class="nameLink" target="_blank" href="https://twitter.com/'+username+'">'+name+'</a></h4> \
+                        '+tweet+' \
+                      </div> \
+                    </div> ');
+  };
+  
+  var fetchLoklakTweets = $.ajax({
+    url: "http://loklak.org/api/search.json?q=%40fossasia&count=20", //get @fossasia tweets
+    method: "GET",
+    dataType: "jsonp"
+  });
+  
+  fetchLoklakTweets.done(function(json_result) {
+    var tweets = json_result.statuses;
+    
+    for(var index in tweets) {
+      var tweet = tweets[index].text.replace(/\\/g, ''); //since characters are escpaed
+      var tweetLink = tweets[index].link;
+      var username = tweets[index].user.screen_name;
+      var name = tweets[index].user.name;
+      var profilePic = tweets[index].user.profile_image_url_https;
+      tweetsTemplate(tweet, tweetLink, username, name, profilePic);
+    }
+  })
+  .fail(function() { console.log("The loklak call failed.")});
+  
+  
 });
 // Anchor to Anchor smooth scroll
 $(function() {
