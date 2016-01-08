@@ -229,13 +229,14 @@ $(document).ready(function() {
     var peers = json_result.peers;
     var table = $('#loklak_table');
     var count = json_result.count; 
-    for(var index in peers) {
-      table.append("<tr><td>"+peers[index].host+"</td><td>"+dateFormatter(peers[index].lastSeen)+" Hours Ago</td></tr>");
+    var counter = count/2 ;
+    for(i = 0; i < counter; i++) {
+      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
     }
 
-   table.append("<tr><td id='endrow'> Available Peers:</td><td id='endrow'>"+ count  +"</td></tr>");
+   table.append("<tr ><td id='endrow'colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
    
-  });
+  });  
   
   var dateFormatter = function (unix_timestamp) {
     //convert to miliseconds

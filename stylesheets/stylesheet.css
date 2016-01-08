@@ -762,12 +762,15 @@ footer ul {
 #loklak_table {
   color: white;
   border: 3px solid white;
-  margin: 10px auto;
+  margin: 10px;
+  text-align: center;
 }
+
 
 th, td {
   padding: 10px 20px;
   border: 1px solid white;
+  text-align: center;
 }
 
 #loklak-twitter {
