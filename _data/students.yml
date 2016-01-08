@@ -1,4 +1,4 @@
-- name: Saatvik Arya
+﻿- name: Saatvik Arya
   github: aryasaatvik
   image: saatvikarya.jpg
   blog:
@@ -348,3 +348,9 @@
   facebook: maitreyav
   twitter: maitvyas
   bio: 17, Second GCI, Design + Code, The web is what you make of it. 
+
+- name: Catalin Pirvu
+  github: CatalinPirvu
+  image: catalinpirvu.jpg
+  facebook: pirvu.catalin.98
+  bio: Gamer. Bookworm. 16. Future lawyer.
