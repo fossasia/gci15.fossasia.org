@@ -114,12 +114,7 @@ nav > .container {
     font-size: 0.85em;
   }
 }
-.members {
-  width: 100%;
-  margin-top: 25px;
-  padding: 45px;
-  padding-top: 10px;
-}
+
 #home {
   height: 300px;
 }
@@ -270,12 +265,6 @@ a:hover {
 .white-border {
   border: 3px white solid;
   padding: 0 15px;
-  transition: all .3s;
-}
-.white-border:hover {
-  background-color: white;
-  color: #C7254E;
-  cursor: default;
 }
 .section-h1 {
   color: white !important;
@@ -530,6 +519,7 @@ footer p {
 .loklak-wrapper {
   margin: auto;
   margin-top: 50px;
+  padding-bottom: 10px;
   background-color: #c7254e;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
@@ -765,16 +755,8 @@ footer ul {
   } 
 }
 
-#loklak_table {
-  color: white;
-  border: 3px solid white;
-  margin: 10px;
-  text-align: center;
-}
-
 
 th, td {
-  padding: 10px 20px;
   border: 1px solid white;
   text-align: center;
 }
