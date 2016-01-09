@@ -11,9 +11,9 @@ A conflict arises when the same line of a file is changed by different contribut
 
 There are two important git remote repos.
 
-1) Your fork. It would look like this : https://github.com/<username>/gci15.fossasia.org. We call it the `origin`
+1) Your fork. It would look like this : `https://github.com/<username>/gci15.fossasia.org` . We call it the `origin`
 
-2) The original https://github.com/fossasia/gci15.fossasia.org. We call it the `upstream`
+2) The original `https://github.com/fossasia/gci15.fossasia.org`. We call it the `upstream`
 
 ## Getting started with Contribution
 
