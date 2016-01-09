@@ -270,6 +270,12 @@ a:hover {
 .white-border {
   border: 3px white solid;
   padding: 0 15px;
+  transition: all .3s;
+}
+.white-border:hover {
+  background-color: white;
+  color: #C7254E;
+  cursor: default;
 }
 .section-h1 {
   color: white !important;
