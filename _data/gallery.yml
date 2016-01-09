@@ -57,7 +57,8 @@
     name: PHP Script
     image: php-script.png
     author: M.Yasoob Ullah Khalid
-    
+  
+
   -
     name: Open Street Map - Postal code queries
     image: OpenStreetMap.png
@@ -66,3 +67,9 @@
     name: YaCy page on ro.Wikipedia
     image: ro-wiki-yacy.png
     author: Dani Pop
+
+  -
+    name: FOSS Quiz
+    image: quiz.png
+    author: Rahul Narayanan
+
