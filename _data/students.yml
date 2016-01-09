@@ -355,6 +355,12 @@
   facebook: pirvu.catalin.98
   bio: Gamer. Bookworm. 16. Future lawyer.
 
+- name: Li Zhaoqi
+  github: Eclipse-Dominator
+  image: liZhaoqi.png
+  twitter: Doomgrammar
+  bio: You will never know whether you are capable of something unless you tried it.
+
 - name: Hannan Ali
   github: abdulhannanali
   image: abdulhannanali.jpg
@@ -362,3 +368,4 @@
   twitter: computistic
   blog: https://abdulhannanali.github.io/my-opensource-journey
   bio: Programmer, open source enthusiast and node.js fan
+
