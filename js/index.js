@@ -217,7 +217,7 @@ $(document).ready(function() {
     images = $.makeArray($('.card-img-top[src=""]'));
   });
   
-  //Retrieve tweets from loklak using AJAX
+//Peers detail fetcher
   var loklak_request = $.ajax({
     url: "http://www.loklak.org/api/peers.json",
     method: "GET",
@@ -229,13 +229,24 @@ $(document).ready(function() {
     var peers = json_result.peers;
     var table = $('#loklak_table');
     var count = json_result.count; 
-    var counter = count/2 ;
-    for(i = 0; i < counter; i++) {
-      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
+    var counter = (count/2) ;
+    var ocount = Math.ceil(count/2)-1;
+    if (count%2 != 0 ) {    
+    for(i = 0; i < ocount; i++) {//for odd numbers
+   table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ 
+    peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td></tr>");
+    }
+   table.append("<tr><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td><td id='endrow'style='text-align:right' > Available Peers: &nbsp;</td><td id='endrow'>"+ count  +"</td></tr>");
+}
+   
+   else{//for even numbers
+     for(i = 0; i < counter; i++) {
+      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours </td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours </td></tr>");
     }
 
-   table.append("<tr ><td id='endrow'colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
-   
+   table.append("<tr ><td id='endrow'rowspan= '1' colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
+   }
+
   });  
   
   var dateFormatter = function (unix_timestamp) {
@@ -251,7 +262,7 @@ $(document).ready(function() {
     return hours;
     
   };
-  
+//Retrieve tweets from loklak using AJAX
   var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL) {
     $('#tweet-container').append('<div class="tweetbox"> \
                       <a class="tweetLink" target="_blank" href="'+tweetURL+'">Tweet</a> \

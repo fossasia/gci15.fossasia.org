@@ -1,85 +1,57 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
-
-body {
-  background-color: #3e94ec;
-  font-family: "Roboto", helvetica, arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
-
-.table-title h3 {
-   color: #fafafa;
-   font-size: 30px;
-   font-weight: 400;
-   font-style:normal;
-   font-family: "Roboto", helvetica, arial, sans-serif;
-   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-   text-transform:uppercase;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
 /*** Table Styles **/
 
-.table-fill {
-  background: white;
-  border-radius:3px;
-  border-collapse: collapse;
-  height: 320px;
-  margin: auto;
-  max-width: 600px;
-  padding:5px;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
-}
- 
 th {
   color:#00e600;;
   background:#1b1e24;
-  border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
-  font-size:23px;
-  font-weight: 100;
-  padding:24px !important;
-  text-align:left;
+  font-size:1rem;
+  font-family: 'Ropa Sans', sans-serif;
+  text-align:center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align:middle;
 }
 
 #endrow {
     color:#00e600;;
-  background:#1b1e24;
-  border-bottom:4px solid #9ea7af;
+  background:black;
   border-right: 1px solid #343a45;
-  font-size:23px;
-  font-weight: 100;
-  padding:24px;
+  font-size:1rem;
   text-align:center;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Ropa Sans', sans-serif;
   vertical-align:middle;
 }
 
 th:first-child {
   border-top-left-radius:3px;
+  border-left: none;
+  border-right: none;
 }
  
 th:last-child {
   border-top-right-radius:3px;
   border-right:none;
+  border-left: none;
+
 }
   
 tr {
   border-top: 1px solid #C1C3D1;
   border-bottom-: 1px solid #C1C3D1;
   color:#666B85;
-  font-size:16px;
-  font-weight:normal;
+  font-size:1rem;
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
- 
+ @media (max-width:408px) {
+  td {
+font-size: .7rem !important ;
+  }
+    th {
+font-size: .8rem !important ;
+  }
+}
 tr:hover td {
   background:black;
-  color:white;
+  color:#00e600;
   border-top: 1px solid #22262e;
   border-bottom: 1px solid #22262e;
 }
@@ -111,11 +83,8 @@ tr:last-child td:last-child {
  
 td {
   background:#FFFFFF;
-  padding:20px;
   text-align:left;
-  vertical-align:middle;
-  font-weight:300;
-  font-size:18px;
+  font-size:1rem;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }
