@@ -127,3 +127,8 @@
     name: Geolocation by postal code
     image: geolocationpostalcode.png
     author: Bartosz Wiśniewski
+    
+  -
+    name: FOSS Quiz
+    image: quiz.png
+    author: Rahul Naryanan
