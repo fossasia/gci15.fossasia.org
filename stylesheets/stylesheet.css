@@ -796,7 +796,31 @@ th, td {
   overflow-x: hidden;
   overflow: auto;
 }
-
+@media screen and (max-width:553px){
+  #loklak-twitter {
+   width: 450px; 
+    margin: 0 auto 5px;
+    padding: 5px;
+    background-color: white;
+  }
+}
+@media screen and (max-width:490px){
+  #loklak-twitter {
+   width: 350px; 
+    margin: 0 auto 5px;
+    padding: 5px;
+      background-color: white;
+      height:auto;
+  }
+}
+@media screen and (max-width:396px){
+  #loklak-twitter {
+   width: 295px; 
+    margin: 0 auto 5px;
+    padding: 5px;
+      background-color: white;
+  }
+}
 .tweetbox {
   position: relative;
   width: 90%;
