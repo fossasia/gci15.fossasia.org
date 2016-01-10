@@ -263,14 +263,14 @@ $(document).ready(function() {
     
   };
 //Retrieve tweets from loklak using AJAX
-  var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL) {
+  var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL ,tweettime) {
     $('#tweet-container').append('<div class="tweetbox"> \
                       <a class="tweetLink" target="_blank" href="'+tweetURL+'">Tweet</a> \
                       <div class="profilePic"> \
                         <img src="'+profilePicURL+'"> \
                       </div> \
                       <div class="tweet-content"> \
-                        <h4><a class="nameLink" target="_blank" href="https://twitter.com/'+username+'">'+name+'</a></h4> \
+                        <h4>'+name+'<br><a class="nameLink" target="_blank" href="https://twitter.com/'+username+'"><span class="tweetstyle">@'+username+'</span></a></h4><h5>'+tweettime+' </h5>\
                         '+tweet+' \
                       </div> \
                     </div> ');
@@ -288,10 +288,11 @@ $(document).ready(function() {
     for(var index in tweets) {
       var tweet = tweets[index].text.replace(/\\/g, ''); //since characters are escpaed
       var tweetLink = tweets[index].link;
+      var tweettime =  new Date(tweets[index].created_at).toString().slice(0, 25);     
       var username = tweets[index].user.screen_name;
       var name = tweets[index].user.name;
       var profilePic = tweets[index].user.profile_image_url_https;
-      tweetsTemplate(tweet, tweetLink, username, name, profilePic);
+      tweetsTemplate(tweet, tweetLink, username, name, profilePic,tweettime);
     }
   })
   .fail(function() { console.log("The loklak call failed.")});
