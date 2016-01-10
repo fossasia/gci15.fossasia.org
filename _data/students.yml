@@ -374,7 +374,7 @@
   github: Raheel102
   image: Raheel102.jpg
   facebook: raheel.mehmood.7
-  twitter: raheel102 
+  twitter: raheel102
   bio: Gamer, Programmer, 17, Last year of GCI
 
 - name: Li Zhaoqi
@@ -382,3 +382,10 @@
   image: LZQ_img.png
   twitter: Doomgrammar
   bio: Believe in the impossible!
+
+- name: Sayan Chaudhry
+  github: shiftsayan
+  image: sayan.png
+  twitter: shiftsayan
+  facebook: shiftsayan
+  bio: The ability to become a Super Saiyan is nothing but a legend.
