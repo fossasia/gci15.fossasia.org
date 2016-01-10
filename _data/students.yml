@@ -363,16 +363,16 @@
   blog: https://abdulhannanali.github.io/my-opensource-journey
   bio: Programmer, open source enthusiast and node.js fan
 
-  name: Tanuj Rao
+- name: Tanuj Rao
   github: tansanrao
   image: tanujrao.jpg
   facebook: tanuj.rao
   twitter: tansanrao
   bio: A Sixteen Year Old Geek From India.
 
-  name: Raheel Saghir
+- name: Raheel Saghir
   github: Raheel102
-  image: raheel102.jpg
+  image: Raheel102.jpg
   facebook: raheel.mehmood.7
   twitter: raheel102 
   bio: Gamer, Programmer, 17, Last year of GCI
