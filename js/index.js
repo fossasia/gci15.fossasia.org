@@ -277,7 +277,7 @@ $(document).ready(function() {
   };
   
   var fetchLoklakTweets = $.ajax({
-    url: "http://loklak.org/api/search.json?q=%40fossasia&count=20", //get @fossasia tweets
+    url: "http://loklak.org/api/search.json?q=from%3Afossasia&count=20", //get @fossasia tweets
     method: "GET",
     dataType: "jsonp"
   });
