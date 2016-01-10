@@ -856,6 +856,16 @@ th, td {
 
 }
 
+.tweet-content h5 {
+  margin-top: 0;
+
+}
+
+.tweetstyle {
+
+  font-size: .8em;
+  color:  #0084b4;
+}
 
 
 .tweet-content .Emoji {
