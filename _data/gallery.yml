@@ -1,4 +1,4 @@
-  - 
+  -
     name: OpenSource Collage
     image: OpenSourceCollage.jpg
     author: Max B.
@@ -7,6 +7,11 @@
     name: Treasurehunt Game
     image: Treasurehunt.png
     author: Juan F. Verhook
+
+  -
+    name: Configuring Apache with PHP
+    image: apache.png
+    author: Yathannsh Kulshrestha
 
   -
     name: Geolocation
@@ -54,9 +59,39 @@
     author: Jason Wong
 
   -
+    name: Git Tutorial
+    image: learngit.png
+    author: Sayan Chaudhry
+
+  -
+    name: Open Source Software Collage
+    image: collage.jpg
+    author: Sayan Chaudhry
+
+  -
+    name: Git Tutorial
+    image: neerajphp.png
+    author: Neeraj Pandey
+
+  -
+    name: Checkers
+    image: checkers.png
+    author: Jason Wong
+
+  -
     name: PHP Script
     image: php-script.png
     author: M.Yasoob Ullah Khalid
+
+  -
+    name: FOSS Math Software Collage
+    image: math.png
+    author: Sayan Chaudhry
+
+  -
+    name: Million Tweets Using Loklak
+    image: million.png
+    author: Sayan Chaudhry
 
   -
     name: Open Street Map - Postal code queries
@@ -64,9 +99,29 @@
     author: Duc Phan Duy
 
   -
-    name: YaCy page on ro.Wikipedia
-    image: ro-wiki-yacy.png
-    author: Dani Pop
+    name: Distance Calculator
+    image: distancecalculator.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: JSON-DATA Fetcher
+    image: idfetch.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Meta Data Viewer
+    image: mdv.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Locator
+    image: locate.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Loklak Search
+    image: search.png
+    author: M.Yasoob Ullah Khalid
 
   -
     name: Geolocation by postal code
