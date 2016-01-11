@@ -43,6 +43,7 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contributors">Contributors</a></li>
           <li><a href="#loklak">Loklak Peers</a></li>
+          <li><a href="#loklak_search">Loklak Search</a></li>
           <li><a href="#social_media">Social Media</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -275,7 +276,7 @@
             <figure>
               <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
               <figcaption>
-                <h2 class="photostack-title">Treasure Hunt</h2>
+                <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
                 <h3>Juan F. Verhook</h3>
               </figcaption>
             </figure>
@@ -289,7 +290,7 @@
             <figure>
               <img src="img/gallery/geolocation.png" alt="img04" height="240" width="240">
               <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/geolocation/" target="_blank">Geolocation Website</a></h2>
+                <h2 class="photostack-title"><a href="https://github.com/codethejason/gci2015/tree/master/geolocation/" target="_blank">Geolocation Website</a></h2>
                 <h3>Jason Wong</h3>
               </figcaption>
             </figure>
@@ -324,7 +325,7 @@
             <figure>
               <img src="img/gallery/lightsout.png" alt="img09" height="240" width="240">
               <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/lightsout/" target="_blank">Lights Out</a></h2>
+                <h2 class="photostack-title"><a href="https://github.com/codethejason/gci2015/tree/master/lightsout/" target="_blank">Lights Out</a></h2>
                 <h3>Jason Wong</h3>
               </figcaption>
             </figure>
@@ -345,7 +346,7 @@
             <figure>
               <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
               <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
+                <h2 class="photostack-title"><a href="https://github.com/codethejason/gci2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
                 <h3>Jason Wong</h3>
               </figcaption>
             </figure>
@@ -441,19 +442,33 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="img/gallery/geolocationpostalcode.png" alt="img25" height="240" width="240">
+              <img src="img/gallery/geolocationpostalcode.png" alt="img26" height="240" width="240">
               <figcaption>
                 <h2 class="photostack-title"><a href="https://poprosturonin.github.io/postalCodeGeolocation/" target="_blank">Geolocation by postal code</a></h2>
                 <h3>Bartosz Wiśniewski</h3>
               </figcaption>
             </figure>
             <figure>
-              <img src="img/gallery/hangman.png" alt="img25" height="240" width="240">
+              <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
               <figcaption>
                 <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
                 <h3>M.Yasoob Ullah Khalid</h3>
               </figcaption>
             </figure>
+            <figure>
+              <img src="img/gallery/manager.png" alt="img28" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="http://juanvhook.pythonanywhere.com/events/" target="_blank">Fossasia Event Manager!</a></h2>
+                <h3>Juan F. Verhook</h3>
+              </figcaption>
+           </figure>
+           <figure>
+             <img src="img/gallery/githuboauth.png" alt="img29" height="240" width="240">
+             <figcaption>
+               <h2 class="photostack-title"><a href="https://github.com/YagoGG/GCI2015/tree/gh-pages/Node.js%20GitHub%20OAuth" target="_blank">Node.js GitHub OAuth</a></h2>
+               <h3>Yago González</h3>
+             </figcaption>
+          </figure>
           </div>
         </section>
       </div>
@@ -477,6 +492,33 @@
             <th>Last Seen</th>
           </tr>
         </table>
+      </div>
+
+      <a class="anchor" name="loklak-search" id="loklak_search"></a>
+      <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
+        <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
+        <form class="form-wrapper cf">
+            <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
+            <button type="submit" ng-click="doSearch()" >Search</button>
+        </form>
+
+        <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 33 33;270 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+            <circle fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30" stroke-dasharray="187" stroke-dashoffset="610">
+              <animate attributeName="stroke" values="#4285F4;#DE3E35;#F7C223;#1B9A59;#4285F4" begin="0s" dur="5.6s" fill="freeze" repeatCount="indefinite"/>
+              <animateTransform attributeName="transform" type="rotate" values="0 33 33;135 33 33;450 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+              <animate attributeName="stroke-dashoffset" values="187;46.75;187" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+            </circle>
+           </g>
+        </svg>
+
+
+        <table class="table table-striped">
+        <tr ng-repeat="tweet in twitterResult.statuses">
+            <td ng-bind-html-unsafe="tweet.text"></td>
+        </tr>
+    </table>
       </div>
 
       <a class="anchor" name="social_media"></a>
@@ -532,7 +574,22 @@
             <li><a href="#">Back to Top</a></li>
           </ul>
         </div>
-        <div class="col-md-6 blurb">
+        <div>
+            <h3>Subscribe to stay informed</h3>
+        <form action="http://news.fossasia.org/subscribe" target="_blank" method="POST" accept-charset="utf-8" class="form-inline">
+    <label for="name">Name</label><br/>
+    <input type="text" name="name" id="name" placeholder="Enter name" class="form-control"/>
+    <br/>
+    <label for="email">Email</label><br/>
+    <input type="text" name="email" id="email" placeholder="Enter email" class="form-control"/>
+    <br/>
+    <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>
+            <br/>
+    <button type="submit" name="submit" class="btn btn-default">Subscribe</button>
+</form>
+            </div>
+        
+        <div class="col-md-8 blurb">
           <h3>About FOSSASIA</h3>
           <p>
             FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
@@ -541,7 +598,8 @@
             FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
           </p>
         </div>
-        <div class="col-centered col-md-2 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-12 col-sm-offset-2">
+        
+        <div class="col-centered col-md-4 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-12 col-sm-offset-2">
           <div class="social-media-container">
             <div class="facebook icon"><a href="https://www.facebook.com/fossasia" target="_blank"></a></div>
             <div class="twitter2 icon"><a href="http://twitter.com/fossasia" target="_blank"></a></div>
@@ -563,8 +621,26 @@
   <script src="js/classie.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
   <script src="js/photostack.js"></script>
+  <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
+  <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
+
+  angular.module('Twitter', ['ngResource']);
+
+  function TwitterCtrl($scope, $resource) {
+      $scope.twitter = $resource('http://loklak.org/api/:action',
+          {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
+          {get:{method:'JSONP'}});
+
+      $scope.doSearch = function () {
+          $("#spinner").show();
+          $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
+            $("#spinner").hide();
+          });
+          //
+      };
+  }
   </script>
 </body>
 </html>
