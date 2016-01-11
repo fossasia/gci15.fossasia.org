@@ -43,6 +43,7 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contributors">Contributors</a></li>
           <li><a href="#loklak">Loklak Peers</a></li>
+          <li><a href="#loklak_search">Loklak Search</a></li>
           <li><a href="#social_media">Social Media</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -486,6 +487,33 @@
         </table>
       </div>
 
+      <a class="anchor" name="loklak-search" id="loklak_search"></a>
+      <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
+        <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
+        <form class="form-wrapper cf">
+            <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
+            <button type="submit" ng-click="doSearch()" >Search</button>
+        </form>
+
+        <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 33 33;270 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+            <circle fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30" stroke-dasharray="187" stroke-dashoffset="610">
+              <animate attributeName="stroke" values="#4285F4;#DE3E35;#F7C223;#1B9A59;#4285F4" begin="0s" dur="5.6s" fill="freeze" repeatCount="indefinite"/>
+              <animateTransform attributeName="transform" type="rotate" values="0 33 33;135 33 33;450 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+              <animate attributeName="stroke-dashoffset" values="187;46.75;187" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+            </circle>
+           </g>
+        </svg>
+
+
+        <table class="table table-striped">
+        <tr ng-repeat="tweet in twitterResult.statuses">
+            <td ng-bind-html-unsafe="tweet.text"></td>
+        </tr>
+    </table>
+      </div>
+
       <a class="anchor" name="social_media"></a>
       <div class="social_media">
         <br>
@@ -570,8 +598,26 @@
   <script src="js/classie.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
   <script src="js/photostack.js"></script>
+  <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
+  <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
+  
+  angular.module('Twitter', ['ngResource']);
+
+  function TwitterCtrl($scope, $resource) {
+      $scope.twitter = $resource('http://loklak.org/api/:action',
+          {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
+          {get:{method:'JSONP'}});
+
+      $scope.doSearch = function () {
+          $("#spinner").show();
+          $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
+            $("#spinner").hide();
+          });
+          //
+      };
+  }
   </script>
 </body>
 </html>
