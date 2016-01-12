@@ -303,3 +303,7 @@ figure.photostack-current::after {
 	-webkit-transform: scale(0.61);
 	transform: scale(0.61);
 }
+.social-media-container
+{
+    margin-top: -50%;
+}
