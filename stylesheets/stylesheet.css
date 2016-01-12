@@ -110,7 +110,7 @@ nav > .container {
 }
 
 @media screen and (max-width: 850px) and (min-width: 767px) {
-  ul.nav > li > a { 
+  ul.nav > li > a {
     font-size: 0.85em;
   }
 }
@@ -590,7 +590,7 @@ img.Emoji{
 
 .facebook:hover {
     background-color: #3664A2;
-    
+
 }
 
 .twitter2 {
@@ -673,11 +673,11 @@ background-size: cover;
     .icon-holder > a {
         display: none;
     }
-    
+
     .icon-holder {
         position: relative;
     }
-    
+
     .mobile-only {
         display: inline-block;
         height: 24vw; /*measured according to boostrap sizing vs browser width*/
@@ -687,7 +687,7 @@ background-size: cover;
         bottom: 0;
         z-index: 8000;
     }
-    
+
     h4.card-title {
         font-size: 0.7em;
     }
@@ -696,7 +696,7 @@ background-size: cover;
 @media screen and (max-width:60em) and (min-width:48em) {
   .icon-holder > a {
     font-size: 0.75em;
-    
+
   }
   .icon-holder {
     padding-top: 0;
@@ -708,7 +708,7 @@ background-size: cover;
   -mozkit-transition:0.6s all ease-in-out;
   -transition:0.6s all ease-in-out;
   opacity: 0.3;
-  
+
 }
 .contributers .card{
  -webkit-transition:0.6s all ease-in-out;
@@ -766,7 +766,7 @@ footer ul {
     margin-bottom: 25px;
     line-height: 65px;
     font-size: 25px !important;
-  } 
+  }
 }
 
 
@@ -812,7 +812,7 @@ th, td {
 }
 @media screen and (max-width:553px){
   #loklak-twitter {
-   width: 450px; 
+   width: 450px;
     margin: 0 auto 5px;
     padding: 5px;
     background-color: white;
@@ -820,7 +820,7 @@ th, td {
 }
 @media screen and (max-width:490px){
   #loklak-twitter {
-   width: 350px; 
+   width: 350px;
     margin: 0 auto 5px;
     padding: 5px;
       background-color: white;
@@ -829,7 +829,7 @@ th, td {
 }
 @media screen and (max-width:396px){
   #loklak-twitter {
-   width: 295px; 
+   width: 295px;
     margin: 0 auto 5px;
     padding: 5px;
       background-color: white;
@@ -882,4 +882,40 @@ a.tweetLink {
 a.nameLink {
   text-decoration: none;
   color: black;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    text
+    margin-left: 1px;
+    white-space: nowrap;
+}
+ul li a:hover {
+background: white;
+}
+li:hover ul {
+    display: block;
+    position: absolute;
+
+}
+li:hover li {
+    float: none;
+}
+li:hover a { background: white;}
+li:hover li a:hover {
+    background: grey;
+    color: blue;
 }
