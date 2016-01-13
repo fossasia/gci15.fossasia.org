@@ -201,7 +201,7 @@
 	cursor: pointer;
 	z-index: 101;
 }
-.js .hovergames::after{content:'View Games';}
+.js .hovergames::after{content:'View Games' !important;}
 .js .photostack::before,
 .js .photostack::after {
 	opacity: 0;
