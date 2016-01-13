@@ -286,19 +286,33 @@ $(document).ready(function() {
     var tweets = json_result.statuses;
     
     for(var index in tweets) {
-      var tweet = tweets[index].text.replace(/\\/g, ''); //since characters are escpaed
-      var tweetLink = tweets[index].link;
-      var username = tweets[index].user.screen_name;
-      var name = tweets[index].user.name;
-      var profilePic = tweets[index].user.profile_image_url_https;
-      tweetsTemplate(tweet, tweetLink, username, name, profilePic);
-    }
-  })
-  .fail(function() { console.log("The loklak call failed.")});
-  
-  
-});
-// Anchor to Anchor smooth scroll
+       var tweet1 = tweets[index].text.replace(/\\/g, ''); 
+        function Checkurl(text) {
+          var url1 = /(^|&lt;|\s)(www\..+?\..+?)(\s|&gt;|$)/g,
+          url2 = /(^|&lt;|\s)(((https?|ftp):\/\/|mailto:).+?)(\s|&gt;|$)/g;
+
+          var html = $.trim(text);
+          if (html) {
+              html = html
+                  .replace(url1, '$1<a style="color:blue; text-decoration:underline;" target="_blank"  href="http://$2">$2</a>$3')
+                  .replace(url2, '$1<a style="color:blue; text-decoration:underline;" target="_blank"  href="$2">$2</a>$5');
+          }
+          return html;
+      }
+      var tweet=Checkurl(tweet1);
+        //since characters are escpaed
+        var tweetLink = tweets[index].link;
+        var username = tweets[index].user.screen_name;
+        var name = tweets[index].user.name;
+        var profilePic = tweets[index].user.profile_image_url_https;
+        tweetsTemplate(tweet, tweetLink, username, name, profilePic);
+      }
+    })
+    .fail(function() { console.log("The loklak call failed.")});
+    
+    
+  });
+//Anchor to Anchor smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
