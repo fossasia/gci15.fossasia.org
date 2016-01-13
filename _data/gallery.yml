@@ -127,3 +127,28 @@
     name: Geolocation by postal code
     image: geolocationpostalcode.png
     author: Bartosz Wiśniewski
+
+  -
+    name: Hangman!
+    image: hangman.png
+    author: M.Yasoob Ullah Khalid
+
+  -
+    name: Juan F. Verhook
+    image: manager.png
+    author: Fossasia Event Manager!
+
+  -
+    name: Node.js GitHub OAuth
+    image: githuboauth.png
+    author: Yago González
+
+  -
+    name: Get Coordinates
+    image: jamgetcoords.png
+    author: John Murzaku
+
+  -
+    name: Loklak Poster
+    image: loklakposter.png
+    author: Sayan Chaudhry
