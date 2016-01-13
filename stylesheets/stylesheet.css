@@ -907,8 +907,13 @@ ul li a:hover {
 background: white;
 }
 li:hover ul {
+<<<<<<< HEAD
+    position: absolute;
+    display: inline-block; z-index: 9999999; right:0px;
+=======
     display: block;
     position: absolute;
+>>>>>>> 4885391... Added dropdown menu #394
 
 }
 li:hover li {
