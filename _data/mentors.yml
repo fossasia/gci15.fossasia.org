@@ -209,10 +209,9 @@
   github: batraabhishek
   image: batra.png
   blog:
-  twitter:
   facebook:
   stackexchange:
-  bio: 
+  bio:
 
 - name: Handoko Suwono
   github:
@@ -222,9 +221,98 @@
   facebook: handoko.suwono
   stackexchange:
   bio:
-  
+
 - name: saptaks
   github: SaptakS
   image: saptak.jpg
   facebook: s4p74k.s3ngup74
+  bio:
+
+- name: Jan Suhr
+  github: jans23
+  image: jans.png
+  facebook:
+  bio:
+
+- name: Duke Leto
+  github: leto
+  image: leto.jpg
+  blog: http://duke.leto.net
+  facebook:
+  bio:
+
+- name: Iwan Gabovitch
+  github: qubodup
+  image: iwan.jpg
+  blog: http://qubodup.net
+  facebook:
+  bio:
+
+- name: Kalpa Welivitigoda
+  github: callkalpa
+  image: kalpa.jpg
+  blog: http://www.kalpapathum.blogspot.com
+  facebook:
+  bio:
+
+- name: Lisa Hui
+  github: LisaHJ
+  image: lisa.jpg
+  facebook:
+  bio:
+
+- name: Manan Wason
+  github: mananwason
+  image: manan.jpg
+  blog: http://mananwason.me
+  twitter: mananwason9
+  facebook: manan.wason
+  bio:
+
+- name: Rafał Kowalski
+  github: rafalkowalski
+  image: rafal.png
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Samarjeet
+  github: Samarjeet27
+  image: samarjeet.jpg
+  blog: http://samarjeet.me
+  twitter:
+  facebook:
+  bio:
+
+- name: Sambuddha Basu
+  github: sammyshj
+  image: basu.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Tymon Radzik
+  github: tradzik
+  image: tradzik.png
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Anh-Tu Nguyen
+  github: ngtuna
+  image: ngtuna.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Michael Peter Christen
+  github: Orbiter
+  image: orbiter.jpg
+  blog:
+  twitter:
+  facebook:
   bio:
