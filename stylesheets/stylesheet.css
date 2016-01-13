@@ -923,6 +923,17 @@ li:hover li a:hover {
     background: grey;
     color: blue;
 }
+div.projects{
+  position: relative;
+}
+div.projects nav{
+  visibility: hidden;
+}
+div.nav-arrows{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 li#studproj:hover #projlist{
     display: block !important;
 }
@@ -947,4 +958,36 @@ li#studproj:hover #projlist{
     background-color: #EEEEEE;
     text-decoration: none;
     color: #706F6F;
+}
+.nav-arrows{
+}
+.left-arrow{
+  position: absolute;
+  left: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 79px;
+  font-weight: bold;
+  color: #6D6A6A;
+  z-index: 2;
+  cursor: pointer;
+  transition: all .5s;
+}
+.left-arrow:hover{
+  left: 30px;
+}
+.right-arrow{
+  position: absolute;
+  right: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 79px;
+  font-weight: bold;
+  color: #6D6A6A;
+  z-index: 2;
+  cursor: pointer;
+  transition: all .5s;
+}
+.right-arrow:hover{
+  right: 30px;
 }
