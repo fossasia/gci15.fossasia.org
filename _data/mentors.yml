@@ -302,14 +302,6 @@
   facebook:
   bio:
 
-- name: Sean McGregor
-  github: smcgregor
-  image: sean.jpg
-  blog: http://seanbmcgregor.com
-  twitter: seanmcgregor
-  facebook:
-  bio:
-
 - name: Anh-Tu Nguyen
   github: ngtuna
   image: ngtuna.jpg
