@@ -844,13 +844,16 @@ th, td {
   margin: 0 auto 10px;
 }
 
+
 .profilePic {
   display: inline-block;
   height: 100%;
+
 }
 
 .profilePic > img {
   height: 100%;
+  border-radius: 50%;
 }
 
 .tweet-content {
@@ -863,7 +866,21 @@ th, td {
 
 .tweet-content h4 {
   margin-top: 0;
+  margin-bottom: 0;
+
 }
+
+.tweet-content h5 {
+  margin-top: 0;
+
+}
+
+.tweetstyle {
+
+  font-size: .8em;
+  color:  #0084b4;
+}
+
 
 .tweet-content .Emoji {
   height: 20px;
