@@ -36,21 +36,28 @@
         <img src="img/google-bkg.png">
       </a>
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class ="nav navbar-nav">
-          <li><a href="#banner">Welcome</a></li>
+        <ul class="nav navbar-nav">
+          <li ><a href="#banner">Welcome</a></li>
           <li><a href="#mentors">Mentors</a></li>
           <li><a href="#students">Students</a></li>
-          <li><a href="#contributors">Contributors</a></li>
-          <li id="studproj"><a href="#">Student Projects</a>
-          <ul id="projlist">
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#loklak">Loklak Peers</a></li>
-            <li><a href="#loklak_search">Loklak Search</a></li>
-            <li><a href="#student_games">Student Games</a></li>
-            <li><a href="#social_media">Social Media</a></li>
-          </ul>
-        </li>
-        <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
+          <li class="large"><a href="#gallery">Gallery</a></li>
+          <li class="large"><a href="#contributors">Contributors</a></li>
+          <li class="large"><a href="#loklak">Loklak Peers</a></li>
+          <li class="large"><a href="#social_media">Social Media</a></li>
+
+          <li class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              More
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contributors">Contributors</a></li>
+              <li><a href="#loklak">Loklak Peers</a></li>
+              <li><a href="#social_media">Social Media</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div><!--/.nav-collapse -->
     </div>
