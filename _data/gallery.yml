@@ -127,3 +127,7 @@
     name: Geolocation by postal code
     image: geolocationpostalcode.png
     author: Bartosz Wiśniewski
+-
+   name: Git Tutorial
+   image: gittutorial.png 
+   author: Yash Kumar Verma
