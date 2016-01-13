@@ -458,14 +458,16 @@ footer p {
 }
 @media (max-width:768px) {
   footer {
-  padding-bottom: 0;
-  padding-top: 0;
-  text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
   }
   .flink  {
-  padding-left: 30%;
-}
-
+    padding-left: 30%;
+  }
+  #navbar{
+    overflow: inherit;
+  }
 
 }
 
@@ -920,4 +922,29 @@ li:hover a { background: white;}
 li:hover li a:hover {
     background: grey;
     color: blue;
+}
+li#studproj:hover #projlist{
+    display: block !important;
+}
+#projlist{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 0px;
+    margin-left: 15px;
+    list-style: none;
+    border-top: none;
+    margin-top: 0px;
+    box-shadow: 0px 3px 5px #989898;
+    width: 195px;
+}
+#projlist li a{
+    display: block;
+    padding: 10px 15px;
+    color: #706F6F;
+}
+#projlist li a:hover{
+    background-color: #EEEEEE;
+    text-decoration: none;
+    color: #706F6F;
 }
