@@ -36,15 +36,21 @@
         <img src="img/google-bkg.png">
       </a>
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
+        <ul class ="nav navbar-nav">
           <li><a href="#banner">Welcome</a></li>
           <li><a href="#mentors">Mentors</a></li>
           <li><a href="#students">Students</a></li>
-          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contributors">Contributors</a></li>
-          <li><a href="#loklak">Loklak Peers</a></li>
-          <li><a href="#loklak_search">Loklak Search</a></li>
-          <li><a href="#social_media">Social Media</a></li>
+          <li id="studproj"><a href="#">Student Projects</a>
+          <ul id="projlist">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#loklak">Loklak Peers</a></li>
+            <li><a href="#loklak_search">Loklak Search</a></li>
+            <li><a href="#student_games">Student Games</a></li>
+            <li><a href="#social_media">Social Media</a></li>
+          </ul>
+        </li>
+        <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -469,6 +475,13 @@
                <h3>Yago González</h3>
              </figcaption>
           </figure>
+          <figure>
+            <img src="img/gallery/jamgetcoords.png" alt="img15" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://jammurz.github.io/GetCoords/" target="_blank">Get Coordinates</a></h2>
+              <h3>John Murzaku</h3>
+            </figcaption>
+          </figure>
           </div>
         </section>
       </div>
@@ -487,9 +500,9 @@
         <table id="loklak_table"   class=" table table-responsive  table-condensed">
           <tr>
             <th>IP Address</th>
-            <th>Last Seen</th>
+            <th>Last Time Peer was Active</th>
             <th>IP Address</th>
-            <th>Last Seen</th>
+            <th>Last Time Peer was Active</th>
           </tr>
         </table>
       </div>
@@ -520,6 +533,55 @@
         </tr>
     </table>
       </div>
+
+      <a class="anchor" name="student_games"></a>
+      <div class="student_games">
+          <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
+          <div class="container1">
+            <section id="photostack-2" class="photostack photostack-start">
+              <div>
+              <figure>
+                <img src="img/gallery/checkers.png" alt="img16" height="240" width="240">
+                <figcaption>
+                  <h2 class="photostack-title"><a href="http://github.com/codethejason/checkers" target="_blank">Checkers</a></h2>
+                  <h3>Jason Wong</h3>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
+                <figcaption>
+                  <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
+                  <h3>Jason Wong</h3>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
+                <figcaption>
+                  <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
+                  <h3>M.Yasoob Ullah Khalid</h3>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="img/gallery/hangman1.png" alt="img10" height="240" width="240">
+                <figcaption>
+                  <h2 class="photostack-title"><a href="https://github.com/oanarosca/hangman/tree/gh-pages" target="_blank">Hangman</a></h2>
+                  <h3>Oana Rosca</h3>
+                </figcaption>
+              </figure>
+              <figure>
+              <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
+                <h3>Juan F. Verhook</h3>
+              </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
 
       <a class="anchor" name="social_media"></a>
       <div class="social_media">
@@ -609,6 +671,7 @@
   <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
+  new Photostack(document.getElementById('photostack-2'));
 
   angular.module('Twitter', ['ngResource']);
 
