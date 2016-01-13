@@ -33,6 +33,72 @@ body {
 }
 
 /* mborsch.css*/
+/*Smaller text in tablets, larger in giant monitors*/
+@media screen and (max-width: 1370px) {
+  .navbar .large { 
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .navbar .dropdown { 
+    display: none;
+  }
+}
+
+.navbar .dropdown {
+  height: 60px;
+}
+
+.navbar .btn {
+  color: #636262;
+    height: 100%;
+    border-radius: 0;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar .btn:focus, .navbar .btn:hover {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.navbar li>a:hover, .navbar li>a:focus, .navbar li>a:active {
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+  font-size: 18px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.navbar li>a[href='#banner'] {
+  border-color: #FF6B6B;
+}
+.navbar li>a[href='#mentors'] {
+  border-color: #6E73EE;
+}
+.navbar li>a[href='#students'] {
+  border-color: #FF7043;
+}
+.navbar li>a[href='#gallery'] {
+  border-color: #41659E;
+}
+.navbar li>a[href='#contributors'] {
+  border-color: #27AE60;
+}
+.navbar li>a[href='#loklak'] {
+  border-color: #C7254E;
+}
+.navbar li>a[href='#social_media'] {
+  border-color: #424242;
+}
+
 a.anchor {
     display: block;
     visibility: hidden;
@@ -50,6 +116,11 @@ a.anchor[name='social_media'] {
   background-color: #FFFFFF;
   box-shadow: 0px 1px 5px #989898;
   border: none;
+}
+@media (max-width: 900px) {
+  .codein-bkg {
+    display: none;
+  }
 }
 .codein-bkg {
   float: right;
@@ -203,26 +274,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-.btn + .btn {
-  margin-left: 1rem;
-}
-.btn:hover {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
 }
 .slider-container{
   overflow: hidden;
@@ -882,40 +933,4 @@ a.tweetLink {
 a.nameLink {
   text-decoration: none;
   color: black;
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-ul li {
-    display: block;
-    position: relative;
-    float: left;
-}
-li ul {
-    display: none;
-}
-ul li a {
-    display: block;
-    text-decoration: none;
-    text
-    margin-left: 1px;
-    white-space: nowrap;
-}
-ul li a:hover {
-background: white;
-}
-li:hover ul {
-    display: block;
-    position: absolute;
-
-}
-li:hover li {
-    float: none;
-}
-li:hover a { background: white;}
-li:hover li a:hover {
-    background: grey;
-    color: blue;
 }
