@@ -18,6 +18,7 @@ Add a comma after each great you add except the last one*/
       'Berkontribusi untuk Terima kasih!',
       '感谢您的贡献！',
       'ขอขอบคุณในความร่วมมือของคุณ',
+      'অবদান রাখার জন্য ধন্যবাদ!',
       'Obrigado por contribuir!',
       'Danke fürs Mitmachen!',
       'Thank you for contributing!',
