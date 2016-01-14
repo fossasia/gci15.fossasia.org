@@ -1,4 +1,4 @@
----
+﻿---
 ---
 <!DOCTYPE html>
 <html lang="en-us">
@@ -269,11 +269,7 @@
         </div>
       </div>
       <a class="anchor" name="gallery"></a>
-      <div class="container1 projects">
-          <div class="nav-arrows">
-            <div class="left-arrow">&#8249;</div>
-            <div class="right-arrow">&#8250;</div>
-          </div>
+      <div class="container1">
         <section id="photostack-1" class="photostack photostack-start">
           <div>
             <figure>
@@ -500,8 +496,49 @@
               <h3>Nastya Kostiv</h3>
             </figcaption>
           </figure>
-
           <!--Don't forget to update the gallery.yml file!-->
+          </div>
+        </section>
+      </div>
+      <a class="anchor" name="student_games"></a>
+      <div class="container2 projects abugfix">
+        <section id="photostack-2" class="photostack photostack-start">
+          <div>
+          <figure>
+            <img src="img/gallery/checkers.png" alt="img16" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://github.com/codethejason/checkers" target="_blank">Checkers</a></h2>
+              <h3>Jason Wong</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
+              <h3>Jason Wong</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
+              <h3>M.Yasoob Ullah Khalid</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/hangman1.png" alt="img10" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/oanarosca/hangman/tree/gh-pages" target="_blank">Hangman</a></h2>
+              <h3>Oana Rosca</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
+              <h3>Juan F. Verhook</h3>
+            </figcaption>
+          </figure>
           </div>
         </section>
       </div>
@@ -526,7 +563,6 @@
           </tr>
         </table>
       </div>
-
       <a class="anchor" name="loklak-search" id="loklak_search"></a>
       <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
@@ -534,7 +570,6 @@
             <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
             <button type="submit" ng-click="doSearch()" >Search</button>
         </form>
-
         <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
           <g>
             <animateTransform attributeName="transform" type="rotate" values="0 33 33;270 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
@@ -545,64 +580,12 @@
             </circle>
            </g>
         </svg>
-
-
         <table class="table table-striped">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
         </tr>
     </table>
       </div>
-
-      <a class="anchor" name="student_games"></a>
-      <div class="student_games">
-          <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
-          <div class="container1">
-            <section id="photostack-2" class="photostack photostack-start">
-              <div>
-              <figure>
-                <img src="img/gallery/checkers.png" alt="img16" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="http://github.com/codethejason/checkers" target="_blank">Checkers</a></h2>
-                  <h3>Jason Wong</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
-                  <h3>Jason Wong</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
-                  <h3>M.Yasoob Ullah Khalid</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman1.png" alt="img10" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://github.com/oanarosca/hangman/tree/gh-pages" target="_blank">Hangman</a></h2>
-                  <h3>Oana Rosca</h3>
-                </figcaption>
-              </figure>
-              <figure>
-              <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
-                <h3>Juan F. Verhook</h3>
-              </figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
-      </div>
-
-
-
-
       <a class="anchor" name="social_media"></a>
       <div class="social_media">
         <br>

@@ -313,21 +313,3 @@ $(function() {
     }
   });
 });
-
-$(function(){
-  $('div.left-arrow').click(function(){
-    if ($('span.current').prev().length !== 0){
-      $('span.current').prev().click();
-    } else{
-      $('span.current').parent().children().last().click();
-    }
-  });
-
-  $('div.right-arrow').click(function(){
-    if ($('span.current').next().length !== 0){
-      $('span.current').next().click();
-    } else{
-      $('span.current').parent().children().first().click();
-    }
-  });
-});
