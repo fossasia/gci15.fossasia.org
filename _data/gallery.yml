@@ -157,3 +157,8 @@
     name: My first site
     image: fix.png
     author: Nastya Kostiv
+
+-
+   name: Git Tutorial
+   image: gittutorial.png 
+   author: Yash Kumar Verma
