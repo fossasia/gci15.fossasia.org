@@ -33,6 +33,46 @@ body {
 }
 
 /* mborsch.css*/
+.navbar li>a:hover, .navbar li>a:focus, .navbar li>a:active {
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.navbar li>a[href='#banner']:hover {
+  border-color: #FF6B6B;
+}
+.navbar li>a[href='#mentors'] {
+  border-color: #6E73EE;
+}
+.navbar li>a[href='#students'] {
+  border-color: #FF7043;
+}
+.navbar li>a[href='#gallery'] {
+  border-color: #41659E;
+}
+.navbar li>a[href='#contributors'] {
+  border-color: #27AE60;
+}
+.navbar li>a[href='#loklak'] {
+  border-color: #C7254E;
+}
+.navbar li>a[href='#loklak_search'] {
+  border-color: #C7254E;
+}
+.navbar li>a[href='#social_media'] {
+  border-color: #424242;
+}
+
+@media (max-width: 1296px) {
+  .codein-bkg {
+    display: none;
+  }
+}
 a.anchor {
     display: block;
     visibility: hidden;
