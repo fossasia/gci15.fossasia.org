@@ -439,7 +439,10 @@ a:hover {
 }
 .student_games h1{
   padding-top: 10px;
-  margin-bottom: -20px;
+  margin-bottom: 40px;
+}
+.student_games img{
+  border-radius: 50% !important;
 }
 .arrow-down {
   position: absolute;
