@@ -157,3 +157,9 @@
     name: My first site
     image: fix.png
     author: Nastya Kostiv
+
+  -
+    name: Call yourself in PHP
+    image: configurePhpPiotr.png
+    author: Piotr Kowalski
+
