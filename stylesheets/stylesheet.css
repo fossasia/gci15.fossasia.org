@@ -937,11 +937,6 @@ div.nav-arrows{
 li#studproj:hover #projlist{
     display: block !important;
 }
-li:hover ul {
-  position: absolute;
-  display: inline-block; z-index: 9999999; right:0px;
-  display: block; 
-}
 #projlist{
     display: none;
     position: absolute;
