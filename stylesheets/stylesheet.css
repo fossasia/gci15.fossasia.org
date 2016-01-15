@@ -321,11 +321,23 @@ a:hover {
   font-size: 1.5em;
 }
 .social a {
-  color: black;
+  color: white;
   text-decoration: none;
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.social a:hover{
+  -webkit-transform: rotate(-358deg);
+     -moz-transform: rotate(-358deg);
+       -o-transform: rotate(-358deg);
+      -ms-transform: rotate(-358deg);
+          transform: rotate(-358deg);
 }
 .social i {
   cursor: pointer;
@@ -340,7 +352,7 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
-  color:  #F0FFFF;
+  color:  black;
 }
 .social i#github:visited {
   color: black;
