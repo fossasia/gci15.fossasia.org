@@ -202,6 +202,10 @@
 	z-index: 101;
 }
 
+.js #photostack-2::after {
+	content: 'View Games' !important;
+}
+
 .js .photostack::before,
 .js .photostack::after {
 	opacity: 0;
