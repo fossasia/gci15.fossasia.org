@@ -162,4 +162,8 @@
     name: Call yourself in PHP
     image: configurePhpPiotr.png
     author: Piotr Kowalski
-
+    
+  -
+	name: YaCy page on ro.Wikipedia
+    image: ro-wiki-yacy.png
+    author: Dani Pop
