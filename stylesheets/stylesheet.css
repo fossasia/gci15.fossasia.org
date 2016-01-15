@@ -432,14 +432,17 @@ a:hover {
 }
 
 .student_games{
-  background-color: #2196F3;
+  background-color: #C7CA33 !important;
   margin-bottom: 50px;
   margin-top: 50px;
   border-radius: 5px;
 }
 .student_games h1{
   padding-top: 10px;
-  margin-bottom: -20px;
+  margin-bottom: 40px;
+}
+.student_games img{
+  border-radius: 50% !important;
 }
 .arrow-down {
   position: absolute;
@@ -458,7 +461,16 @@ a:hover {
 }
 
 }
-
+div.links li{
+  float: none;
+  width: 180px;
+}
+div.links li a{
+  padding-left: 5px;
+}
+div.links li a:hover{
+  background-color:  #424242;
+}
 
 .avatar {
   position: relative;
