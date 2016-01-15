@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/hover-animations.css"> <!-- for hover animations -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="stylesheets/loklak.css">
 </head>
@@ -57,7 +58,7 @@
     </div>
   </nav>
   <!--End Navbar-->
-  <!--Slider-->
+   <!--Slider-->
   <div class="slider-container" id="banner">
     <div class="slider-control left inactive"></div>
     <div class="slider-control right"></div>
@@ -70,8 +71,8 @@
             <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
           </svg>
           <div class="slide__text">
-            <h2 class="slide__text-heading">FOSSASIA</h2>
-            <p class="slide__text-desc">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
+            <h2 class="slide__text-heading hvr-bob">FOSSASIA</h2>
+            <p class="slide__text-desc hvr-hang">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
             <a class="slide__text-link" href="http://fossasia.org/" target="_blank">HOME</a>
           </div>
         </div>
@@ -83,8 +84,8 @@
             <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
           </svg>
           <div class="slide__text">
-            <h2 class="equal_pad slide__text-heading">Google Code-In </h2>
-            <p class="equal_pad slide__text-desc" >Participating in Google Code-in, a bootcamp for young minds to explore the world of open source. </p>
+            <h2 class="equal_pad slide__text-heading hvr-bob">Google Code-In </h2>
+            <p class="equal_pad slide__text-desc hvr-hang" >Participating in Google Code-in, a bootcamp for young minds to explore the world of open source. </p>
             <a class="slide__text-link" href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">CODE-IN 2015</a>
           </div>
         </div>
@@ -96,8 +97,8 @@
             <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
           </svg>
           <div class="slide__text">
-            <h2 class="slide__text-heading">FOSSASIA 2016</h2>
-            <p class="slide__text-desc">Asia's premier Open Technology Event | March 18th - 20th 2016 in Singapore </p>
+            <h2 class="slide__text-heading hvr-bob">FOSSASIA 2016</h2>
+            <p class="slide__text-desc hvr-hang">Asia's premier Open Technology Event | March 18th - 20th 2016 in Singapore </p>
             <a class="slide__text-link" href="http://2016.fossasia.org/" target="_blank">ATTEND</a>
           </div>
         </div>
@@ -109,8 +110,8 @@
             <path class="slide__overlay-path" d="M0,0 150,0 455,405 0,405" />
           </svg>
           <div class="slide__text">
-            <h2 class="slide__text-heading">FOSSASIA 2015</h2>
-            <p class="slide__text-desc">MARCH 13TH - 15TH 2015 SINGAPORE </p>
+            <h2 class="slide__text-heading hvr-bob">FOSSASIA 2015</h2>
+            <p class="slide__text-desc hvr-hang">MARCH 13TH - 15TH 2015 SINGAPORE </p>
             <a class="slide__text-link" href="http://2015.fossasia.org/" target="_blank"> 2015 HOME</a>
           </div>
         </div>
@@ -474,6 +475,29 @@
             </figcaption>
           </figure>
 
+          <figure>
+            <img src="img/gallery/gittutorial.png" alt="img33" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://www.github.com/yashkumarverma" target="_blank">Git Tutorial</a></h2>
+              <h3>Yash Kumar Verma</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/yash_checker.png" alt="img34" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://www.github.com/yashkumarverma" target="_blank">Checkers</a></h2>
+              <h3>Yash Kumar Verma</h3>
+            </figcaption>
+          </figure>
+
+           <figure>
+            <img src="img/gallery/yash_postal.png" alt="img34" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://www.github.com/yashkumarverma" target="_blank">Geo Location</a></h2>
+              <h3>Yash Kumar Verma</h3>
+            </figcaption>
+          </figure>
+
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -490,7 +514,7 @@
       <a class="anchor" name="loklak" id="loklak"></a>
       <div class=" loklak-wrapper" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Peers</span></h1>
-        <table id="loklak_table"   class=" table table-responsive  table-condensed">
+        <table id="loklak_table"   class=" table table-responsive  table-condensed hvr-bob">
           <tr>
             <th>IP Address</th>
             <th>Last Time Peer was Active</th>
@@ -503,7 +527,7 @@
       <a class="anchor" name="loklak-search" id="loklak_search"></a>
       <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
-        <form class="form-wrapper cf">
+        <form class="form-wrapper cf hvr-float-shadow">
             <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
             <button type="submit" ng-click="doSearch()" >Search</button>
         </form>
@@ -520,7 +544,7 @@
         </svg>
 
 
-        <table class="table table-striped">
+        <table class="table table-striped hvr-bob">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
         </tr>
@@ -561,6 +585,7 @@
                   <h3>Oana Rosca</h3>
                 </figcaption>
               </figure>
+              
               <figure>
               <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
               <figcaption>
@@ -568,6 +593,16 @@
                 <h3>Juan F. Verhook</h3>
               </figcaption>
               </figure>
+
+              <figure>
+              <img src="img/gallery/yash_checker.png" alt="img03" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="http://www.github.com/yashkumarverma" target="_blank" target="_blank" >Checker</a></h2>
+                <h3>Yash Kumar Verma</h3>
+              </figcaption>
+              </figure>
+              
+
             </div>
             </section>
           </div>
@@ -575,11 +610,11 @@
 
       <a class="anchor" name="student_geolocation"></a>
       <div class="student_geolocation">
-          <h1 class="section-h1"><span class="white-border">Geolocation Projects</span></h1>
+          <h1 class="section-h1 hvr-bob"><span class="white-border">Geolocation Projects</span></h1>
           <div class="container">
             <section>
               <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3  hvr-hang">
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/geolocation/">
                       <div class="avatar img-circle">
@@ -595,7 +630,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3  hvr-hang">
                   <div class="card">
                     <a href="https://github.com/Yathannsh/locateme.git">
                       <div class="avatar img-circle">
@@ -611,7 +646,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3  hvr-hang">
                   <div class="card">
                     <a href="https://poprosturonin.github.io/postalCodeGeolocation/">
                       <div class="avatar img-circle">
@@ -627,7 +662,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3  hvr-hang">
                   <div class="card">
                     <a href="http://jammurz.github.io/GetCoords/">
                       <div class="avatar img-circle">
@@ -642,6 +677,24 @@
                     </a>
                   </div>
                 </div>
+
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 hvr-hang">
+                  <div class="card">
+                    <a href="http://yashkumarverma.github.io/gci_postal/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/yash_postal.png" data="img/gallery/yash_postal.png" alt="Yash Kumar Verma">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://yashkumarverma.github.io/gci_postal/">
+                      <h4 class="card-title">Get Coordinates</h4>
+                      <h4 class="card-subtitle">Yash Kumar Verma</h4>
+                    </a>
+                  </div>
+                </div>
+
+
               </div>
             </section>
           </div>
@@ -655,7 +708,7 @@
           <div class="col-xs-12 col-md-6">
             <div class="row">
               <div class="col-xs-12 col-md-12">
-                <div id="loklak-twitter">
+                <div id="loklak-twitter"   class="hvr-bob">
                   <img src="img/loklak.png" alt="loklak" class="header-image">
                   <img src="img/twitter.png" alt="twitter" class="header-image" style="float:right;">
                   <h3>Tweets from Loklak</h3>
@@ -665,14 +718,14 @@
                 </div>
               </div>
               <div class="col-xs-12 col-md-12">
-                <iframe id="facebook-iframe" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?id=126893747338271&amp;width=500&amp;connections=15&amp;stream=false&amp;header=false&amp;height=500"></iframe>
+                <iframe class="hvr-bob" id="facebook-iframe" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?id=126893747338271&amp;width=500&amp;connections=15&amp;stream=false&amp;header=false&amp;height=500"></iframe>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
             <div class="row">
               <div class="col-xs-12 col-md-12">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLzZVLecTsGpIt1xH0_dSwNwsLrdhR1bh3" frameborder="0" allowfullscreen></iframe>
+                <iframe class="hvr-bob" width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLzZVLecTsGpIt1xH0_dSwNwsLrdhR1bh3" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div id="GPlusPage">
@@ -689,18 +742,19 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 links">
+      <div class="col-md-4 links hvr-underline-from-center">
         <h3>Other Links</h3>
-        <ul>
-          <li><a href="http://fossasia.org/" target="_blank">Main Site</a></li>
-          <li><a href="http://2016.fossasia.org/" target="_blank">FOSSASIA 2016</a></li>
-          <li><a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">GCI Page</a></li>
-          <li><a href="http://blog.fossasia.org/events" target="_blank">Events</a></li> <li><a href="https://en.wikipedia.org/wiki/FOSSASIA" target="_blank">Wiki</a></li>
-          <li><a href="http://blog.fossasia.org/" targer="_blank">Blog</a><li>
-            <li><a href="#">Back to Top</a></li>
-          </ul>
+
+         <a href="http://fossasia.org/" target="_blank" class="hvr-overline-reveal">Main Site</a> <br />
+         <a href="http://2016.fossasia.org/" target="_blank" class="hvr-overline-reveal">FOSSASIA 2016</a> <br />
+         <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="hvr-overline-reveal">GCI Page</a> <br />
+         <a href="http://blog.fossasia.org/events" target="_blank" class="hvr-overline-reveal">Events</a> <br />
+         <a href="https://en.wikipedia.org/wiki/FOSSASIA" target="_blank" class="hvr-overline-reveal">Wiki</a> <br />
+         <a href="http://blog.fossasia.org/" target="_blank" class="hvr-overline-reveal">Blog</a> <br />
+         <a href="#" target="_blank" class="hvr-overline-reveal">Back to top</a> <br />
+
         </div>
-        <div class="col-md-6 blurb">
+        <div class="col-md-6 blurb hvr-underline-from-center">
           <h3>About FOSSASIA</h3>
           <p>
             FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
@@ -724,7 +778,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/index.js"></script>
+
+   <script src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="js/scroll.js"></script>
