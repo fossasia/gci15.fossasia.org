@@ -321,11 +321,15 @@ a:hover {
   font-size: 1.5em;
 }
 .social a {
-  color: black;
+  color: white;
   text-decoration: none;
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
+}
+.social a:hover{
+  width: 2.5em;
+  height: 2.5em;
 }
 .social i {
   cursor: pointer;
