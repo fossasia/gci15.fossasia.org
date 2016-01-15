@@ -321,47 +321,65 @@ a:hover {
   font-size: 1.5em;
 }
 .social a {
-  color: black;
+  color: #FFFF00;
   text-decoration: none;
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
+  max-width: 50px;
 }
 .social i {
   cursor: pointer;
   transition: color 300ms ease, margin-top 300ms ease;
   transform: translateZ(0);
   vertical-align: middle;
+  max-width: 60px;
 }
 .social i:hover {
   margin-top: -1px;
 }
 .social i#twitter:hover {
   color: #77DDF6;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#github:hover {
   color:  #F0FFFF;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#github:visited {
   color: black;
 }
 .social i#linkedin:hover {
   color: #0177B5;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#code:hover {
   color: #29A329;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#stackexchange:hover {
   color: #ED780E;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#facebook:hover {
   color: #3b5998;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#mail:hover {
   color: #F7B401;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .social i#instagram:hover {
   color: #F0FFFF;
+  -webkit-transform: scale;
+  transform: scale;
 }
 .card .card-action a {
   color: #444;
