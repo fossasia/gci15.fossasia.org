@@ -197,7 +197,7 @@ $(document).ready(function() {
   $("#GPlusPage").html('<div class="g-page" data-layout="' + (isMobile ? "landscape" : "portrait") + '" data-width="' + (isMobile ? 150 : 450) + '" data-href="https://plus.google.com/+FossasiaOrg"></div>');
   //End Dynamic Social Widgets
 
-  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors", function (json) {
+  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors?per_page=100", function (json) {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
       output = output + '<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">\n';
