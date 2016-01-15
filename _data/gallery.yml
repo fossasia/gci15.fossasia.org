@@ -163,3 +163,17 @@
     image: configurePhpPiotr.png
     author: Piotr Kowalski
 
+ -
+   name: Git Tutorial
+   image: gittutorial.png 
+   author: Yash Kumar Verma
+
+-
+   name: Checkers
+   image: yash_checker.png 
+   author: Yash Kumar Verma
+
+-
+	name:Geolocation
+	image:yash_postal.png
+	author:Yash Kumar Verma
