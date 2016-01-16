@@ -35,7 +35,8 @@ Add a comma after each great you add except the last one*/
       'Tibi gratias dedit quod tu',
       "მადლობა ხელს უწყობს!",
       "ਯੋਗਦਾਨ ਲਈ ਧੰਨਵਾਦ!" ,
-      "നൽകുന്നതിന്  താങ്കൾക്കു നന്ദി"
+      "നൽകുന്നതിന്  താങ്കൾക്കു നന്ദി",
+	  'Дякую за внесок!'
     ],
     i = 0;
 //Don't modify until you know what you are doing
