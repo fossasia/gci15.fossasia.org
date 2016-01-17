@@ -197,7 +197,7 @@ $(document).ready(function() {
   $("#GPlusPage").html('<div class="g-page" data-layout="' + (isMobile ? "landscape" : "portrait") + '" data-width="' + (isMobile ? 150 : 450) + '" data-href="https://plus.google.com/+FossasiaOrg"></div>');
   //End Dynamic Social Widgets
 
-  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors", function (json) {
+  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors?per_page=100", function (json) {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
       output = output + '<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">\n';
@@ -315,19 +315,19 @@ $(function() {
 });
 
 $(function(){
-  $('div.left-arrow').click(function(){
-    if ($('span.current').prev().length !== 0){
-      $('span.current').prev().click();
+  $('#left-arrow1').click(function(){
+    if ($('#photostack-1 nav span.current').prev().length !== 0){
+      $('#photostack-1 nav span.current').prev().click();
     } else{
-      $('span.current').parent().children().last().click();
+      $('#photostack-1 nav span.current').parent().children().last().click();
     }
   });
 
-  $('div.right-arrow').click(function(){
-    if ($('span.current').next().length !== 0){
-      $('span.current').next().click();
+  $('#right-arrow1').click(function(){
+    if ($('#photostack-1 nav span.current').next().length !== 0){
+      $('#photostack-1 nav span.current').next().click();
     } else{
-      $('span.current').parent().children().first().click();
+      $('#photostack-1 nav span.current').parent().children().first().click();
     }
   });
 });

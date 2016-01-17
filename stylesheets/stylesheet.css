@@ -321,11 +321,23 @@ a:hover {
   font-size: 1.5em;
 }
 .social a {
-  color: black;
+  color: white;
   text-decoration: none;
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.social a:hover{
+  -webkit-transform: rotate(-358deg);
+     -moz-transform: rotate(-358deg);
+       -o-transform: rotate(-358deg);
+      -ms-transform: rotate(-358deg);
+          transform: rotate(-358deg);
 }
 .social i {
   cursor: pointer;
@@ -340,7 +352,7 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
-  color:  #F0FFFF;
+  color:  black;
 }
 .social i#github:visited {
   color: black;
@@ -432,14 +444,17 @@ a:hover {
 }
 
 .student_games{
-  background-color: #2196F3;
+  background-color: #C7CA33 !important;
   margin-bottom: 50px;
   margin-top: 50px;
   border-radius: 5px;
 }
 .student_games h1{
   padding-top: 10px;
-  margin-bottom: -20px;
+  margin-bottom: 40px;
+}
+.student_games img{
+  border-radius: 50% !important;
 }
 .arrow-down {
   position: absolute;
@@ -458,7 +473,16 @@ a:hover {
 }
 
 }
-
+div.links li{
+  float: none;
+  width: 180px;
+}
+div.links li a{
+  padding-left: 5px;
+}
+div.links li a:hover{
+  background-color:  #424242;
+}
 
 .avatar {
   position: relative;
@@ -989,7 +1013,7 @@ li#studproj:hover #projlist{
 li:hover ul {
   position: absolute;
   display: inline-block; z-index: 9999999; right:0px;
-  display: block; 
+  display: block;
 }
 #projlist{
     display: none;
@@ -1060,6 +1084,24 @@ li:hover ul {
     border-radius: 5px;
 }
 .student_geolocation h4{
+    color: white;
+    text-align: center;
+}
+.lights_out .avatar img{
+    border-radius: 0;
+}
+.lights_out .container{
+    width: 100%;
+}
+.lights_out .container .card-block a:hover{
+    text-decoration: none;
+}
+.lights_out{
+    background-color: #cccc01;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.lights_out h4{
     color: white;
     text-align: center;
 }

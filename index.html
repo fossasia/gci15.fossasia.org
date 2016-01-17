@@ -15,8 +15,9 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/hover.css" media="screen">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/loklak.css">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="stylesheets/loklak.css">
+
 </head>
 <body>
   <!--Navbar-->
@@ -49,6 +50,7 @@
             <li><a href="#student_games">Student Games</a></li>
             <li><a href="#student_geolocation">Geolocation Projects</a></li>
             <li><a href="#social_media">Social Media</a></li>
+            <li><a href ="#lights_out">Lights out</a></li>
           </ul>
         </li>
         <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
@@ -272,8 +274,8 @@
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
-            <div class="left-arrow">&#8249;</div>
-            <div class="right-arrow">&#8250;</div>
+            <div class="left-arrow" id="left-arrow1">&#8249;</div>
+            <div class="right-arrow"  id="right-arrow1">&#8250;</div>
           </div>
         <section id="photostack-1" class="photostack photostack-start">
           <div>
@@ -282,13 +284,6 @@
               <figcaption>
                 <h2 class="photostack-title">Open Source Collage</h2>
                 <h3>Max B.</h3>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
-                <h3>Juan F. Verhook</h3>
               </figcaption>
             </figure>
             <figure>
@@ -334,24 +329,10 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="img/gallery/hangman1.png" alt="img10" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/oanarosca/hangman/tree/gh-pages" target="_blank">Hangman</a></h2>
-                <h3>Oana Rosca</h3>
-              </figcaption>
-            </figure>
-            <figure>
               <img src="img/gallery/opensource.png" alt="img11" height="240" width="240">
               <figcaption>
                 <h2 class="photostack-title"><a href="http://gciopensource.blogspot.ro/" target="_blank">Blog about Open Source</a></h2>
                 <h3>Selina Feng</h3>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/codethejason/gci2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
-                <h3>Jason Wong</h3>
               </figcaption>
             </figure>
             <figure>
@@ -373,13 +354,6 @@
               <figcaption>
                 <h2 class="photostack-title"><a href="https://phpapache.herokuapp.com" target="_blank">Git Tutorial</a></h2>
                 <h3>Neeraj Pandey</h3>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="img/gallery/checkers.png" alt="img16" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="http://github.com/codethejason/checkers" target="_blank">Checkers</a></h2>
-                <h3>Jason Wong</h3>
               </figcaption>
             </figure>
             <figure>
@@ -439,13 +413,6 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
-                <h3>M.Yasoob Ullah Khalid</h3>
-              </figcaption>
-            </figure>
-            <figure>
               <img src="img/gallery/manager.png" alt="img28" height="240" width="240">
               <figcaption>
                 <h2 class="photostack-title"><a href="http://juanvhook.pythonanywhere.com/events/" target="_blank">Fossasia Event Manager!</a></h2>
@@ -473,7 +440,14 @@
               <h3>Nastya Kostiv</h3>
             </figcaption>
           </figure>
-
+            <figure>
+              <img src="img/gallery/quiz.png" alt="img23" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://github.com/zakomon/fossquiz" target="_blank">FOSS QUIZ</a></h2>
+                <h3>Rahul Narayanan</h3>
+              </figcaption>
+            </figure>
+            <figure>
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -527,48 +501,126 @@
     </table>
       </div>
 
+
       <a class="anchor" name="student_games"></a>
-      <div class="student_games">
+      <div class="student_geolocation student_games">
           <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
-          <div class="container1">
-            <section id="photostack-2" class="photostack photostack-start">
-              <div>
-              <figure>
-                <img src="img/gallery/checkers.png" alt="img16" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="http://github.com/codethejason/checkers" target="_blank">Checkers</a></h2>
-                  <h3>Jason Wong</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman2.png" alt="img12" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/" target="_blank">Hangman</a></h2>
-                  <h3>Jason Wong</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman.png" alt="img27" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://yasoob.me/hangman" target="_blank">Hangman!</a></h2>
-                  <h3>M.Yasoob Ullah Khalid</h3>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="img/gallery/hangman1.png" alt="img10" height="240" width="240">
-                <figcaption>
-                  <h2 class="photostack-title"><a href="https://github.com/oanarosca/hangman/tree/gh-pages" target="_blank">Hangman</a></h2>
-                  <h3>Oana Rosca</h3>
-                </figcaption>
-              </figure>
-              <figure>
-              <img src="img/gallery/Treasurehunt.png" alt="img02" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3" target="_blank" target="_blank" >Treasure Hunt</a></h2>
-                <h3>Juan F. Verhook</h3>
-              </figcaption>
-              </figure>
-            </div>
+          <div class="container">
+            <section>
+              <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="http://github.com/codethejason/checkers">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/checkers.png" alt="Jason-wong">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://github.com/codethejason/checkers">
+                      <h4 class="card-title">Checkers</h4>
+                      <h4 class="card-title">Jason Wong</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/hangman2.png" data="img/gallery/hangman2.png" alt="Jason-wong">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/">
+                      <h4 class="card-title">Hangman</h4>
+                      <h4 class="card-title">Jason Wong</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://yasoob.me/hangman">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/hangman.png" data="img/gallery/hangman.png" alt="yasoob-khalid">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://yasoob.me/hangman">
+                      <h4 class="card-title">Hangman!</h4>
+                      <h4 class="card-title">M.Yasoob Ullah Khalid</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/oanarosca/hangman/tree/gh-pages">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/hangman1.png" data="img/gallery/hangman1.png" alt="shashank-sharma">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/oanarosca/hangman/tree/gh-pages">
+                      <h4 class="card-title">Hangman</h4>
+                      <h4 class="card-subtitle">Oana Rosca</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/Treasurehunt.png" data="img/gallery/Treasurehunt.png" alt="yasoob-khalid">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3">
+                      <h4 class="card-title">Treasure Hunt</h4>
+                      <h4 class="card-title">Juan F. Verhook</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://yasoob.me/checkers">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/checkers1.png" data="img/gallery/checkers1.png" alt="shashank-sharma">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://yasoob.me/checkers">
+                      <h4 class="card-title">Checkers!</h4>
+                      <h4 class="card-subtitle">M.Yasoob Ullah Khalid</h4>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="http://fossasia.github.io/flappy-svg/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/Flappy-SVG-icon.svg" data="img/gallery/Flappy-SVG-icon.svg" alt="Flappy SVG">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://fossasia.github.io/flappy-svg/">
+                      <h4 class="card-title">Flappy SVG</h4>
+                      <h4 class="card-subtitle"></h4>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
             </section>
           </div>
       </div>
@@ -643,9 +695,173 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                 <div class="card">
+                   <a href="https://github.com/zakomon/fossquiz">
+                    <div class="avatar img-circle">
+                      <img class="card-img-top" src="img/gallery/quiz.png" data="img/gallery/quiz.png" alt="Quiz">
+                      </div>
+                    </a>
+                 </div>
+               
+                </div>
             </section>
           </div>
       </div>
+      <a class="anchor" name="lights_out"></a>
+      <div class="lights_out">
+              <h1 class="section-h1"><span class="white-border">Lights Out</span></h1>
+              <div class="container">
+                <section>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="card">
+                          <div class="avatar img-circle">
+                            <a href="http://codethejason.github.io/gci2015/lightsout/index.html">
+                            <img class="card-img-top" src="img/gallery/lightsout.png">
+                          </a>
+                          </div>
+                      </div>
+                      <div class="card-block">
+                          <h4 class="card-title">by Jason Wong</h4>
+                          <h4 class = "card-subtitle"><a href="http://codethejason.github.io/gci2015/lightsout/index.html">Github</a></h4>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="card">
+                          <div class="avatar img-circle">
+                            <a href="http://oanarosca.github.io/lights-out/">
+                            <img class="card-img-top" src="img/gallery/lights-out.png">
+                            </a>
+                          </div>
+                      </div>
+                      <div class="card-block">
+                          <h4 class="card-title">by Oana Rosca</h4>
+                          <h4 class = "card-subtitle"><a href="https://github.com/oanarosca/lights-out">Github</a></h4>
+                      </div>
+                    </div>
+
+            <div class="col-xs-3">
+              <div class="card">
+                <div class="avatar img-circle">
+                  <a href="http://delta949.github.io/">
+                    <img class="card-img-top" src="img/gallery/lightsoutdea.png">
+                  </a>
+                  </div>
+                </div>
+                <div class="card-block">
+                  <h4 class="card-title">by Dea Chintia</h4>
+                    <h4 class = "card-subtitle"><a href="https://github.com/Delta949/delta949.github.io">Github</a></h4>
+                </div>
+              </div>
+
+            <div class="col-xs-3">
+              <div class="card">
+                  <div class="avatar img-circle">
+                    <a href="http://ducphanduyagentp.github.io/ptnega-light/">
+                    <img class="card-img-top" src="img/gallery/lightsoutduc.png">
+                  </a>
+                  </div>
+                </a>
+              </div>
+              <div class="card-block">
+                  <h4 class="card-title">by Duc Phan Duy</h4>
+                  <h4 class = "card-subtitle"><a href="https://github.com/ducphanduyagentp/ptnega-light">Github</a></h4>
+              </div>
+            </div>
+        </div>
+
+
+          <div class = "row">
+            <div class="col-xs-3">
+              <div class="card">
+                  <div class="avatar img-circle">
+                    <a href="http://s-ulphuric.github.io/git-lights-out/">
+                    <img class="card-img-top" src="img/gallery/lightsoutaditya.png">
+                  </a>
+                  </div>
+              </div>
+              <div class="card-block">
+                  <h4 class="card-title">by Aditya Singh</h4>
+                  <h4 class = "card-subtitle"><a href="https://github.com/s-ulphuric/git-lights-out/">Github</a></h4>
+              </div>
+            </div>
+
+            <div class="col-xs-3">
+              <div class="card">
+                  <div class="avatar img-circle">
+                    <a href="https://pages.choy.in/GCI2015/">
+                    <img class="card-img-top" src="img/gallery/lightsoutyong.png">
+                  </a>
+                  </div>
+              </div>
+              <div class="card-block">
+                  <h4 class="card-title">by Yong Cho Yin</h4>
+                  <h4 class = "card-subtitle"><a href="https://github.com/hkminegod/GCI2015/tree/master/javascript">Github</a></h4>
+              </div>
+            </div>
+
+            <div class="col-xs-3">
+              <div class="card">
+                  <div class="avatar img-circle">
+                    <a href="http://jleow00.github.io/Lights-Out/">
+                    <img class="card-img-top" src="img/gallery/lightsoutjeromel.png">
+                    </a>
+                  </div>
+              </div>
+              <div class="card-block">
+                  <h4 class="card-title">by Jerome Leow</h4>
+                  <h4 class = "card-subtitle"><a href="https://github.com/jleow00/Lights-Out/">Github</a></h4>
+              </div>
+            </div>
+
+          <div class="col-xs-3">
+            <div class="card">
+                <div class="avatar img-circle">
+                  <a href="http://srv.seadog007.me/Light-Adv/Web/">
+                  <img class="card-img-top" src="img/gallery/lightsoutseadog.png">
+                </a>
+                </div>
+            </div>
+            <div class="card-block">
+                <h4 class="card-title">by Jasper Yu</h4>
+                <h4 class = "card-subtitle"><a href="https://github.com/seadog007/Light-Adv">Github</a></h4>
+            </div>
+          </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-xs-3">
+          <div class = "card">
+          <div class="avatar img-circle">
+            <a href="http://s.codepen.io/LeungEnterprises/debug/MKjQMe">
+            <img class="card-img-top" src="img/gallery/lightsoutleung.png">
+          </a>
+          </div>
+      </div>
+      <div class="card-block">
+          <h4 class="card-title">by Leung Enterprises</h4>
+          <h4 class = "card-subtitle"><a href="http://s.codepen.io/LeungEnterprises/debug/MKjQMe">Github</a></h4>
+      </div>
+    </div>
+
+    <div class = "col-xs-3">
+      <div class = "card">
+      <div class="avatar img-circle">
+        <a href="http://raheel102.github.io/lightbulb.html">
+        <img class="card-img-top" src="img/gallery/lightsoutraheel.png">
+      </a>
+      </div>
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">by Raheel Sagir</h4>
+      <h4 class = "card-subtitle"><a href="https://github.com/fossasia/fossasia-gci15/tree/master/%5BLights_out%5D_%5BRaheel_Saghir%5D">Github</a></h4>
+    </div>
+    </div>
+
+    </div>
 
       <a class="anchor" name="social_media"></a>
       <div class="social_media">
