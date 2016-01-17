@@ -601,6 +601,18 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
+
+.lightsout-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  background-color:#33cc33 ;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+
 img.Emoji{
   width: 20px;
 }
@@ -1031,6 +1043,7 @@ li:hover ul {
     display: block;
     padding: 10px 15px;
     color: #706F6F;
+    font-size: 15px;
 }
 #projlist li a:hover{
     background-color: #EEEEEE;
@@ -1087,21 +1100,17 @@ li:hover ul {
     color: white;
     text-align: center;
 }
-.lights_out .avatar img{
+.lightsout-wrapper .avatar img{
     border-radius: 0;
 }
-.lights_out .container{
+.lightsout-wrapper .container{
     width: 100%;
 }
-.lights_out .container .card-block a:hover{
+.lightsout-wrapper  .container .card-block a:hover{
     text-decoration: none;
 }
-.lights_out{
-    background-color: #cccc01;
-    overflow: hidden;
-    border-radius: 5px;
-}
-.lights_out h4{
+
+.lightsout-wrapper h4{
     color: white;
     text-align: center;
 }
