@@ -1105,3 +1105,33 @@ li:hover ul {
     color: white;
     text-align: center;
 }
+.tweetsection{/*styling for social media section*/
+ padding: 4%;
+  border-radius: 5px;
+  background-color: rebeccapurple;
+  margin:4px;
+  margin-top: 50px;
+}
+.videosection{ /*styling for social media section*/
+   padding: 4%;
+  border-radius: 5px;
+  background-color:#3B94D9;
+   margin:4px;
+   margin-top: 50px;
+}
+.facebook1{ /*styling for social media section*/
+  background-color: #4A913C;
+  padding: 4%;
+  border-radius: 5px;
+  margin:4px;
+  margin-top: 50px;
+
+}
+.gplus{/*styling for social media section*/
+ background-color:#C7254E;
+  padding: 4%;
+  border-radius: 5px;
+  margin:4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
