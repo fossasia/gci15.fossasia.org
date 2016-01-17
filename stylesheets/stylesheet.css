@@ -751,7 +751,46 @@ background-size: cover;
     align-items: center;
     align-content: center;
 }
-
+.form-group
+{
+    margin-left: 32%;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+}
+h2
+{
+    color: #fff;
+    font-family:  'Open Sans', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    text-align: center;
+}
+.newsletter
+{
+    padding: 2%;
+    background-color:#404040;
+    font-family: 'Open Sans', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; 
+}
+input
+{
+    text-align: center;
+}
+.subscribe-button
+{
+    margin-left: 46%;
+}
+@media screen and (max-width:900px)
+{
+    .form-group
+    {
+        width: 70%;
+        margin-left: 14%;
+    }
+    .subscribe-button
+    {
+        margin-left: 30%;
+    }
+    
+}
 
 @media screen and (max-width:48em) {
     div.pinched {
