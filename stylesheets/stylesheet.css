@@ -1031,6 +1031,7 @@ li:hover ul {
     display: block;
     padding: 10px 15px;
     color: #706F6F;
+    font-size: 15px;
 }
 #projlist li a:hover{
     background-color: #EEEEEE;
