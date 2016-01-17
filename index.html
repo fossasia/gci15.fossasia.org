@@ -492,8 +492,6 @@
             </circle>
            </g>
         </svg>
-
-
         <table class="table table-striped">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
@@ -950,11 +948,7 @@
   <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
   <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
   <script type="text/javascript">
-  new Photostack(document.getElementById('photostack-1'));
-  new Photostack(document.getElementById('photostack-2'));
-
   angular.module('Twitter', ['ngResource']);
-
   function TwitterCtrl($scope, $resource) {
       $scope.twitter = $resource('http://loklak.org/api/:action',
           {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
@@ -968,6 +962,11 @@
           //
       };
   }
+  </script>
+  <script type="text/javascript">
+  new Photostack(document.getElementById('photostack-1'));
+  new Photostack(document.getElementById('photostack-2'));
+
   </script>
 </body>
 </html>
