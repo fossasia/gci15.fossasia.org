@@ -492,8 +492,6 @@
             </circle>
            </g>
         </svg>
-
-
         <table class="table table-striped">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
@@ -694,7 +692,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
+         
 
               <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
                  <div class="card">
@@ -704,13 +702,21 @@
                       </div>
                     </a>
                  </div>
+               		<div class="card-block">
+                    <a href="http://jammurz.github.io/GetCoords/">
+                      <h4 class="card-title">FOSS Quiz</h4>
+                      <h4 class="card-subtitle">Zakmon</h4>
+                    </a>
+                  </div>
+                </div>
+             
                
                 </div>
             </section>
           </div>
       </div>
       <a class="anchor" name="lights_out"></a>
-      <div class="lights_out">
+      <div class="lightsout-wrapper">
               <h1 class="section-h1"><span class="white-border">Lights Out</span></h1>
               <div class="container">
                 <section>
@@ -830,9 +836,7 @@
                 <h4 class = "card-subtitle"><a href="https://github.com/seadog007/Light-Adv">Github</a></h4>
             </div>
           </div>
-      </div>
 
-      <div class = "row">
         <div class = "col-xs-3">
           <div class = "card">
           <div class="avatar img-circle">
@@ -860,11 +864,12 @@
       <h4 class = "card-subtitle"><a href="https://github.com/fossasia/fossasia-gci15/tree/master/%5BLights_out%5D_%5BRaheel_Saghir%5D">Github</a></h4>
     </div>
     </div>
-
+    </div>
+    </section>
+    </div>
     </div>
 
       <a class="anchor" name="social_media"></a>
-      <div class="social_media">
         <br>
         <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
         <div class="row">
@@ -950,11 +955,7 @@
   <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
   <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
   <script type="text/javascript">
-  new Photostack(document.getElementById('photostack-1'));
-  new Photostack(document.getElementById('photostack-2'));
-
   angular.module('Twitter', ['ngResource']);
-
   function TwitterCtrl($scope, $resource) {
       $scope.twitter = $resource('http://loklak.org/api/:action',
           {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
@@ -968,6 +969,11 @@
           //
       };
   }
+  </script>
+  <script type="text/javascript">
+  new Photostack(document.getElementById('photostack-1'));
+  new Photostack(document.getElementById('photostack-2'));
+
   </script>
 </body>
 </html>
