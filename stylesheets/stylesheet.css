@@ -97,7 +97,7 @@ a.anchor[name='social_media'] {
 nav > .container {
   padding-right: 0;
   margin-right: 0;
-  width: 100vw;
+  width: 95vw;
 }
 .codein-bkg img {
   height: 67px;
@@ -601,18 +601,6 @@ footer p {
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
-
-.lightsout-wrapper {
-  margin: auto;
-  margin-top: 50px;
-  padding-bottom: 10px;
-  background-color:#33cc33 ;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-}
-
 img.Emoji{
   width: 20px;
 }
@@ -1025,7 +1013,7 @@ li#studproj:hover #projlist{
 li:hover ul {
   position: absolute;
   display: inline-block; z-index: 9999999; right:0px;
-  display: block;
+  display: block; 
 }
 #projlist{
     display: none;
@@ -1043,7 +1031,6 @@ li:hover ul {
     display: block;
     padding: 10px 15px;
     color: #706F6F;
-    font-size: 15px;
 }
 #projlist li a:hover{
     background-color: #EEEEEE;
@@ -1097,20 +1084,6 @@ li:hover ul {
     border-radius: 5px;
 }
 .student_geolocation h4{
-    color: white;
-    text-align: center;
-}
-.lightsout-wrapper .avatar img{
-    border-radius: 0;
-}
-.lightsout-wrapper .container{
-    width: 100%;
-}
-.lightsout-wrapper  .container .card-block a:hover{
-    text-decoration: none;
-}
-
-.lightsout-wrapper h4{
     color: white;
     text-align: center;
 }
