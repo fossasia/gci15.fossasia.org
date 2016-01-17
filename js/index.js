@@ -181,7 +181,7 @@ $(document).ready(function() {
   $(document).scroll(function(){
     var st = $(this).scrollTop();
     scrollingUp = st < lastScrollTop;
-      
+
     checkAnimation();
     if (!images.length < 1) {
       checkImages();
@@ -197,10 +197,10 @@ $(document).ready(function() {
   $("#GPlusPage").html('<div class="g-page" data-layout="' + (isMobile ? "landscape" : "portrait") + '" data-width="' + (isMobile ? 150 : 450) + '" data-href="https://plus.google.com/+FossasiaOrg"></div>');
   //End Dynamic Social Widgets
 
-  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors", function (json) {
+  $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors?per_page=100", function (json) {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
-      output = output + '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">\n';
+      output = output + '<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">\n';
       output = output + '<div class="card">\n';
       output = output + '<a href="https://github.com/' + json[i].login + '">';
       output = output + '<div class="avatar img-circle">\n';
@@ -216,39 +216,39 @@ $(document).ready(function() {
     $('.contributers').append(output);
     images = $.makeArray($('.card-img-top[src=""]'));
   });
-  
+
 //Peers detail fetcher
   var loklak_request = $.ajax({
     url: "http://www.loklak.org/api/peers.json",
     method: "GET",
     dataType: "jsonp"
   });
-  
-  
+
+
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
     var table = $('#loklak_table');
-    var count = json_result.count; 
+    var count = json_result.count;
     var counter = (count/2) ;
     var ocount = Math.ceil(count/2)-1;
-    if (count%2 != 0 ) {    
+    if (count%2 != 0 ) {
     for(i = 0; i < ocount; i++) {//for odd numbers
-   table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ 
+   table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+
     peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td></tr>");
     }
    table.append("<tr><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td><td id='endrow'style='text-align:right' > Available Peers: &nbsp;</td><td id='endrow'>"+ count  +"</td></tr>");
 }
-   
+
    else{//for even numbers
      for(i = 0; i < counter; i++) {
-      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours </td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours </td></tr>");
+      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
     }
 
    table.append("<tr ><td id='endrow'rowspan= '1' colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
    }
 
-  });  
-  
+  });
+
   var dateFormatter = function (unix_timestamp) {
     //convert to miliseconds
     var date = new Date(unix_timestamp);
@@ -260,7 +260,7 @@ $(document).ready(function() {
 
     // Will display time in 10:30:23 format
     return hours;
-    
+
   };
 //Retrieve tweets from loklak using AJAX
   var tweetsTemplate = function (tweet, tweetURL, username, name, profilePicURL) {
@@ -275,17 +275,18 @@ $(document).ready(function() {
                       </div> \
                     </div> ');
   };
-  
+
   var fetchLoklakTweets = $.ajax({
     url: "http://loklak.org/api/search.json?q=%40fossasia&count=20", //get @fossasia tweets
     method: "GET",
     dataType: "jsonp"
   });
-  
+
   fetchLoklakTweets.done(function(json_result) {
     var tweets = json_result.statuses;
-    
+
     for(var index in tweets) {
+
        var tweet1 = tweets[index].text.replace(/\\/g, ''); 
         function Checkurl(text) {
           var url1 = /(^|&lt;|\s)(www\..+?\..+?)(\s|&gt;|$)/g,
@@ -329,19 +330,19 @@ $(function() {
 });
 
 $(function(){
-  $('div.left-arrow').click(function(){
-    if ($('span.current').prev().length !== 0){
-      $('span.current').prev().click();
+  $('#left-arrow1').click(function(){
+    if ($('#photostack-1 nav span.current').prev().length !== 0){
+      $('#photostack-1 nav span.current').prev().click();
     } else{
-      $('span.current').parent().children().last().click();
+      $('#photostack-1 nav span.current').parent().children().last().click();
     }
   });
 
-  $('div.right-arrow').click(function(){
-    if ($('span.current').next().length !== 0){
-      $('span.current').next().click();
+  $('#right-arrow1').click(function(){
+    if ($('#photostack-1 nav span.current').next().length !== 0){
+      $('#photostack-1 nav span.current').next().click();
     } else{
-      $('span.current').parent().children().first().click();
+      $('#photostack-1 nav span.current').parent().children().first().click();
     }
   });
 });

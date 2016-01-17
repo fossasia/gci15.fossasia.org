@@ -1,11 +1,4 @@
-﻿- name: Saatvik Arya
-  github: aryasaatvik
-  image: saatvikarya.jpg
-  blog:
-  twitter: SaatvikArya
-  facebook:
-  stackexchange:
-  bio: "15 year old Computer Science Enthusiast"
+﻿#New members please add your credentials to the bottom of the file.
 
 - name: Max B.
   github: MaxBorsch
@@ -395,7 +388,16 @@
   image: sevazhidkov.jpg
   twitter: sevazhidkov
   bio: School student from Russia, Python developer
-  
+
+- name: Saatvik Arya
+  github: aryasaatvik
+  image: saatvikarya.jpg
+  blog:
+  twitter: SaatvikArya
+  facebook:
+  stackexchange:
+  bio: "15 year old Computer Science Enthusiast"
+
 - name: Nastya Kostiv
   github: nolik2000
   image: NKostiv.jpg
@@ -409,3 +411,36 @@
   facebook: vladgeorge.prundus
   twitter: prundus
   bio: 16 years, Romania. Future CEO.
+
+- name: Chin Yong Chen
+  github: EthanoicAcetate
+  image: YongC.jpg
+  twitter: chinyc185
+  bio: CHEM <3 MUSIC <3 MATH
+
+- name: Sanjay Tharagesh
+  github: sanjaytharagesh31
+  image: sanjay.jpg
+  twitter: sanjay tharagesh
+  facebook: Sanjay Tharagesh
+  bio: A vigorous coder, who thinks coding is life.
+
+- name: Aman Surana
+  github: AmanSurana
+  image: amans.jpg
+  twitter: AmanSurana
+  facebook: amansurana
+  bio: 16 years old, i believe i can fly!
+
+- name: Abishek V Ashok
+  github: Abhi2424shek
+  image: abishek.jpg
+  twitter: abhi2424shek
+  facebook: abishekvashok
+  bio: 14 year old Indian, who loves coding and open source and thinks everyone is God
+
+- name: Rahul Narayanan
+  github: zakomon
+  image: rahul.jpg
+  twitter: 448bb8
+  bio: Programmer

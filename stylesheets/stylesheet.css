@@ -33,6 +33,46 @@ body {
 }
 
 /* mborsch.css*/
+.navbar li>a:hover, .navbar li>a:focus, .navbar li>a:active {
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.navbar li>a[href='#banner']:hover {
+  border-color: #FF6B6B;
+}
+.navbar li>a[href='#mentors'] {
+  border-color: #6E73EE;
+}
+.navbar li>a[href='#students'] {
+  border-color: #FF7043;
+}
+.navbar li>a[href='#gallery'] {
+  border-color: #41659E;
+}
+.navbar li>a[href='#contributors'] {
+  border-color: #27AE60;
+}
+.navbar li>a[href='#loklak'] {
+  border-color: #C7254E;
+}
+.navbar li>a[href='#loklak_search'] {
+  border-color: #C7254E;
+}
+.navbar li>a[href='#social_media'] {
+  border-color: #424242;
+}
+
+@media (max-width: 1296px) {
+  .codein-bkg {
+    display: none;
+  }
+}
 a.anchor {
     display: block;
     visibility: hidden;
@@ -281,11 +321,23 @@ a:hover {
   font-size: 1.5em;
 }
 .social a {
-  color: black;
+  color: white;
   text-decoration: none;
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.social a:hover{
+  -webkit-transform: rotate(-358deg);
+     -moz-transform: rotate(-358deg);
+       -o-transform: rotate(-358deg);
+      -ms-transform: rotate(-358deg);
+          transform: rotate(-358deg);
 }
 .social i {
   cursor: pointer;
@@ -300,7 +352,7 @@ a:hover {
   color: #77DDF6;
 }
 .social i#github:hover {
-  color:  #F0FFFF;
+  color:  black;
 }
 .social i#github:visited {
   color: black;
@@ -391,7 +443,19 @@ a:hover {
   color: #FF7043;
 }
 
-
+.student_games{
+  background-color: #C7CA33 !important;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.student_games h1{
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+.student_games img{
+  border-radius: 50% !important;
+}
 .arrow-down {
   position: absolute;
   width: 0;
@@ -409,7 +473,16 @@ a:hover {
 }
 
 }
-
+div.links li{
+  float: none;
+  width: 180px;
+}
+div.links li a{
+  padding-left: 5px;
+}
+div.links li a:hover{
+  background-color:  #424242;
+}
 
 .avatar {
   position: relative;
@@ -937,6 +1010,11 @@ div.nav-arrows{
 li#studproj:hover #projlist{
     display: block !important;
 }
+li:hover ul {
+  position: absolute;
+  display: inline-block; z-index: 9999999; right:0px;
+  display: block;
+}
 #projlist{
     display: none;
     position: absolute;
@@ -947,7 +1025,7 @@ li#studproj:hover #projlist{
     border-top: none;
     margin-top: 0px;
     box-shadow: 0px 3px 5px #989898;
-    width: 195px;
+    width: 200px;
 }
 #projlist li a{
     display: block;
@@ -990,6 +1068,42 @@ li#studproj:hover #projlist{
 }
 .right-arrow:hover{
   right: 30px;
+}
+.student_geolocation .avatar img{
+    border-radius: 0;
+}
+.student_geolocation .container{
+    width: 100%;
+}
+.student_geolocation .container .card-block a:hover{
+    text-decoration: none;
+}
+.student_geolocation{
+    background-color: #4682A2;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.student_geolocation h4{
+    color: white;
+    text-align: center;
+}
+.lights_out .avatar img{
+    border-radius: 0;
+}
+.lights_out .container{
+    width: 100%;
+}
+.lights_out .container .card-block a:hover{
+    text-decoration: none;
+}
+.lights_out{
+    background-color: #cccc01;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.lights_out h4{
+    color: white;
+    text-align: center;
 }
 .tweetsection{/*styling for social media section*/
  padding: 4%;
