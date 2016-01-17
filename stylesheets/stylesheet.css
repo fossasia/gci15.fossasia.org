@@ -853,6 +853,7 @@ footer ul {
     margin-bottom: 25px;
     line-height: 65px;
     font-size: 25px !important;
+	 
   }
 }
 
@@ -869,6 +870,8 @@ th, td {
   margin: 0 auto 10px;
   padding: 10px;
   background-color: white;
+  border-radius:70px;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 
 #loklak-twitter h3 {
@@ -892,7 +895,7 @@ th, td {
 }
 
 #tweet-container {
-  height: 475px;
+  height: 455px;
   overflow-y: auto;
   overflow-x: hidden;
   overflow: auto;
