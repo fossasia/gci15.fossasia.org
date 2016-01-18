@@ -1114,3 +1114,11 @@ li:hover ul {
     color: white;
     text-align: center;
 }
+
+#loklak_table {
+  width: 90%;
+}
+
+.loklak_search-wrapper h1, .loklak-wrapper h1 {
+  padding-top: 10px;
+}
