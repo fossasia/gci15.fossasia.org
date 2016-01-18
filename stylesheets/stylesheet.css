@@ -1114,3 +1114,35 @@ li:hover ul {
     color: white;
     text-align: center;
 }
+.bigby {  
+  color:#F00;  
+  border:1px solid;  
+  border-color:#e5e6e9 #dfe0e4 #d0d1d5;  
+  background-image:url(../img/footer/newletter_bg.png);  
+  background-size:100% 100%;  
+  background-color:#ffe;  
+}  
+.bigby > h3 {  
+  color:#F00;  
+}  
+.nws_box {  
+  outline:none;  
+  border:1px solid;  
+  border-color:#e5e6e9 #dfe0e4 #d0d1d5;  
+  width:350px;  
+  height:35px;  
+  color:#000;  
+  padding:4px;  
+  margin-bottom:5px;  
+}  
+.nws_sub {  
+  outline:none;  
+  border:1px solid;  
+  border-color:#e5e6e9 #dfe0e4 #d0d1d5;  
+  width:200px;  
+  height:40px;  
+  color:#FFF;  
+  background:#0bf;  
+  text-align:center;  
+  text-align:30px;  
+} 
