@@ -16,8 +16,10 @@
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/loklak.css">
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'>
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700'>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 </head>
 <body>
   <!--Navbar-->
@@ -41,7 +43,6 @@
           <li><a href="#banner">Welcome</a></li>
           <li><a href="#mentors">Mentors</a></li>
           <li><a href="#students">Students</a></li>
-          <li><a href="#contributors">Contributors</a></li>
           <li id="studproj"><a href="#">Student Projects &#x25BC;</a>
           <ul id="projlist">
             <li><a href="#gallery">Gallery</a></li>
@@ -51,8 +52,10 @@
             <li><a href="#student_geolocation">Geolocation Projects</a></li>
             <li><a href="#social_media">Social Media</a></li>
             <li><a href ="#lights_out">Lights out</a></li>
+            <li><a href ="#privly-stickers">Privly Stickers</a></li>
           </ul>
         </li>
+        <li><a href="#contributors">Contributors</a></li>
         <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -127,7 +130,7 @@
         <div class="members mentors">
           <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
           {% for mentor in site.data.mentors %}
-          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
             <div class="grid">
               <figure class="effect-duke">
                 {% if mentor.github %}
@@ -200,7 +203,7 @@
         <div class="members students">
           <h1 class="section-h1"><span class="white-border">Students</span></h1>
           {% for student in site.data.students %}
-          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
             <div class="grid">
               <figure class="effect-duke">
                 {% if student.github %}
@@ -459,15 +462,6 @@
           </div>
         </section>
       </div>
-      <a class="anchor" name="contributors" id="contributors"></a>
-      <div class="row contributors-wrapper">
-        <div class="members contributers">
-          <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
-        </div>
-      </div>
-      <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center" >
-        <p id="changingword">Thank you for contributing!</p>
-      </div>
       <a class="anchor" name="loklak" id="loklak"></a>
       <div class=" loklak-wrapper" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Peers</span></h1>
@@ -565,7 +559,7 @@
                   <div class="card">
                     <a href="https://github.com/oanarosca/hangman/tree/gh-pages">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hangman1.png" data="img/gallery/hangman1.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="img/gallery/hangman1.png" data="img/gallery/hangman1.png" alt="oanarosca">
                       </div>
                     </a>
                   </div>
@@ -581,7 +575,7 @@
                   <div class="card">
                     <a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/Treasurehunt.png" data="img/gallery/Treasurehunt.png" alt="yasoob-khalid">
+                        <img class="card-img-top" src="img/gallery/Treasurehunt.png" data="img/gallery/Treasurehunt.png" alt="Juanvulcano">
                       </div>
                     </a>
                   </div>
@@ -597,7 +591,7 @@
                   <div class="card">
                     <a href="https://yasoob.me/checkers">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/checkers1.png" data="img/gallery/checkers1.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="img/gallery/checkers1.png" data="img/gallery/checkers1.png" alt="yasoob-khalid">
                       </div>
                     </a>
                   </div>
@@ -699,11 +693,11 @@
                     </a>
                   </div>
                 </div>
-         
 
-              
-             
-               
+
+
+
+
                 </div>
             </section>
           </div>
@@ -861,7 +855,44 @@
     </section>
     </div>
     </div>
+ 	 <a class="anchor" name="privly-stickers"></a>
+      <div class="privly-wrapper">
+      <h1 class="section-h1"><span class="white-border">Privly-Stickers</span></h1>
 
+
+    <section id="portfolio" class="clear bounce-in">
+        <div class="containerContent">
+        <div class="set_size_section1">
+            <div class="folio-list">
+            <!--Add your Privly stickers here-->
+                    <div class="thumbnail folio-thumb">
+                        <figure class="gallery-item">
+                            <img alt="logo1" src="https://raw.githubusercontent.com/fossasia/gci15.fossasia.org/gh-pages/img/privly/samplesticker.png" >
+                            <figcaption class="img-title">
+                                <h4>View on Github <a href="https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/img/privly/samplesticker.png"><i id="github" class="icon-github"></i></a></h4>
+                            </figcaption>
+                        </figure>
+                        <h3>Made by Privly</h3>
+                    </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+  	 </div> 
+
+      <a class="anchor" name="contributors" id="contributors"></a>
+      <div class="row contributors-wrapper">
+        <div class="members contributers">
+          <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
+        </div>
+      </div>
+      <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center" >
+        <p id="changingword">Thank you for contributing!</p>
+      </div>
       <a class="anchor" name="social_media"></a>
         <br>
         <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
@@ -933,6 +964,19 @@
             <div class="flickr icon"><a href="https://www.flickr.com/photos/fossasia" target="_blank"></a></div>
             <div class="linkedin icon"><a href="https://www.linkedin.com/groups/3762811/profile" target="_blank"></a></div>
             <div class="mail icon"><a href="mailto:contact@fossasia.com" target="_blank"></a></div>
+          </div>
+        </div>
+        <div class="col-centered">
+          <div class="col-md-6 bigby" id="jig">  
+            <h3 onClick="location.href='#name'">Why not signup for our newsletter!</h3>  
+            <form action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">  
+              <label for="name">Enter your name:</label><br/>  
+              <input type="text" name="name" id="name" required class="nws_box"/><br/>  
+              <label for="email">Email:</label><br/>  
+              <input type="email" name="email" id="email" required class="nws_box"/><br/>  
+              <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>  
+              <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/><br/><br/>  
+            </form>            	          
           </div>
         </div>
       </div>

@@ -44,6 +44,16 @@
     author: Jason Wong
 
   -
+    name: Lights Out
+    image: quizantonio.png
+    author: Antonio Molner Domenech
+
+  -
+    name: FOSS Quiz
+    image: lightsoutantoniomdk.png
+    author: Antonio Molner Domenech
+
+  -
     name: Hangman
     image: hangman1.png
     author: Oana Rosca
