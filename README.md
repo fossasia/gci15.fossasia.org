@@ -31,6 +31,34 @@ or own fork version
 
     http://0.0.0.0:4000/ or http://localhost:4000/
 
+## About modyfying code
+
+For the following files please modyfy the file with the same name but with [dev] prefix and then copy the whole code to the respective the online compressors compress the code and put it in the file [the file withou the [dev] prefix]{This is done to improve page load time and speed}
+     
+    index.html
+    stylesheets/components.css
+    stylesheets/hover.css
+    stylesheets/loklak.css
+    stylesheets/scroll.css
+    stylesheets/stylesheet.css
+    js/classie.js
+    js/index.js
+    js/photostack.js
+    js/scroll.js
+
+Compressors:
+CSS        {.css}  files - https://cssminifier.com/
+HTML       {.html} files - http://www.willpeavy.com/minifier/
+JAVASCRIPT {.js}   files - https://javascript-minifier.com/
+
+NB: You may also use any compressor of your choice
+
+## About Adding images
+
+Please add only compressed images to the images folder and never mention online image links
+
+Here's the link to PNGgaunlet a free software to optimize most image files : http://pnggauntlet.com/
+
 ## Useful Git Tricks
   see [GIT.md](https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/GIT.md) 
 
