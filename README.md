@@ -37,3 +37,7 @@ or own fork version
 ## Demo
 
 You can see the current website [over here](http://gci15.fossasia.org).
+
+##Special Note
+
+Use the development version(the files present in the development folder) to develop the files present in that folder(index,css files and js files)[they are compressed and put in the site root to improve page speeds] If you modify them please compress the respective file and then override the file present in the site root and then put the compressed file in the development folder.
