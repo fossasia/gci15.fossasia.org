@@ -1,0 +1,123 @@
+	@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
+	th
+{
+	color:#00e600;
+	;
+	background:#1b1e24;
+	border-right:1px solid #343a45;
+	font-size:1rem;
+	font-family:'Ropa Sans',sans-serif;
+	text-align:center;
+	text-shadow:0 1px 1px rgba(0,0,0,0.1)
+}
+	#endrow
+{
+	color:#00e600;
+	;
+	background:black;
+	border-right:1px solid #343a45;
+	font-size:1rem;
+	text-align:center;
+	font-family:'Ropa Sans',sans-serif;
+	vertical-align:middle
+}
+	th:first-child
+{
+	border-top-left-radius:3px;
+	border-left:none;
+	border-right:none
+}
+	th:last-child
+{
+	border-top-right-radius:3px;
+	border-right:none;
+	border-left:none
+}
+	tr
+{
+	border-top:1px solid #C1C3D1;
+	border-bottom-:1px solid #C1C3D1;
+	color:#666B85;
+	font-size:1rem;
+	text-shadow:0 1px 1px rgba(256,256,256,0.1)
+}
+	@media (max-width:408px)
+{
+	td
+{
+	font-size:.7rem!important
+}
+	th
+{
+	font-size:.8rem!important
+}
+
+}
+	tr:hover td
+{
+	background:black;
+	color:#00e600;
+	border-top:1px solid #22262e;
+	border-bottom:1px solid #22262e
+}
+	tr:first-child
+{
+	border-top:none
+}
+	tr:last-child
+{
+	border-bottom:none
+}
+	tr:nth-child(odd) td
+{
+	background:#EBEBEB
+}
+	tr:nth-child(odd):hover td
+{
+	background:black;
+	color:white
+}
+	tr:last-child td:first-child
+{
+	border-bottom-left-radius:3px
+}
+	tr:last-child td:last-child
+{
+	border-bottom-right-radius:3px
+}
+	td
+{
+	background:#FFF;
+	text-align:left;
+	font-size:1rem;
+	text-shadow:-1px -1px 1px rgba(0,0,0,0.1);
+	border-right:1px solid #C1C3D1
+}
+	td:last-child
+{
+	border-right:0
+}
+	th.text-left
+{
+	text-align:left
+}
+	th.text-center
+{
+	text-align:center
+}
+	th.text-right
+{
+	text-align:right
+}
+	td.text-left
+{
+	text-align:left
+}
+	td.text-center
+{
+	text-align:center
+}
+	td.text-right
+{
+	text-align:right
+}
