@@ -1,4 +1,4 @@
-  -
+﻿  -
     name: OpenSource Collage
     image: OpenSourceCollage.jpg
     author: Max B.
@@ -157,6 +157,11 @@
     name: Get Coordinates
     image: jamgetcoords.png
     author: John Murzaku
+
+  -
+    name: Loklak 3D Crazy cow
+    image: loklakcowstl1.PNG
+    author: Sumedh Supe
 
   -
     name: Loklak Poster
