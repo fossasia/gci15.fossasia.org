@@ -48,6 +48,7 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#loklak">Loklak Peers</a></li>
             <li><a href="#loklak_search">Loklak Search</a></li>
+            <li><a href="#loklak_heatmap">Loklak Heatmap</a></li>
             <li><a href="#student_games">Student Games</a></li>
             <li><a href="#student_geolocation">Geolocation Projects</a></li>
             <li><a href="#social_media">Social Media</a></li>
@@ -496,7 +497,6 @@
             <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
             <button type="submit" ng-click="doSearch()" >Search</button>
         </form>
-
         <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
           <g>
             <animateTransform attributeName="transform" type="rotate" values="0 33 33;270 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
@@ -514,6 +514,13 @@
     </table>
       </div>
 
+      <a class="anchor" name="loklak-heatmap" id="loklak_heatmap"></a>
+      <div class="loklak_heatmap-wrapper loklak-wrapper" align="center">
+        <h1 class="section-h1"><span class="white-border">Loklak Tweet Heatmap</span></h1>
+        <div id="heatmap">
+          <object type="text/html" data="https://gci-polbaladas.c9users.io/embedable" width="90%" height="600px"></object>
+        </div>
+      </div>
 
       <a class="anchor" name="student_games"></a>
       <div class="student_geolocation student_games">
