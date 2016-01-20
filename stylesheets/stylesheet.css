@@ -388,7 +388,6 @@ a:hover {
   white-space: nowrap;
   margin-left: -10px;
   margin-right: -10px;
-  font-size: 17px;
 }
 .card a:hover, a:focus {
   text-decoration: none;
@@ -603,7 +602,7 @@ footer p {
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
 }
 
-.lightsout-wrapper {
+.lightsout-wrapper,.blogs_wrapper {
   margin: auto;
   margin-top: 50px;
   padding-bottom: 10px;
@@ -612,6 +611,28 @@ footer p {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+}
+.blogs_wrapper {
+	background-color:#3498db;
+	border-radius:0px;
+	min-height:200px;
+}
+.dimer,.dime {
+	text-align:center;
+	list-style:none;
+	font-size:36px;
+	color:#0bf;
+	padding-top:70px;
+}
+.dimer {
+	cursor:pointer;
+}
+.dime {
+	display:none;
+}
+.dimer:hover {
+	color:#000;
+	transition:1s;
 }
 .privly-wrapper {
   margin: auto;
