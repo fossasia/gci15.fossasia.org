@@ -1,0 +1,191 @@
+/* Common style */
+.grideeeeee {
+	margin: 40px auto 120px;
+	max-width: 1000px;
+	width: 90%;
+}
+
+.grideee a {
+	float: left;
+	width: 300px;
+	height: 300px;
+	color: #333;
+	margin-bottom:15px;
+	font-size:3px !important;
+	margin-right:15px;
+}
+
+.grideee figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #333;
+}
+
+.grideee figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.grideee figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.grideee figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grideee figcaption p {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grideee figcaption h2,
+.grideee figcaption p {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.grideee figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grideee figcaption,
+.grideee figcaption h2,
+.grideee figcaption p,
+.grideee figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grideee svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.grideee svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.grideee a:hover figure img {
+	opacity: 1;
+}
+
+.grideee a:hover figcaption h2,
+.grideee a:hover figcaption p {
+	-webkit-transform: translateY(10);
+	transform: translateY(10);
+}
+
+.grideee a:hover figcaption p {
+	opacity: 0;
+}
+
+.container .grideee figure button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #0bf;
+	background: #fff;
+	color: #0bf;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.container .grideee a:hover figure button{
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+	.grideee a {
+		width: 33.333%;
+	}
+
+	.grideee a:nth-child(odd) {
+		margin: 0;
+	}
+
+	.grideee a:nth-child(3n-1) {
+		margin: 30px 0 -30px 0;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.grideee {
+		max-width: 500px;
+	}
+
+	.grideee a {
+		width: 50%;
+	}
+
+	.grideee a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.grideee a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.grideee figcaption h2 {
+		margin-bottom: 0px;
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	.grideee figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.grideee {
+		max-width: 250px;
+	}
+
+	.grideee a {
+		width: 100%;
+	}
+
+	.grideee a:nth-child(even) {
+		margin: 0;
+	}
+}

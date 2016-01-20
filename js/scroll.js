@@ -7,7 +7,7 @@ Add a comma after each great you add except the last one*/
       'Bedankt voor het bijdragen!',
       'योगदान के लिए धन्यवाद!',
       'Благодаря за приноса Ви!',
-      'Ви благодараме за придонесот!'
+      'Ви благодараме за придонесот!',
       'Go raibh maith agat as cur',
       'දායකවූවාට ස්තුතියි!',
       '感謝您的貢獻！',
