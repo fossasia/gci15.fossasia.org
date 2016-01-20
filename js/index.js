@@ -343,4 +343,16 @@ $('.gallery-item').hover(function(){
                 marginLeft: '0px'
             }, 100);
         });
-
+function loadblog(){
+	$.ajax({
+	  type : "GET",
+      url : "loadblog.html",
+	  beforeSend: function(){
+        document.getElementById("dime").style.display="inherit";
+		document.getElementById("dimer").style.display="none";
+      },
+      success : function(data){
+        $(".blogs_wrapper").html(data);
+      }
+    });
+}
