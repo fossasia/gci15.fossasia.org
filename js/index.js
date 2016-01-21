@@ -334,12 +334,12 @@ $(function(){
 
 $('.gallery-item').hover(function(){
             $(this).find('h5, p').stop().animate({
-                opacity: '1',              
+                opacity: '1',
                 marginLeft: '230px'
             }, 300);
         }, function(){
             $(this).find('h5, p').stop().animate({
-                opacity: '0',              
+                opacity: '0',
                 marginLeft: '0px'
             }, 100);
         });
@@ -355,4 +355,16 @@ function loadblog(){
         $(".blogs_wrapper").html(data);
       }
     });
+}
+
+function changebclight(){
+  var myElement = document.querySelector("#lightsout");
+  if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
+    document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
+    myElement.style.backgroundColor = "#515100";
+  }
+  else{
+    myElement.style.backgroundColor = "#cccc00";
+    document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
+  }
 }
