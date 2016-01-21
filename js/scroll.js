@@ -1,4 +1,4 @@
-/*Add your Thank-You great down below
+﻿/*Add your Thank-You great down below
 Add a comma after each great you add except the last one*/
 (function() {
   var words = [
@@ -12,6 +12,7 @@ Add a comma after each great you add except the last one*/
       'දායකවූවාට ස්තුතියි!',
       '感謝您的貢獻！',
       '!شكرا لكم للمساهمة',
+      'Kea le leboha ka tlatsetsa!'
       'תודה על התרומה שלך',
       'Cảm ơn bạn đã đóng góp!',
       'Nous vous remercions de votre contribution!',
