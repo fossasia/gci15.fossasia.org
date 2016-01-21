@@ -200,14 +200,14 @@ $(document).ready(function() {
   $.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors?per_page=100", function (json) {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
-      output = output + '<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">\n';
+      output = output + '<div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 ">\n';
       output = output + '<div class="card">\n';
       output = output + '<a href="https://github.com/' + json[i].login + '">';
       output = output + '<div class="avatar img-circle">\n';
       output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
       output = output + '</div>';
-      output = output + '<div class="card-block">';
-      output = output + '<h4 class="card-title">' + json[i].login + '</h4>';
+      output = output + '<div class="card-block ">';
+      output = output + '<h4 class="card-title "><p class="overflow ellipsis">'+ json[i].login + '</p></h4>';
       output = output + '</a>';
       output = output + '</div>';
       output = output + '</div>';
