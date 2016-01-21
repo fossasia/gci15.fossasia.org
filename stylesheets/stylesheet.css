@@ -961,9 +961,6 @@ figure {
         z-index: 8000;
     }
 
-    h4.card-title {
-        font-size: 0.7em;
-    }
 }
 
 @media screen and (max-width:60em) and (min-width:48em) {
@@ -1340,3 +1337,15 @@ iframe{
   	position:relative;
   	top:1px;
   }
+
+.overflow {
+
+      white-space: nowrap;
+    overflow: hidden;
+    font-size: .8em;
+}
+.ellipsis { text-overflow: ellipsis; }
+.clip { text-overflow: clip; }
+.word { text-overflow: ellipsis-word; }
+.text { text-overflow: "---"; }
+.double { text-overflow: ellipsis ellipsis; text-align: center; }
