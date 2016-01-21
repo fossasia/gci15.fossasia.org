@@ -530,6 +530,37 @@ footer p {
   margin-bottom: 0;
   float: right;
 }
+
+footer input[type=text],input[type=email]{
+  width: 350px;
+  margin-bottom: 1.5%; 
+  color: black;
+  padding: 0 1%;
+}
+
+footer input[type=submit]{
+  width: 150px;
+  margin-top: 1.5%;
+  background: #3498db;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer input[type=submit]:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
 @media (max-width:768px) {
   footer {
     padding-bottom: 0;
