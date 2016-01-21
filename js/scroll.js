@@ -10,6 +10,7 @@ Add a comma after each great you add except the last one*/
       'Ви благодараме за придонесот!',
       'Go raibh maith agat as cur',
       'දායකවූවාට ස්තුතියි!',
+      'Kea le leboha ka tlatsetsa!'
       '感謝您的貢獻！',
       '!شكرا لكم للمساهمة',
       'תודה על התרומה שלך',
