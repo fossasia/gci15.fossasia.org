@@ -1291,11 +1291,9 @@ li:hover ul {
     color: white;
     text-align: center;
 }
-.lightsout-wrapper .avatar img{
-    border-radius: 0;
-}
+
 .lightsout-wrapper .container{
-    width: 100%;
+    width: 90%;
 }
 .lightsout-wrapper  .container .card-block a:hover{
     text-decoration: none;
@@ -1304,6 +1302,9 @@ li:hover ul {
 .lightsout-wrapper h4{
     color: white;
     text-align: center;
+}
+.lightsout-wrapper{
+  background-color: #cccc00;
 }
 
 #loklak_table {
@@ -1316,4 +1317,26 @@ li:hover ul {
 
 iframe{
   box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
+  }
+  #lightbutton {
+  	background-color:#44c767;
+  	-moz-border-radius:26px;
+  	-webkit-border-radius:26px;
+  	border-radius:28px;
+  	border:1px solid #18ab29;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:17px;
+  	padding:16px 31px;
+  	text-decoration:none;
+  	text-shadow:0px 1px 0px #2f6627;
+  }
+  #lightbutton:hover {
+  	background-color:#5cbf2a;
+  }
+  #lightbutton:active {
+  	position:relative;
+  	top:1px;
   }
