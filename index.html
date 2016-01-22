@@ -22,7 +22,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-<a href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: fixed; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<a href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <!--Navbar-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -984,7 +984,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 links">
+        <div class="col-md-2 col-sm-3 links">
           <h3>Other Links</h3>
           <ul>
             <li><a href="http://fossasia.org/" target="_blank">Main Site</a></li>
@@ -995,16 +995,7 @@
             <li><a href="#">Back to Top</a></li>
           </ul>
         </div>
-        <div class="col-md-6 blurb">
-          <h3>About FOSSASIA</h3>
-          <p>
-            FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
-          </p>
-          <p>
-            FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
-          </p>
-        </div>
-        <div class="col-centered col-md-2 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-12 col-sm-offset-2">
+        <div class="col-centered col-md-2 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-3 col-sm-offset-0">
           <div class="social-media-container">
             <div class="facebook icon"><a href="https://www.facebook.com/fossasia" target="_blank"></a></div>
             <div class="twitter2 icon"><a href="http://twitter.com/fossasia" target="_blank"></a></div>
@@ -1016,24 +1007,32 @@
             <div class="mail icon"><a href="mailto:contact@fossasia.com" target="_blank"></a></div>
           </div>
         </div>
-        <div class="col-centered">
-          <div class="col-md-6 bigby" id="jig">
-            <h3 onClick="location.href='#name'">Why not signup for our newsletter!</h3>
-            <form action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">
-              <label for="name">Name:</label><br/>
-              <input type="text" name="name" id="name" required class="nws_box"/><br/>
-              <label for="email">Email:</label><br/>
-              <input type="email" name="email" id="email" required class="nws_box"/><br/>
-              <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>
-              <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/><br/><br/>
-            </form>
-          </div>
+        <div class="col-md-5 col-sm-6 blurb">
+          <h3>About FOSSASIA</h3>
+          <p>
+            FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
+          </p>
+          <p id="last">
+            FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
+          </p>
         </div>
+        
       </div>
     </div>
+    <div id="newsletterDiv"><a class="close">&#10006;</a>
+      <form action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">
+        <p>Why not signup for our Newsletter?</p>
+        <label for="name">Name:</label><br/>
+        <input type="text" name="name" id="name" required class="nws_box"/><br/>
+        <label for="email">Email:</label><br/>
+        <input type="email" name="email" id="email" required class="nws_box"/><br/>
+        <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>
+        <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/>
+      </form>
+    </div>
   </footer>
-  <script src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/saSlider.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="js/scroll.js"></script>
   <script src="js/classie.js"></script>
@@ -1041,6 +1040,7 @@
   <script src="js/photostack.js"></script>
   <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
   <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
+  <script src="js/index.js"></script>
   <script type="text/javascript">
   angular.module('Twitter', ['ngResource']);
   function TwitterCtrl($scope, $resource) {

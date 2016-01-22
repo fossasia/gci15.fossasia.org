@@ -225,6 +225,26 @@ $(document).ready(function() {
   });
 
 
+  (function() {
+    var newsletterDiv = $('#newsletterDiv');
+    if (newsletterDiv.length>0) {
+      $(window).scroll(function(){
+          var distanceTop = $('#last').offset().top - $(window).height();
+          if  ($(window).scrollTop() > distanceTop){
+              newsletterDiv.animate({'bottom':'0px'},550);
+          }
+          else{
+              newsletterDiv.stop(true).animate({'bottom':'-430px'},550);
+          }
+      });
+      $('#newsletterDiv .close').on('click',function(){
+          $(this).parent().remove();
+          $('footer').animate({'padding-bottom': '50px'},550);
+      });
+    }
+  })();
+  
+
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
     var table = $('#loklak_table');
@@ -232,20 +252,18 @@ $(document).ready(function() {
     var counter = (count/2) ;
     var ocount = Math.ceil(count/2)-1;
     if (count%2 != 0 ) {
-    for(i = 0; i < ocount; i++) {//for odd numbers
-   table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+
-    peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td></tr>");
-    }
-   table.append("<tr><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td><td id='endrow'style='text-align:right' > Available Peers: &nbsp;</td><td id='endrow'>"+ count  +"</td></tr>");
-}
+      for(i = 0; i < ocount; i++) {//for odd numbers
+          table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+
+          peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td></tr>");
+      }
+      table.append("<tr><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td><td id='endrow'style='text-align:right' > Available Peers: &nbsp;</td><td id='endrow'>"+ count  +"</td></tr>");
+    } else {//for even numbers
+      for(i = 0; i < counter; i++) {
+        table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
+      }
 
-   else{//for even numbers
-     for(i = 0; i < counter; i++) {
-      table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+ peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");
+      table.append("<tr ><td id='endrow'rowspan= '1' colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
     }
-
-   table.append("<tr ><td id='endrow'rowspan= '1' colspan='4' > Available Peers: &nbsp;"+ count  +"</td></tr>");
-   }
 
   });
 
