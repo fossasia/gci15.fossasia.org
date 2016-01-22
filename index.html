@@ -984,7 +984,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 links">
+        <div class="col-md-2 col-sm-3 links">
           <h3>Other Links</h3>
           <ul>
             <li><a href="http://fossasia.org/" target="_blank">Main Site</a></li>
@@ -995,16 +995,7 @@
             <li><a href="#">Back to Top</a></li>
           </ul>
         </div>
-        <div class="col-md-6 blurb">
-          <h3>About FOSSASIA</h3>
-          <p>
-            FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
-          </p>
-          <p>
-            FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
-          </p>
-        </div>
-        <div class="col-centered col-md-2 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-12 col-sm-offset-2">
+        <div class="col-centered col-md-2 col-xs-12 col-md-offset-0 col-xs-offset-1 col-sm-3 col-sm-offset-0">
           <div class="social-media-container">
             <div class="facebook icon"><a href="https://www.facebook.com/fossasia" target="_blank"></a></div>
             <div class="twitter2 icon"><a href="http://twitter.com/fossasia" target="_blank"></a></div>
@@ -1016,20 +1007,28 @@
             <div class="mail icon"><a href="mailto:contact@fossasia.com" target="_blank"></a></div>
           </div>
         </div>
-        <div class="col-centered">
-          <div class="col-md-6 bigby" id="jig">
-            <h3 onClick="location.href='#name'">Why not signup for our newsletter!</h3>
-            <form action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">
-              <label for="name">Name:</label><br/>
-              <input type="text" name="name" id="name" required class="nws_box"/><br/>
-              <label for="email">Email:</label><br/>
-              <input type="email" name="email" id="email" required class="nws_box"/><br/>
-              <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>
-              <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/><br/><br/>
-            </form>
-          </div>
+        <div class="col-md-5 col-sm-6 blurb">
+          <h3>About FOSSASIA</h3>
+          <p>
+            FOSSASIA is an open source technology organization in Asia that aims to bring together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.
+          </p>
+          <p id="last">
+            FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
+          </p>
         </div>
+        
       </div>
+    </div>
+    <div id="newsletterDiv"><a class="close">&#10006;</a>
+      <form action="http://news.fossasia.org/subscribe" method="POST" accept-charset="utf-8">
+        <p>Why not signup for our Newsletter?</p>
+        <label for="name">Name:</label><br/>
+        <input type="text" name="name" id="name" required class="nws_box"/><br/>
+        <label for="email">Email:</label><br/>
+        <input type="email" name="email" id="email" required class="nws_box"/><br/>
+        <input type="hidden" name="list" value="A8fchTRvBw2wap1ojIfjyQ"/>
+        <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/>
+      </form>
     </div>
   </footer>
   <script src="js/index.js"></script>
