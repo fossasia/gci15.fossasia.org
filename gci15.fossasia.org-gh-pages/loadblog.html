@@ -1,0 +1,114 @@
+<!-- Please follow the format of the first anchor inside secition grideee -->
+<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="stylesheets/demo.css"/>
+<link rel="stylesheet" type="text/css" href="stylesheets/componenter.css"/>
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
+<script src="js/snap.svg-min.js"></script>
+<div class="containermmm">
+  <h1 class="section-h1"><span class="white-border">Blog Posts</span></h1>
+  <section id="grideee" class="grideee clearfix">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="https://dev4god.wordpress.com/2016/01/16/gci-2015-2016-adventure-with-fossasia/" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+	    <figure>
+		  <img src="img/blogs/1.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+          <!-- Insert your blog's title here-->
+		    <h2>Adventure with FOSSASIA</h2>
+          <!-- Insert your name here -->
+		    <p>Pop Dany</p>
+          <!-- Insert your blog url inside the '' - single quotes after location.href= -->
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+    </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="https://gabrielleegci.wordpress.com/2016/01/16/what-open-source-means-to-me/" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" id="eli">
+	    <figure>
+		  <img src="img/blogs/2.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+		    <h2>Opensource to me</h2>
+		    <p>Gabriel</p>
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+	  </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="http://abdulhannanali.github.io/my-opensource-journey/graphql-tutorial/content/" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" id="eli">
+	    <figure>
+		  <img src="img/blogs/3.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+		    <h2>GraphQL</h2>
+		    <p>Addul Hannanali</p>
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+	  </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="https://t.co/R5aMPTeJJU" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" id="eli">
+	    <figure>
+		  <img src="img/blogs/4.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+		    <h2>Why Opensource</h2>
+		    <p>Tejashwa Tiwari</p>
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+	  </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="https://abdulhannanali.github.io/my-opensource-journey/interview-with-tj-holowaychuk/content/" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" id="eli">
+	    <figure>
+		  <img src="img/blogs/5.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+		    <h2>An interview</h2>
+		    <p>Addul Hannanali</p>
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+    </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+    <a href="https://abdulhannanali.github.io/my-opensource-journey/what-opensource-means-to-me/content/" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" id="eli">
+	    <figure>
+		  <img src="img/blogs/6.png"/>
+		  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+		  <figcaption>
+		    <h2>Opensource to me</h2>
+		    <p>Addul Hannanali</p>
+		    <button>View Blog</button>
+		  </figcaption>
+	    </figure>
+	  </a>
+  </div>
+  </section>
+</div>
+<script>
+(function(){
+	function init(){
+		var speed=250,
+		easing=mina.easeinout;
+    	[].slice.call(document.querySelectorAll('#grideee > a')).forEach(function(el){
+	  		var s=Snap(el.querySelector('svg')),path=s.select('path'),
+	 	    pathConfig={
+				from:path.attr('d'),
+				to:el.getAttribute('data-path-hover')
+			};
+            el.addEventListener('mouseenter',function(){
+				path.animate({'path':pathConfig.to},speed,easing);
+			});
+            el.addEventListener('mouseleave',function() {
+				path.animate({'path':pathConfig.from},speed,easing );
+			});
+		});
+	}
+	init();
+})();
+</script>
