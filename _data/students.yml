@@ -463,22 +463,22 @@
   github: bokobot9
   image: arjun.jpg
   bio: 14 year old robotics champion
-  
+
 - name: Mui Kai En
   github: kaine119
   image: muiKaiEn.jpg
   twitter: kaine119
   bio: 15-year-old aspiring web developer. Hope I can contribute!
-    
+
 - name: Khush Patel
   facebook: iKhushPatel
   image: KhushPatel.jpg
-  twitter: iKhushPatel 
+  twitter: iKhushPatel
   blog: http://www.khushpatel.com
   github: iKhushPatel
   stackexchange:
   bio: Coder | Tech Enthusiast | IGNITED Teenovator
-  
+
 - name: Nguyen Cong Khang
   facebook: nguyencongkhang72
   image: khang72.jpg
@@ -510,7 +510,7 @@
 
 - name: Harry Margalotti
   github: imharrymargalotti
-  image: HarryMargalotti.jpg
+  image: HarryMargalotti2.jpg
   blog: http://gciHarry.wordpress.com
-  twitter: HarryMargalotti
-  bio: 1st GCI 
+  twitter: @HarryMargalotti
+  bio: 1st GCI
