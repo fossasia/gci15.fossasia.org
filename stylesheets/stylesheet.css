@@ -530,6 +530,37 @@ footer p {
   margin-bottom: 0;
   float: right;
 }
+
+footer input[type=text],input[type=email]{
+  width: 350px;
+  margin-bottom: 1.5%; 
+  color: black;
+  padding: 0 1%;
+}
+
+footer input[type=submit]{
+  width: 150px;
+  margin-top: 1.5%;
+  background: #3498db;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer input[type=submit]:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
 @media (max-width:768px) {
   footer {
     padding-bottom: 0;
@@ -961,9 +992,6 @@ figure {
         z-index: 8000;
     }
 
-    h4.card-title {
-        font-size: 0.7em;
-    }
 }
 
 @media screen and (max-width:60em) and (min-width:48em) {
@@ -1291,11 +1319,9 @@ li:hover ul {
     color: white;
     text-align: center;
 }
-.lightsout-wrapper .avatar img{
-    border-radius: 0;
-}
+
 .lightsout-wrapper .container{
-    width: 100%;
+    width: 90%;
 }
 .lightsout-wrapper  .container .card-block a:hover{
     text-decoration: none;
@@ -1304,6 +1330,9 @@ li:hover ul {
 .lightsout-wrapper h4{
     color: white;
     text-align: center;
+}
+.lightsout-wrapper{
+  background-color: #cccc00;
 }
 
 #loklak_table {
@@ -1317,3 +1346,37 @@ li:hover ul {
 iframe{
   box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
   }
+  #lightbutton {
+  	background-color:#44c767;
+  	-moz-border-radius:26px;
+  	-webkit-border-radius:26px;
+  	border-radius:28px;
+  	border:1px solid #18ab29;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:17px;
+  	padding:16px 31px;
+  	text-decoration:none;
+  	text-shadow:0px 1px 0px #2f6627;
+  }
+  #lightbutton:hover {
+  	background-color:#5cbf2a;
+  }
+  #lightbutton:active {
+  	position:relative;
+  	top:1px;
+  }
+
+.overflow {
+
+      white-space: nowrap;
+    overflow: hidden;
+    font-size: .8em;
+}
+.ellipsis { text-overflow: ellipsis; }
+.clip { text-overflow: clip; }
+.word { text-overflow: ellipsis-word; }
+.text { text-overflow: "---"; }
+.double { text-overflow: ellipsis ellipsis; text-align: center; }

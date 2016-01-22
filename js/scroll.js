@@ -11,6 +11,7 @@ Add a comma after each great you add except the last one*/
       'Go raibh maith agat as cur',
       'දායකවූවාට ස්තුතියි!',
       '感謝您的貢獻！',
+      'Kea le leboha ka tlatsetsa!',
       '!شكرا لكم للمساهمة',
       'תודה על התרומה שלך',
       'Cảm ơn bạn đã đóng góp!',
