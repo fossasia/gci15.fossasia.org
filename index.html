@@ -278,10 +278,10 @@
           {% endfor %}
         </div>
       </div>
-      
+
       <a class="anchor" name="blog_posts"></a>
       <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
-      
+
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
@@ -687,6 +687,21 @@
                     <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
                       <h4 class="card-title">JAVA FOSS Quiz</h4>
                       <h4 class="card-subtitle">Baidyanath Kundu</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/xssc/gci-hangman/tree/master">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/hangmanc.png" data="img/gallery/hangmanc.png">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/xssc/gci-hangman/tree/master">
+                      <h4 class="card-title">Hangman</h4>
+                      <h4 class="card-subtitle">Sawyer Charles</h4>
                     </a>
                   </div>
                 </div>
@@ -1138,7 +1153,7 @@
   new Photostack(document.getElementById('photostack-1'));
   </script>
   <script type="text/javascript">
-        $.getJSON( 
+        $.getJSON(
 			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
 			function(){
 				console.log("success");
@@ -1176,7 +1191,7 @@
 				$('#contentres').append(div);
 		      });
 			}
-	        
+
 		})
 		.fail(function(){
 			console.log("fail");
