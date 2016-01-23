@@ -243,7 +243,7 @@ $(document).ready(function() {
       });
     }
   })();
-  
+
 
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
@@ -362,9 +362,9 @@ $('.gallery-item').hover(function(){
             }, 100);
         });
 
-  
-  
-  
+
+
+
 
 
 
@@ -389,17 +389,6 @@ function loadblog(){
     });
 }
 
-function changebclight(){
-  var myElement = document.querySelector("#lightsout");
-  if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
-    document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
-    myElement.style.backgroundColor = "#515100";
-  }
-  else{
-    myElement.style.backgroundColor = "#cccc00";
-    document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
-  }
-}
   $("#grideee a").toggle();
 
 

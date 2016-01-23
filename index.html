@@ -278,10 +278,10 @@
           {% endfor %}
         </div>
       </div>
-      
+
       <a class="anchor" name="blog_posts"></a>
       <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
-      
+
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
@@ -1138,7 +1138,7 @@
   new Photostack(document.getElementById('photostack-1'));
   </script>
   <script type="text/javascript">
-        $.getJSON( 
+        $.getJSON(
 			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
 			function(){
 				console.log("success");
@@ -1176,11 +1176,24 @@
 				$('#contentres').append(div);
 		      });
 			}
-	        
+
 		})
 		.fail(function(){
 			console.log("fail");
 		})
+   </script>
+   <script type = "text/javascript">
+   function changebclight(){
+     var myElement = document.querySelector("#lightsout");
+     if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
+       document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
+       myElement.style.backgroundColor = "#515100";
+     }
+     else{
+       myElement.style.backgroundColor = "#cccc00";
+       document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
+     }
+   }
    </script>
 </body>
 </html>
