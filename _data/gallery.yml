@@ -190,7 +190,10 @@
 
   -
     name: Hangman
-    image: HANGman.PNG
+    image: hm.PNG
     author: Baidyanth Kundu
 
-
+  -
+    name: JAVA Quiz
+    image: JQ.PNG
+    author: Baidyanath Kundu
