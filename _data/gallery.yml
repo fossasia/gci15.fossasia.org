@@ -193,4 +193,7 @@
     image: HANGman.PNG
     author: Baidyanth Kundu
 
-
+  -
+    name: Hangman
+    image: hangmanc.png
+    author: Sawyer Charles
