@@ -551,17 +551,17 @@
   image: shjnauie.png
   twitter: jiashuen
   bio: It's always ourself we find in the sea
-  
+
 - name: Boh Jie Qi
   github: BohJieQi
   image: JQ.png
   bio: First time in GCI, ball is life
-  
+
 - name: Johann Seow
   github: annes123
   image: dino.png
   bio: As a human kid I liked dinosaurs.
-  
+
 - name: Vic Chen
   github: vicchen0502
   imgage: vicchen0502.jpg
@@ -574,3 +574,9 @@
   twitter: bored_marcooz
   image: mumumumummu.png
   bio: Push yourself because no one else is going to do it for you.
+
+- name: Sawyer Charles
+  gitub: xssc
+  image: xssc.jpg
+  twitter: x_ssc
+  bio: Code the future. First GCI.
