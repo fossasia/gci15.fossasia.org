@@ -59,6 +59,31 @@
     author: Antonio Molner Domenech
 
   -
+    name: 'Geolocation & Distance'
+    image: LatLonDistance_mborsch.png
+    author: Max B.
+
+  -
+    name: 'World Distance Calculator'
+    image: WorldDistCalc_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Postal Code Locator'
+    image: PostalLocate_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Lights Out!'
+    image: LightsOut_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Metadata Viewer'
+    image: MetadataViewer_mborsch.png
+    author: Max B.
+
+  -
     name: Hangman
     image: hangman1.png
     author: Oana Rosca
