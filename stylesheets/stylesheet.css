@@ -454,7 +454,7 @@ a:hover {
   padding-top: 10px;
   margin-bottom: 40px;
 }
-  
+
 .student_games img{
   border-radius: 50% !important;
 }
@@ -1389,9 +1389,9 @@ iframe{
   }
   #lightbutton {
   	background-color:#44c767;
-  	-moz-border-radius:24px;
-  	-webkit-border-radius:24px;
-  	border-radius:18px;
+  	-moz-border-radius:16px;
+  	-webkit-border-radius:16px;
+  	border-radius:16px;
   	border:1px solid #18ab29;
   	display:inline-block;
   	cursor:pointer;
@@ -1404,12 +1404,12 @@ iframe{
     margin-top: 0.5cm;
   }
   #lightbutton:hover {
-  	background-color:#5cbf2a;
-  }
-  #lightbutton:active {
-  	position:relative;
-  	top:1px;
-  }
+  background-color:#5cbf2a;
+}
+#lightbutton:active {
+  position:relative;
+  top:1px;
+}
   #lightbutton:focus {
     outline:0;
   }
