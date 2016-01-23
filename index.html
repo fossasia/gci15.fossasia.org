@@ -59,6 +59,7 @@
           </ul>
         </li>
         <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#issues">Github Issues</a></li>
         <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -739,10 +740,12 @@
           </div>
       </div>
       <a class="anchor" name="blog_posts"></a>
-      <div class="blogs_wrapper"><li class="dimer" id="dimer" onClick="loadblog()">View Blog Posts</li><li class="dime" id="dime">Loading...</li></div>
+      <div class="blogs_wrapper">
+        <li class="dimer" id="dimer" onClick="loadblog()">View Blog Posts</li><li class="dime" id="dime">Loading...</li>
+      </div>
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
-              <h1 class="section-h1"><button id = "lightbutton" onclick="changebclight()">Lights Out Projects (Click Me)</button></h1>
+              <h1 class="section-h1"><button id = "lightbutton" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
               <div class="container">
                 <section>
                   <div class="row">
@@ -918,37 +921,43 @@
     </section>
     </div>
     </div>
+     <a class="anchor" name="issues"></a>
+     <div id="contentem" class="blogs_wrapper">
+       <h2 class="section-h1" id="jigsaw"><span class="white-border">Github Issues</span></h2>
+       <li class="dimer white-fg" id="dimers" onClick="issueget()">View Issues</li><li class="dime white-fg" id="dimex">Loading...</li>
+       <div id="contentres"></div>
+     </div>
  	 <a class="anchor" name="privly-stickers"></a>
       <div class="privly-wrapper">
-      <h1 class="section-h1"><span class="white-border">Privly-Stickers</span></h1>
-    <section id="portfolio" class="clear bounce-in">
-        <div class="containerContent">
-        <div class="set_size_section1">
-            <div class="folio-list">
-            <!--Add your Privly stickers here-->
-                    <div class="thumbnail folio-thumb">
-                        <figure class="gallery-item">
-                            <img alt="logo1" src="https://raw.githubusercontent.com/fossasia/gci15.fossasia.org/gh-pages/img/privly/samplesticker.png" >
-                            <figcaption class="img-title">
-                                <h4>View on Github <a href="https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/img/privly/samplesticker.png"><i id="github" class="icon-github"></i></a></h4>
-                            </figcaption>
-                        </figure>
-                        <h3>Made by Privly</h3>
-                    </div>
-                    <div class="thumbnail folio-thumb">
-                        <figure class="gallery-item">
-                            <img alt="Sticker" src="img/gallery/privly.PNG" >
-                            <figcaption class="img-title">
-                                <h4>Sumedh Supe <a href="https://github.com/sumsupee"><i id="github" class="icon-github"></i></a></h4>
-                            </figcaption>
-                        </figure>
-                        <h3>Made by Sumedh Supe</h3>
-                    </div>
+        <h1 class="section-h1"><span class="white-border">Privly-Stickers</span></h1>
+        <section id="portfolio" class="clear bounce-in">
+          <div class="containerContent">
+            <div class="set_size_section1">
+              <div class="folio-list">
+              <!--Add your Privly stickers here-->
+                <div class="thumbnail folio-thumb">
+                  <figure class="gallery-item">
+                    <img alt="logo1" src="https://raw.githubusercontent.com/fossasia/gci15.fossasia.org/gh-pages/img/privly/samplesticker.png" >
+                    <figcaption class="img-title">
+                      <h4>View on Github <a href="https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/img/privly/samplesticker.png"><i id="github" class="icon-github"></i></a></h4>
+                    </figcaption>
+                  </figure>
+                  <h3>Made by Privly</h3>
+                </div>
+                <div class="thumbnail folio-thumb">
+                  <figure class="gallery-item">
+                     <img alt="Sticker" src="img/gallery/privly.PNG" >
+                     <figcaption class="img-title">
+                       <h4>Sumedh Supe <a href="https://github.com/sumsupee"><i id="github" class="icon-github"></i></a></h4>
+                     </figcaption>
+                  </figure>
+                  <h3>Made by Sumedh Supe</h3>
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
-    </section>
-  	 </div>
+          </div>
+        </section>
+  	  </div>
       <a class="anchor" name="contributors" id="contributors"></a>
       <div class="row contributors-wrapper">
         <div class="members contributers">
@@ -1074,6 +1083,60 @@
   </script>
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
+  </script>
+  <script src="https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature"></script>
+  <script type="text/javascript">
+  function issueget(){
+        $.getJSON( 
+			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
+			function(){
+				document.getElementById("dimers").style.display="none";
+				document.getElementById("dimex").style.display="inherit";
+			}
+		)
+		.done(function(data){
+			if(data==""||!data||data==0||data=="undefined"){
+				document.getElementById("contentem").innerHTML="<li class='mi'>Sorry there are no issues labeled feature currently open at gci15.fossasia.org <br> <a onClick='issueget'>Reload</a></li>";
+			}
+			else{
+			  document.getElementById("dimex").style.display="none";
+			  document.getElementById("jigsaw").style.display="inherit";
+			  $.each(data, function(i, item) {
+				//List of Content
+				var tag;
+				$.each(item["labels"], function(i, label) {
+					if (label["name"] != "feature") {
+						tag = label["name"];
+					}
+				});
+				if ($("#" + tag).length <= 0) {
+					var html = "<li class='tags'>" + tag + "<ul id='" + tag + "'></ul></li>";
+					$('#table').append(html);
+				}
+				var a = $("<a>", {href: "#" + item["id"]});
+				a.html(item["title"] + "<br>");
+				var li = $("<li>");
+				li.html(a);
+				$('#' + tag).append(li);
+				//Content Description
+				var div = $("<div>", {id: item["id"]});
+				var h4 = $("<h4>");
+				h4.html(item["title"]);
+				var p = $("<p>");
+				p.html(item["body"]);
+				var bes = $("<input>",{type:"button",onClick:"location.href='"+item["html_url"]+"'",value:"Read more on Github",id:"issuebut"});
+				div.html(h4);
+				div.append(p);
+				div.append(bes);
+				$('#contentres').append(div);
+		      });
+			}
+	        
+		})
+		.fail(function(){
+			console.log("fail");
+		})
+	}
   </script>
 </body>
 </html>
