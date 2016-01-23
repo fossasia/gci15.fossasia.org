@@ -34,6 +34,10 @@ or own fork version
 ## Useful Git Tricks
   see [GIT.md](https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/GIT.md) 
 
+## Adding Blog Posts
+  see [blogpost.md](https://github.com/codethejason/gci15.fossasia.org/blob/gh-pages/blogpost.md) 
+
+
 ## Demo
 
 You can see the current website [over here](http://gci15.fossasia.org).

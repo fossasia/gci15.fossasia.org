@@ -243,7 +243,7 @@ $(document).ready(function() {
       });
     }
   })();
-  
+
 
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
@@ -315,7 +315,7 @@ $(document).ready(function() {
   .fail(function() { console.log("The loklak call failed.")});
 
 
-});
+
 // Anchor to Anchor smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -361,13 +361,27 @@ $('.gallery-item').hover(function(){
                 marginLeft: '0px'
             }, 100);
         });
+
+
+
+
+
+
+
+
+/* Directions:
+1. Copy the blog HTML
+2. Paste into http://www.html-cleaner.com/
+3. Then paste into http://www.textfixer.com/tools/remove-line-breaks.php and paste the line of string into the blogData array in blogData.js.
+4. Add an h3 and h4 with title and author, respectively
+*/
+
 function loadblog(){
 	$.ajax({
 	  type : "GET",
       url : "loadblog.html",
 	  beforeSend: function(){
         document.getElementById("dime").style.display="inherit";
-		document.getElementById("dimer").style.display="none";
       },
       success : function(data){
         $(".blogs_wrapper").html(data);
@@ -375,14 +389,26 @@ function loadblog(){
     });
 }
 
-function changebclight(){
-  var myElement = document.querySelector("#lightsout");
-  if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
-    document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
-    myElement.style.backgroundColor = "#515100";
+  $("#grideee a").toggle();
+
+
+
+loadblog();
+
+});
+
+function displayBlog(element, event, blognum) {
+  event.preventDefault();
+  var blogText = blogData[blognum-1];
+  var wordContainer = $(".pText");
+  var url = $(element).attr("href");
+  wordContainer.html(blogText+"<br><p>See more at: <a href='"+url+"' target=_blank>"+url+"</a></p>");
+  if($('.blogText').css('display') == 'none') {
+    toggleDisplay();
   }
-  else{
-    myElement.style.backgroundColor = "#cccc00";
-    document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
-  }
+}
+
+function toggleDisplay() {
+  var textOverlay = $('.blogText');
+  textOverlay.toggle();
 }

@@ -1,4 +1,4 @@
-﻿#New members please add your credentials to the bottom of the file.
+#New members please add your credentials to the bottom of the file.
 
 - name: Max B.
   github: MaxBorsch
@@ -551,17 +551,17 @@
   image: shjnauie.png
   twitter: jiashuen
   bio: It's always ourself we find in the sea
-  
+
 - name: Boh Jie Qi
   github: BohJieQi
   image: JQ.png
   bio: First time in GCI, ball is life
-  
+
 - name: Johann Seow
   github: annes123
   image: dino.png
   bio: As a human kid I liked dinosaurs.
-  
+
 - name: Vic Chen
   github: vicchen0502
   imgage: vicchen0502.jpg
@@ -574,3 +574,22 @@
   twitter: bored_marcooz
   image: mumumumummu.png
   bio: Push yourself because no one else is going to do it for you.
+
+- name: Marion Mok
+  github: marionmok
+  twitter: doraemarion
+  image: marionmok.png
+  blog: https://ayeemarion.wordpress.com/
+  bio: Love people at their worst
+
+- name: Baidyanath Kundu
+  github: Baidya99
+  facebook: Baidya99
+  image: Baidya99.jpg
+  bio: Loves tech and also coding.
+  
+- name: Zhang Jing Yuan
+  github: veehshiftz
+  image: table.jpeg
+  bio: I love classy tables!
+

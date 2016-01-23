@@ -46,6 +46,7 @@
           <li><a href="#students">Students</a></li>
           <li id="studproj"><a href="#">Student Projects &#x25BC;</a>
           <ul id="projlist">
+            <li><a href="#blog_posts">Blog Posts</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#loklak">Loklak Peers</a></li>
             <li><a href="#loklak_search">Loklak Search</a></li>
@@ -55,10 +56,10 @@
             <li><a href="#social_media">Social Media</a></li>
             <li><a href ="#lights_out">Lights out</a></li>
             <li><a href ="#privly-stickers">Privly Stickers</a></li>
-            <li><a href="#blog_posts">Blog Posts</a></li>
           </ul>
         </li>
         <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#issues">Github Issues</a>
         <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -277,6 +278,10 @@
           {% endfor %}
         </div>
       </div>
+
+      <a class="anchor" name="blog_posts"></a>
+      <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
+
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
@@ -474,7 +479,13 @@
               <h3>Aditya Thakral</h3>
             </figcaption>
           </figure>
-
+          <figure>
+            <img src="img/gallery/myapp-abishek.jpg" alt="Abi" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/Abhi2424shek/Abishek-Android-App" target="_blank">My Android App</a></h2>
+              <h3>Abishek V Ashok</h3>
+            </figcaption>
+          </figure>
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -653,13 +664,28 @@
                   <div class="card">
                     <a href="https://github.com/Baidya99/GciHangman/tree/master">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="https://cloud.githubusercontent.com/assets/16690760/12458957/4a70dda2-bfd2-11e5-9414-2d42b7292ab0.PNG" data="https://cloud.githubusercontent.com/assets/16690760/12458957/4a70dda2-bfd2-11e5-9414-2d42b7292ab0.PNG">
+                        <img class="card-img-top" src="img/gallery/hm.PNG" data="img/gallery/hm.PNG" alt="hangman">
                       </div>
                     </a>
                   </div>
                   <div class="card-block">
                     <a href="https://github.com/Baidya99/GciHangman/tree/master">
                       <h4 class="card-title">HangMan</h4>
+                      <h4 class="card-subtitle">Baidyanath Kundu</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/JQ.PNG" data="img/gallery/JQ.PNG" alt="hangman">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
+                      <h4 class="card-title">JAVA FOSS Quiz</h4>
                       <h4 class="card-subtitle">Baidyanath Kundu</h4>
                     </a>
                   </div>
@@ -734,15 +760,44 @@
                     </a>
                   </div>
                 </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://abhi2424shek.github.io/pinlocator.html/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/pinlocator-abishek.jpg" data="img/gallery/pinlocator-abishek.jpg" alt="Abi">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://abhi2424shek.github.io/pinlocator.html/">
+                      <h4 class="card-title">Pinlocator</h4>
+                      <h4 class="card-subtitle">Abishek V Ashok</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://abhi2424shek.github.io/geolocator.html">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/geolocator-abishek.jpg" data="img/gallery/geolocator-abishek.jpg" alt="Abi">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://abhi2424shek.github.io/geolocator.html">
+                      <h4 class="card-title">Geolocator</h4>
+                      <h4 class="card-subtitle">Abishek V Ashok</h4>
+                    </a>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
       </div>
-      <a class="anchor" name="blog_posts"></a>
-      <div class="blogs_wrapper"><li class="dimer" id="dimer" onClick="loadblog()">View Blog Posts</li><li class="dime" id="dime">Loading...</li></div>
+
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
-              <h1 class="section-h1"><button id = "lightbutton" onclick="changebclight()">Lights Out Projects (Click Me)</button></h1>
+              <h1 class="section-h1"><button id = "lightbutton" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
               <div class="container">
                 <section>
                   <div class="row">
@@ -899,7 +954,7 @@
       <h4 class = "card-subtitle"><a href="https://github.com/nolik2000/light.com">Github</a></h4>
     </div>
     </div>
-    
+
     <div class = "col-xs-3">
       <div class = "card">
       <div class="avatar img-circle">
@@ -913,10 +968,15 @@
       <h4 class = "card-subtitle"><a href="https://github.com/awaykened/awaykened.github.io">Github</a></h4>
     </div>
     </div>
-    
+
     </div>
     </section>
     </div>
+    </div>
+    <a class="anchor" name="issues"></a>
+    <div id="contentem" class="blogs_wrapper">
+      <h2 class="section-h1" id="jigsaw"><span class="white-border">Github Issues</span></h2>
+      <div id="contentres"></div>
     </div>
  	 <a class="anchor" name="privly-stickers"></a>
       <div class="privly-wrapper">
@@ -1031,7 +1091,7 @@
             FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
           </p>
         </div>
-        
+
       </div>
     </div>
     <div id="newsletterDiv"><a class="close">&#10006;</a>
@@ -1046,6 +1106,8 @@
       </form>
     </div>
   </footer>
+  <script src="js/blogData.js"></script>
+  <script src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/saSlider.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -1075,5 +1137,63 @@
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
   </script>
+  <script type="text/javascript">
+        $.getJSON(
+			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
+			function(){
+				console.log("success");
+			}
+		)
+		.done(function(data){
+			if(data==""||!data||data==0||data=="undefined"){
+				document.getElementById("contentem").innerHTML="<li class='mi'>Sorry there are no issues labeled feature currently opened at gci15.fossasia.org</li>";
+			}
+			else{
+			  $.each(data, function(i, item) {
+				//List of Content
+				var tag;
+				$.each(item["labels"], function(i, label) {
+					if (label["name"] != "feature") {
+						tag = label["name"];
+					}
+				});
+				if ($("#" + tag).length <= 0) {
+					var html = "<li class='tags'>" + tag + "<ul id='" + tag + "'></ul></li>";
+					$('#table').append(html);
+				}
+				var a = $("<a>", {href: "#" + item["id"]});
+				a.html(item["title"] + "<br>");
+				var li = $("<li>");
+				li.html(a);
+				$('#' + tag).append(li);
+				//Content Description
+				var div = $("<div>", {id: item["id"]});
+				var h4 = $("<h4>");
+				h4.html(item["title"]);
+				var bes = $("<input>",{type:"button",onClick:"location.href='"+item["html_url"]+"'",value:"Read more on Github",id:"issuebut"});
+				div.html(h4);
+				div.append(bes);
+				$('#contentres').append(div);
+		      });
+			}
+
+		})
+		.fail(function(){
+			console.log("fail");
+		})
+   </script>
+   <script type = "text/javascript">
+   function changebclight(){
+     var myElement = document.querySelector("#lightsout");
+     if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
+       document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
+       myElement.style.backgroundColor = "#515100";
+     }
+     else{
+       myElement.style.backgroundColor = "#cccc00";
+       document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
+     }
+   }
+   </script>
 </body>
 </html>
