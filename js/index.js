@@ -403,6 +403,11 @@ function changebclight(){
   $("#grideee a").toggle();
 
 
+
+loadblog();
+
+});
+
 function displayBlog(element, event, blognum) {
   event.preventDefault();
   var blogText = blogData[blognum-1];
@@ -418,7 +423,3 @@ function toggleDisplay() {
   var textOverlay = $('.blogText');
   textOverlay.toggle();
 }
-
-loadblog();
-
-});
