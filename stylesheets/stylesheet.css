@@ -658,13 +658,13 @@ footer input[type=submit]:hover {
 }
 .dimer {
 	cursor:pointer;
+  transition: all .5s;
 }
 .dime {
 	display:none;
 }
 .dimer:hover {
 	color:#000;
-	transition:1s;
 }
 .privly-wrapper {
   margin: auto;
