@@ -21,16 +21,16 @@ $(document).ready(function() {
       autoSlideDelay = 6000,
       $pagination = $(".slider-pagi");
 
-  function createBullets() {
+  (function createBullets() {
     for (var i = 0; i < numOfSlides+1; i++) {
       var $li = $("<li class='slider-pagi__elem'></li>");
       $li.addClass("slider-pagi__elem-"+i).data("page", i);
       if (!i) $li.addClass("active");
+      console.log(i);
       $pagination.append($li);
     }
-  };
+  })();
 
-  createBullets();
 
   function manageControls() {
     $(".slider-control").removeClass("inactive");
