@@ -3,6 +3,7 @@ Add a comma after each great you add except the last one*/
 (function() {
   var words = [
       'Спасибо за вклад!',
+      'অবদান রাখার জন্য আপনাকে ধন্যবাদ! ',
       'Diolch i chi am gyfrannu!',
       'Bedankt voor het bijdragen!',
       'योगदान के लिए धन्यवाद!',
