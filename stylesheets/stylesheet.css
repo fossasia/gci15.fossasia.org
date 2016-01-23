@@ -1421,3 +1421,44 @@ a.close {
        width: 100%;
     }
 }
+.white-fg,#contentres{
+	color:#fff;
+}
+#contentres > div{
+	width:80%;
+	min-height:100px;
+	margin-left:10%;
+	margin-right:10%;
+	background:#fff;
+	color:#111;
+	padding:20px;
+	margin-top:30px;
+}
+#contentres h4{
+	color:#000;
+	font-size:23px;
+	text-decoration:underline;
+}
+#issuebut {
+	background: #0bf;
+    otuline: none;
+    border: none;
+    color: #fff;
+    width: 200px;
+    height: 35px;
+}
+#jigsaw{
+	display:none;
+}
+.mi{
+	color:#fff;
+	list-style:none;
+	padding-top:40px;
+	font-size:24px;
+	text-align:center;
+}
+.mi > a{
+	color:#00F;
+	cursor:pointer;
+	text-decoration:none;
+}
