@@ -46,6 +46,7 @@
           <li><a href="#students">Students</a></li>
           <li id="studproj"><a href="#">Student Projects &#x25BC;</a>
           <ul id="projlist">
+            <li><a href="#blog_posts">Blog Posts</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#loklak">Loklak Peers</a></li>
             <li><a href="#loklak_search">Loklak Search</a></li>
@@ -55,7 +56,6 @@
             <li><a href="#social_media">Social Media</a></li>
             <li><a href ="#lights_out">Lights out</a></li>
             <li><a href ="#privly-stickers">Privly Stickers</a></li>
-            <li><a href="#blog_posts">Blog Posts</a></li>
           </ul>
         </li>
         <li><a href="#contributors">Contributors</a></li>
@@ -278,6 +278,10 @@
           {% endfor %}
         </div>
       </div>
+      
+      <a class="anchor" name="blog_posts"></a>
+      <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
+      
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
@@ -790,8 +794,7 @@
             </section>
           </div>
       </div>
-      <a class="anchor" name="blog_posts"></a>
-      <div class="blogs_wrapper"><li class="dimer" id="dimer" onClick="loadblog()">View Blog Posts</li><li class="dime" id="dime">Loading...</li></div>
+
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
               <h1 class="section-h1"><button id = "lightbutton" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
@@ -1103,6 +1106,8 @@
       </form>
     </div>
   </footer>
+  <script src="js/blogData.js"></script>
+  <script src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/saSlider.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>

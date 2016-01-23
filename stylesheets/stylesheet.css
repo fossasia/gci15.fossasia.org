@@ -454,6 +454,7 @@ a:hover {
   padding-top: 10px;
   margin-bottom: 40px;
 }
+  
 .student_games img{
   border-radius: 50% !important;
 }
@@ -648,12 +649,17 @@ footer input[type=submit]:hover {
 	background-color:#3498db;
 	border-radius:0px;
 	min-height:200px;
+  position: relative;
+}
+
+.blogs_wrapper h1 {
+  padding-top: 10px;
 }
 .dimer,.dime {
 	text-align:center;
 	list-style:none;
 	font-size:36px;
-	color:#0bf;
+	color:#fff;
 	padding-top:70px;
 }
 .dimer {
@@ -665,7 +671,42 @@ footer input[type=submit]:hover {
 }
 .dimer:hover {
 	color:#000;
+	transition:1s;
 }
+
+.blogText {
+  background-color: #fff;
+  width: 100%;
+  height: 80%;
+  z-index: 1029; /*just less than header's*/
+  display: none;
+  margin-bottom: 30px;
+}
+
+.pText {
+  padding: 20px 50px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: auto;
+  height: 80%;
+  width: 90%;
+  margin: auto;
+}
+
+.pText h4 {
+  font-size: 14px;
+}
+
+.blogBtn {
+  font-size: 20px;
+  margin: 20px;
+  padding: 6px 8px;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
 .privly-wrapper {
   margin: auto;
   margin-top: 50px;
