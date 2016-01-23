@@ -1421,3 +1421,33 @@ a.close {
        width: 100%;
     }
 }
+.mi {
+	font-size: 25px;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding-top: 80px;
+}
+#contentres > div {
+	margin-left: 10%;
+    width: 80%;
+    background: #fff;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+	margin-bottom:20px;
+}
+#contentres h4{
+	font-size:22px;
+	font-size: 22px;
+}
+#contentres input{
+	width: 200px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    background: #0bf;
+    border: none;
+    color: #fff;
+}
