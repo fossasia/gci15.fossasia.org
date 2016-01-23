@@ -1457,8 +1457,11 @@ a.close {
   }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 480px) {
     #newsletterDiv {
+       width: 100%;
+    }
+    #newsletterDiv input[type="text"], #newsletterDiv input[type="email"]{
        width: 100%;
     }
 }
