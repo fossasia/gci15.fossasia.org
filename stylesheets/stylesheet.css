@@ -444,6 +444,15 @@ a:hover {
   color: #FF7043;
 }
 
+#h4  {
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  font-size: 17px;
+}
+
 .student_games{
   background-color: #C7CA33 !important;
   margin-bottom: 50px;
@@ -1049,7 +1058,7 @@ figure {
   -webkit-transition:0.6s all ease-in-out;
   -mozkit-transition:0.6s all ease-in-out;
   -transition:0.6s all ease-in-out;
-  opacity: 0.3;
+ 
 
 }
 .contributers .card{
