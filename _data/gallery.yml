@@ -219,9 +219,15 @@
     author: Baidyanth Kundu
 
   -
+<<<<<<< HEAD
+    name: PHP App: Hello [name]
+    image: php hello [name] screenshot.png
+    author: Jeffrey Kam
+=======
     name: JAVA Quiz
     image: JQ.PNG
     author: Baidyanath Kundu
+>>>>>>> c5606ed64e64b3f97c97efa1017f53eed183f66f
 
   -
     name: Hangman
