@@ -929,7 +929,7 @@
 
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
-              <h1 class="section-h1"><button id = "lightbutton" type="button" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
+              <h1 class="section-h1"><button id = "lightbutton" type="button" onClick="changebclight()">Lights Out Projects (On)!</button></h1>
               <div class="container">
                 <section>
                   <div class="row">
@@ -1101,7 +1101,8 @@
       <h4 class = "card-subtitle"><a href="http://maxborsch.github.io/Lights-Out/">Github</a></h4>
     </div>
     </div>
-
+  </div>
+  <div class ="row">
     <div class = "col-xs-3">
       <div class = "card">
       <div class="avatar img-circle">
@@ -1115,7 +1116,7 @@
       <h4 class = "card-subtitle"><a href="https://github.com/awaykened/awaykened.github.io">Github</a></h4>
     </div>
     </div>
-    
+
         <div class = "col-xs-3">
       <div class = "card">
       <div class="avatar img-circle">
@@ -1143,7 +1144,7 @@
       <h4 class = "card-subtitle"><a href="https://github.com/anshuman73/GCI-2015/tree/master/Lights%20Out">Github</a></h4>
     </div>
     </div>
-              
+
     </div>
     </section>
     </div>
@@ -1363,13 +1364,13 @@
    <script type = "text/javascript">
    $('#lightbutton').on('touchstart click', function(){
      var myElement = document.querySelector("#lightsout");
-     if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
-       document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
+     if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (On)!"){
+       document.getElementById("lightbutton").innerHTML="Lights Out Projects (Off)!"
        myElement.style.backgroundColor = "#515100";
      }
      else{
        myElement.style.backgroundColor = "#cccc00";
-       document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
+       document.getElementById("lightbutton").innerHTML="Lights Out Projects (On)!";
      }
    });
 </script>
