@@ -619,6 +619,64 @@
 
 - name: mercuryprasad
   github: mercuryprasad
-  image: mercuryprasad.png
+  image: mercuryprasad.jpeg
   twitter: prasad_pitagi
   bio: Loves electronics, learning coding
+
+- name: Kriya 
+  facebook: Akshata Kriya Betageri
+  image: kriya.jpg
+  twitter: Debena2
+  bio: It is always the adventurous who accomplish great things!
+
+- name: Anushri
+  image: anushri.jpg
+  twitter: Uanushri
+  bio: In search of purpose of existance
+
+- name: Akshata
+  image: akshata.jpg
+  twitter:swararevankar 
+  bio: Reach your goal
+
+- name: Nikhil
+  github: Djnikk
+  image: nikhil.jpg
+  twitter: Nballodi
+  bio: Nothing but something
+
+- name: Pavan
+  github: 
+  image: pavan.jpg
+  twitter: pavancdesai
+  bio: Enjoying learning with FOSSASIA
+
+- name: Piyu
+  github: tavakaripiyu 
+  image: piyu.jpg
+  twitter: piyutavakari
+  bio: Think a lot before you speak
+
+- name: Ravina
+  github:  
+  image: ravina.jpg
+  twitter: RavinaBugaliya
+  bio: Be yourself
+
+- name: Rituja
+  github:  
+  image: rituja.jpg
+  twitter: rituja1234
+  bio: Enjoy your life slowly
+
+- name: Yasmin
+  github: yasmin22 
+  image: ravina.jpg
+  twitter: yasmin_sarkar
+  bio: Life is beautiful
+
+- name: Vaishnavi
+  github: 
+  image: vaishnavi.jpg
+  twitter: VaishnaviSalun5
+  bio: Live Life
