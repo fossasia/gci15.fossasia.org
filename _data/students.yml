@@ -1,4 +1,4 @@
-#New members please add your credentials to the bottom of the file.
+﻿#New members please add your credentials to the bottom of the file.
 
 - name: Max B.
   github: MaxBorsch
@@ -598,3 +598,9 @@
   image: xssc.jpg
   twitter: x_ssc
   bio: Code the future. First GCI.
+
+- name: Lee Sin Yuen
+  github: DhsLsy
+  image: lsy.png
+  twitter: LsyDhs
+  bio: The best moments are yet to come
