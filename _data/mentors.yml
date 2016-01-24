@@ -1,20 +1,20 @@
-- name: Hong Phuc
+﻿- name: Hong Phuc
   github: hpdang
   image: hpdang.jpg
   blog: http://blog.fossasia.org/
-  twitter: 
+  twitter:
   facebook: hpdang
-  stackexchange: 
-  bio: 
+  stackexchange:
+  bio:
 
 - name: eMBee
   github: embee
   image: embee.png
   blog: http://societyserver.org/mbaehr/
-  twitter: 
-  facebook: 
-  stackexchange: 
-  bio: 
+  twitter:
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Mario Behling
   github: mariobehling
@@ -22,8 +22,8 @@
   blog: http://mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
 - name: Aruna Herath
   github: RoonyH
@@ -31,8 +31,8 @@
   blog: http://mariobehling.de/
   twitter: aruna_herath
   facebook: aruna.herath99
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
 - name: Andreas Bräu
   github: andibraeu
@@ -40,8 +40,8 @@
   blog: https://blog.andi95.de
   twitter: evaltenberga
   facebook: eddie.vonaltenberga
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
 - name: Kalpa Welivitigoda
   github: callkalpa
@@ -49,8 +49,8 @@
   blog: http://kalpapathum.blogspot.com
   twitter: callkalpa
   facebook: callkalpa
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
 - name: Harsh Vardhan
   github: royalharsh
@@ -58,8 +58,8 @@
   blog: https://royalharsh95.wordpress.com/
   twitter: royalharsh95
   facebook: royalharsh95
-  stackexchange: 
-  description: 
+  stackexchange:
+  description:
 
 - name: Ko Ko Ye`
   github: kokoye2007
@@ -67,41 +67,338 @@
   blog: http://ubuntu-mm.net/
   twitter: kokoye2007
   facebook: kokoye2007
-  stackexchange: 
-  bio: 
+  stackexchange:
+  bio:
 
 - name: Mohit Kanwal
   github: creativepsyco
   image: mohitkanwal.jpg
   blog: http://blog.mohitkanwal.com/
   twitter: mohitkanwal
-  facebook: 
-  stackexchange: 
-  bio: 
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Sudheesh Singanamalla
   github: sudheesh001
   image: sudheesh001.jpeg
   blog: http://sudheesh.info/
   twitter: sudheesh001
-  facebook: 
-  stackexchange: 
-  bio: 
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Harsh Kothari
   github: harshkothari410
   image: harsh.jpg
   blog: http://harshkothari.com/
   twitter: harshkothari410
-  facebook: 
-  stackexchange: 
-  bio: 
+  facebook:
+  stackexchange:
+  bio:
 
 - name: Sean McGregor
   github: smcgregor
   image: smcgregor.jpg
   blog: http://seanbmcgregor.com/
   twitter: seanmcgregor
-  facebook: 
-  stackexchange: 
-  bio: 
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Arnav Gupta
+  github: championswimmer
+  image: arnav.jpg
+  blog: http://championswimmer.in/
+  twitter: championswimmer
+  facebook: championswimmer
+  stackexchange:
+  bio:
+
+- name: Jigyasa Grover
+  github: jig08
+  image: jigyasagrover.jpg
+  blog: http://jigyasagrover.wordpress.com
+  twitter: jigyasa_grover
+  facebook: jigyasa.grover.14
+  stackexchange:
+  bio:
+
+- name: Nikunj Thakkar
+  github: nikunjness
+  image: nikunj.jpg
+  blog: http://nikunjthakkar.com/
+  twitter: nikunjness
+  facebook: Nikunjness
+  stackexchange:
+  bio:
+
+- name: Sayan Chowdhury
+  github: sayanchowdhury
+  image: sayan.jpg
+  blog: http://sayanchowdhury.dgplug.org/
+  twitter: yudocaa
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Rohit Kashyap
+  github: rkgudboy
+  image: rohit.jpg
+  blog: http://rohitkashyap.in/
+  twitter: rkgudboy
+  facebook: rkgudboy
+  stackexchange:
+  bio:
+
+- name: Praveen (Gnovi)
+  github: wavicles
+  image: praveen.jpg
+  blog: http://wavicles.in/
+  twitter:
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Muhammed Thanish
+  github: mnmtanish
+  image: muhammed.jpg
+  blog: http://thanish.me/
+  twitter: mnmtanish
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Shiluka Raveen Dharmasena
+  github: shiluka
+  image: shiluka.png
+  blog:
+  twitter: shiluka
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Nicco Kunzmann
+  github: niccokunzmann
+  image: NiccoKunzmann.jpg
+  twitter: dannhaltohneson
+  bio:
+
+- name: Arunoda Susiripala
+  github: arunoda
+  image: arunoda.jpg
+  twitter: arunoda
+  bio:
+
+- name: Hossain Al Ikram
+  github: hossainalikram
+  image: hossain.jpg
+  twitter: Hossainalikram
+  bio:
+
+- name: Doris Lee
+  github: dorislee0309
+  image: dorislee.jpg
+  blog: http://dorisjunglinlee.com/
+  twitter:
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Abhishek Batra
+  github: batraabhishek
+  image: batra.png
+  blog:
+  facebook:
+  stackexchange:
+  bio:
+
+- name: Handoko Suwono
+  github:
+  image: hand.jpg
+  blog: http://astroiseur.tiddlyspace.com/
+  twitter: h_suwono
+  facebook: handoko.suwono
+  stackexchange:
+  bio:
+
+- name: saptaks
+  github: SaptakS
+  image: saptak.jpg
+  facebook: s4p74k.s3ngup74
+  bio:
+
+- name: Jan Suhr
+  github: jans23
+  image: jans.png
+  facebook:
+  bio:
+
+- name: Duke Leto
+  github: leto
+  image: leto.jpg
+  blog: http://duke.leto.net
+  facebook:
+  bio:
+
+- name: Iwan Gabovitch
+  github: qubodup
+  image: iwan.jpg
+  blog: http://qubodup.net
+  facebook:
+  bio:
+
+- name: Kalpa Welivitigoda
+  github: callkalpa
+  image: kalpa.jpg
+  blog: http://www.kalpapathum.blogspot.com
+  facebook:
+  bio:
+
+- name: Lisa Hui
+  github: LisaHJ
+  image: lisa.jpg
+  facebook:
+  bio:
+
+- name: Manan Wason
+  github: mananwason
+  image: manan.jpg
+  blog: http://mananwason.me
+  twitter: mananwason9
+  facebook: manan.wason
+  bio:
+
+- name: Rafał Kowalski
+  github: rafalkowalski
+  image: rafal.png
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Samarjeet
+  github: Samarjeet27
+  image: samarjeet.jpg
+  blog: http://samarjeet.me
+  twitter:
+  facebook:
+  bio:
+
+- name: Sambuddha Basu
+  github: sammyshj
+  image: basu.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Tymon Radzik
+  github: tradzik
+  image: tradzik.png
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Anh-Tu Nguyen
+  github: ngtuna
+  image: ngtuna.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Michael Peter Christen
+  github: Orbiter
+  image: orbiter.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: André Rebentisch
+  github: tabesin
+  image: André.jpg
+  blog:
+  twitter: agonarch 
+  facebook:
+  bio:
+
+- name: Yeonwoon Jung
+  github: yeonwoonj
+  image: yeonwoonj.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+  
+- name: Jihye Sofia Seo
+  github: jihyeseo
+  image: jihye.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+  
+- name: Diego Mora Cespedes
+  github: Perados
+  image: perados.jpg
+  blog: http://thetravelinghacker.io/
+  twitter:
+  facebook:
+  bio:
+  
+- name: Gauthamraj Elango
+  github: gautha91
+  image: gautha.png
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: Luther Goh
+  github: elfgoh
+  image: elfgoh.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+  
+- name: Diwanshi Pandey
+  github: diwanshi
+  image: diwanshi.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+  
+- name: Austin English
+  github: austin987
+  image: austin.png
+  blog: http://austinenglish.com/blog/
+  twitter:
+  facebook:
+  bio:
+  
+- name: Arkodyuti Saha
+  github: arkodyuti
+  image: arkodyuti.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+  
+- name: Chandankumar
+  github: chkumar246
+  image: chkkumar.jpg
+  blog:
+  twitter:
+  facebook:
+  bio:
+
+- name: André Rebentisch
+  github: tabesin
+  image: And.png
+  blog:
+  bio:

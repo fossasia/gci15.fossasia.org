@@ -1,3 +1,5 @@
+﻿#New members please add your credentials to the bottom of the file.
+
 - name: Max B.
   github: MaxBorsch
   image: mborsch.jpg
@@ -15,6 +17,15 @@
   facebook:
   stackexchange:
   bio: Second GCI
+
+- name: Sten van Houwelingen
+  github: Stenvh
+  image: Stenvh.jpg
+  blog: https://sten.meorga.nl/
+  twitter: https://twitter.com/stenvh
+  facebook:
+  stackexchange:
+  bio: A 15 Year old geek from The Netherlands
 
 - name: Mario S.
   github: MarioScappini
@@ -38,8 +49,8 @@
   github: Yathannsh
   image: yathannsh.jpg
   blog:
-  twitter:
-  facebook:
+  twitter: yathannsh
+  facebook: yathansh
   stackexchange:
   bio:
 
@@ -58,8 +69,17 @@
   blog: https://juanfverhook.wordpress.com/
   twitter: Juanfrancisco1
   facebook:
-  stackexchange:
-  bio: Venezuelan, 16 years, Building stuff :), First GCI
+  stackexchange: http://stackoverflow.com/users/4135058/juanvulcano
+  bio: Venezuelan, 16 years, Building stuff :) First GCI! Good luck to everyone!
+
+- name: Mehmet Cagri Ari
+  github: hesapadim
+  image: mehmetcagri.jpg
+  facebook: hesapadim.cagriari
+  stackexchange: http://stackoverflow.com/users/5006597/mehmet-Çağrı-ari
+  blog: http://cagriari.com
+  twitter: cagriaricom
+  bio: 14 years student, gamer, coder. First GCI :)
 
 - name: Ethan Falck
   github: emanf9
@@ -78,6 +98,15 @@
   facebook:
   stackexchange: http://stackoverflow.com/users/3832802/pythad
   bio: Following my dreams, first GCI
+
+- name: Sarah Greisdorf
+  github: sarahgreisdorf
+  image: sarahg.png
+  blog: http://sarahgreisdorf.com
+  twitter: sarahgreisdorf
+  facebook: Sarah Greisdorf
+  stackexchange:
+  bio: Designer and Developer, First GCI
 
 - name: Neeraj Pandey
   github: neerajp99
@@ -104,7 +133,7 @@
   twitter: PolBaladas
   facebook:
   stackexchange:
-  bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI. 👍
+  bio: Developer, creative, math enthusiast, galaxy hitchhiker and harmonica player ;) 16 years. Third GCI.
 
 - name: Jared Stefanowicz
   github: jaredStef
@@ -119,7 +148,7 @@
   github: benhiatt
   image: bhiatt.JPG
   instagram: ben_hiatt
-  bio: I’m totally doing this for the t-shirt... and for the non-profits :)
+  bio: I'm totally doing this for the t-shirt... and for the non-profits :)
 
 - name: Michael Jancen-Widmer
   github: michaeljancen
@@ -129,10 +158,449 @@
   facebook:
   stackexchange:
   bio: First GCI, I <3 cyber-security and coding :)
-  
+
 - name: Poh Say Keong
   github: PohSayKeong
   image: pohSayKeong.jpg
   twitter: pohsaykeong
   facebook: poh.saykeong
   bio: 14 years... Hope I can help
+
+- name: Shashank Sharma
+  github: shashank-sharma
+  image: shashank.jpg
+  twitter: shashanksharma9
+  facebook: shashank.sharma.902
+  stackexchange: http://stackexchange.com/users/4312856/shashank
+  bio: Programmer, 17 years old, love physics, and I love coding :D
+
+- name: Rohit kumar
+  github: Rohythakur
+  image: rohyt.jpg
+  twitter: rohytx
+  facebook: rohyt.thakur
+  stackexchange: http://stackexchange.com/users/7503355/rohyt
+  bio: from india , i know java,python..
+
+- name: Jason Wong
+  github: codethejason
+  blog: http://codethejason.github.io/blog
+  image: jasonw.jpg
+  twitter: codethejason
+  stackexchange: http://stackexchange.com/users/3961331/animaltesting
+  bio: Designer and developer - first GCI!
+
+- name: Archie Buissink
+  github: abuissink
+  image: archieb.jpg
+  twitter: ribbitdev
+  facebook: arch.buissink
+  stackexchange: http://stackexchange.com/users/5701991/archiebnz
+  bio: from NZ, this is my first GCI. I <3 Biology and Coding
+
+- name: Cho Yin Yong
+  github: hkminegod
+  image: choyin.jpg
+  blog: https://choy.in/
+  twitter: choyiny
+  bio: Student, Gamer, Developer, 17!
+
+- name: Dea Chintia Putri
+  github: delta949
+  image: delta949.jpg
+  twitter: dea94998
+  facebook: deachintiaputri
+  bio: First and last GCI, from Indonesia. Coding is fun.
+
+- name: Ian Arlo Hoegen
+  github: ihoegen
+  image: IanHoegen.jpg
+  blog: http://hoegendevelopments.ga
+  twitter:
+  facebook: ianhoegen
+  stackexchange: https://stackexchange.com/users/6268679/ian-hoegen
+  bio: Web developer, from Washington.
+
+- name: Amisha Dobriyal
+  github: amishad
+  image: amisha.jpg
+  blog: https://amishad.github.io/
+  twitter: amishadobriyal
+  facebook: amishadobriyal00
+  bio: 15, Student, First GCI :)
+
+- name: Shreyas Sanghvi
+  github: shreyassanghvi
+  image: shreyassanghvi.jpg
+  blog: http://shreyassanghvi.co.in/
+  twitter: shreyas2101
+  facebook: shreyasharshant
+  bio: 16, Aviator, coder
+
+- name: Dhruv Ramani
+  github: dhruvramani
+  image: dhruv.jpg
+  blog: http://dhruvramani.github.io
+  twitter: dhruvRamani98
+  facebook: dhruv.ramani
+  stackexchange: https://stackoverflow.com/users/4534903/dhruv-ramani
+  bio: Coding is passion
+
+- name: M.Yasoob Ullah Khalid
+  github: yasoob
+  image: yasoob.jpg
+  blog: http://yasoob.me
+  twitter: yasoobkhalid
+  facebook: m.yasoob
+  stackexchange:
+  bio: 17, Author, Blogger, Programmer. First & last GCI.
+
+- name: Duc Phan Duy
+  github: ducphanduyagentp
+  image: ducphanduy.jpg
+  blog: https://ptnega.wordpress.com/
+  twitter: I_am_agentp_14
+  facebook: ducphanduy.agentp
+  bio: What's worth the prize is always worth the fight
+
+- name: Oana Rosca
+  github: oanarosca
+  image: oanarosca.jpg
+  facebook: https://www.facebook.com/Rosca.Oanaa
+  twitter: oanarosca12
+  bio: 16, Romanian student, coder, science enthusiast. First GCI :D
+
+- name: Amaan Marfatia
+  github: DrAlias
+  image: amaan.png
+  bio: Math and comp sci fanatic! 2nd GCI
+
+- name: Yash Mundra
+  github: Yashmundra13
+  image: yash.jpg
+  facebook: https://www.facebook.com/Yashmundra13
+  twitter: Yash013
+
+- name: Aditya Singh
+  github: S-ulphuric
+  image: aditya.jpg
+  facebook: https://www.facebook.com/cuteaditya1
+  twitter: NxtbigAditya
+  bio: Web Designer, Gamer, CODER. 15, First Year GCI.
+
+- name: Jerome Leow
+  github: JLeow00
+  image: JLeow.png
+  facebook: jerome.leow.5
+  twitter: JLeow00
+  bio: Ukulele is love, ukulele is life
+
+- name: Leow Yee Zhi
+  github: yeezhi
+  image: yeezhi.png
+  facebook: yeezhi.leow
+  twitter: yee_zhi_leow
+  bio: Eat_Sleep_Ball
+
+- name: Kenneth Chua
+  github: kencyk99
+  image: kenneth.jpg
+  facebook: kenneth.chua.332
+  twitter: evad3rChua
+  bio: Gamer, Pentester, First Year GCI.
+
+- name: Ching Hannie
+  github: ChingHannie
+  image: ching.jpg
+  facebook: abchingh
+  twitter: hannniieeeee
+  bio: Singaporean coder and classical music enthusiast!
+
+- name: John Murzaku
+  github: JamMurz
+  image: johnmurz.jpg
+  facebook: john.murzaku
+  bio: 16 years old, 3rd GCI, interested in startups and open source community.
+
+- name: Dani Pop
+  github: AvramPop
+  image: danipop.jpg
+  facebook: dany.pop.507
+  bio: iOS developer. Football addict. 16. Physics enthusiast. Jesus lover!
+
+- name: Bartosz Wiśniewski
+  github: PoprostuRonin
+  image: poprosturonin.jpg
+  blog: http://poprosturonin.com
+  twitter: poprosturonin
+  bio: Gamer, developer, designer from Poland.
+
+- name: Maitreya Vyas
+  github: maitreyav
+  image: maitreyav.jpg
+  facebook: maitreyav
+  twitter: maitvyas
+  bio: 17, Second GCI, Design + Code, The web is what you make of it.
+
+- name: Catalin Pirvu
+  github: CatalinPirvu
+  image: catalinpirvu.jpg
+  facebook: pirvu.catalin.98
+  bio: Gamer. Bookworm. 16. Future lawyer.
+
+- name: Hannan Ali
+  github: abdulhannanali
+  image: abdulhannanali.jpg
+  facebook: abdulhannanali
+  twitter: computistic
+  blog: https://abdulhannanali.github.io/my-opensource-journey
+  bio: Programmer, open source enthusiast and node.js fan
+
+- name: Tanuj Rao
+  github: tansanrao
+  image: tanujrao.jpg
+  facebook: tanuj.rao
+  twitter: tansanrao
+  bio: A Sixteen Year Old Geek From India.
+
+- name: Raheel Saghir
+  github: Raheel102
+  image: Raheel102.jpg
+  facebook: raheel.mehmood.7
+  twitter: raheel102
+  bio: Gamer, Programmer, 17, Last year of GCI
+
+- name: Li Zhaoqi
+  github: Eclipse-Dominator
+  image: LZQ_img.png
+  twitter: Doomgrammar
+  bio: Believe in the impossible!
+
+- name: Sayan Chaudhry
+  github: shiftsayan
+  image: sayan.png
+  twitter: shiftsayan
+  facebook: shiftsayan
+  bio: The ability to become a Super Saiyan is nothing but a legend.
+
+- name: Seva Zhidkov
+  github: sevazhidkov
+  image: sevazhidkov.jpg
+  twitter: sevazhidkov
+  bio: School student from Russia, Python developer
+
+- name: Saatvik Arya
+  github: aryasaatvik
+  image: saatvikarya.jpg
+  blog:
+  twitter: SaatvikArya
+  facebook:
+  stackexchange:
+  bio: "15 year old Computer Science Enthusiast"
+
+- name: Nastya Kostiv
+  github: nolik2000
+  image: NKostiv.jpg
+  twitter: Nastya Kostiv
+  facebook: Nastya Kostiv
+  bio: First CGI)))
+
+- name: Vlad Prundus
+  github: vladpr21
+  image: PrundusVlad.JPG
+  facebook: vladgeorge.prundus
+  twitter: prundus
+  bio: 16 years, Romania. Future CEO.
+
+- name: Chin Yong Chen
+  github: EthanoicAcetate
+  image: YongC.jpg
+  twitter: chinyc185
+  bio: CHEM <3 MUSIC <3 MATH
+
+- name: Sanjay Tharagesh
+  github: sanjaytharagesh31
+  image: sanjay.jpg
+  twitter: sanjay tharagesh
+  facebook: Sanjay Tharagesh
+  bio: A vigorous coder, who thinks coding is life.
+
+- name: Aman Surana
+  github: AmanSurana
+  image: amans.jpg
+  twitter: AmanSurana
+  facebook: amansurana
+  bio: 16 years old, i believe i can fly!
+
+- name: Abishek V Ashok
+  github: Abhi2424shek
+  image: abishek.jpg
+  twitter: abhi2424shek
+  facebook: abishekvashok
+  bio: 14 year old Indian, who loves coding and open source and thinks everyone is God
+
+- name: Rahul Narayanan
+  github: zakomon
+  image: rahul.jpg
+  twitter: 448bb8
+  bio: Programmer
+
+- name: Naveen Balachandran
+  github: naveenbalachandran
+  image: naveen.jpg
+  twitter: thenaveenb
+  blog: http://naveenbalachandran.github.io/home/
+  facebook: naveen.balachandran.fun
+  bio: Developer Graphic Artist Innovator CEO
+
+- name: Antonio Molner Domenech
+  github: antoniomdk
+  image: antoniomolner.jpg
+  twitter: antonio_molner
+  bio: Spanish. 17. Game Developer at Wapmania, Unity, UE4 programmer. Learning HTML5 and C++
+
+- name: Arjun Bhorkar
+  github: bokobot9
+  image: arjun.jpg
+  bio: 14 year old robotics champion
+
+- name: Mui Kai En
+  github: kaine119
+  image: muiKaiEn.jpg
+  twitter: kaine119
+  bio: 15-year-old aspiring web developer. Hope I can contribute!
+
+- name: Khush Patel
+  facebook: iKhushPatel
+  image: KhushPatel.jpg
+  twitter: iKhushPatel
+  blog: http://www.khushpatel.com
+  github: iKhushPatel
+  stackexchange:
+  bio: Coder | Tech Enthusiast | IGNITED Teenovator
+
+- name: Nguyen Cong Khang
+  facebook: nguyencongkhang72
+  image: khang72.jpg
+  twitter: KhangNguyenCong
+  blog: http://nguyencongkhang72.blogspot.com/
+  github: khang72
+  bio: Viva La Vida!
+
+- name: Collin Chua
+  image: collin_Auth.jpg
+  twitter: AuthenticCollin
+  github: Authentic-Collin
+  bio: Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.
+
+- name: Sharat Garg.
+  github: Sharatsa
+  image: Sharat.png
+  blog: www.sharatlog.wordpress.com
+  facebook: SharatGarg01
+  bio: "A Participant of GCI 2015"
+
+- name: Disam Wang
+  github: disam8853
+  image: disam8853.jpg
+  blog: http://disam8853.github.io/
+  twitter: Disam_Joker
+  facebook: www.sam3
+  bio: I love everyone
+
+- name: Harry Margalotti
+  github: imharrymargalotti
+  image: HarrisonMargalotti.jpg
+  blog: http://gciHarry.wordpress.com
+  twitter: HarryMargalotti
+  bio: 1st GCI
+
+- name: Timothy Law
+  github: Timtim7
+  image: timtim7.png
+  twitter: law_songen
+  bio: We were born to be real, not to be perfect
+
+- name: Jeryl Lee
+  github: Gambit375
+  image: FabGambit.png
+  twitter: Gambit_375
+  bio: Carried by me!
+
+- name: Marks Polakovs
+  github: marksomnian
+  image: MarksPolakovs.jpg
+  twitter: SirMarksomnian
+  blog: http://markspolakovs.me
+  bio: Don't forget to water the plants.
+
+- name: Aditya Thakral
+  github: 9at8
+  image: AdityaThakral.jpg
+  twitter: 19_9at8
+  bio: First GCI, Python<3 <3 :)
+
+- name: Li MingYuan
+  github: ScrubMYisMe
+  image: LMY_usefull.png
+  twitter: Pro_MYScrub
+  bio: Can you differentiate the useful and the useless?
+
+- name: Yee Jia Shuen
+  github: shjnauie
+  image: shjnauie.png
+  twitter: jiashuen
+  bio: It's always ourself we find in the sea
+
+- name: Boh Jie Qi
+  github: BohJieQi
+  image: JQ.png
+  bio: First time in GCI, ball is life
+
+- name: Johann Seow
+  github: annes123
+  image: dino.png
+  bio: As a human kid I liked dinosaurs.
+
+- name: Vic Chen
+  github: vicchen0502
+  imgage: vicchen0502.jpg
+  instagram: vic0502_chen
+  facebook: vic.chen.7169
+  bio: keep working
+
+- name: Dee Mu Rui Marcus
+  github: bored-marcooz
+  twitter: bored_marcooz
+  image: mumumumummu.png
+  bio: Push yourself because no one else is going to do it for you.
+
+- name: Marion Mok
+  github: marionmok
+  twitter: doraemarion
+  image: marionmok.png
+  blog: https://ayeemarion.wordpress.com/
+  bio: Love people at their worst
+
+- name: Baidyanath Kundu
+  github: Baidya99
+  facebook: Baidya99
+  image: Baidya99.jpg
+  bio: Loves tech and also coding.
+
+- name: Zhang Jing Yuan
+  github: veehshiftz
+  image: table.jpeg
+  bio: I love classy tables!
+
+- name: Sawyer Charles
+  gitub: xssc
+  image: xssc.jpg
+  twitter: x_ssc
+  bio: Code the future. First GCI.
+
+- name: Lee Sin Yuen
+  github: DhsLsy
+  image: lsy.png
+  twitter: LsyDhs
+  bio: The best moments are yet to come

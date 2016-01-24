@@ -1,0 +1,229 @@
+  -
+    name: OpenSource Collage
+    image: OpenSourceCollage.jpg
+    author: Max B.
+
+  -
+    name: Treasurehunt Game
+    image: Treasurehunt.png
+    author: Juan F. Verhook
+
+  -
+    name: Configuring Apache with PHP
+    image: apache.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Geolocation
+    image: geolocation.png
+    author: Jason Wong
+
+  -
+    name: Personal Page
+    image: personalpage.png
+    author: Vlad Fara
+
+  -
+    name: Git tutorial
+    image: git-tutorial.png
+    author: Oana Rosca
+
+  -
+    name: Lights Out Javascript
+    image: lights-out.png
+    author: Oana Rosca
+
+  -
+    name: What are smart cities?
+    image: smart.PNG
+    author: Sumedh Supe
+
+  -
+    name: LibreOffice Poster
+    image: libreoffice.png
+    author: Dea Chintia
+
+  -
+    name: Lights Out
+    image: lightsout.png
+    author: Jason Wong
+
+  -
+    name: Lights Out
+    image: quizantonio.png
+    author: Antonio Molner Domenech
+
+  -
+    name: FOSS Quiz
+    image: lightsoutantoniomdk.png
+    author: Antonio Molner Domenech
+
+  -
+    name: 'Geolocation & Distance'
+    image: LatLonDistance_mborsch.png
+    author: Max B.
+
+  -
+    name: 'World Distance Calculator'
+    image: WorldDistCalc_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Postal Code Locator'
+    image: PostalLocate_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Lights Out!'
+    image: LightsOut_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Metadata Viewer'
+    image: MetadataViewer_mborsch.png
+    author: Max B.
+
+  -
+    name: Hangman
+    image: hangman1.png
+    author: Oana Rosca
+
+  -
+    name: Blog about Open Source
+    image: opensource.png
+    author: Selina Feng
+
+  -
+    name: Hangman
+    image: hangman2.png
+    author: Jason Wong
+
+  -
+    name: Git Tutorial
+    image: learngit.png
+    author: Sayan Chaudhry
+
+  -
+    name: Open Source Software Collage
+    image: collage.jpg
+    author: Sayan Chaudhry
+
+  -
+    name: Git Tutorial
+    image: neerajphp.png
+    author: Neeraj Pandey
+
+  -
+    name: Checkers
+    image: checkers.png
+    author: Jason Wong
+
+  -
+    name: PHP Script
+    image: php-script.png
+    author: M.Yasoob Ullah Khalid
+
+  -
+    name: FOSS Math Software Collage
+    image: math.png
+    author: Sayan Chaudhry
+
+  -
+    name: Million Tweets Using Loklak
+    image: million.png
+    author: Sayan Chaudhry
+
+  -
+    name: Open Street Map - Postal code queries
+    image: OpenStreetMap.png
+    author: Duc Phan Duy
+
+  -
+    name: Distance Calculator
+    image: distancecalculator.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: JSON-DATA Fetcher
+    image: idfetch.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Meta Data Viewer
+    image: mdv.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Locator
+    image: locate.png
+    author: Yathannsh Kulshrestha
+
+  -
+    name: Loklak Search
+    image: search.png
+    author: M.Yasoob Ullah Khalid
+
+  -
+    name: Geolocation by postal code
+    image: geolocationpostalcode.png
+    author: Bartosz Wiśniewski
+
+  -
+    name: Hangman!
+    image: hangman.png
+    author: M.Yasoob Ullah Khalid
+
+  -
+    name: Juan F. Verhook
+    image: manager.png
+    author: Fossasia Event Manager!
+
+  -
+    name: Node.js GitHub OAuth
+    image: githuboauth.png
+    author: Yago González
+
+  -
+    name: Get Coordinates
+    image: jamgetcoords.png
+    author: John Murzaku
+
+  -
+    name: 3D Loklak 'Crazy Cow'
+    image: loklakcowstl1.PNG
+    author: Sumedh Supe
+
+  -
+    name: Loklak Poster
+    image: loklakposter.png
+    author: Sayan Chaudhry
+
+  -
+    name: My first site
+    image: fix.png
+    author: Nastya Kostiv
+
+  -
+    name: Call yourself in PHP
+    image: configurePhpPiotr.png
+    author: Piotr Kowalski
+
+  -
+    name: Distance-Finder
+    image: Distance-Finder.jpg
+    author: Aditya Thakral
+
+  -
+    name: Hangman
+    image: hm.PNG
+    author: Baidyanth Kundu
+
+  -
+    name: JAVA Quiz
+    image: JQ.PNG
+    author: Baidyanath Kundu
+
+  -
+    name: Hangman
+    image: hangmanc.png
+    author: Sawyer Charles  
