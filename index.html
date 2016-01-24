@@ -812,7 +812,7 @@
 
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
-              <h1 class="section-h1"><button id = "lightbutton" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
+              <h1 class="section-h1"><button id = "lightbutton" type="button" onClick="changebclight()">Lights Out Projects (Click Me)</button></h1>
               <div class="container">
                 <section>
                   <div class="row">
@@ -927,7 +927,8 @@
                 <h4 class = "card-subtitle"><a href="https://github.com/seadog007/Light-Adv">Github</a></h4>
             </div>
           </div>
-
+        </div>
+        <div class = "row">
         <div class = "col-xs-3">
           <div class = "card">
           <div class="avatar img-circle">
@@ -1198,7 +1199,7 @@
 		})
    </script>
    <script type = "text/javascript">
-   function changebclight(){
+   $('#lightbutton').on('touchstart click', function(){
      var myElement = document.querySelector("#lightsout");
      if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
        document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
@@ -1208,7 +1209,7 @@
        myElement.style.backgroundColor = "#cccc00";
        document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
      }
-   }
-   </script>
+   });
+</script>
 </body>
 </html>
