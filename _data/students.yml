@@ -604,9 +604,15 @@
   image: lsy.png
   twitter: LsyDhs
   bio: The best moments are yet to come
-  
+
 - name: Brenden Brusberg
   github: BobJoeTom
   image: BrendenBrusberg.jpg
   twitter: BrenbrusBrenden
   bio: 1st GCI
+
+- name: Ryan Yeo
+  github: RyanYeo
+  image: RyanYeo.png
+  twitter: ryanyyk
+  bio: Impossible just means that you haven't found a solution
