@@ -219,11 +219,6 @@
     author: Baidyanth Kundu
 
   -
-    name: PHP App: Hello Name
-    image: php hello [name] screenshot.png
-    author: Jeffrey Kam
-
-  -
     name: JAVA Quiz
     image: JQ.PNG
     author: Baidyanath Kundu
@@ -232,7 +227,13 @@
     name: Hangman
     image: hangmanc.png
     author: Sawyer Charles  
+  
   -
     name: File Metadata
     image: filemetadataanshuman73.png
     author: Anshuman Agarwal 
+
+  -
+    name: PHP App: Hello Name
+    image: php hello [name] screenshot.png
+    author: Jeffrey Kam
