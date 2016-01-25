@@ -1058,7 +1058,7 @@ figure {
   -webkit-transition:0.6s all ease-in-out;
   -mozkit-transition:0.6s all ease-in-out;
   -transition:0.6s all ease-in-out;
- 
+
 
 }
 .contributers .card{
@@ -1396,31 +1396,49 @@ li:hover ul {
 iframe{
   box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
   }
-  #lightbutton {
-  	background-color:#44c767;
-  	-moz-border-radius:16px;
-  	-webkit-border-radius:16px;
-  	border-radius:16px;
-  	border:1px solid #18ab29;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	padding:13px 28px;
-  	text-decoration:none;
-  	text-shadow:0px 1px 0px #2f6627;
-    font-family: "Russo-one",sans-serif;
-    font-size: 39px;
-    margin-top: 0.5cm;
+  .onoffswitch {
+      margin: 0.5cm;
+      position: relative; width: 90px;
+      -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
   }
-  #lightbutton:hover {
-  background-color:#5cbf2a;
-}
-#lightbutton:active {
-  position:relative;
-  top:1px;
-}
-  #lightbutton:focus {
-    outline:0;
+  .onoffswitch-checkbox {
+      display: none;
+  }
+  .onoffswitch-label {
+      display: block; overflow: hidden; cursor: pointer;
+      border: 2px solid #999999; border-radius: 20px;
+  }
+  .onoffswitch-inner {
+      display: block; width: 200%; margin-left: -100%;
+  }
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+      display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+      font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+      box-sizing: border-box;
+  }
+  .onoffswitch-inner:before {
+      content: "ON";
+      padding-left: 10px;
+      background-color: #34A7C1; color: #FFFFFF;
+  }
+  .onoffswitch-inner:after {
+      content: "OFF";
+      padding-right: 10px;
+      background-color: #EEEEEE; color: #999999;
+      text-align: right;
+  }
+  .onoffswitch-switch {
+      display: block; width: 18px; margin: 6px;
+      background: #FFFFFF;
+      position: absolute; top: 0; bottom: 0;
+      right: 56px;
+      border: 2px solid #999999; border-radius: 20px;
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+      right: 0px;
   }
 .overflow {
     white-space: nowrap;
