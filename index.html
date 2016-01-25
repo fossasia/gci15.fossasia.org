@@ -22,7 +22,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-<a href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<a class="fork-github" href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <!--Navbar-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -298,17 +298,17 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="img/gallery/personalpage.png" alt="img05" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="http://github.com/vldfr/Profile_page/" target="_blank">Personal Page</a></h2>
-                <h3>Vlad Fara</h3>
-              </figcaption>
-            </figure>
-            <figure>
               <img src="img/gallery/apache.png" alt="img03" height="240" width="240">
               <figcaption>
                 <h2 class="photostack-title"><a href="https://github.com/Yathannsh/PHP_APP" target="_blank" target="_blank" >Configuring Apache with PHP</a></h2>
                 <h3>Yathannsh Kulshrestha</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/gallery/personalpage.png" alt="img05" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="http://github.com/vldfr/Profile_page/" target="_blank">Personal Page</a></h2>
+                <h3>Vlad Fara</h3>
               </figcaption>
             </figure>
             <figure>
@@ -524,14 +524,6 @@
             </figcaption>
           </figure>
           <figure>
-<<<<<<< HEAD
-              <img src="img/gallery/php hello [name] screenshot.png" alt="img05" height="240" width="240">
-              <figcaption>
-                <h2 class="photostack-title"><a href="https://github.com/lazypanda10117/Hello-Jeffrey-Kam-PHP" target="_blank">PHP App: Hello [name]</a></h2>
-                <h3>Jeffrey Kam</h3>
-              </figcaption>
-            </figure>
-=======
             <img src="img/gallery/myapp-abishek.jpg" alt="Abi" height="240" width="240">
             <figcaption>
               <h2 class="photostack-title"><a href="https://github.com/Abhi2424shek/Abishek-Android-App" target="_blank">My Android App</a></h2>
@@ -545,7 +537,13 @@
               <h3>Anshuman Agarwal</h3>
             </figcaption>
           </figure>
->>>>>>> c5606ed64e64b3f97c97efa1017f53eed183f66f
+          <figure>
+            <img src="img/gallery/php hello [name] screenshot.png" alt="img05" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/lazypanda10117/Hello-Jeffrey-Kam-PHP" target="_blank">PHP App: Hello [name]</a></h2>
+              <h3>Jeffrey Kam</h3>
+            </figcaption>
+          </figure>
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -1312,7 +1310,6 @@
       $scope.twitter = $resource('http://loklak.org/api/:action',
           {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
           {get:{method:'JSONP'}});
-
       $scope.doSearch = function () {
           $("#spinner").show();
           $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
@@ -1364,7 +1361,6 @@
 				$('#contentres').append(div);
 		      });
 			}
-
 		})
 		.fail(function(){
 			console.log("fail");
@@ -1385,3 +1381,5 @@
 </script>
 </body>
 </html>
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
