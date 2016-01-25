@@ -1474,6 +1474,11 @@ a.close {
        width: 100%;
     }
 }
+@media (min-width: 770px) and (max-width: 1100px) {
+  .fork-github img{
+    top: 120px !important;
+  }
+}
 .mi {
 	font-size: 25px;
     color: #fff;
