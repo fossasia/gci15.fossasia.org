@@ -234,6 +234,6 @@
     author: Anshuman Agarwal 
 
   -
-    name: PHP App: Hello [name]
+    name: PHP Apache App
     image: php hello [name] screenshot.png
     author: Jeffrey Kam
