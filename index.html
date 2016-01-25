@@ -565,8 +565,8 @@
       <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
         <form class="form-wrapper cf">
-            <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
-            <button type="submit" ng-click="doSearch()" >Search</button>
+            <input type="text"  id="loklakSearchInput" ng-model="searchTerm" placeholder="Search Tweets" required>
+            <button type="submit" id="loklakSearchSubmit" ng-click="doSearch()" >Search</button>
         </form>
         <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -578,7 +578,7 @@
             </circle>
            </g>
         </svg>
-        <table class="table table-striped">
+        <table class="table table-striped" id="loklakSearchTable">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
         </tr>

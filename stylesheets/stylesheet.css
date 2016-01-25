@@ -1527,3 +1527,27 @@ a.close {
     border: none;
     color: #fff;
 }
+
+#loklakSearchTable {
+  width: 80%;
+}
+
+#loklakSearchInput {
+  background-color: #c7254e;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+}
+
+#loklakSearchSubmit {
+  background-color: #c7254e;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  transition: background-color 0.1s linear;
+}
+
+#loklakSearchSubmit:active {
+  color: #c7254e;
+  background-color: #fff;
+}
