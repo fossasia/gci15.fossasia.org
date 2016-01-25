@@ -537,6 +537,13 @@
               <h3>Anshuman Agarwal</h3>
             </figcaption>
           </figure>
+          <figure>
+            <img src="img/gallery/php hello [name] screenshot.png" alt="img05" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/lazypanda10117/Hello-Jeffrey-Kam-PHP" target="_blank">PHP Apache App</a></h2>
+              <h3>Jeffrey Kam</h3>
+            </figcaption>
+          </figure>
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -1325,7 +1332,6 @@
       $scope.twitter = $resource('http://loklak.org/api/:action',
           {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
           {get:{method:'JSONP'}});
-
       $scope.doSearch = function () {
           $("#spinner").show();
           $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
@@ -1377,7 +1383,6 @@
 				$('#contentres').append(div);
 		      });
 			}
-
 		})
 		.fail(function(){
 			console.log("fail");
@@ -1396,3 +1401,5 @@
 </script>
 </body>
 </html>
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
