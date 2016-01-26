@@ -1413,7 +1413,7 @@ iframe{
   }
   .onoffswitch-inner:before, .onoffswitch-inner:after {
       display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-      font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+      font-size: 14px; color: white; font-family: 'Russo-one', sans-serif; font-weight: bold;
       box-sizing: border-box;
   }
   .onoffswitch-inner:before {
@@ -1526,4 +1526,28 @@ a.close {
     background: #0bf;
     border: none;
     color: #fff;
+}
+
+#loklakSearchTable {
+  width: 80%;
+}
+
+#loklakSearchInput {
+  background-color: #c7254e;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+}
+
+#loklakSearchSubmit {
+  background-color: #c7254e;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  transition: background-color 0.1s linear;
+}
+
+#loklakSearchSubmit:active {
+  color: #c7254e;
+  background-color: #fff;
 }
