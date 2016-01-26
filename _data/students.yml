@@ -38,7 +38,7 @@
 
 - name: Jasper Yu
   github: seadog007
-  image: seadog007.png
+  image: seadog007.jpg
   blog:
   twitter: 007seadog
   facebook: seadog007
@@ -101,7 +101,7 @@
 
 - name: Sarah Greisdorf
   github: sarahgreisdorf
-  image: sarahg.png
+  image: sarahg.jpg
   blog: http://sarahgreisdorf.com
   twitter: sarahgreisdorf
   facebook: Sarah Greisdorf
@@ -272,7 +272,7 @@
 
 - name: Amaan Marfatia
   github: DrAlias
-  image: amaan.png
+  image: amaan.jpg
   bio: Math and comp sci fanatic! 2nd GCI
 
 - name: Yash Mundra
@@ -290,14 +290,14 @@
 
 - name: Jerome Leow
   github: JLeow00
-  image: JLeow.png
+  image: JLeow.jpg
   facebook: jerome.leow.5
   twitter: JLeow00
   bio: Ukulele is love, ukulele is life
 
 - name: Leow Yee Zhi
   github: yeezhi
-  image: yeezhi.png
+  image: yeezhi.jpg
   facebook: yeezhi.leow
   twitter: yee_zhi_leow
   bio: Eat_Sleep_Ball
@@ -372,13 +372,13 @@
 
 - name: Li Zhaoqi
   github: Eclipse-Dominator
-  image: LZQ_img.png
+  image: LZQ_img.jpg
   twitter: Doomgrammar
   bio: Believe in the impossible!
 
 - name: Sayan Chaudhry
   github: shiftsayan
-  image: sayan.png
+  image: sayan.jpg
   twitter: shiftsayan
   facebook: shiftsayan
   bio: The ability to become a Super Saiyan is nothing but a legend.
@@ -504,7 +504,7 @@
 
 - name: Sharat Garg.
   github: Sharatsa
-  image: Sharat.png
+  image: Sharat.jpg
   blog: www.sharatlog.wordpress.com
   facebook: SharatGarg01
   bio: "A Participant of GCI 2015"
@@ -526,13 +526,13 @@
 
 - name: Timothy Law
   github: Timtim7
-  image: timtim7.png
+  image: timtim7.jpg
   twitter: law_songen
   bio: We were born to be real, not to be perfect
 
 - name: Jeryl Lee
   github: Gambit375
-  image: FabGambit.png
+  image: FabGambit.jpg
   twitter: Gambit_375
   bio: Carried by me!
 
@@ -557,7 +557,7 @@
 
 - name: Yee Jia Shuen
   github: shjnauie
-  image: shjnauie.png
+  image: shjnauie.jpg
   twitter: jiashuen
   bio: It's always ourself we find in the sea
 
