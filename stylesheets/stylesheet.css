@@ -1551,3 +1551,8 @@ a.close {
   color: #c7254e;
   background-color: #fff;
 }
+
+img.blogImage {
+  width: 240px;
+  height: 240px;
+}
