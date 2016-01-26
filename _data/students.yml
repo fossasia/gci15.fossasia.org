@@ -389,6 +389,15 @@
   twitter: sevazhidkov
   bio: School student from Russia, Python developer
 
+- name: Sumedh Supe
+  github: sumsupee
+  image: sumedh.jpg
+  blog:
+  twitter: Scool2000
+  facebook:
+  stackexchange:
+  bio: 'Creative, clever and love to smile!'
+
 - name: Saatvik Arya
   github: aryasaatvik
   image: saatvikarya.jpg
@@ -551,20 +560,225 @@
   image: shjnauie.png
   twitter: jiashuen
   bio: It's always ourself we find in the sea
-  
+
 - name: Boh Jie Qi
   github: BohJieQi
   image: JQ.png
   bio: First time in GCI, ball is life
-  
+
 - name: Johann Seow
   github: annes123
   image: dino.png
   bio: As a human kid I liked dinosaurs.
-  
+
 - name: Vic Chen
   github: vicchen0502
   imgage: vicchen0502.jpg
   instagram: vic0502_chen
   facebook: vic.chen.7169
   bio: keep working
+
+- name: Dee Mu Rui Marcus
+  github: bored-marcooz
+  twitter: bored_marcooz
+  image: mumumumummu.png
+  bio: Push yourself because no one else is going to do it for you.
+
+- name: Marion Mok
+  github: marionmok
+  twitter: doraemarion
+  image: marionmok.png
+  blog: https://ayeemarion.wordpress.com/
+  bio: Love people at their worst
+
+- name: Baidyanath Kundu
+  github: Baidya99
+  facebook: Baidya99
+  image: Baidya99.jpg
+  bio: Loves tech and also coding.
+
+- name: Zhang Jing Yuan
+  github: veehshiftz
+  image: table.jpg
+  bio: I love classy tables!
+
+- name: Sawyer Charles
+  gitub: xssc
+  image: xssc.jpg
+  twitter: x_ssc
+  bio: Code the future. First GCI.
+
+- name: Lee Sin Yuen
+  github: DhsLsy
+  image: lsy.png
+  twitter: LsyDhs
+  bio: The best moments are yet to come
+
+- name: Brenden Brusberg
+  github: BobJoeTom
+  image: BrendenBrusberg.jpg
+  twitter: BrenbrusBrenden
+  bio: 1st GCI
+
+- name: Ryan Yeo
+  github: RyanYeo
+  image: RyanYeo.png
+  twitter: ryanyyk
+  bio: Impossible just means that you haven't found a solution
+
+- name: mercuryprasad
+  github: mercuryprasad
+  image: mercuryprasad.jpeg
+  twitter: prasad_pitagi
+  bio: Loves electronics, learning coding
+
+- name: Kriya 
+  facebook: Akshata Kriya Betageri
+  image: kriya.jpg
+  twitter: Debena2
+  bio: It is always the adventurous who accomplish great things!
+
+- name: Anushri
+  image: anushri.jpg
+  twitter: Uanushri
+  bio: In search of purpose of existance
+
+- name: Akshata
+  image: akshata.jpg
+  twitter: swararevankar 
+  bio: Reach your goal
+
+- name: Nikhil
+  github: Djnikk
+  image: nikhil.jpg
+  twitter: Nballodi
+  bio: Nothing but something
+
+- name: Pavan
+  github: 
+  image: pavan.jpg
+  twitter: pavancdesai
+  bio: Enjoying learning with FOSSASIA
+
+- name: Piyu
+  github: tavakaripiyu 
+  image: piyu.jpg
+  twitter: piyutavakari
+  bio: Think a lot before you speak
+
+- name: Ravina
+  github:  
+  image: ravina.jpg
+  twitter: RavinaBugaliya
+  bio: Be yourself
+
+- name: Rituja
+  github:  
+  image: rituja.jpg
+  twitter: rituja1234
+  bio: Enjoy your life slowly
+
+- name: Yasmin
+  github: yasmin22 
+  image: yasmin.jpg
+  twitter: yasmin_sarkar
+  bio: Life is beautiful
+
+- name: Vaishnavi
+  github: 
+  image: vaishnavi.jpg
+  twitter: VaishnaviSalun5
+  bio: Live Life
+
+- name: Matthew Ponce de Leon
+  github: mattpdl
+  image: mattpdl.jpg
+  blog: http://mattpdl.github.io
+  twitter: mattpdl
+  facebook: mattpdl01
+  stackexchange: http://stackexchange.com/users/6321491/mattpdl
+  bio: Building the next big thing...
+  
+- name: Somya Upadhyay
+  github: somyaupadhyay
+  image: somya.jpg
+  blog: http://somyaupadhyay.edublogs.org/
+  twitter: somya23upadhyay
+  facebook: somya.upadhyay.1
+  bio: Passionate about Computer Science and Art
+
+- name: Rutuja Katamble
+  github:
+  image: rutuja.jpg
+  twitter:
+  bio: Learning to code with FOSSASIA
+
+- name: Omkar Hegde
+  github:
+  image: omkarhegde.jpg
+  twitter:
+  facebook: 100008555595926
+  bio: Enjoying learnig with FOSSASIA
+
+- name: Vishal Bharati
+  github:
+  image: vishalbharati.jpg
+  twitter:
+  facebook: 100006011508605
+  bio: Loves hacking with electronics
+
+- name: Omkar Balekundri
+  github:
+  image: omkar.jpg
+  twitter:
+  facebook: omkar.balekundri.35
+  bio: Loves biking
+
+- name: Prasad Vernekar
+  github:
+  image: prasadvernekar.jpg
+  twitter:
+  facebook : 100005036476983
+  bio: Learning to code with FOSSASIA
+
+- name: Poornima Telsang
+  github:
+  image: poornimatelsang.jpg
+  twitter:
+  facebook : 100011041716506
+  bio: Learning to code with FOSSASIA
+
+- name: VijayLaxmi
+  github:
+  image: vijaylaxmi.jpg
+  twitter:
+  facebook : 100009371741832
+  bio: Learning to code with FOSSASIA
+
+- name: Aniket Wadkar
+  github:
+  image: aniketwadkar.jpg
+  twitter:
+  facebook : aniket.wadkar.792
+  bio: Learning to code with FOSSASIA
+
+- name: Yash Anvekar
+  github:
+  image: yashanvekar.jpg
+  twitter:
+  facebook : yash.anvekar.5059
+  bio: Learning to code with FOSSASIA
+
+- name: Mohit Angolkar
+  github:
+  image: mohitangolkar.jpg
+  twitter:
+  facebook : mohit.angolkar
+  bio: Taking my first steps in the world of FOSS with FOSSASIA
+
+- name: Vrushabh
+  github:
+  image: vrushabh.jpg
+  twitter:
+  facebook : vrushabh08312464383
+  bio: Taking my first steps in the world of FOSS with FOSSASIA

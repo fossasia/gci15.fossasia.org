@@ -59,6 +59,31 @@
     author: Antonio Molner Domenech
 
   -
+    name: 'Geolocation & Distance'
+    image: LatLonDistance_mborsch.png
+    author: Max B.
+
+  -
+    name: 'World Distance Calculator'
+    image: WorldDistCalc_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Postal Code Locator'
+    image: PostalLocate_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Lights Out!'
+    image: LightsOut_mborsch.png
+    author: Max B.
+
+  -
+    name: 'Metadata Viewer'
+    image: MetadataViewer_mborsch.png
+    author: Max B.
+
+  -
     name: Hangman
     image: hangman1.png
     author: Oana Rosca
@@ -190,7 +215,19 @@
 
   -
     name: Hangman
-    image: HANGman.PNG
+    image: hm.PNG
     author: Baidyanth Kundu
 
+  -
+    name: JAVA Quiz
+    image: JQ.PNG
+    author: Baidyanath Kundu
 
+  -
+    name: Hangman
+    image: hangmanc.png
+    author: Sawyer Charles  
+  -
+    name: File Metadata
+    image: filemetadataanshuman73.png
+    author: Anshuman Agarwal 

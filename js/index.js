@@ -21,16 +21,16 @@ $(document).ready(function() {
       autoSlideDelay = 6000,
       $pagination = $(".slider-pagi");
 
-  function createBullets() {
+  (function createBullets() {
     for (var i = 0; i < numOfSlides+1; i++) {
       var $li = $("<li class='slider-pagi__elem'></li>");
       $li.addClass("slider-pagi__elem-"+i).data("page", i);
       if (!i) $li.addClass("active");
+      console.log(i);
       $pagination.append($li);
     }
-  };
+  })();
 
-  createBullets();
 
   function manageControls() {
     $(".slider-control").removeClass("inactive");
@@ -201,16 +201,20 @@ $(document).ready(function() {
     output = "";
     for (var i = 0; i <= json.length - 1; i++) {
       output = output + '<div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 ">\n';
-      output = output + '<div class="card">\n';
-      output = output + '<a href="https://github.com/' + json[i].login + '">';
-      output = output + '<div class="avatar img-circle">\n';
-      output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
-      output = output + '</div>';
-      output = output + '<div class="card-block ">';
-      output = output + '<h4 class="card-title "><p class="overflow ellipsis">'+ json[i].login + '</p></h4>';
-      output = output + '</a>';
-      output = output + '</div>';
-      output = output + '</div>';
+            output = output + '<div class="grid">\n';
+                  output = output + '<figure class="effect-duke">\n';      
+                        output = output + '<a href="https://github.com/' + json[i].login + '" style="display:none"><i id="github" class="icon-github"></i></a>';          
+                        output = output + '<div class="card">\n';
+                              output = output + '<div class="avatar img-circle">\n';
+                                    output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
+                              output = output + '</div>';
+                              output = output + '<div class="card-block">';
+                                    output = output + '<h4 id="h4"><p class="overflow ellipsis">'+ json[i].login + '</p></h4>';
+                                    output = output + '<figcaption><div class="social"><div class="icon-holder"><a href="https://github.com/' + json[i].login + ' "><i id="github" class="icon-github"></i></a></div></div></figcaption>';
+                              output = output + '</div>';   
+                        output = output + '</div>';        
+                  output = output + '</figure>';
+            output = output + '</div>';
       output = output + '</div>';
     }
     $('.contributers').append(output);
@@ -243,7 +247,7 @@ $(document).ready(function() {
       });
     }
   })();
-  
+
 
   loklak_request.done(function(json_result) {
     var peers = json_result.peers;
@@ -315,7 +319,7 @@ $(document).ready(function() {
   .fail(function() { console.log("The loklak call failed.")});
 
 
-});
+
 // Anchor to Anchor smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -361,13 +365,27 @@ $('.gallery-item').hover(function(){
                 marginLeft: '0px'
             }, 100);
         });
+
+
+
+
+
+
+
+
+/* Directions:
+1. Copy the blog HTML
+2. Paste into http://www.html-cleaner.com/
+3. Then paste into http://www.textfixer.com/tools/remove-line-breaks.php and paste the line of string into the blogData array in blogData.js.
+4. Add an h3 and h4 with title and author, respectively
+*/
+
 function loadblog(){
 	$.ajax({
 	  type : "GET",
       url : "loadblog.html",
 	  beforeSend: function(){
         document.getElementById("dime").style.display="inherit";
-		document.getElementById("dimer").style.display="none";
       },
       success : function(data){
         $(".blogs_wrapper").html(data);
@@ -375,14 +393,26 @@ function loadblog(){
     });
 }
 
-function changebclight(){
-  var myElement = document.querySelector("#lightsout");
-  if(document.getElementById("lightbutton").innerHTML=="Lights Out Projects (Click Me)"){
-    document.getElementById("lightbutton").innerHTML="Lights really off! Click me!"
-    myElement.style.backgroundColor = "#515100";
+  $("#grideee a").toggle();
+
+
+
+loadblog();
+
+});
+
+function displayBlog(element, event, blognum) {
+  event.preventDefault();
+  var blogText = blogData[blognum-1];
+  var wordContainer = $(".pText");
+  var url = $(element).attr("href");
+  wordContainer.html(blogText+"<br><p>See more at: <a href='"+url+"' target=_blank>"+url+"</a></p>");
+  if($('.blogText').css('display') == 'none') {
+    toggleDisplay();
   }
-  else{
-    myElement.style.backgroundColor = "#cccc00";
-    document.getElementById("lightbutton").innerHTML="Lights Out Projects (Click Me)";
-  }
+}
+
+function toggleDisplay() {
+  var textOverlay = $('.blogText');
+  textOverlay.toggle();
 }

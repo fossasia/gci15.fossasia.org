@@ -22,7 +22,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-<a href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<a class="fork-github" href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <!--Navbar-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -46,6 +46,7 @@
           <li><a href="#students">Students</a></li>
           <li id="studproj"><a href="#">Student Projects &#x25BC;</a>
           <ul id="projlist">
+            <li><a href="#blog_posts">Blog Posts</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#loklak">Loklak Peers</a></li>
             <li><a href="#loklak_search">Loklak Search</a></li>
@@ -55,10 +56,10 @@
             <li><a href="#social_media">Social Media</a></li>
             <li><a href ="#lights_out">Lights out</a></li>
             <li><a href ="#privly-stickers">Privly Stickers</a></li>
-            <li><a href="#blog_posts">Blog Posts</a></li>
           </ul>
         </li>
         <li><a href="#contributors">Contributors</a></li>
+        <li><a href="#issues">Github Issues</a>
         <li><a href="http://gci14.fossasia.org">GCI 2014</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -244,7 +245,7 @@
                     {% endif %}
                   </div>
                   <div class="card-block">
-                    <h4 class="card-title">{{ student.name }}</h4>
+                    <h4 class="card-title overflow ellipsis">{{ student.name }}</h4>
                     <figcaption>
                       <div class="social">
                         <div class="icon-holder">
@@ -277,6 +278,10 @@
           {% endfor %}
         </div>
       </div>
+
+      <a class="anchor" name="blog_posts"></a>
+      <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
+
       <a class="anchor" name="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
@@ -320,6 +325,43 @@
                 <h3>Oana Rosca</h3>
               </figcaption>
             </figure>
+
+            <figure>
+              <img src="img/gallery/LatLonDistance_mborsch.png" alt="img07" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://jsfiddle.net/MBorsch/7j1x00ed/" target="_blank">Geolocation and Distance</a></h2>
+                <h3>Max B.</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/gallery/WorldDistCalc_mborsch.png" alt="img07" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://jsfiddle.net/MBorsch/tgjjpgmd/" target="_blank">World Distance Calculator</a></h2>
+                <h3>Max B.</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/gallery/PostalLocate_mborsch.png" alt="img07" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://jsfiddle.net/MBorsch/gpbdy8u3/" target="_blank">Postal Code Locator</a></h2>
+                <h3>Max B.</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/gallery/LightsOut_mborsch.png" alt="img07" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="http://maxborsch.github.io/Lights-Out/" target="_blank">Lights Out!</a></h2>
+                <h3>Max B.</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/gallery/MetadataViewer_mborsch.png" alt="img07" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title">Metadata Viewer</h2>
+                <h3>Max B.</h3>
+              </figcaption>
+            </figure>
+
             <figure>
               <img src="img/gallery/libreoffice.png" alt="img08" height="240" width="240" >
               <figcaption>
@@ -467,6 +509,13 @@
                 <h3>Rahul Narayanan</h3>
               </figcaption>
             </figure>
+              <figure>
+              <img src="img/gallery/phpapp.png" alt="img24" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://github.com/Elgayar/php-app" target="_blank">PHP APP</a></h2>
+                <h3>Mostafa Elgayar</h3>
+              </figcaption>
+            </figure>
           <figure>
             <img src="img/gallery/Distance-Finder.png" alt="img69" height="240" width="240">
             <figcaption>
@@ -474,7 +523,27 @@
               <h3>Aditya Thakral</h3>
             </figcaption>
           </figure>
-
+          <figure>
+            <img src="img/gallery/myapp-abishek.jpg" alt="Abi" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="https://github.com/Abhi2424shek/Abishek-Android-App" target="_blank">My Android App</a></h2>
+              <h3>Abishek V Ashok</h3>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gallery/filemetadataanshuman73.png" alt="anshuman73" height="240" width="240">
+            <figcaption>
+              <h2 class="photostack-title"><a href="http://anshuman73.hol.es/FileMetadata/" target="_blank">File Metadata</a></h2>
+              <h3>Anshuman Agarwal</h3>
+            </figcaption>
+          </figure>
+           <figure>
+              <img src="img/gallery/phpform.png" alt="imgphp" height="240" width="240">
+              <figcaption>
+                <h2 class="photostack-title"><a href="https://github.com/nicholascheow/phpformgci" target="_blank" target="_blank" >A PHP form app hosted on apache and PHP server</a></h2>
+                <h3>Nicholas Cheow</h3>
+              </figcaption>
+            </figure>
           <!--Don't forget to update the gallery.yml file!-->
           </div>
         </section>
@@ -496,8 +565,8 @@
       <div class="loklak_search-wrapper loklak-wrapper" ng-app="Twitter" ng-controller="TwitterCtrl" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Search</span></h1>
         <form class="form-wrapper cf">
-            <input type="text"  ng-model="searchTerm" placeholder="Search Tweet" required>
-            <button type="submit" ng-click="doSearch()" >Search</button>
+            <input type="text"  id="loklakSearchInput" ng-model="searchTerm" placeholder="Search Tweets" required>
+            <button type="submit" id="loklakSearchSubmit" ng-click="doSearch()" >Search</button>
         </form>
         <svg id="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -509,7 +578,7 @@
             </circle>
            </g>
         </svg>
-        <table class="table table-striped">
+        <table class="table table-striped" id="loklakSearchTable">
         <tr ng-repeat="tweet in twitterResult.statuses">
             <td ng-bind-html-unsafe="tweet.text"></td>
         </tr>
@@ -520,7 +589,7 @@
       <div class="loklak_heatmap-wrapper loklak-wrapper" align="center">
         <h1 class="section-h1"><span class="white-border">Loklak Tweet Heatmap</span></h1>
         <div id="heatmap">
-          <object type="text/html" data="https://gci-polbaladas.c9users.io/embedable" width="90%" height="600px"></object>
+          <object type="text/html" data="http://loklak-heatmap.herokuapp.com" width="100%" height="700px"></object>
         </div>
       </div>
       <a class="anchor" name="student_games"></a>
@@ -653,7 +722,7 @@
                   <div class="card">
                     <a href="https://github.com/Baidya99/GciHangman/tree/master">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="https://cloud.githubusercontent.com/assets/16690760/12458957/4a70dda2-bfd2-11e5-9414-2d42b7292ab0.PNG" data="https://cloud.githubusercontent.com/assets/16690760/12458957/4a70dda2-bfd2-11e5-9414-2d42b7292ab0.PNG">
+                        <img class="card-img-top" src="img/gallery/hm.PNG" data="img/gallery/hm.PNG" alt="hangman">
                       </div>
                     </a>
                   </div>
@@ -661,6 +730,36 @@
                     <a href="https://github.com/Baidya99/GciHangman/tree/master">
                       <h4 class="card-title">HangMan</h4>
                       <h4 class="card-subtitle">Baidyanath Kundu</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/JQ.PNG" data="img/gallery/JQ.PNG" alt="hangman">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
+                      <h4 class="card-title">JAVA FOSS Quiz</h4>
+                      <h4 class="card-subtitle">Baidyanath Kundu</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                  <div class="card">
+                    <a href="https://github.com/xssc/gci-hangman/tree/master">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/hangmanc.png" data="img/gallery/hangmanc.png">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/xssc/gci-hangman/tree/master">
+                      <h4 class="card-title">Hangman</h4>
+                      <h4 class="card-subtitle">Sawyer Charles</h4>
                     </a>
                   </div>
                 </div>
@@ -678,22 +777,41 @@
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/geolocation/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/geolocation.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/geolocation.png" alt="codethejason">
                       </div>
                     </a>
                   </div>
                   <div class="card-block">
                     <a href="https://github.com/codethejason/gci2015/tree/master/geolocation/">
-                      <h4 class="card-title">Geolocation Website</h4>
+                      <h4 class="card-title">Geolocation by Browser</h4>
                       <h4 class="card-title">Jason Wong</h4>
                     </a>
                   </div>
                 </div>
+                
+                
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="https://github.com/codethejason/gci2015/tree/master/openstreetmappostalcode/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationzipjason.png" alt="codethejason">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/codethejason/gci2015/tree/master/openstreetmappostalcode/">
+                      <h4 class="card-title">Geolocation by Zip Code</h4>
+                      <h4 class="card-title">Jason Wong</h4>
+                    </a>
+                  </div>
+                </div>
+                
+                
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                   <div class="card">
                     <a href="https://github.com/Yathannsh/locateme.git">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/locate.png" data="img/gallery/locate.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/locate.png" alt="shashank-sharma">
                       </div>
                     </a>
                   </div>
@@ -708,7 +826,7 @@
                   <div class="card">
                     <a href="https://poprosturonin.github.io/postalCodeGeolocation/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/geolocationpostalcode.png" data="img/gallery/geolocationpostalcode.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationpostalcode.png" alt="shashank-sharma">
                       </div>
                     </a>
                   </div>
@@ -723,7 +841,7 @@
                   <div class="card">
                     <a href="http://jammurz.github.io/GetCoords/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/jamgetcoords.png" data="img/gallery/jamgetcoords.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/jamgetcoords.png" alt="shashank-sharma">
                       </div>
                     </a>
                   </div>
@@ -734,15 +852,131 @@
                     </a>
                   </div>
                 </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="https://jsfiddle.net/MBorsch/gpbdy8u3/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="" data="img/gallery/PostalLocate_mborsch.png" alt="Max B.">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="#Max B.">
+                      <h4 class="card-title">Postal Code Locator</h4>
+                      <h4 class="card-subtitle">Max B.</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="https://jsfiddle.net/MBorsch/7j1x00ed/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="" data="img/gallery/LatLonDistance_mborsch.png" alt="Max B.">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="#Max B.">
+                      <h4 class="card-title">Geolocation & Distance</h4>
+                      <h4 class="card-subtitle">Max B.</h4>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://abhi2424shek.github.io/pinlocator.html/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/pinlocator-abishek.jpg" data="img/gallery/pinlocator-abishek.jpg" alt="Abi">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://abhi2424shek.github.io/pinlocator.html/">
+                      <h4 class="card-title">Pinlocator</h4>
+                      <h4 class="card-subtitle">Abishek V Ashok</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://abhi2424shek.github.io/geolocator.html">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="img/gallery/geolocator-abishek.jpg" data="img/gallery/geolocator-abishek.jpg" alt="Abi">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="http://abhi2424shek.github.io/geolocator.html">
+                      <h4 class="card-title">Geolocator</h4>
+                      <h4 class="card-subtitle">Abishek V Ashok</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://anshuman73.hol.es/BrowserGeolocation/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationanshuman73.png" alt="anshuman73">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/anshuman73/GCI-2015/tree/master/Geolocation%20Browser">
+                      <h4 class="card-title">Geolocation from Browser</h4>
+                    </a>
+                    <a href="http://anshuman73.github.io">
+                      <h4 class="card-title">Anshuman Agarwal</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                  <div class="card">
+                    <a href="http://anshuman73.hol.es/NominatimOSM/">
+                      <div class="avatar img-circle">
+                        <img class="card-img-top" src="" data="img/gallery/postalcodeanshuman73.png" alt="anshuman73">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <a href="https://github.com/anshuman73/GCI-2015/tree/master/OpenStreet%20Postal%20Code">
+                      <h4 class="card-title">Geolocation by Postal Code</h4>
+                    </a>
+                    <a href="http://anshuman73.github.io">
+                      <h4 class="card-title">Anshuman Agarwal</h4>
+                    </a>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
       </div>
-      <a class="anchor" name="blog_posts"></a>
-      <div class="blogs_wrapper"><li class="dimer" id="dimer" onClick="loadblog()">View Blog Posts</li><li class="dime" id="dime">Loading...</li></div>
+
       <a class="anchor" name="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
-              <h1 class="section-h1"><button id = "lightbutton" onclick="changebclight()">Lights Out Projects (Click Me)</button></h1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-xs-4">
+            </div>
+            <div class="col-xs-6 col-xs-4">
+              <h1 class="section-h1">
+                <span class = "white-border" style = "text-align:center">Lights Out</span>
+              </h1>
+            </div>
+            <div class="col-xs-6 col-xs-4">
+                  <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+            </div>
+          </div>
+          </div>
+
               <div class="container">
                 <section>
                   <div class="row">
@@ -857,7 +1091,8 @@
                 <h4 class = "card-subtitle"><a href="https://github.com/seadog007/Light-Adv">Github</a></h4>
             </div>
           </div>
-
+        </div>
+        <div class = "row">
         <div class = "col-xs-3">
           <div class = "card">
           <div class="avatar img-circle">
@@ -899,9 +1134,72 @@
       <h4 class = "card-subtitle"><a href="https://github.com/nolik2000/light.com">Github</a></h4>
     </div>
     </div>
+
+    <div class = "col-xs-3">
+      <div class = "card">
+      <div class="avatar img-circle">
+        <a href="http://maxborsch.github.io/Lights-Out/">
+        <img class="card-img-top" src="img/gallery/LightsOut_mborsch.png">
+      </a>
+      </div>
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">by Max B.</h4>
+      <h4 class = "card-subtitle"><a href="http://maxborsch.github.io/Lights-Out/">Github</a></h4>
+    </div>
+    </div>
+  </div>
+  <div class ="row">
+    <div class = "col-xs-3">
+      <div class = "card">
+      <div class="avatar img-circle">
+        <a href="http://awaykened.github.io/lights_out">
+        <img class="card-img-top" src="img/gallery/lightsoutweiwei.png">
+      </a>
+      </div>
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">by Weiwei Zhong</h4>
+      <h4 class = "card-subtitle"><a href="https://github.com/awaykened/awaykened.github.io">Github</a></h4>
+    </div>
+    </div>
+
+        <div class = "col-xs-3">
+      <div class = "card">
+      <div class="avatar img-circle">
+        <a href="http://elgayar.github.io">
+        <img class="card-img-top" src="img/gallery/jslightsout.png">
+      </a>
+      </div>
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">by Mostafa Elgayar</h4>
+      <h4 class = "card-subtitle"><a href="https://github.com/Elgayar/elgayar.github.io">Github</a></h4>
+    </div>
+    </div>
+
+    <div class = "col-xs-3">
+      <div class = "card">
+      <div class="avatar img-circle">
+        <a href="http://anshuman73.hol.es/lightsout">
+        <img class="card-img-top" src="img/gallery/lightsoutanshuman73.png">
+      </a>
+      </div>
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">by Anshuman Agarwal</h4>
+      <h4 class = "card-subtitle"><a href="https://github.com/anshuman73/GCI-2015/tree/master/Lights%20Out">Github</a></h4>
+    </div>
+    </div>
+
     </div>
     </section>
     </div>
+    </div>
+    <a class="anchor" name="issues"></a>
+    <div id="contentem" class="blogs_wrapper">
+      <h2 class="section-h1" id="jigsaw"><span class="white-border">Github Issues</span></h2>
+      <div id="contentres"></div>
     </div>
  	 <a class="anchor" name="privly-stickers"></a>
       <div class="privly-wrapper">
@@ -1016,7 +1314,7 @@
             FOSSASIA is involved in Google Code-in, which serves as a great introduction to the world of open source collaboration and an excellent mediator to involve the next generation of digital collaborators.
           </p>
         </div>
-        
+
       </div>
     </div>
     <div id="newsletterDiv"><a class="close">&#10006;</a>
@@ -1030,7 +1328,13 @@
         <input type="submit" name="submit" id="submit" value="Subscribe" class="nws_sub"/>
       </form>
     </div>
+      <br>
+      <div>
+        <p class="text-center col-xs-12">&copy; Copyright 2009-2016 FOSSASIA</p>
+      </div>
   </footer>
+  <script src="js/blogData.js"></script>
+  <script src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/saSlider.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -1040,7 +1344,6 @@
   <script src="js/photostack.js"></script>
   <script src="http://code.angularjs.org/angular-1.0.0rc4.min.js"></script>
   <script src="http://code.angularjs.org/angular-resource-1.0.0rc4.min.js"></script>
-  <script src="js/index.js"></script>
   <script type="text/javascript">
   angular.module('Twitter', ['ngResource']);
   function TwitterCtrl($scope, $resource) {
@@ -1060,5 +1363,61 @@
   <script type="text/javascript">
   new Photostack(document.getElementById('photostack-1'));
   </script>
+  <script type="text/javascript">
+        $.getJSON(
+			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
+			function(){
+				console.log("success");
+			}
+		)
+		.done(function(data){
+			if(data==""||!data||data==0||data=="undefined"){
+				document.getElementById("contentem").innerHTML="<li class='mi'>Sorry there are no issues labeled feature currently opened at gci15.fossasia.org</li>";
+			}
+			else{
+			  $.each(data, function(i, item) {
+				//List of Content
+				var tag;
+				$.each(item["labels"], function(i, label) {
+					if (label["name"] != "feature") {
+						tag = label["name"];
+					}
+				});
+				if ($("#" + tag).length <= 0) {
+					var html = "<li class='tags'>" + tag + "<ul id='" + tag + "'></ul></li>";
+					$('#table').append(html);
+				}
+				var a = $("<a>", {href: "#" + item["id"]});
+				a.html(item["title"] + "<br>");
+				var li = $("<li>");
+				li.html(a);
+				$('#' + tag).append(li);
+				//Content Description
+				var div = $("<div>", {id: item["id"]});
+				var h4 = $("<h4>");
+				h4.html(item["title"]);
+				var bes = $("<input>",{type:"button",onClick:"location.href='"+item["html_url"]+"'",value:"Read more on Github",id:"issuebut"});
+				div.html(h4);
+				div.append(bes);
+				$('#contentres').append(div);
+		      });
+			}
+
+		})
+		.fail(function(){
+			console.log("fail");
+		})
+   </script>
+   <script type = "text/javascript">
+   $('#myonoffswitch').on('touchstart click', function(){
+     var myElement = document.querySelector("#lightsout");
+     if(!document.getElementById("myonoffswitch").checked){
+       myElement.style.backgroundColor = "#515100";
+     }
+     else{
+       myElement.style.backgroundColor = "#cccc00";
+     }
+   });
+</script>
 </body>
 </html>

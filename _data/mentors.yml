@@ -155,8 +155,8 @@
   github: wavicles
   image: praveen.jpg
   blog: http://wavicles.in/
-  twitter:
-  facebook:
+  twitter: _gnovi
+  facebook: praveenpatil103
   stackexchange:
   bio:
 
@@ -401,4 +401,12 @@
   github: tabesin
   image: And.png
   blog:
+  bio:
+
+- name: Minal Patil
+  github: oviminal
+  image: minal.jpg
+  blog: https://minalpraveenpatil.wordpress.com/
+  twitter:
+  facebook: minal.patil.7370
   bio:
