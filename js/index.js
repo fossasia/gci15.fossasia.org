@@ -202,8 +202,8 @@ $(document).ready(function() {
     for (var i = 0; i <= json.length - 1; i++) {
       output = output + '<div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 ">\n';
             output = output + '<div class="grid">\n';
-                  output = output + '<figure class="effect-duke">\n';      
-                        output = output + '<a href="https://github.com/' + json[i].login + '" style="display:none"><i id="github" class="icon-github"></i></a>';          
+                  output = output + '<figure class="effect-duke">\n';
+                        output = output + '<a href="https://github.com/' + json[i].login + '" style="display:none"><i id="github" class="icon-github"></i></a>';
                         output = output + '<div class="card">\n';
                               output = output + '<div class="avatar img-circle">\n';
                                     output = output + '<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/' + json[i].id + '?v=3" alt="' + json[i].login + '">\n';
@@ -211,8 +211,8 @@ $(document).ready(function() {
                               output = output + '<div class="card-block">';
                                     output = output + '<h4 id="h4"><p class="overflow ellipsis">'+ json[i].login + '</p></h4>';
                                     output = output + '<figcaption><div class="social"><div class="icon-holder"><a href="https://github.com/' + json[i].login + ' "><i id="github" class="icon-github"></i></a></div></div></figcaption>';
-                              output = output + '</div>';   
-                        output = output + '</div>';        
+                              output = output + '</div>';
+                        output = output + '</div>';
                   output = output + '</figure>';
             output = output + '</div>';
       output = output + '</div>';
@@ -416,3 +416,57 @@ function toggleDisplay() {
   var textOverlay = $('.blogText');
   textOverlay.toggle();
 }
+
+$.getJSON(
+"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
+function(){
+console.log("success");
+}
+)
+.done(function(data){
+if(data==""||!data||data==0||data=="undefined"){
+document.getElementById("contentem").innerHTML="<li class='mi'>Sorry there are no issues labeled feature currently opened at gci15.fossasia.org</li>";
+}
+else{
+$.each(data, function(i, item) {
+//List of Content
+var tag;
+$.each(item["labels"], function(i, label) {
+  if (label["name"] != "feature") {
+    tag = label["name"];
+  }
+});
+if ($("#" + tag).length <= 0) {
+  var html = "<li class='tags'>" + tag + "<ul id='" + tag + "'></ul></li>";
+  $('#table').append(html);
+}
+var a = $("<a>", {href: "#" + item["id"]});
+a.html(item["title"] + "<br>");
+var li = $("<li>");
+li.html(a);
+$('#' + tag).append(li);
+//Content Description
+var div = $("<div>", {id: item["id"]});
+var h4 = $("<h4>");
+h4.html(item["title"]);
+var bes = $("<input>",{type:"button",onClick:"location.href='"+item["html_url"]+"'",value:"Read more on Github",id:"issuebut"});
+div.html(h4);
+div.append(bes);
+$('#contentres').append(div);
+  });
+}
+
+})
+.fail(function(){
+console.log("fail");
+})
+
+$('#myonoffswitch').on('touchstart click', function(){
+  var myElement = document.querySelector("#lightsout");
+  if(!document.getElementById("myonoffswitch").checked){
+    myElement.style.backgroundColor = "#515100";
+  }
+  else{
+    myElement.style.backgroundColor = "#cccc00";
+  }
+});
