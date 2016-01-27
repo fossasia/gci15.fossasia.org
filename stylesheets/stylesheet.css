@@ -1104,10 +1104,8 @@ footer ul {
 #GPlusPage {
   margin: 20px 0 40px;
   text-align: center;
-   box-shadow: 0.6em 0.6em 10px rgba(122,122,122,0.5);
-   width:450px;
-   height:494px;
-   box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
+  width:450px;
+  height:494px;
 }
 @media screen and (max-width:370px){
    .section-h1 {
@@ -1136,7 +1134,7 @@ th, td {
   margin: 0 auto 10px;
   padding: 10px;
   background-color: white;
-  box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.1em 17px rgba(0,0,0,0.5);
 }
 
 #loklak-twitter h3 {
@@ -1393,7 +1391,7 @@ li:hover ul {
 }
 
 iframe{
-  box-shadow: 0.6em 0.6em 17px rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.1em 17px rgba(0,0,0,0.5);
   }
   .onoffswitch {
       margin: 0.5cm;
