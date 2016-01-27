@@ -6,13 +6,13 @@
 }
 
 .grideee a {
-	float: left;
+  display: block;
+  margin: 15px auto;
 	width: 240px;
 	height: 240px;
 	color: #333;
 	margin-bottom:15px;
 	font-size:15px !important;
-	margin-right:15px;
 }
 
 .grideee figure {
@@ -129,64 +129,4 @@
 	opacity: 1;
 	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
 	transform: translateY(-50%) translateX(-50%) scale(1);
-}
-/* Media Queries */
-/* Let's redefine the width of each anchor and the margins */
-
-@media screen and (max-width: 58em) {
-	.grideee a {
-		width: 33.333%;
-	}
-
-	.grideee a:nth-child(odd) {
-		margin: 0;
-	}
-
-	.grideee a:nth-child(3n-1) {
-		margin: 30px 0 -30px 0;
-	}
-}
-
-@media screen and (max-width: 45em) {
-	.grideee {
-		max-width: 500px;
-	}
-
-	.grideee a {
-		width: 50%;
-	}
-
-	.grideee a:nth-child(3n-1) {
-		margin: 0;
-	}
-
-	.grideee a:nth-child(even) {
-		margin: 30px 0 -30px 0;
-	}
-
-
-	.grideee figcaption h2 {
-		margin-bottom: 0px;
-		-webkit-transform: translateY(30px);
-		transform: translateY(30px);
-	}
-
-	.grideee figcaption p {
-		margin: 0;
-		padding: 0 10px;
-	}
-}
-
-@media screen and (max-width: 27em) {
-	.grideee {
-		max-width: 250px;
-	}
-
-	.grideee a {
-		width: 100%;
-	}
-
-	.grideee a:nth-child(even) {
-		margin: 0;
-	}
 }
