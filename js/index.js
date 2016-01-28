@@ -26,7 +26,6 @@ $(document).ready(function() {
       var $li = $("<li class='slider-pagi__elem'></li>");
       $li.addClass("slider-pagi__elem-"+i).data("page", i);
       if (!i) $li.addClass("active");
-      console.log(i);
       $pagination.append($li);
     }
   })();
