@@ -1,4 +1,4 @@
-﻿#New members please add your credentials to the bottom of the file.
+#New members please add your credentials to the bottom of the file.
 
 - name: Max B.
   github: MaxBorsch
@@ -551,7 +551,7 @@
 
 - name: Li MingYuan
   github: ScrubMYisMe
-  image: LMY_usefull.png
+  image: LMY_usefull.jpg
   twitter: Pro_MYScrub
   bio: Can you differentiate the useful and the useless?
 
@@ -563,12 +563,12 @@
 
 - name: Boh Jie Qi
   github: BohJieQi
-  image: JQ.png
+  image: JQ.jpg
   bio: First time in GCI, ball is life
 
 - name: Johann Seow
   github: annes123
-  image: dino.png
+  image: dino.jpg
   bio: As a human kid I liked dinosaurs.
 
 - name: Vic Chen
@@ -581,13 +581,13 @@
 - name: Dee Mu Rui Marcus
   github: bored-marcooz
   twitter: bored_marcooz
-  image: mumumumummu.png
+  image: mumumumummu.jpg
   bio: Push yourself because no one else is going to do it for you.
 
 - name: Marion Mok
   github: marionmok
   twitter: doraemarion
-  image: marionmok.png
+  image: marionmok.jpg
   blog: https://ayeemarion.wordpress.com/
   bio: Love people at their worst
 
@@ -610,7 +610,7 @@
 
 - name: Lee Sin Yuen
   github: DhsLsy
-  image: lsy.png
+  image: lsy.jpg
   twitter: LsyDhs
   bio: The best moments are yet to come
 
@@ -622,7 +622,7 @@
 
 - name: Ryan Yeo
   github: RyanYeo
-  image: RyanYeo.png
+  image: RyanYeo.jpg
   twitter: ryanyyk
   bio: Impossible just means that you haven't found a solution
 
@@ -632,7 +632,7 @@
   twitter: prasad_pitagi
   bio: Loves electronics, learning coding
 
-- name: Kriya 
+- name: Kriya
   facebook: Akshata Kriya Betageri
   image: kriya.jpg
   twitter: Debena2
@@ -645,7 +645,7 @@
 
 - name: Akshata
   image: akshata.jpg
-  twitter: swararevankar 
+  twitter: swararevankar
   bio: Reach your goal
 
 - name: Nikhil
@@ -655,37 +655,37 @@
   bio: Nothing but something
 
 - name: Pavan
-  github: 
+  github:
   image: pavan.jpg
   twitter: pavancdesai
   bio: Enjoying learning with FOSSASIA
 
 - name: Piyu
-  github: tavakaripiyu 
+  github: tavakaripiyu
   image: piyu.jpg
   twitter: piyutavakari
   bio: Think a lot before you speak
 
 - name: Ravina
-  github:  
+  github:
   image: ravina.jpg
   twitter: RavinaBugaliya
   bio: Be yourself
 
 - name: Rituja
-  github:  
+  github:
   image: rituja.jpg
   twitter: rituja1234
   bio: Enjoy your life slowly
 
 - name: Yasmin
-  github: yasmin22 
+  github: yasmin22
   image: yasmin.jpg
   twitter: yasmin_sarkar
   bio: Life is beautiful
 
 - name: Vaishnavi
-  github: 
+  github:
   image: vaishnavi.jpg
   twitter: VaishnaviSalun5
   bio: Live Life
@@ -698,7 +698,7 @@
   facebook: mattpdl01
   stackexchange: http://stackexchange.com/users/6321491/mattpdl
   bio: Building the next big thing...
-  
+
 - name: Somya Upadhyay
   github: somyaupadhyay
   image: somya.jpg
