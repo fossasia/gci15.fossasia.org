@@ -7,8 +7,15 @@
   <title>gci15.fossasia.org by fossasia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
-<body>
-<a class="fork-github" href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<body onLoad="startcontent()">
+<div id="splash_screen">
+  <ul>
+    <img src="img/fossasia-dark.png" width="170px" height="36px" id="center_splash"/><br>
+    Loading...<br>
+  </ul>
+</div>
+<div id="mega_container">
+  <a class="fork-github" href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" width="149px" height="149px"></a>
   <!--Navbar-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -17,13 +24,13 @@
           <span class="sr-only">Toggle navigation</span>
         </button>
         <a class="navbar-brand" href="http://fossasia.org/">
-          <img class="navbar-brand-logo" src="img/fossasia-dark.png">
+          <img width="170px"  height="36px" class="navbar-brand-logo" src="img/fossasia-dark.png">
         </a>
       </div>
       <a href="https://codein.withgoogle.com/" class="codein-bkg hidden-xs">
         <h2 class="codein-bigger">Google</h2>
         <h2 class="codein-smaller">Code-in</h2>
-        <img src="img/google-bkg.png">
+        <img width="240px"  height="60px" src="img/google-bkg.png">
       </a>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class ="nav navbar-nav">
@@ -129,9 +136,9 @@
                 <div class="card">
                   <div class=" avatar img-circle">
                     {% if mentor.image %}
-                    <img class="card-img-top" src="" data="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}">
+                    <img class="card-img-top" src="" data="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}" height="160px" width="160px">
                     {% else %}
-                    <img class="card-img-top" src="" data="img/member.png" alt="{{ mentor.name }}">
+                    <img class="card-img-top" src="" data="img/member.png" alt="{{ mentor.name }}" height="160px" width="160px">
                     {% endif %}
                     {% if mentor.bio %}
                     <div class="pinched">
@@ -202,7 +209,7 @@
                 <div id="{{ student.name }}" class="card">
                   <div class="avatar img-circle">
                     {% if student.image %}
-                    <img class="card-img-top" src="" data="img/students/{{ student.image }}" alt="{{ student.name }}">
+                    <img class="card-img-top" src="" data="img/students/{{ student.image }}" alt="{{ student.name }}" height="160px" width="160px">
                     {% else %}
                     <img class="card-img-top" src="" data="img/member.png" alt="{{ student.name }}">
                     {% endif %}
@@ -269,7 +276,7 @@
       <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
 
       <a class="anchor" name="gallery"></a>
-      <div class="container1 projects">
+    <div class="container1 projects">
           <div class="nav-arrows">
             <div class="left-arrow" id="left-arrow1">&#8249;</div>
             <div class="right-arrow"  id="right-arrow1">&#8250;</div>
@@ -580,7 +587,7 @@
       </div>
       <a class="anchor" name="student_games"></a>
       <div class="student_geolocation student_games">
-          <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
+      <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
           <div class="container">
             <section>
               <div class="row">
@@ -588,7 +595,7 @@
                   <div class="card">
                     <a href="http://github.com/codethejason/checkers">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/checkers.png" alt="Jason-wong">
+                        <img class="card-img-top" src="img/gallery/checkers.png" alt="Jason-wong" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -603,7 +610,7 @@
                   <div class="card">
                     <a href="https://github.com/codethejason/gcismallprojects2015/tree/master/hangman/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hangman2.png" data="img/gallery/hangman2.png" alt="Jason-wong">
+                        <img class="card-img-top" src="img/gallery/hangman2.png" data="img/gallery/hangman2.png" alt="Jason-wong" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -618,7 +625,7 @@
                   <div class="card">
                     <a href="https://yasoob.me/hangman">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hangman.png" data="img/gallery/hangman.png" alt="yasoob-khalid">
+                        <img class="card-img-top" src="img/gallery/hangman.png" data="img/gallery/hangman.png" alt="yasoob-khalid" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -633,7 +640,7 @@
                   <div class="card">
                     <a href="https://github.com/oanarosca/hangman/tree/gh-pages">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hangman1.png" data="img/gallery/hangman1.png" alt="oanarosca">
+                        <img class="card-img-top" src="img/gallery/hangman1.png" data="img/gallery/hangman1.png" alt="oanarosca" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -648,7 +655,7 @@
                   <div class="card">
                     <a href="https://github.com/Juanvulcano/GCI/tree/master/Fossasia/Week3">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/Treasurehunt.png" data="img/gallery/Treasurehunt.png" alt="Juanvulcano">
+                        <img class="card-img-top" src="img/gallery/Treasurehunt.png" data="img/gallery/Treasurehunt.png" alt="Juanvulcano" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -663,7 +670,7 @@
                   <div class="card">
                     <a href="https://yasoob.me/checkers">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/checkers1.png" data="img/gallery/checkers1.png" alt="yasoob-khalid">
+                        <img class="card-img-top" src="img/gallery/checkers1.png" data="img/gallery/checkers1.png" alt="yasoob-khalid" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -678,7 +685,7 @@
                   <div class="card">
                     <a href="http://fossasia.github.io/flappy-svg/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/Flappy-SVG-icon.svg" data="img/gallery/Flappy-SVG-icon.svg" alt="Flappy SVG">
+                        <img class="card-img-top" src="img/gallery/Flappy-SVG-icon.svg" data="img/gallery/Flappy-SVG-icon.svg" alt="Flappy SVG" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -693,7 +700,7 @@
                   <div class="card">
                     <a href="https://github.com/Raheel102/Checkers/tree/master/Raheel102.github.io-68296e0421edc754fe9d7b03ae5e17b6c7d92dff">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/checkers2.png" data="img/gallery/checkers2.png" alt="yasoob-khalid">
+                        <img class="card-img-top" src="img/gallery/checkers2.png" data="img/gallery/checkers2.png" alt="yasoob-khalid" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -708,7 +715,7 @@
                   <div class="card">
                     <a href="https://github.com/Baidya99/GciHangman/tree/master">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hm.PNG" data="img/gallery/hm.PNG" alt="hangman">
+                        <img class="card-img-top" src="img/gallery/hm.PNG" data="img/gallery/hm.PNG" alt="hangman" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -723,7 +730,7 @@
                   <div class="card">
                     <a href="https://github.com/Baidya99/FOSSquiz/tree/master">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/JQ.PNG" data="img/gallery/JQ.PNG" alt="hangman">
+                        <img class="card-img-top" src="img/gallery/JQ.PNG" data="img/gallery/JQ.PNG" alt="hangman" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -738,7 +745,7 @@
                   <div class="card">
                     <a href="https://github.com/xssc/gci-hangman/tree/master">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/hangmanc.png" data="img/gallery/hangmanc.png">
+                        <img class="card-img-top" src="img/gallery/hangmanc.png" data="img/gallery/hangmanc.png" width="160px" height="160px">
                       </div>
                     </a>
                   </div>
@@ -755,7 +762,7 @@
       </div>
       <a class="anchor" name="student_geolocation"></a>
       <div class="student_geolocation">
-          <h1 class="section-h1"><span class="white-border">Geolocation Projects</span></h1>
+      <h1 class="section-h1"><span class="white-border">Geolocation Projects</span></h1>
           <div class="container">
             <section>
               <div class="row">
@@ -763,7 +770,7 @@
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/geolocation/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/geolocation.png" alt="codethejason">
+                        <img class="card-img-top" src="" data="img/gallery/geolocation.png" alt="codethejason" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -780,7 +787,7 @@
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/openstreetmappostalcode/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/geolocationzipjason.png" alt="codethejason">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationzipjason.png" alt="codethejason" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -797,7 +804,7 @@
                   <div class="card">
                     <a href="https://github.com/Yathannsh/locateme.git">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/locate.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/locate.png" alt="shashank-sharma" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -812,7 +819,7 @@
                   <div class="card">
                     <a href="https://poprosturonin.github.io/postalCodeGeolocation/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/geolocationpostalcode.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationpostalcode.png" alt="shashank-sharma" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -827,7 +834,7 @@
                   <div class="card">
                     <a href="http://jammurz.github.io/GetCoords/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/jamgetcoords.png" alt="shashank-sharma">
+                        <img class="card-img-top" src="" data="img/gallery/jamgetcoords.png" alt="shashank-sharma" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -842,7 +849,7 @@
                   <div class="card">
                     <a href="https://jsfiddle.net/MBorsch/gpbdy8u3/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/PostalLocate_mborsch.png" alt="Max B.">
+                        <img class="card-img-top" src="" data="img/gallery/PostalLocate_mborsch.png" alt="Max B." height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -857,7 +864,7 @@
                   <div class="card">
                     <a href="https://jsfiddle.net/MBorsch/7j1x00ed/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/LatLonDistance_mborsch.png" alt="Max B.">
+                        <img class="card-img-top" src="" data="img/gallery/LatLonDistance_mborsch.png" alt="Max B." height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -874,7 +881,7 @@
                   <div class="card">
                     <a href="http://abhi2424shek.github.io/pinlocator.html/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/pinlocator-abishek.jpg" data="img/gallery/pinlocator-abishek.jpg" alt="Abi">
+                        <img class="card-img-top" src="img/gallery/pinlocator-abishek.jpg" data="img/gallery/pinlocator-abishek.jpg" alt="Abi" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -889,7 +896,7 @@
                   <div class="card">
                     <a href="http://abhi2424shek.github.io/geolocator.html">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="img/gallery/geolocator-abishek.jpg" data="img/gallery/geolocator-abishek.jpg" alt="Abi">
+                        <img class="card-img-top" src="img/gallery/geolocator-abishek.jpg" data="img/gallery/geolocator-abishek.jpg" alt="Abi" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -904,7 +911,7 @@
                   <div class="card">
                     <a href="http://anshuman73.hol.es/BrowserGeolocation/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/geolocationanshuman73.png" alt="anshuman73">
+                        <img class="card-img-top" src="" data="img/gallery/geolocationanshuman73.png" alt="anshuman73" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -921,7 +928,7 @@
                   <div class="card">
                     <a href="http://anshuman73.hol.es/NominatimOSM/">
                       <div class="avatar img-circle">
-                        <img class="card-img-top" src="" data="img/gallery/postalcodeanshuman73.png" alt="anshuman73">
+                        <img class="card-img-top" src="" data="img/gallery/postalcodeanshuman73.png" alt="anshuman73" height="255px" width="255px">
                       </div>
                     </a>
                   </div>
@@ -952,7 +959,7 @@
               </h1>
             </div>
             <div class="col-xs-6 col-xs-4">
-                  <div class="onoffswitch">
+                <div class="onoffswitch">
                       <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
                       <label class="onoffswitch-label" for="myonoffswitch">
                         <span class="onoffswitch-inner"></span>
@@ -970,7 +977,7 @@
                       <div class="card">
                           <div class="avatar img-circle">
                             <a href="http://codethejason.github.io/gci2015/lightsout/index.html">
-                            <img class="card-img-top" src="img/gallery/lightsout.png">
+                            <img class="card-img-top" src="img/gallery/lightsout.png" width="226.5px" height="226.5px">
                           </a>
                           </div>
                       </div>
@@ -981,10 +988,10 @@
                     </div>
 
                     <div class="col-xs-3">
-                      <div class="card">
+                    <div class="card">
                           <div class="avatar img-circle">
                             <a href="http://oanarosca.github.io/lights-out/">
-                            <img class="card-img-top" src="img/gallery/lights-out.png">
+                            <img class="card-img-top" src="img/gallery/lights-out.png" width="226.5px" height="226.5px">
                             </a>
                           </div>
                       </div>
@@ -997,7 +1004,7 @@
               <div class="card">
                 <div class="avatar img-circle">
                   <a href="http://delta949.github.io/">
-                    <img class="card-img-top" src="img/gallery/lightsoutdea.png">
+                    <img class="card-img-top" src="img/gallery/lightsoutdea.png" width="226.5px" height="226.5px">
                   </a>
                   </div>
                 </div>
@@ -1007,10 +1014,10 @@
                 </div>
               </div>
             <div class="col-xs-3">
-              <div class="card">
+            <div class="card">
                   <div class="avatar img-circle">
                     <a href="http://ducphanduyagentp.github.io/ptnega-light/">
-                    <img class="card-img-top" src="img/gallery/lightsoutduc.png">
+                    <img class="card-img-top" src="img/gallery/lightsoutduc.png" width="226.5px" height="226.5px">
                   </a>
                   </div>
               </div>
@@ -1025,7 +1032,7 @@
               <div class="card">
                   <div class="avatar img-circle">
                     <a href="http://s-ulphuric.github.io/git-lights-out/">
-                    <img class="card-img-top" src="img/gallery/lightsoutaditya.png">
+                    <img class="card-img-top" src="img/gallery/lightsoutaditya.png" width="226.5px" height="226.5px">
                   </a>
                   </div>
               </div>
@@ -1036,10 +1043,10 @@
             </div>
 
             <div class="col-xs-3">
-              <div class="card">
+            <div class="card">
                   <div class="avatar img-circle">
                     <a href="https://pages.choy.in/GCI2015/">
-                    <img class="card-img-top" src="img/gallery/lightsoutyong.png">
+                    <img class="card-img-top" src="img/gallery/lightsoutyong.png" width="226.5px" height="226.5px">
                   </a>
                   </div>
               </div>
@@ -1050,10 +1057,10 @@
             </div>
 
             <div class="col-xs-3">
-              <div class="card">
+            <div class="card">
                   <div class="avatar img-circle">
                     <a href="http://jleow00.github.io/Lights-Out/">
-                    <img class="card-img-top" src="img/gallery/lightsoutjeromel.png">
+                    <img class="card-img-top" src="img/gallery/lightsoutjeromel.png" width="226.5px" height="226.5px">
                     </a>
                   </div>
               </div>
@@ -1067,7 +1074,7 @@
             <div class="card">
                 <div class="avatar img-circle">
                   <a href="http://srv.seadog007.me/Light-Adv/Web/">
-                  <img class="card-img-top" src="img/gallery/lightsoutseadog.png">
+                  <img class="card-img-top" src="img/gallery/lightsoutseadog.png" width="226.5px" height="226.5px">
                 </a>
                 </div>
             </div>
@@ -1082,7 +1089,7 @@
           <div class = "card">
           <div class="avatar img-circle">
             <a href="http://s.codepen.io/LeungEnterprises/debug/MKjQMe">
-            <img class="card-img-top" src="img/gallery/lightsoutleung.png">
+            <img class="card-img-top" src="img/gallery/lightsoutleung.png" width="226.5px" height="226.5px">
           </a>
           </div>
       </div>
@@ -1096,7 +1103,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://raheel102.github.io/lightbulb.html">
-        <img class="card-img-top" src="img/gallery/lightsoutraheel.png">
+        <img class="card-img-top" src="img/gallery/lightsoutraheel.png" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1110,7 +1117,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://nolik2000.github.io/light.com/">
-        <img class="card-img-top" src="img/gallery/lamp.jpg">
+        <img class="card-img-top" src="img/gallery/lamp.jpg" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1124,7 +1131,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://maxborsch.github.io/Lights-Out/">
-        <img class="card-img-top" src="img/gallery/LightsOut_mborsch.png">
+        <img class="card-img-top" src="img/gallery/LightsOut_mborsch.png" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1139,7 +1146,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://awaykened.github.io/lights_out">
-        <img class="card-img-top" src="img/gallery/lightsoutweiwei.png">
+        <img class="card-img-top" src="img/gallery/lightsoutweiwei.png" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1153,7 +1160,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://elgayar.github.io">
-        <img class="card-img-top" src="img/gallery/jslightsout.png">
+        <img class="card-img-top" src="img/gallery/jslightsout.png" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1167,7 +1174,7 @@
       <div class = "card">
       <div class="avatar img-circle">
         <a href="http://anshuman73.hol.es/lightsout">
-        <img class="card-img-top" src="img/gallery/lightsoutanshuman73.png">
+        <img class="card-img-top" src="img/gallery/lightsoutanshuman73.png" width="226.5px" height="226.5px">
       </a>
       </div>
     </div>
@@ -1196,7 +1203,7 @@
             <!--Add your Privly stickers here-->
                     <div class="thumbnail folio-thumb">
                         <figure class="gallery-item">
-                            <img alt="logo1" src="https://raw.githubusercontent.com/fossasia/gci15.fossasia.org/gh-pages/img/privly/samplesticker.png" >
+                            <img alt="logo1" src="https://raw.githubusercontent.com/fossasia/gci15.fossasia.org/gh-pages/img/privly/samplesticker.png" width="230px" height="230px">
                             <figcaption class="img-title">
                                 <h4>View on Github <a href="https://github.com/fossasia/gci15.fossasia.org/blob/gh-pages/img/privly/samplesticker.png"><i id="github" class="icon-github"></i></a></h4>
                             </figcaption>
@@ -1205,7 +1212,7 @@
                     </div>
                     <div class="thumbnail folio-thumb">
                         <figure class="gallery-item">
-                            <img alt="Sticker" src="img/privly/sumedh.PNG" >
+                            <img alt="Sticker" src="img/privly/sumedh.PNG" width="230px" height="230px">
                             <figcaption class="img-title">
                                 <h4>Sumedh Supe <a href="https://github.com/sumsupee"><i id="github" class="icon-github"></i></a></h4>
                             </figcaption>
@@ -1214,7 +1221,7 @@
                     </div>
                     <div class="thumbnail folio-thumb">
                         <figure class="gallery-item">
-                            <img alt="Sticker" src="img/privly/PRIVLYshirtlowres.jpg" >
+                            <img alt="Sticker" src="img/privly/PRIVLYshirtlowres.jpg" width="230px" height="230px">
                             <figcaption class="img-title">
                                 <h4>Naveen Balachandran <a href="https://github.com/naveenbalachandran"><i id="github" class="icon-github"></i></a></h4>
                             </figcaption>
@@ -1223,7 +1230,7 @@
                     </div>
                     <div class="thumbnail folio-thumb">
                         <figure class="gallery-item">
-                            <img alt="Sticker" src="img/privly/ciucur-daniel_PrivlySticker.png" >
+                            <img alt="Sticker" src="img/privly/ciucur-daniel_PrivlySticker.png" width="230px" height="230px">
                             <figcaption class="img-title">
                                 <h4>Ciucur Daniel <a href="https://github.com/ciucur-daniel"><i id="github" class="icon-github"></i></a></h4>
                             </figcaption>
@@ -1245,15 +1252,15 @@
         <p id="changingword">Thank you for contributing!</p>
       </div>
       <a class="anchor" name="social_media"></a>
-        <br>
+      <br>
         <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
         <div class="row">
           <div class="col-xs-12 col-md-6">
             <div class="row">
               <div class="col-xs-12 col-md-12">
                 <div id="loklak-twitter">
-                  <img src="img/loklak.png" alt="loklak" class="header-image">
-                  <img src="img/twitter.png" alt="twitter" class="header-image" style="float:right;">
+                  <img src="img/loklak.png" alt="loklak" class="header-image" height="75px" width="75px">
+                  <img src="img/twitter.png" alt="twitter" class="header-image" style="float:right;" height="75px" width="75px">
                   <h3>Tweets from Loklak</h3>
                   <hr>
                   <div id="tweet-container">
@@ -1333,6 +1340,7 @@
         <p class="text-center col-xs-12">&copy; Copyright 2009-2016 FOSSASIA</p>
       </div>
   </footer>
+</div>
 </body>
 <!-- CSS is put after HTML to improve page speeds -->
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
@@ -1349,7 +1357,7 @@
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'>
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700'>
 <!-- Javascript put atlast to improve speed -->
-  <script async src="js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
   <script async src="js/blogData.js"></script>
   <script async src="js/index.js"></script>
   <script async src="js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
