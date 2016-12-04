@@ -774,8 +774,8 @@
                     </a>
                   </div>
                 </div>
-                
-                
+
+
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/openstreetmappostalcode/">
@@ -791,8 +791,8 @@
                     </a>
                   </div>
                 </div>
-                
-                
+
+
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                   <div class="card">
                     <a href="https://github.com/Yathannsh/locateme.git">
@@ -1237,7 +1237,7 @@
   	 </div>
       <a class="anchor" name="contributors" id="contributors"></a>
       <div class="row contributors-wrapper">
-        <div class="members contributers">
+        <div class="members contributers" id="contribiii">
           <h1 class="section-h1"><span class="white-border">Contributors</span></h1>
         </div>
       </div>
@@ -1428,6 +1428,29 @@
      else{
        myElement.style.backgroundColor = "#cccc00";
      }
+   });
+   $(function(){
+       $.ajax({
+           url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors"
+       }).done(function(data){
+           data.forEach(function(contributors){
+               // Ignore LineLengthBear
+               var html = "<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='card'>";
+               html += "<div class='pic'>";
+               html += "<img src="+contributors.avatar_url+"><div class='contribs'><p>";
+               html += contributors.contributions;
+               if (contributors.contributions === 1) {
+                   html += " contribution";
+               }
+               else {
+                   html += " contributions";
+               }
+               html += "</p></div><a href="+contributors.html_url+">";
+               html += "<i class='fa fa-github fa-2x gh-icon' aria-hidden='true'></i><span>";
+               html += contributors.login+"</span></a></div></div></div>";
+               $("#contribiii").append(html);
+           });
+       });
    });
    </script>
 </html>
