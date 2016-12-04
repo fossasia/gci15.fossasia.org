@@ -7,7 +7,7 @@
   <title>gci15.fossasia.org by fossasia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
-<body onLoad="okfunctions()">
+<body>
 <a class="fork-github" href="https://github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <!--Navbar-->
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -774,8 +774,8 @@
                     </a>
                   </div>
                 </div>
-
-
+                
+                
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                   <div class="card">
                     <a href="https://github.com/codethejason/gci2015/tree/master/openstreetmappostalcode/">
@@ -791,8 +791,8 @@
                     </a>
                   </div>
                 </div>
-
-
+                
+                
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
                   <div class="card">
                     <a href="https://github.com/Yathannsh/locateme.git">
@@ -1351,9 +1351,10 @@
 <!-- Javascript put atlast to improve speed -->
   <script async src="js/jquery.js"></script>
   <script async src="js/blogData.js"></script>
+  <script async src="js/index.js"></script>
   <script async src="js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script async src="js/saSlider.js"></script>
-  <script async src="https://apis.google.com/js/platform.js"></script>
+  <script async src="https://apis.google.com/js/platform.js" async defer></script>
   <script async src="js/scroll.js"></script>
   <script async src="js/classie.js"></script>
   <script async type="text/javascript" src="js/modernizr.min.js"></script>
@@ -1361,21 +1362,20 @@
   <script async src="js/angular-1.0.0rc4.min.js"></script>
   <script async src="js/angular-resource-1.0.0rc4.min.js"></script>
   <script async type="text/javascript">
-  function okfunctions(){
-    angular.module('Twitter', ['ngResource']);
-    function TwitterCtrl($scope, $resource) {
-        $scope.twitter = $resource('http://loklak.org/api/:action',
-            {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
-            {get:{method:'JSONP'}});
+  angular.module('Twitter', ['ngResource']);
+  function TwitterCtrl($scope, $resource) {
+      $scope.twitter = $resource('http://loklak.org/api/:action',
+          {action:'search.json', q:'angularjs', callback:'JSON_CALLBACK', count:10},
+          {get:{method:'JSONP'}});
 
-            $scope.doSearch = function () {
-              $("#spinner").show();
-              $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
-                $("#spinner").hide();
-              });
+      $scope.doSearch = function () {
+          $("#spinner").show();
+          $scope.twitterResult = $scope.twitter.get({q:$scope.searchTerm},function(){
+            $("#spinner").hide();
+          });
           //
-        };
-    }
+      };
+  }
   new Photostack(document.getElementById('photostack-1'));
         $.getJSON(
 			"https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?labels=feature",
@@ -1429,16 +1429,5 @@
        myElement.style.backgroundColor = "#cccc00";
      }
    });
- }
- $(document).ready(function(){var $slider=$(".slider"),$slideBGs=$(".slide__bg"),diff=0,curSlide=0,numOfSlides=$(".slide").length-1,animating=false,animTime=500,autoSlideTimeout,autoSlideDelay=6000,$pagination=$(".slider-pagi");(function createBullets(){for(var i=0;i<numOfSlides+1;i++){var $li=$("<li class='slider-pagi__elem'></li>");$li.addClass("slider-pagi__elem-"+i).data("page",i);if(!i)$li.addClass("active");$pagination.append($li);}})();function manageControls(){$(".slider-control").removeClass("inactive");if(!curSlide)$(".slider-control.left").addClass("inactive");if(curSlide===numOfSlides)$(".slider-control.right").addClass("inactive");};function autoSlide(){autoSlideTimeout=setTimeout(function(){curSlide++;if(curSlide>numOfSlides)curSlide=0;changeSlides();},autoSlideDelay);};autoSlide();function changeSlides(instant){if(!instant){animating=true;manageControls();$slider.addClass("animating");$slider.css("top");$(".slide").removeClass("active");$(".slide-"+curSlide).addClass("active");setTimeout(function(){$slider.removeClass("animating");animating=false;},animTime);}window.clearTimeout(autoSlideTimeout);$(".slider-pagi__elem").removeClass("active");$(".slider-pagi__elem-"+curSlide).addClass("active");$slider.css("transform","translate3d("+-curSlide*100+"%,0,0)");$slideBGs.css("transform","translate3d("+curSlide*50+"%,0,0)");diff=0;autoSlide();}function navigateLeft(){if(animating)return;if(curSlide>0)curSlide--;changeSlides();}function navigateRight(){if(animating)return;if(curSlide<numOfSlides)curSlide++;changeSlides();}$(document).on("mousedown touchstart",".slider",function(e){if(animating)return;window.clearTimeout(autoSlideTimeout);var startX=e.pageX||e.originalEvent.touches[0].pageX,winW=$(window).width();diff=0;$(document).on("mousemove touchmove",function(e){var x=e.pageX||e.originalEvent.touches[0].pageX;diff=(startX-x)/winW*70;if((!curSlide&&diff<0)||(curSlide===numOfSlides&&diff>0))diff/=2;$slider.css("transform","translate3d("+(-curSlide*100-diff)+"%,0,0)");$slideBGs.css("transform","translate3d("+(curSlide*50+diff/2)+"%,0,0)");});});$(document).on("mouseup touchend",function(e){$(document).off("mousemove touchmove");if(animating)return;if(!diff){changeSlides(true);return;}if(diff>-8&&diff<8){changeSlides();return;}if(diff<=-8){navigateLeft();}if(diff>=8){navigateRight();}});$(document).on("click",".slider-control",function(){if($(this).hasClass("left")){navigateLeft();}else{navigateRight();}});$(document).on("click",".slider-pagi__elem",function(){curSlide=$(this).data("page");changeSlides();});function isElementInViewport(elem,biasUp){var $elem=$(elem);var scrollElem=((navigator.userAgent.toLowerCase().indexOf('webkit')!=-1)?'body':'html');var viewportTop=$(scrollElem).scrollTop();var viewportBottom=viewportTop+$(window).height();var elemTop=Math.round($elem.offset().top);var elemBottom=elemTop+$elem.height();return((elemTop<viewportBottom+(biasUp?0:500))&&(elemBottom>viewportTop-(biasUp?0:500)));}function checkAnimation(){var $elem=$('.section-h1').each(function(index){var isInView=isElementInViewport($(this));if($(this).hasClass('start')){if(!isInView){$(this).removeClass('start');}return;};if(isInView){$(this).addClass('start');}});}var images=$.makeArray($('.card-img-top'));function checkImages(){if(!images){return;}images.forEach(function(item,index){if(item.getAttribute("src")==""&&isElementInViewport(item,scrollingUp)){item.setAttribute("src",item.getAttribute("data"));images.splice(index,1);}});}var lastScrollTop=0;var scrollingUp=false;$(document).scroll(function(){var st=$(this).scrollTop();scrollingUp=st<lastScrollTop;checkAnimation();if(!images.length<1){checkImages();}lastScrollTop=st;});var isMobile=($(window).width()<500?true:false);$("#GPlusPage").html('<div class="g-page" data-layout="'+(isMobile?"landscape":"portrait")+'" data-width="'+(isMobile?150:450)+'" data-href="https://plus.google.com/+FossasiaOrg"></div>');$.getJSON("https://api.github.com/repos/fossasia/gci15.fossasia.org/contributors?per_page=100",function(json){output="";for(var i=0;i<=json.length-1;i++){output=output+'<div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 ">\n';output=output+'<div class="grid">\n';output=output+'<figure class="effect-duke">\n';output=output+'<a href="https://github.com/'+json[i].login+'" style="display:none"><i id="github" class="icon-github"></i></a>';output=output+'<div class="card">\n';output=output+'<div class="avatar img-circle">\n';output=output+'<img class="card-img-top" src="" data="https://avatars.githubusercontent.com/u/'+json[i].id+'?v=3" alt="'+json[i].login+'">\n';output=output+'</div>';output=output+'<div class="card-block">';output=output+'<h4 id="h4"><p class="overflow ellipsis">'+json[i].login+'</p></h4>';output=output+'<figcaption><div class="social"><div class="icon-holder"><a href="https://github.com/'+json[i].login+' "><i id="github" class="icon-github"></i></a></div></div></figcaption>';output=output+'</div>';output=output+'</div>';output=output+'</figure>';output=output+'</div>';output=output+'</div>';}$('.contributers').append(output);images=$.makeArray($('.card-img-top[src=""]'));});var loklak_request=$.ajax({url:"http://www.loklak.org/api/peers.json",method:"GET",dataType:"jsonp"});(function(){var newsletterDiv=$('#newsletterDiv');if(newsletterDiv.length>0){$(window).scroll(function(){var distanceTop=$('#last').offset().top-$(window).height();if($(window).scrollTop()>distanceTop){newsletterDiv.animate({'bottom':'0px'},550);}else{newsletterDiv.stop(true).animate({'bottom':'-430px'},550);}});$('#newsletterDiv .close').on('click',function(){$(this).parent().remove();$('footer').animate({'padding-bottom':'50px'},550);});}})();loklak_request.done(function(json_result){var peers=json_result.peers;var table=$('#loklak_table');var count=json_result.count;var counter=(count/2);var ocount=Math.ceil(count/2)-1;if(count%2!=0){for(i=0;i<ocount;i++){table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td></tr>");}table.append("<tr><td>"+peers[i+ocount].host+"</td><td>"+dateFormatter(peers[i+ocount].lastSeen)+" Hours Ago</td><td id='endrow'style='text-align:right' > Available Peers: &nbsp;</td><td id='endrow'>"+count+"</td></tr>");}else{for(i=0;i<counter;i++){table.append("<tr><td>"+peers[i].host+"</td><td>"+dateFormatter(peers[i].lastSeen)+" Hours Ago</td><td>"+peers[i+counter].host+"</td><td>"+dateFormatter(peers[i+counter].lastSeen)+" Hours Ago</td></tr>");}table.append("<tr ><td id='endrow'rowspan= '1' colspan='4' > Available Peers: &nbsp;"+count+"</td></tr>");}});var dateFormatter=function(unix_timestamp){var date=new Date(unix_timestamp);var dateNow=(new Date).getTime();var difference=Math.abs(dateNow-date);var dateCompare=new Date(difference*1000);var hours=dateCompare.getHours();return hours;};var tweetsTemplate=function(tweet,tweetURL,username,name,profilePicURL){$('#tweet-container').append('<div class="tweetbox"> \
-                       <a class="tweetLink" target="_blank" href="'+tweetURL+'">Tweet</a> \
-                       <div class="profilePic"> \
-                         <img src="'+profilePicURL+'"> \
-                       </div> \
-                       <div class="tweet-content"> \
-                         <h4><a class="nameLink" target="_blank" href="https://twitter.com/'+username+'">'+name+'</a></h4> \
-                         '+tweet+' \
-                       </div> \
-                     </div> ');};var fetchLoklakTweets=$.ajax({url:"http://loklak.org/api/search.json?q=%40fossasia&count=20",method:"GET",dataType:"jsonp"});fetchLoklakTweets.done(function(json_result){var tweets=json_result.statuses;for(var index in tweets){var tweet=tweets[index].text.replace(/\\/g,'');var tweetLink=tweets[index].link;var username=tweets[index].user.screen_name;var name=tweets[index].user.name;var profilePic=tweets[index].user.profile_image_url_https;tweetsTemplate(tweet,tweetLink,username,name,profilePic);}}).fail(function(){console.log("The loklak call failed.")});$(function(){$('a[href*=#]:not([href=#])').click(function(){if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){var target=$(this.hash);target=target.length?target:$('[name='+this.hash.slice(1)+']');if(target.length){$('html,body').animate({scrollTop:target.offset().top},1000);return false;}}});});$('.slider').saSlider();$(function(){$('#left-arrow1').click(function(){if($('#photostack-1 nav span.current').prev().length!==0){$('#photostack-1 nav span.current').prev().click();}else{$('#photostack-1 nav span.current').parent().children().last().click();}});$('#right-arrow1').click(function(){if($('#photostack-1 nav span.current').next().length!==0){$('#photostack-1 nav span.current').next().click();}else{$('#photostack-1 nav span.current').parent().children().first().click();}});});$('.gallery-item').hover(function(){$(this).find('h5, p').stop().animate({opacity:'1',marginLeft:'230px'},300);},function(){$(this).find('h5, p').stop().animate({opacity:'0',marginLeft:'0px'},100);});function loadblog(){$.ajax({type:"GET",url:"loadblog.html",beforeSend:function(){document.getElementById("dime").style.display="inherit";},success:function(data){$(".blogs_wrapper").html(data);}});}$("#grideee a").toggle();loadblog();});function displayBlog(element,event,blognum){event.preventDefault();var blogText=blogData[blognum-1];var wordContainer=$(".pText");var url=$(element).attr("href");wordContainer.html(blogText+"<br><p>See more at: <a href='"+url+"' target=_blank>"+url+"</a></p>");if($('.blogText').css('display')=='none'){toggleDisplay();}}function toggleDisplay(){var textOverlay=$('.blogText');textOverlay.toggle();}
-</script>
+   </script>
 </html>
