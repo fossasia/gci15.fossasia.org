@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1
+  - 2.3.3
 install: 
   - bundle install
 script:
