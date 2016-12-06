@@ -10,3 +10,74 @@ h2{text-align:center;}
 .header h1, h3{text-align:center;}
 h5{margin-top:30px;}
 .box input{padding-left:10px;}
+
+.latest-issues {
+    margin-top: 50px;
+}
+
+.issues-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    background: #4286f4;
+    border-radius: 5px;
+}
+
+.issue {
+    width: 100%;
+    height: 80px;
+    padding:18px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 10px;
+    background:#FFF;
+}
+
+.issue:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.issues-wrapper span {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.issues-wrapper a {
+    color: #1862db;
+}
+
+.issues-wrapper .user {
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 88px;
+}
+
+.issues-wrapper .right-coms {
+    float: right;
+    text-align: right;
+    margin-top: -55px;
+}
+
+.issues-wrapper i {
+    margin-right: 5px;
+}
+
+.button {
+  background: #FFF;
+  text-align: center;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom:20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.button a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}

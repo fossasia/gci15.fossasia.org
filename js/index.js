@@ -8,3 +8,29 @@ $(document).ready(function(){var $slider=$(".slider"),$slideBGs=$(".slide__bg"),
                         '+tweet+' \
                       </div> \
                     </div> ');};var fetchLoklakTweets=$.ajax({url:"http://loklak.org/api/search.json?q=%40fossasia&count=20",method:"GET",dataType:"jsonp"});fetchLoklakTweets.done(function(json_result){var tweets=json_result.statuses;for(var index in tweets){var tweet=tweets[index].text.replace(/\\/g,'');var tweetLink=tweets[index].link;var username=tweets[index].user.screen_name;var name=tweets[index].user.name;var profilePic=tweets[index].user.profile_image_url_https;tweetsTemplate(tweet,tweetLink,username,name,profilePic);}}).fail(function(){console.log("The loklak call failed.")});$(function(){$('a[href*=#]:not([href=#])').click(function(){if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){var target=$(this.hash);target=target.length?target:$('[name='+this.hash.slice(1)+']');if(target.length){$('html,body').animate({scrollTop:target.offset().top},1000);return false;}}});});$('.slider').saSlider();$(function(){$('#left-arrow1').click(function(){if($('#photostack-1 nav span.current').prev().length!==0){$('#photostack-1 nav span.current').prev().click();}else{$('#photostack-1 nav span.current').parent().children().last().click();}});$('#right-arrow1').click(function(){if($('#photostack-1 nav span.current').next().length!==0){$('#photostack-1 nav span.current').next().click();}else{$('#photostack-1 nav span.current').parent().children().first().click();}});});$('.gallery-item').hover(function(){$(this).find('h5, p').stop().animate({opacity:'1',marginLeft:'230px'},300);},function(){$(this).find('h5, p').stop().animate({opacity:'0',marginLeft:'0px'},100);});function loadblog(){$.ajax({type:"GET",url:"loadblog.html",beforeSend:function(){document.getElementById("dime").style.display="inherit";},success:function(data){$(".blogs_wrapper").html(data);}});}$("#grideee a").toggle();loadblog();});function displayBlog(element,event,blognum){event.preventDefault();var blogText=blogData[blognum-1];var wordContainer=$(".pText");var url=$(element).attr("href");wordContainer.html(blogText+"<br><p>See more at: <a href='"+url+"' target=_blank>"+url+"</a></p>");if($('.blogText').css('display')=='none'){toggleDisplay();}}function toggleDisplay(){var textOverlay=$('.blogText');textOverlay.toggle();}
+
+$(function(){
+    $.ajax({
+        url: "https://api.github.com/repos/fossasia/gci15.fossasia.org/issues?state=open"
+    }).done(function(data){
+        var index = 0;
+        data.forEach(function(issue){
+            if (index > 9) { // show the 10 latest issues
+                return false;
+            }
+            if (issue.hasOwnProperty("pull_request")) {
+                return;
+            }
+            index++;
+            var html = "<div class='issue'><span>#"+issue.number+"</span>";
+            html += "<a href='"+issue.html_url+"' target='_blank'>"+issue.title+"</a>";
+            html += "<p>Opened by</p>";
+            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'";
+            html += " style='white-space:pre'> "+issue.user.login+"</a><div class='right-coms'>";
+            html += "<a href='"+issue.html_url+"' class='comments' target='_blank'>";
+            html += "<i class='fa fa-comment'></i>"+issue.comments;
+            html += "</a></div></a></div>";
+            $(".issues-wrapper").append(html);
+        });
+    });
+});
