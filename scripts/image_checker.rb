@@ -5,7 +5,6 @@ class ImageChecker
     puts "Improvements by Robby O'Connor during GCI 2016"
     @max_size = max_size
     @directories = directories
-    ok?
   end
 
   # DRY things up a bit
@@ -34,7 +33,7 @@ class ImageChecker
       puts 'All images are ok... Hurray!'
     else
       puts 'Image Checker: There are images which exceed the expected dimensions as specified above'
-      puts "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
+      abort "Please resize your images so that are #{@max_size} x #{@max_size} [w x h]"
       return false
     end
     true
@@ -46,4 +45,5 @@ directories = [Dir['./img/students/**/*.*'], Dir['./img/students/**/*.*'],
                Dir['./img/privly/**/*.*']]
 
 # Check images now
-ImageChecker.new 240, directories
+checker = ImageChecker.new 240, directories
+checker.ok?
