@@ -5,6 +5,7 @@ install:
   - bundle install
 script:
   - bundle exec jekyll build
+  - ruby ./scripts/ImgChecker/ImgChecker.rb
 branches:
   only:
     - gh-pages
