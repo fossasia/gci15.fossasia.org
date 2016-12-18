@@ -1,11 +1,11 @@
 language: ruby
 rvm:
   - 2.3.3
-install: 
+install:
   - bundle install
 script:
   - bundle exec jekyll build
-  - ruby ./scripts/ImgChecker/ImgChecker.rb
+  - ruby ./scripts/ImgChecker.rb
 branches:
   only:
     - gh-pages
