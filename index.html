@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+<!--For Lights Out Button-->
+<div class="shadow">
 <body>
 <a class="fork-github" href="//github.com/fossasia/gci15.fossasia.org"><img style="position: absolute; top: 60px; z-index:99; right: 0; border: 0;" src="//camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="//s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <!--Navbar-->
@@ -954,7 +956,7 @@
               </h1>
             </div>
             <div class="col-xs-6 col-xs-4">
-                  <div class="onoffswitch">
+                  <div class="onoffswitch" onclick="toggle();">
                       <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
                       <label class="onoffswitch-label" for="myonoffswitch">
                         <span class="onoffswitch-inner"></span>
@@ -1352,6 +1354,7 @@
       </div>
   </footer>
 </body>
+</div>
 <!-- CSS is put after HTML to improve page speeds -->
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
@@ -1464,14 +1467,12 @@
 		.fail(function(){
 			console.log("fail");
 		})
-   $('#myonoffswitch').on('touchstart click', function(){
-     var myElement = document.querySelector("#lightsout");
-     if(!document.getElementById("myonoffswitch").checked){
-       myElement.style.backgroundColor = "#515100";
-     }
-     else{
-       myElement.style.backgroundColor = "#cccc00";
-     }
-   });
+   function toggle () {
+	var shadow = document.getElementById("shadow");
+	if ( shadow.style.display !== "block" ) {
+		shadow.style.display = "block";
+	} else {
+		shadow.style.display = "none";
+	}
    </script>
 </html>
