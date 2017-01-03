@@ -119,7 +119,7 @@
   <!--End Slider-->
   <section class="main-content">
     <div class="container">
-      <a class="anchor" name="mentors"></a>
+      <a class="anchor" name="mentors" id="mentors"></a>
       <div class="row mentors-wrapper">
         <div class="members mentors">
           <h1 class="section-h1"><span class="white-border">Mentors</span></h1>
@@ -192,7 +192,7 @@
           {% endfor %}
         </div>
       </div>
-      <a class="anchor" name="students"></a>
+      <a class="anchor" name="students" id="students"></a>
       <div class="row students-wrapper">
         <div class="members students">
           <h1 class="section-h1"><span class="white-border">Students</span></h1>
@@ -269,10 +269,10 @@
         </div>
       </div>
 
-      <a class="anchor" name="blog_posts"></a>
+      <a class="anchor" id="blog_posts"></a>
       <div class="blogs_wrapper"><li class="dime" id="dime">Loading...</li></div>
 
-      <a class="anchor" name="gallery"></a>
+      <a class="anchor" id="gallery"></a>
       <div class="container1 projects">
           <div class="nav-arrows">
             <div class="left-arrow" id="left-arrow1">&#8249;</div>
@@ -582,7 +582,7 @@
           <object type="text/html" data="http://loklak-heatmap.herokuapp.com" width="100%" height="700px"></object>
         </div>
       </div>
-      <a class="anchor" name="student_games"></a>
+      <a class="anchor" id="student_games"></a>
       <div class="student_geolocation student_games">
           <h1 class="section-h1"><span class="white-border">Student Games</span></h1>
           <div class="container">
@@ -757,7 +757,7 @@
             </section>
           </div>
       </div>
-      <a class="anchor" name="student_geolocation"></a>
+      <a class="anchor" id="student_geolocation"></a>
       <div class="student_geolocation">
           <h1 class="section-h1"><span class="white-border">Geolocation Projects</span></h1>
           <div class="container">
@@ -943,7 +943,7 @@
           </div>
       </div>
 
-      <a class="anchor" name="lights_out"></a>
+      <a class="anchor" id="lights_out"></a>
       <div class="lightsout-wrapper" id ="lightsout">
 
         <div class="container">
@@ -1185,7 +1185,7 @@
     </section>
     </div>
     </div>
-    <a class="anchor" name="issues"></a>
+    <a class="anchor" id="issues"></a>
     <!--<div id="contentem" class="blog_wrapper">
       <h2 class="section-h1" id="jigsaw"><span class="white-border">Github Issues</span></h2>
       <div id="contentres">
@@ -1206,7 +1206,7 @@
         </div>
       </div>
     </section>
- 	 <a class="anchor" name="privly-stickers"></a>
+ 	 <a class="anchor" id="privly-stickers"></a>
       <div class="privly-wrapper">
       <h1 class="section-h1"><span class="white-border">Privly-Stickers</span></h1>
     <section id="portfolio" class="clear bounce-in">
@@ -1264,7 +1264,7 @@
       <div class="row thanku-wrapper text-scroll scrolling-words otto" align="center" >
         <p id="changingword">Thank you for contributing!</p>
       </div>
-      <a class="anchor" name="social_media"></a>
+      <a class="anchor" id="social_media"></a>
         <br>
         <h2 class="section-h1"><span class="white-border">Social Media</span></h2>
         <div class="row">
@@ -1386,6 +1386,13 @@
   <script async src="js/angular-1.0.0rc4.min.js"></script>
   <script async src="js/angular-resource-1.0.0rc4.min.js"></script>
   <script async type="text/javascript">
+              var $root = $('html, body');
+  $('a').click(function() {
+      $root.animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 1000);
+      return false;
+  });
   $(function(){
       $.ajax({
           url: "https://api.github.com/repos/fossasia/gci16.fossasia.org/contributors"
