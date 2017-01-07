@@ -93,3 +93,8 @@ h5{margin-top:30px;}
 	filter: alpha(opacity=60);
 	z-index: 99;
 }
+@media (max-width:520px) {
+    #facebook-iframe {
+        width: 350px !important;
+    }
+}
