@@ -381,9 +381,51 @@
   facebook:
   bio:
   
-- name: Arkodyuti Saha
-  github: arkodyuti
-  image: arkodyuti.jpg
+- name: André Hentschel
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: 
+  bio:
+- name: Chandankumar
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+- name: Coffee Man
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+- name: Derek
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+- name: Diva 
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+- name: Eden Dang
+  github:
+  image: anonyms.jpg
+  blog:
+  twitter:
+  facebook: amazingissunny
+  bio:
+- name: Gibtang
+  github:
+  image: anonyms.jpg
   blog:
   twitter:
   facebook: amazingissunny
