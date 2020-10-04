@@ -22,7 +22,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     fastimage (2.0.1)
       addressable (~> 2)
-    ffi (1.9.14)
+    ffi (1.13.1)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
     github-pages (110)
