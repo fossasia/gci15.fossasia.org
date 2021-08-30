@@ -1,12 +1,44 @@
 <!-- Please follow the format of the first anchor inside secition grideee -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/demo.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/componenter.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
+<style>
+  .blogBtn{
+    border-radius: 15%;
+    margin: 10px;
+  }
+  .blogBtn:hover{
+    color: red;
+  }
+  #scrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    z-index: 1;
+  }
+  #scrollToTop:active{
+    background: rgb(82, 80, 80);
+  }
+</style>
 <script src="js/snap.svg-min.js"></script>
 <div class="containermmm">
-  <h1 class="section-h1"><span class="white-border">Blog Posts</span></h1>
+  <center><h1 class="section-h1"><span class="white-border" style="font-family: Arial, Helvetica, sans-serif; color: #3498db;">Blog Posts</span></h1></center>
+
   <div class="blogText"><button class="blogBtn" onClick="toggleDisplay()">Back</button><div class="pText"></div></div>
+  <div>
+    <button id="scrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+  </div>
   <section id="grideee" class="grideee clearfix">
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <a href="https://dev4god.wordpress.com/2016/01/16/gci-2015-2016-adventure-with-fossasia/" onclick="displayBlog(this, event, 1)" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
@@ -456,6 +488,12 @@
 
 </section>
 </div>
+<script>
+  const scrollToTop=document.querySelector("#scrollToTop");
+  scrollToTop.addEventListener("click",function (){
+  window.scrollTo(0,0);
+});
+</script>
 <script>
 (function(){
 	function init(){
