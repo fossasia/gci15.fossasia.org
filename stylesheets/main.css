@@ -98,3 +98,10 @@ h5{margin-top:30px;}
         width: 350px !important;
     }
 }
+@media (max-width:767px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
