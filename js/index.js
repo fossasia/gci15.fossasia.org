@@ -34,3 +34,12 @@ $(function(){
         });
     });
 });
+ //Back to top button
+  let backtotop = document.querySelector('.back-to-top')
+    document.addEventListener('scroll', function(){
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }  
+    })
